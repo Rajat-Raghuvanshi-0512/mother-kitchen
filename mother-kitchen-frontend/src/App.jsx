@@ -1,7 +1,7 @@
+import Navbar from './components/Navbar'
+
 const App = () => {
-  return (
-    <div className="text-3xl font-bold w-screen h-screen flex justify-center items-center">Mother Kitchen Project</div>
-  )
+  return <Navbar />
 }
 
 export default App
