@@ -1,8 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten&family=Lexend+Peta&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #ffc66a;
+  overflow-x: hidden;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.606);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff7b00;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #dc6a00;
+}
+
+.animate-infinite {
+  width: 1800%;
+  animation: rotateInfinite 10s linear infinite;
+}
+@keyframes rotateInfinite {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -126%;
+  }
 }

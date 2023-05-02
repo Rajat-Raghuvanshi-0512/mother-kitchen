@@ -7,10 +7,18 @@ export default {
         'green-base': '#039860',
         'red-base': '#9F2700',
         'yellow-base': '#ffc66a',
+        'yellow-dark': '#FCAF0B',
+      },
+      boxShadow: {
+        '3xl': '1px 1px 5px -15px rgb(0, 0, 0)',
+      },
+      dropShadow: {
+        '3xl': '1px 1px 3px rgb(0, 0, 0)',
       },
     },
     fontFamily: {
       lexend: ['Lexend Peta'],
+      gluten: ['Gluten'],
     },
   },
   plugins: [],
