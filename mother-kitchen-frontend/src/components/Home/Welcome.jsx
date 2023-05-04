@@ -1,4 +1,4 @@
-import { KitchenBg, KitchenCard1 } from '../assets'
+import { KitchenBg, kitchen1, kitchen2, kitchen3 } from '../../assets'
 import KitchenCard from './KitchenCard'
 import KitchenMenu from './KitchenMenu'
 
@@ -6,17 +6,20 @@ const KitchenItems = [
   {
     largeHeading: 'Health in the Kitchen',
     smallHeading: 'Gravy By Mother’s Kitchen',
-    image: KitchenCard1,
+    image: kitchen1,
+    color: 'bg-[#7B4512]',
   },
   {
-    largeHeading: 'Health in the Kitchen',
-    smallHeading: 'Gravy By Mother’s Kitchen',
-    image: KitchenCard1,
+    largeHeading: 'Health on the Go',
+    smallHeading: 'Spreads By Mother’s Kitchen',
+    image: kitchen2,
+    color: 'bg-[#7B3212]',
   },
   {
-    largeHeading: 'Health in the Kitchen',
-    smallHeading: 'Gravy By Mother’s Kitchen',
-    image: KitchenCard1,
+    largeHeading: 'Health on the Table',
+    smallHeading: 'Bites By Mother’s Kitchen',
+    image: kitchen3,
+    color: 'bg-[#DAA235]',
   },
 ]
 

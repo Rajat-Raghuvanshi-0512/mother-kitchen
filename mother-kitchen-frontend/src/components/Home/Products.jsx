@@ -1,32 +1,32 @@
 import { useRef } from 'react'
-import { Hazelnut, ProductsHeading } from '../assets'
+import { Hazelnut, ProductsHeading, product1, product2, product3 } from '../../assets'
 import ProductCard from './ProductCard'
 import ProductsInfiniteScroll from './ProductsInfiniteScroll'
 
 const productsData = [
   {
-    image: Hazelnut,
+    image: product1,
     price: '$6.0/Sachet',
     quantity: '250gm',
-    title: 'Hazelnut Cocoa Sprea',
+    title: 'Green Mint Chutney',
     desc: 'Instant Preseasoned Green mint chutney',
     btnText: 'Buy Now',
     color: 'bg-green-500',
   },
   {
-    image: Hazelnut,
+    image: product2,
     price: '$6.0/Sachet',
     quantity: '250gm',
     title: 'Hazelnut Cocoa Spread',
-    desc: 'Instant Preseasoned Green mint chutney',
+    desc: 'Loaded with the goodness of hazelnuts',
     btnText: 'Buy Now',
     color: 'bg-[#8A99E7]',
   },
   {
-    image: Hazelnut,
+    image: product3,
     price: '$6.0/Sachet',
     quantity: '250gm',
-    title: 'Hazelnut Cocoa Spred',
+    title: 'Turmeric Almond & Saffron Booster',
     desc: 'Instant Preseasoned Green mint chutney',
     btnText: 'Buy Now',
     color: 'bg-[#ED4E4E]',

@@ -1,4 +1,4 @@
-import { Bottle, Drop, FatFree, GirlBadge, Vegan } from '../assets'
+import { Bottle, Drop, FatFree, GirlBadge, Vegan } from '../../assets'
 
 const nutritionData = [
   {

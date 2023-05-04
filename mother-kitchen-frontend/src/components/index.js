@@ -1,9 +1,7 @@
-import Nutrition from './Nutrition'
-import Hero from './Hero'
 import Navbar from './Navbar'
-import Products from './Products'
-import Welcome from './Welcome'
-import Reviews from './Reviews'
 import Footer from './Footer'
-import InstagramSection from './InstagramSection'
-export { Nutrition, Hero, Navbar, Products, Welcome, Reviews, Footer, InstagramSection }
+import { Nutrition, Hero, Products, Welcome, Reviews, InstagramSection } from './Home'
+import { AboutHero } from './About'
+import LastSection from './LastSection'
+
+export { Nutrition, Hero, Navbar, Products, Welcome, Reviews, Footer, InstagramSection, AboutHero, LastSection }

@@ -1,5 +1,5 @@
-import { Girl, HHLeft, HHRight, HeroLVec } from '../assets'
-import Button from './custom/Button'
+import { Girl, HHLeft, HHRight, HeroLVec } from '../../assets'
+import Button from '../custom/Button'
 
 const Hero = () => {
   return (

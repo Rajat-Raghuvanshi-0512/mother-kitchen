@@ -26,6 +26,27 @@ import footerImg from './footerImg.png'
 import InstaImg from './insta_img.png'
 import Squirrel from './squirrel.png'
 import Containers from './containers.png'
+import AboutBg from './about.png'
+import AboutIntroBg from './about_intro.webp'
+import AboutHeroTextBg from './hero_text_bg.png'
+import GreenYellowBg from './long_journey.png'
+import SuperWoman from './superwoman.png'
+import Rocket from './rocket.png'
+import DiscoverBg1 from './discovery-bg1.png'
+import review1 from './reviews/review1.png'
+import review2 from './reviews/review2.png'
+import review3 from './reviews/review3.png'
+import review4 from './reviews/review4.png'
+import review5 from './reviews/review5.png'
+import review6 from './reviews/review6.png'
+import product1 from './products/product1.png'
+import product2 from './products/product2.png'
+import product3 from './products/product3.png'
+import kitchen1 from './kitchen/kitchencard1.png'
+import kitchen2 from './kitchen/kitchencard2.png'
+import kitchen3 from './kitchen/kitchencard3.png'
+import kitchenMenu2 from './kitchen/kitchenmenu2.png'
+import kitchenMenu3 from './kitchen/kitchenmenu3.png'
 
 export {
   TextLogo,
@@ -56,4 +77,25 @@ export {
   ReviewImg,
   footerImg,
   InstaImg,
+  AboutBg,
+  AboutIntroBg,
+  AboutHeroTextBg,
+  GreenYellowBg,
+  SuperWoman,
+  Rocket,
+  DiscoverBg1,
+  review1,
+  review2,
+  review3,
+  review4,
+  review5,
+  review6,
+  product1,
+  product2,
+  product3,
+  kitchen1,
+  kitchen2,
+  kitchen3,
+  kitchenMenu2,
+  kitchenMenu3,
 }

@@ -1,4 +1,4 @@
-import { Hero, InstagramSection, Nutrition, Products, Reviews, Welcome } from '../components'
+import { Hero, InstagramSection, LastSection, Nutrition, Products, Reviews, Welcome } from '../components'
 
 const Home = () => {
   return (
@@ -9,6 +9,7 @@ const Home = () => {
       <Welcome />
       <Reviews />
       <InstagramSection />
+      <LastSection />
     </div>
   )
 }

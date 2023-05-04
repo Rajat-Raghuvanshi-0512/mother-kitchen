@@ -1,10 +1,9 @@
 import { ImInstagram } from 'react-icons/im'
-import Button from './custom/Button'
-import { Containers, InstaImg, Squirrel } from '../assets'
-import NavigationButton from './custom/NavigationButtons'
+import Button from '../custom/Button'
+import { Containers, InstaImg, Squirrel } from '../../assets'
 const InstagramSection = () => {
   return (
-    <section className="md:px-24 md:py-24">
+    <section className="md:px-24 md:pt-24">
       <div className="border-[6px] border-black border-r-[16px] border-b-[16px] rounded-2xl bg-[#EF3D69] text-white py-4 px-8">
         <div className="grid grid-cols-6 gap-10 font-lexend">
           <div className="icon col-span-2">
@@ -32,14 +31,6 @@ const InstagramSection = () => {
             <img src={InstaImg} alt="instagrid" className="w-full" />
           </div>
         </div>
-      </div>
-
-      <div className="navigationButtons flex justify-center items-center gap-10 mt-28">
-        <NavigationButton className="bg-[#42DE6E] text-xl px-14 py-5">Comics</NavigationButton>
-        <div className="w-[1.5px] bg-black h-20" />
-        <NavigationButton className="bg-[#42D5DE] text-xl px-14 py-5">Brands</NavigationButton>
-        <div className="w-[1.5px] bg-black h-20" />
-        <NavigationButton className="bg-[#C842DE] text-xl px-14 py-5">Contact</NavigationButton>
       </div>
     </section>
   )

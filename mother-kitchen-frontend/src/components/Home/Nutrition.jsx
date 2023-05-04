@@ -1,14 +1,15 @@
-import { Nutrition } from '../assets'
+import { Nutrition } from '../../assets'
 import NutritionDetails from './NutritionDetails'
-import Button from './custom/Button'
+import Button from '../custom/Button'
+import YellowDiv from '../custom/YellowDiv'
 
 const NutritionSection = () => {
   return (
     <>
       <section className="md:px-20">
-        <div className="flex border-4 relative border-black before:border-white before:border-4 before:absolute before:w-full before:h-full before:rounded-2xl before:rounded-tl-3xl before:-z-20 border-b-8 border-r-8 rounded-3xl bg-yellow-dark">
+        <YellowDiv className="flex">
           <div className="flex-1 relative">
-            <img src={Nutrition} alt="nutrition" className="absolute -top-10" />
+            <img src={Nutrition} alt="nutrition" className="absolute -top-10 w-[100%]" />
           </div>
           <div className="flex-1 p-5">
             <h3 className="font-lexend text-3xl font-semibold mb-5">
@@ -26,7 +27,7 @@ const NutritionSection = () => {
             </p>
             <Button className="mt-10">View More</Button>
           </div>
-        </div>
+        </YellowDiv>
       </section>
       <NutritionDetails />
     </>

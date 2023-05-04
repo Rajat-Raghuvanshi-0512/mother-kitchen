@@ -35,9 +35,9 @@ const Navbar = () => {
   const { isOpen, openModal, closeModal } = useModal()
   return (
     <nav className="py-8 px-5 md:px-20 w-screen">
-      <div className="bg-green-base border-[3px] border-black border-b-8 border-r-8 px-10 rounded-tr-[40px] rounded-tl-[40px] flex justify-between items-center">
+      <div className="bg-green-base border-[3px] border-black border-b-8 border-r-8 px-10 rounded-tr-[40px] rounded-tl-[40px] flex justify-between items-center drop-shadow-small">
         <div className="pt-3">
-          <img src={TextLogo} alt="logo" className="w-[70%]" />
+          <img src={TextLogo} alt="logo" className="w-[50%]" />
         </div>
         <ul className="hidden md:flex text-sm items-center text-white font-lexend font-medium">
           {navLinks.map((navLink) => {
