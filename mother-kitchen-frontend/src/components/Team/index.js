@@ -1,3 +1,4 @@
-import TeamInfo from './TeamInfo'
+import { lazy } from 'react'
+const TeamInfo = lazy(() => import('./TeamInfo'))
 
 export { TeamInfo }

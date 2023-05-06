@@ -1,8 +1,9 @@
-import Navbar from './Navbar'
-import Footer from './Footer'
+import { lazy } from 'react'
+const Navbar = lazy(() => import('./Navbar'))
+const Footer = lazy(() => import('./Footer'))
 import { Nutrition, Hero, Products, Welcome, Reviews, InstagramSection } from './Home'
 import { AboutHero } from './About'
-import LastSection from './LastSection'
+const LastSection = lazy(() => import('./LastSection'))
 import { TeamInfo } from './Team'
 
 export {

@@ -1,8 +1,10 @@
-import Nutrition from './Nutrition'
-import Hero from './Hero'
-import Products from './Products'
-import Welcome from './Welcome'
-import Reviews from './Reviews'
-import InstagramSection from './InstagramSection'
+import { lazy } from 'react'
+
+const Nutrition = lazy(() => import('./Nutrition'))
+const Hero = lazy(() => import('./Hero'))
+const Products = lazy(() => import('./Products'))
+const Welcome = lazy(() => import('./Welcome'))
+const Reviews = lazy(() => import('./Reviews'))
+const InstagramSection = lazy(() => import('./InstagramSection'))
 
 export { Nutrition, Hero, Products, Welcome, Reviews, InstagramSection }

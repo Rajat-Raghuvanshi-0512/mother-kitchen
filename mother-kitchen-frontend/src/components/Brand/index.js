@@ -1,3 +1,5 @@
-import Brand from './Brand'
+import { lazy } from 'react'
+
+const Brand = lazy(() => import('./Brand'))
 
 export { Brand }
