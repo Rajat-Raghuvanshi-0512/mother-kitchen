@@ -12,19 +12,19 @@ const KitchenMenu = () => {
         <div className="grid grid-cols-3 pb-7">
           <div className="p-3 flex flex-col items-center">
             <img src={Kitchen1} alt="k1" className="w-[80%]" />
-            <Button className="text-xl font-bold bg-[#41041A] flex items-center gap-2">
+            <Button className="text-xl font-bold !bg-[#41041A] hover:!bg-[#560c27] flex items-center gap-2">
               Chicken Curry <HiArrowNarrowRight />
             </Button>
           </div>
           <div className="p-3 flex flex-col items-center">
             <img src={kitchenMenu2} alt="k1" className="w-[80%]" />
-            <Button className="text-xl font-bold bg-[#41041A] flex items-center gap-2">
+            <Button className="text-xl font-bold !bg-[#41041A] hover:!bg-[#560c27] flex items-center gap-2">
               Dal Makhni <HiArrowNarrowRight />
             </Button>
           </div>
           <div className="p-3 flex flex-col items-center">
             <img src={kitchenMenu3} alt="k1" className="w-[80%]" />
-            <Button className="text-xl font-bold bg-[#41041A] flex items-center gap-2">
+            <Button className="text-xl font-bold !bg-[#41041A] hover:!bg-[#560c27] flex items-center gap-2">
               Palak Paneer <HiArrowNarrowRight />
             </Button>
           </div>

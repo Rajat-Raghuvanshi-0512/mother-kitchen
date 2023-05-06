@@ -33,20 +33,54 @@ import GreenYellowBg from './long_journey.png'
 import SuperWoman from './superwoman.png'
 import Rocket from './rocket.png'
 import DiscoverBg1 from './discovery-bg1.png'
+
 import review1 from './reviews/review1.png'
 import review2 from './reviews/review2.png'
 import review3 from './reviews/review3.png'
 import review4 from './reviews/review4.png'
 import review5 from './reviews/review5.png'
 import review6 from './reviews/review6.png'
+import reviewBg from './reviews/review_bg.png'
+
 import product1 from './products/product1.png'
 import product2 from './products/product2.png'
 import product3 from './products/product3.png'
+
 import kitchen1 from './kitchen/kitchencard1.png'
 import kitchen2 from './kitchen/kitchencard2.png'
 import kitchen3 from './kitchen/kitchencard3.png'
 import kitchenMenu2 from './kitchen/kitchenmenu2.png'
 import kitchenMenu3 from './kitchen/kitchenmenu3.png'
+
+import BigWheel from './discover/big_wheel.png'
+import SmallWheel from './discover/small_wheel.png'
+import GirlShoot from './discover/girl_shoot.png'
+import Wiring from './discover/wiring.png'
+import Camera from './discover/camera.png'
+import Film from './discover/film.png'
+import YellowBg from './discover/yellow_stripe_bg.png'
+import DancingWomen from './discover/support.png'
+import InfoImg1 from './discover/info1.png'
+import InfoImg2 from './discover/info2.png'
+import InfoImg3 from './discover/info3.png'
+import NumberBg from './discover/numbers.png'
+
+import TeamHeading from './team_heading.png'
+import Shivani from './team/shivani.png'
+import Sunil from './team/sunil.png'
+import bhavna from './team/bhavna.png'
+import joshua from './team/joshua.png'
+import mrunalini from './team/mrunalini.png'
+import shrikumar from './team/shrikumar.png'
+import stuart from './team/stuart.png'
+import shifali from './team/shifali.png'
+import satyam from './team/satyam.png'
+
+import soon from './soon.png'
+import RabitTea from './tea_with_rabbit.png'
+
+import LoadingGirl from './loading_girl.png'
+import LoadingItems from './loading_items.png'
 
 export {
   TextLogo,
@@ -98,4 +132,31 @@ export {
   kitchen3,
   kitchenMenu2,
   kitchenMenu3,
+  BigWheel,
+  SmallWheel,
+  GirlShoot,
+  Wiring,
+  Camera,
+  Film,
+  YellowBg,
+  DancingWomen,
+  InfoImg1,
+  InfoImg2,
+  InfoImg3,
+  NumberBg,
+  reviewBg,
+  TeamHeading,
+  Shivani,
+  Sunil,
+  bhavna,
+  joshua,
+  satyam,
+  stuart,
+  shrikumar,
+  shifali,
+  mrunalini,
+  soon,
+  RabitTea,
+  LoadingGirl,
+  LoadingItems,
 }

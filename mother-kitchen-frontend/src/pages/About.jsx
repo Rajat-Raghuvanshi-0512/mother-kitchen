@@ -1,4 +1,5 @@
-import { Mission, AboutHero, Discover } from '../components/About'
+import { Mission, AboutHero, Discover, Support } from '../components/About'
+import { LastSection } from '../components'
 
 const About = () => {
   return (
@@ -6,6 +7,8 @@ const About = () => {
       <AboutHero />
       <Mission />
       <Discover />
+      <Support />
+      <LastSection />
     </>
   )
 }

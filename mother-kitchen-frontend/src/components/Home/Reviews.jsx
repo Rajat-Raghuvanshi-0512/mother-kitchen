@@ -1,4 +1,4 @@
-import { ReviewHeading, review1, review2, review3, review4, review5, review6 } from '../../assets'
+import { ReviewHeading, review1, review2, review3, review4, review5, review6, reviewBg } from '../../assets'
 import ReviewCard from './ReviewCard'
 
 const reviews1 = [
@@ -92,14 +92,15 @@ const Reviews = () => {
       <div className=" flex items-center justify-center">
         <img src={ReviewHeading} alt="ax" className="w-[90%]" />
       </div>
+      <div className="relative">
+        <img src={reviewBg} alt="reviewbg" className="absolute -z-20 h-[200vh] scale-125 top-20 object-cover" />
+      </div>
       <div className="relative overflow-x-auto">
         <div className="md:pt-28 pb-20 [&>*:nth-child(odd)]:translate-y-20 flex w-max gap-10 overflow-hidden select-none -left-10 px-10">
           {reviews1.map((review, idx) => (
             <ReviewCard {...review} key={review.name + idx} />
           ))}
         </div>
-      </div>
-      <div className="relative overflow-x-auto">
         <div className="pt-5 pb-20 [&>*:nth-child(odd)]:translate-y-20 flex w-max gap-10 overflow-hidden select-none -left-10 px-10">
           {reviews2.map((review, idx) => (
             <ReviewCard {...review} key={review.name + idx} />

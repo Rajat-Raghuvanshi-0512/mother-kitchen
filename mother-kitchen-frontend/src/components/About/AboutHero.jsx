@@ -5,7 +5,7 @@ const AboutHero = () => {
   return (
     <section className="">
       <img src={AboutBg} alt="about" className="-top-10 absolute -z-30" />
-      <h1 className="text-center text-[80px] font-lexend font-black uppercase mt-32 leading-[60px]">
+      <h1 className="text-center text-[80px] font-lexend font-black uppercase mt-20 leading-[60px]">
         <div className="text-red-base tracking-tighter">Opening</div>
         <div className="pt-5 text-6xl text-red-base font-gluten">the</div>
         <div className="font-bold">door</div>

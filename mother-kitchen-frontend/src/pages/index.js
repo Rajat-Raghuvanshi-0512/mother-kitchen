@@ -1,4 +1,6 @@
 import About from './About'
+import Brands from './Brands'
+import Comic from './Comic'
 import Home from './Home'
-
-export { Home, About }
+import Team from './Team'
+export { Home, About, Team, Brands, Comic }
