@@ -23,7 +23,21 @@ const KitchenItems = [
   },
 ]
 
-const Welcome = () => {
+const WelcomeSm = () => {
+  return (
+    <section className="mt-40 px-5 ">
+      <h3 className="font-gluten font-bold text-center text-4xl text-red-base">Welcome to Mother’s Kitchen</h3>
+      <img src={KitchenBg} alt="bg" className="-z-30 absolute w-full left-0" />
+      <div className="grid grid-cols-1 mt-24 gap-10">
+        {KitchenItems.map((item) => (
+          <KitchenCard key={item.smallHeading} largeHeading={item.largeHeading} color={item.color} image={item.image} />
+        ))}
+      </div>
+      <KitchenMenu />
+    </section>
+  )
+}
+const WelcomeLg = () => {
   return (
     <section className="md:mt-40 px-20 ">
       <h3 className="font-gluten font-bold text-center text-5xl text-red-base">Welcome to Mother’s Kitchen</h3>
@@ -35,6 +49,22 @@ const Welcome = () => {
       </div>
       <KitchenMenu />
     </section>
+  )
+}
+
+const Welcome = () => {
+  return (
+    <div>
+      <div className="md:hidden ">
+        {/*Small Screen*/}
+        <WelcomeSm />
+      </div>
+
+      <div className="hidden md:block">
+        {/*Large Screen*/}
+        <WelcomeLg />
+      </div>
+    </div>
   )
 }
 

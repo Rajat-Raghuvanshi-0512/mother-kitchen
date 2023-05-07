@@ -50,14 +50,32 @@ const productsData = [
     color: 'bg-[#8A99E7]',
   },
 ]
-const Products = () => {
-  const productsRef = useRef()
-  const handleLeftClick = () => {
-    productsRef.current.scrollBy(-440, 0)
-  }
-  const handleRightClick = () => {
-    productsRef.current.scrollBy(440, 0)
-  }
+const ProductsSm = () => {
+  return (
+    <>
+      <section className="py-10 md:py-24">
+        <div className="flex justify-center items-center">
+          <img src={ProductsHeading} alt="heading" className="h-14 absolute -z-20" />
+          <h3 className="font-gluten text-xl font-bold text-center text-red-base">
+            &quot;<span className="text-[#553500]"> TOP-</span>rated by taste buds &quot;
+          </h3>
+        </div>
+        <div className="relative pt-20 ml-3">
+          <div className="flex gap-5 overflow-x-auto">
+            {productsData.map((product) => (
+              <ProductCard key={product.title} {...product} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className=" py-10 w-screen">
+        <ProductsInfiniteScroll />
+      </section>
+    </>
+  )
+}
+const ProductsLg = ({ productsRef, handleLeftClick, handleRightClick }) => {
   return (
     <>
       <section className="py-10 md:py-24">
@@ -88,9 +106,31 @@ const Products = () => {
         </div>
       </section>
 
-      <section className=" py-10">
-        <ProductsInfiniteScroll />
-      </section>
+      <ProductsInfiniteScroll />
+    </>
+  )
+}
+
+const Products = () => {
+  const productsRef = useRef()
+  const handleLeftClick = () => {
+    productsRef.current.scrollBy(-440, 0)
+  }
+  const handleRightClick = () => {
+    productsRef.current.scrollBy(440, 0)
+  }
+
+  return (
+    <>
+      <div className="md:hidden ">
+        {/*Small Screen*/}
+        <ProductsSm />
+      </div>
+
+      <div className="hidden md:block">
+        {/*Large Screen*/}
+        <ProductsLg handleLeftClick={handleLeftClick} handleRightClick={handleRightClick} productsRef={productsRef} />
+      </div>
     </>
   )
 }

@@ -25,24 +25,28 @@ const scrollData = [
 
 const ProductsInfiniteScroll = () => {
   return (
-    <div className="bg-yellow-dark h-20 absolute left-0 shadow-md flex animate-infinite">
-      <div className="justify-center items-center flex ">
-        {scrollData.map((item) => (
-          <div className="flex items-center" key={item.text}>
-            <img src={item.image} alt="logo" className="w-28" />
-            <span className="font-gluten text-2xl font-bold px-10 even:text-white text-red-base">{item.text}</span>
-          </div>
-        ))}
+    <section className="overflow-x-hidden w-screen">
+      <div className="bg-yellow-dark h-14 md:h-20 absolute left-0 shadow-md flex animate-infinite">
+        <div className="justify-center items-center flex ">
+          {scrollData.map((item) => (
+            <div className="flex items-center" key={item.text}>
+              <img src={item.image} alt="logo" className="w-20 md:w-28" />
+              <span className="font-gluten text-lg md:text-2xl font-bold px-10 even:text-white text-red-base">
+                {item.text}
+              </span>
+            </div>
+          ))}
+        </div>
+        <div className="justify-center items-center flex ">
+          {scrollData.map((item) => (
+            <div className="flex items-center" key={item.text}>
+              <img src={item.image} alt="logo" className="w-20 md:w-28" />
+              <span className="font-gluten text-2xl font-bold px-10 even:text-white text-red-base">{item.text}</span>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="justify-center items-center flex ">
-        {scrollData.map((item) => (
-          <div className="flex items-center" key={item.text}>
-            <img src={item.image} alt="logo" className="w-28" />
-            <span className="font-gluten text-2xl font-bold px-10 even:text-white text-red-base">{item.text}</span>
-          </div>
-        ))}
-      </div>
-    </div>
+    </section>
   )
 }
 

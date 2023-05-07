@@ -6,7 +6,7 @@ const KitchenCard = ({ largeHeading, smallHeading, image, color }) => {
     <div className={`border-4 border-r-[14px] border-b-[14px] border-black rounded-3xl ${color}`}>
       <div className="grid grid-cols-2 pl-3 py-4">
         <div className="text-white font-bold text-lg font-lexend">Mother’s Kitchen</div>
-        <p className="text-white ">{smallHeading} </p>
+        {smallHeading && <p className="text-white ">{smallHeading} </p>}
       </div>
       <img src={image} alt="kc1" className="py-5 px-10" />
       <div className="px-5 pb-10 relative">
