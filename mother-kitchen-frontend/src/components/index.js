@@ -5,7 +5,7 @@ import { Nutrition, Hero, Products, Welcome, Reviews, InstagramSection } from '.
 import { AboutHero } from './About'
 const LastSection = lazy(() => import('./LastSection'))
 import { TeamInfo } from './Team'
-
+import Loader from './Loader'
 export {
   Nutrition,
   Hero,
@@ -18,4 +18,5 @@ export {
   AboutHero,
   LastSection,
   TeamInfo,
+  Loader,
 }
