@@ -25,7 +25,7 @@ const scrollData = [
 
 const ProductsInfiniteScroll = () => {
   return (
-    <section className="overflow-x-hidden w-screen">
+    <section className="overflow-x-hidden w-screen hidden md:block">
       <div className="bg-yellow-dark h-14 md:h-20 absolute left-0 shadow-md flex animate-infinite">
         <div className="justify-center items-center flex ">
           {scrollData.map((item) => (

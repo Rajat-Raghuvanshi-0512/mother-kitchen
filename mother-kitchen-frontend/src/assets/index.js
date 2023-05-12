@@ -1,4 +1,5 @@
 import TextLogo from './logo_text.png'
+import TextLogoBlack from './logo_text_black.png'
 import PaperPlane from './Paperplane.png'
 import HHLeft from './hero-heading-left.png'
 import HHRight from './hero-heading-right.png'
@@ -82,6 +83,13 @@ import RabitTea from './tea_with_rabbit.png'
 import LoadingGirl from './loading_girl.png'
 import LoadingItems from './loading_items.png'
 
+import ContactFormImg from './contact/cform.png'
+import Bird from './contact/bird.png'
+import Animals from './contact/animals.png'
+import Monkey from './contact/monkey.png'
+
+import ThanksImg from './thanks.png'
+import NavSmall from './nav-sm.png'
 export {
   TextLogo,
   PaperPlane,
@@ -159,4 +167,11 @@ export {
   RabitTea,
   LoadingGirl,
   LoadingItems,
+  ContactFormImg,
+  Bird,
+  Animals,
+  Monkey,
+  ThanksImg,
+  NavSmall,
+  TextLogoBlack,
 }

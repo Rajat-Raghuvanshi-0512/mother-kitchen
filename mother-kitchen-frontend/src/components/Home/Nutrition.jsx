@@ -24,7 +24,7 @@ const HeroSm = () => {
               preparing dinner for the whole crew, Mother&rsquo;s Kitchen has got you covered. Come join us in the
               kitchen today and taste the love!
             </p>
-            <div className="flex justify-end">
+            <div className="flex justify-end z-50">
               <Button className="my-5">View More</Button>
             </div>
           </div>

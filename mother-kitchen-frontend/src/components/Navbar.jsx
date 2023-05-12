@@ -1,9 +1,12 @@
-import { PaperPlane, TextLogo } from '../assets'
+import { NavSmall, PaperPlane, TextLogo, TextLogoBlack } from '../assets'
 import { Link, useLocation } from 'react-router-dom'
 // import { useModal } from '../custom-hooks'
 // import Drawer from './custom/Drawer'
 import { AiFillHome } from 'react-icons/ai'
-import { RxHamburgerMenu } from 'react-icons/rx'
+import { RxCross1, RxHamburgerMenu, RxInstagramLogo } from 'react-icons/rx'
+import { RiFacebookFill, RiLinkedinFill } from 'react-icons/ri'
+import Drawer from './custom/Drawer'
+import { useModal } from '../custom-hooks'
 
 const navLinks = [
   {
@@ -32,11 +35,13 @@ const navLinks = [
   },
 ]
 const NavSm = () => {
+  let location = useLocation()
+  const { isOpen, openModal, closeModal } = useModal()
   return (
     <nav className="py-8 px-5">
       <div className=" bg-[#C40D4F] border-[3px] border-black border-b-8 border-r-8 px-4 rounded-full flex justify-between items-center drop-shadow-small">
         <div className="text-[#FEF5CE] pl-3">
-          <RxHamburgerMenu className="w-9 h-9" />
+          <RxHamburgerMenu className="w-9 h-9" onClick={openModal} />
         </div>
         <div className="pt-3">
           <img src={TextLogo} alt="logo" className="w-[50%] mx-auto" />
@@ -45,6 +50,66 @@ const NavSm = () => {
           <AiFillHome className="w-5 h-5 sm:w-8 sm:h-8 text-[#C40D4F]" />
         </div>
       </div>
+      <Drawer isOpen={isOpen}>
+        <div className="grid grid-cols-2">
+          <div className="flex items-center justify-center">
+            <img src={TextLogoBlack} alt="nav" />
+          </div>
+          <div>
+            <img src={NavSmall} alt="nav" />
+          </div>
+        </div>
+        {navLinks.map((link) => {
+          return (
+            <div key={link.name}>
+              <Link
+                to={link.path}
+                className={`${
+                  location.pathname === link.path
+                    ? 'bg-[#E9787C] text-white border-r-4 border-b-2 border-black'
+                    : 'text-black'
+                } font-gluten font-extralight p-3 rounded-full text-xl`}
+              >
+                {link.name}
+              </Link>
+              <div className="bg-[#976120] my-4 h-[0.07px]" />
+            </div>
+          )
+        })}
+        <div>
+          <Link
+            to="/contact"
+            className={`${
+              location.pathname === '/contact'
+                ? 'bg-[#E9787C] text-white border-r-4 border-b-2 border-black'
+                : 'text-black'
+            } font-gluten font-extralight p-3 rounded-full text-xl`}
+          >
+            Contact Us
+          </Link>
+          <div className="bg-[#976120] my-4 h-[0.07px]" />
+        </div>
+        <div className="grid grid-cols-3 pb-5">
+          <div className="col-span-1 flex items-center">
+            <div className="bg-black rounded-full flex items-center justify-center w-8 h-8">
+              <RxCross1 className="text-white" onClick={closeModal} />
+            </div>
+          </div>
+          <div className="col-span-2">
+            <div className="flex justify-between">
+              <div className="border bg-[#FF9E00] text-white w-14 h-14 border-black border-b-4 rounded-full flex items-center justify-center">
+                <RiFacebookFill className="w-10 h-10" />
+              </div>
+              <div className="border bg-[#FF9E00] text-white w-14 h-14 border-black border-b-4 rounded-full flex items-center justify-center">
+                <RiLinkedinFill className="w-10 h-10" />
+              </div>
+              <div className="border bg-[#FF9E00] text-white w-14 h-14 border-black border-b-4 rounded-full flex items-center justify-center">
+                <RxInstagramLogo className="w-10 h-10" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </Drawer>
     </nav>
   )
 }
@@ -73,9 +138,14 @@ const NavLg = () => {
           })}
         </ul>
         <div className="flex items-center justify-start">
-          <div className="border-[2.5px] text-white rounded-lg p-1">
-            <img src={PaperPlane} alt="plane" className="w-7" />
-          </div>
+          <Link
+            to={'/contact'}
+            className={`border-[2.5px] text-white rounded-lg p-1 ${
+              location.pathname === '/contact' && 'border-black bg-red-base rounded '
+            }`}
+          >
+            <img src={PaperPlane} alt="plane" className="w-6" />
+          </Link>
         </div>
       </div>
     </nav>
