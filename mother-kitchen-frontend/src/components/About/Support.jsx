@@ -8,7 +8,7 @@ const Support = () => {
         <h2 className="text-2xl md:text-6xl text-red-base white-stroke font-gluten font-black uppercase text-center py-10">
           We support
         </h2>
-        <div className="grid md:grid-cols-2">
+        <div className="grid md:grid-cols-2 gap-5 md:gap-0">
           <div className="flex items-center justify-center">
             <img src={DancingWomen} alt="women" className="w-full h-full" />
           </div>

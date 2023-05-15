@@ -1,5 +1,28 @@
 const DetailCardSm = ({ even, image, heading, description }) => {
-  return null
+  if (!even) {
+    return (
+      <div className={`grid grid-cols-2 px-4`}>
+        <div className="px-4">
+          <h3 className="font-gluten text-lg font-bold text-red-900">{heading}</h3>
+          <img src={image} alt="imaze" />
+        </div>
+        <div>
+          <h3 className="font-gluten text-white text-[10px] font-semibold text-justify pt-16">{description}</h3>
+        </div>
+      </div>
+    )
+  }
+  return (
+    <div className={`grid grid-cols-2 px-4`}>
+      <div>
+        <h3 className="font-gluten text-white text-[10px] font-semibold pt-16 text-justify">{description}</h3>
+      </div>
+      <div className="px-4">
+        <h3 className="font-gluten text-lg font-bold text-red-900">{heading}</h3>
+        <img src={image} alt="imaze" />
+      </div>
+    </div>
+  )
 }
 const DetailCardLg = ({ even, image, heading, description }) => {
   if (even) {
