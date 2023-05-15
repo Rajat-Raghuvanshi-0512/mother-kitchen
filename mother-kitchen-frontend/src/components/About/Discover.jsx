@@ -7,8 +7,8 @@ const Discover = () => {
   return (
     <section className="py-20">
       <div className="flex justify-center ">
-        <img src={ProductsHeading} alt="heading" className="h-24 absolute -z-20 mt-10" />
-        <h2 className="text-[#790000] text-5xl font-gluten font-black text-center leading-[60px]">
+        <img src={ProductsHeading} alt="heading" className="h-14  md:h-24 absolute -z-20 mt-6 md:mt-10" />
+        <h2 className="text-[#790000] text-3xl md:text-5xl font-gluten font-black text-center md:leading-[60px]">
           HOW?
           <br /> WE DISCOVERED THE <br /> <span className="text-white font-lexend drop-shadow-3xl">MASCOT</span>
         </h2>
@@ -16,7 +16,7 @@ const Discover = () => {
       <div className="relative h-fit">
         <img src={DiscoverBg1} alt="dbg" className="absolute -z-30" />
         <div className="flex justify-end pr-24 py-20">
-          <div className="bg-[#039860] w-[50%] p-7 border-b-4 border-black/70 border-r-8 text-white text-center font-lexend">
+          <div className="bg-[#039860] md:w-[50%] md:p-7 border-b-4 border-black/70 border-r-8 text-white text-center font-lexend">
             Inspired by the image of the daughter of our founder and owner Shivani Malik, Inayat represents everything
             that we stand for - love, purity, and goodness
           </div>
@@ -32,7 +32,7 @@ const Discover = () => {
       </div>
       <div className="relative h-full">
         <img src={YellowBg} alt="bg" className="absolute -top-[20rem] -z-50 w-screen" />
-        <h2 className="white-stroke text-red-base text-7xl font-gluten font-bold -rotate-6 -mt-40 pl-40">
+        <h2 className="white-stroke text-red-base md:text-7xl font-gluten font-bold -rotate-6 -mt-40 pl-40">
           A Tale of <span className="text-black">Discovery!</span>
         </h2>
         <div className="flex flex-col items-end justify-end pt-20">

@@ -1,4 +1,7 @@
-const DetailCard = ({ even, image, heading, description }) => {
+const DetailCardSm = ({ even, image, heading, description }) => {
+  return null
+}
+const DetailCardLg = ({ even, image, heading, description }) => {
   if (even) {
     return (
       <div
@@ -28,6 +31,21 @@ const DetailCard = ({ even, image, heading, description }) => {
       <div className="px-4">
         <h3 className="font-gluten text-7xl font-bold text-red-900">{heading}</h3>
         <h3 className="font-gluten font-semibold pt-10">{description}</h3>
+      </div>
+    </div>
+  )
+}
+const DetailCard = (props) => {
+  return (
+    <div>
+      <div className="md:hidden ">
+        {/*Small Screen*/}
+        <DetailCardSm {...props} />
+      </div>
+
+      <div className="hidden md:block">
+        {/*Large Screen*/}
+        <DetailCardLg {...props} />
       </div>
     </div>
   )
