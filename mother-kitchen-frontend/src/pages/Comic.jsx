@@ -3,7 +3,7 @@ import LastSection from '../components/LastSection'
 
 const ComicPage = () => {
   return (
-    <div>
+    <div className="2xl:mx-56">
       <Comic />
       <LastSection />
     </div>

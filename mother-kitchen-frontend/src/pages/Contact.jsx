@@ -1,10 +1,10 @@
 import { LastSection } from '../components'
-import { ContactDetails, ContactForm, ContactInfo } from '../components/Contact'
+import { ContactDetails, ContactForm, ContactInfo, ContactLastPhone } from '../components/Contact'
 import NavigationIndicator from '../components/NavigationIndicator'
 
 const Contact = () => {
   return (
-    <div className="m-5 md:px-20 md:mt-20">
+    <div className="m-5 md:px-20 md:mt-20 2xl:mx-56">
       <div className="flex justify-between items-end">
         <div className="md:hidden bg-[#FABF5F] rounded-3xl w-full text-center p-3">
           <h2 className="text-[#5B3202] font-gluten text-2xl font-bold">JOIN US TO ENTER THE KITCHEN</h2>
@@ -18,6 +18,7 @@ const Contact = () => {
       <ContactForm />
       <ContactInfo />
       <ContactDetails />
+      <ContactLastPhone />
       <LastSection />
     </div>
   )

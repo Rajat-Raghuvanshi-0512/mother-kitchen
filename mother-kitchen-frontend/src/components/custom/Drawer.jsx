@@ -2,7 +2,7 @@ const Drawer = ({ isOpen, children }) => {
   return (
     <div
       className={`${
-        !isOpen && 'hidden'
+        !isOpen ? '-translate-x-full' : 'translate-x-0'
       } w-screen fixed z-[1000] top-0 left-0 duration-500 bg-opacity-20 transition-transform rounded-3xl p-3`}
     >
       <div className={` top-5 left-[10px] fixed w-[95%] md:max-w-lg rounded-3xl`}>

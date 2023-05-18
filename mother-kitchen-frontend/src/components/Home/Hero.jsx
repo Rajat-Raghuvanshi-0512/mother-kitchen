@@ -25,6 +25,29 @@ const HeroSm = () => {
     </div>
   )
 }
+const HeroMd = () => {
+  return (
+    <div className="pl-14 flex">
+      <div className="left-section flex-1 py-14">
+        <div className="relative">
+          <img src={HeroLVec} alt="vec" className="absolute w-[55%] -left-28 top-5 -z-10" />
+          <img src={HHLeft} alt="elem" className="w-10 absolute -left-10 -top-7" />
+          <h2 className="font-gluten text-6xl font-bold">
+            <span className="text-red-base">Mindful</span> <br /> eating for <br /> well being.
+          </h2>
+          <img src={HHRight} alt="elem" className="w-10 absolute left-[17rem] -top-9" />
+        </div>
+        <p className="font-lexend  mt-5 text-lg">
+          &ldquo;Bringing the warmth of mom&rsquo;s cooking to every kitchen, one delicious bite at a time.
+        </p>
+        <Button className="mt-5 flex-1font-semibold text-2xl !px-8">Shop Now</Button>
+      </div>
+      <div className="flex-1 items-start justify-end flex pt-4">
+        <img src={Girl} alt="gitl" />
+      </div>
+    </div>
+  )
+}
 const HeroLg = () => {
   return (
     <div className="pl-28 flex 2xl:px-[15rem]">
@@ -58,7 +81,11 @@ const Hero = () => {
         <HeroSm />
       </div>
 
-      <div className="hidden md:block">
+      <div className="lg:hidden hidden md:block">
+        {/*Medium Screen*/}
+        <HeroMd />
+      </div>
+      <div className="hidden lg:block">
         {/*Large Screen*/}
         <HeroLg />
       </div>

@@ -22,7 +22,7 @@ const nutritionData = [
 const CircularDiv = ({ image, text, idx }) => {
   return (
     <div
-      className={`border-4 border-white rounded-full w-28 h-28 bg-[#FFD16E] flex justify-center items-center flex-col p-2 absolute md:relative ${
+      className={`border-4 border-white rounded-full w-28 h-28 md:w-20 md:h-20 lg:w-28 lg:h-28 bg-[#FFD16E] flex justify-center items-center flex-col p-2 absolute md:relative ${
         idx === 0
           ? 'top-5 left-5'
           : idx === 1
@@ -34,8 +34,10 @@ const CircularDiv = ({ image, text, idx }) => {
           : ''
       } `}
     >
-      <img src={image} alt="item" className="w-10" />
-      <p className="text-xs font-gluten text-center font-semibold leading-3 mt-1">{text}</p>
+      <img src={image} alt="item" className="w-10 md:w-6 lg:w-10" />
+      <p className="text-xs md:text-[7px] md:leading-[6px] lg:leading-3 lg:text-xs font-gluten text-center font-semibold leading-3 mt-1">
+        {text}
+      </p>
     </div>
   )
 }
@@ -51,6 +53,19 @@ const NutritionSm = () => {
           <CircularDiv image={item.image} idx={idx} text={item.text} key={item.text} />
         ))}
       </div>
+    </section>
+  )
+}
+const NutritionMd = () => {
+  return (
+    <section className="py-20">
+      <div className="bg-yellow-dark h-24 relative border-4 border-l-0 border-r-0 shadow-md flex justify-evenly items-center pl-52">
+        <img src={GirlBadge} alt="girl-badge" className="w-40 absolute -top-10 left-10" />
+        {nutritionData.map((item) => (
+          <CircularDiv image={item.image} text={item.text} key={item.text} />
+        ))}
+      </div>
+      <div className="h-[6px] bg-black"></div>
     </section>
   )
 }
@@ -76,7 +91,11 @@ const NutritionDetails = () => {
         <NutritionSm />
       </div>
 
-      <div className="hidden md:block">
+      <div className="hidden lg:hidden md:block">
+        {/*Medium Screen*/}
+        <NutritionMd />
+      </div>
+      <div className="hidden lg:block">
         {/*Large Screen*/}
         <NutritionLg />
       </div>

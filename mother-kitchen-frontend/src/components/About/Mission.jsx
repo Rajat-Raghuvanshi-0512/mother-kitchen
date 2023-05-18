@@ -3,11 +3,7 @@ import { GreenYellowBg, Rocket, SuperWoman } from '../../assets'
 const Mission = () => {
   return (
     <section className="md:py-20 relative">
-      <img
-        src={GreenYellowBg}
-        alt="bg"
-        className="absolute -z-10 -top-20 h-[100vh] md:h-auto object-cover md:object-none"
-      />
+      <img src={GreenYellowBg} alt="bg" className="absolute -z-10 -top-20 h-[100vh] md:h-auto object-cover" />
       <div className="grid md:grid-cols-6 md:gap-10">
         <div className="col-span-2">
           <img src={SuperWoman} alt="" className="hidden md:block" />

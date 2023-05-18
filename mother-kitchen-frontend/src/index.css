@@ -54,6 +54,9 @@ body {
 .white-stroke {
   text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
 }
+.text-shadow-none {
+  text-shadow: none;
+}
 
 .black-shadow {
   text-shadow: black 0 4px;

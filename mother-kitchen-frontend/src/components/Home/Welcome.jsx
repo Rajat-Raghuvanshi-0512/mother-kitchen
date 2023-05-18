@@ -39,10 +39,10 @@ const WelcomeSm = () => {
 }
 const WelcomeLg = () => {
   return (
-    <section className="md:mt-40 px-20 ">
+    <section className="md:mt-40 px-5 lg:px-20 2xl:mx-56">
       <h3 className="font-gluten font-bold text-center text-5xl text-red-base">Welcome to Mother’s Kitchen</h3>
       <img src={KitchenBg} alt="bg" className="-z-30 absolute w-full left-0" />
-      <div className="grid grid-cols-3 mt-24 gap-10">
+      <div className="grid grid-cols-3 mt-24 gap-5 lg:gap-10">
         {KitchenItems.map((item) => (
           <KitchenCard key={item.smallHeading} {...item} />
         ))}

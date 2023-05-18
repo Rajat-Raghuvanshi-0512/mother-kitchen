@@ -10,36 +10,43 @@ const ContactForm = () => {
         <div className="md:hidden pb-10">
           <img src={ContactFormImg} alt="img" className="w-full" />
         </div>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-3 md:gap-8">
           <input
             type="text"
-            className="bg-[#976120] w-full outline-none text-white placeholder:text-white p-2 py-3  rounded-xl border-2 border-black border-r-4 border-b-4"
+            className="bg-[#976120] w-full outline-none text-white placeholder:text-white p-2 py-3  rounded-xl border-2 border-black border-r-4 border-b-4 text-[8px] md:text-base"
             placeholder="Your Name"
           />
           <input
             type="text"
-            className="bg-[#976120] w-full outline-none text-white placeholder:text-white p-2 py-3 rounded-xl border-2 border-black border-r-4 border-b-4"
-            placeholder="Your Name"
+            className="bg-[#976120] w-full outline-none text-white placeholder:text-white p-2 py-3 rounded-xl border-2 border-black border-r-4 border-b-4 text-[8px] md:text-base"
+            placeholder="Your Email"
           />
           <input
             type="text"
-            className="bg-[#976120] w-full outline-none text-white placeholder:text-white p-2 py-3 rounded-xl border-2 border-black border-r-4 border-b-4"
-            placeholder="Your Name"
+            className="bg-[#976120] w-full outline-none text-white placeholder:text-white p-2 py-3 rounded-xl border-2 border-black border-r-4 border-b-4 text-[8px] md:text-base"
+            placeholder="Your Number"
           />
           <textarea
             name="contact"
             id="contact"
             cols="50"
-            rows="10"
-            className="bg-[#976120] w-full outline-none text-white placeholder:text-white p-2 rounded-xl border-2 border-black border-r-4 border-b-4 mt-10 resize-none"
-            placeholder="Write your message"
+            rows="8"
+            className="bg-[#976120] w-full outline-none text-white placeholder:text-white p-2 rounded-xl border-2 border-black border-r-4 border-b-4 text-[8px] md:text-base mt-5 resize-none"
+            placeholder="Write your message..."
           ></textarea>
+          <button
+            type="button"
+            className="ml-auto md:hidden bg-[#C40D4F] px-7 py-2 mt-5 rounded-full border-b-4 border-black text-white font-semibold "
+            onClick={openModal}
+          >
+            Sent
+          </button>
         </div>
         <div className="relative hidden md:block">
           <img src={ContactFormImg} alt="img" />
           <button
             type="button"
-            className="absolute right-6 bottom-10 bg-[#C40D4F] px-10 py-3 rounded-full border-b-4 border-black text-white font-semibold "
+            className="absolute right-6 bottom-10 bg-[#C40D4F] px-10 py-3 rounded-full border-b-4 border-black text-white font-semibold hidden md:block"
             onClick={openModal}
           >
             Sent

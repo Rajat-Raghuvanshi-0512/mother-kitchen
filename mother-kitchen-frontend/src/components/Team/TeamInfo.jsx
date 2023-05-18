@@ -76,7 +76,7 @@ const TeamInfo = () => {
             <ImageBox image={Shivani} />
             <h5 className="md:text-2xl text-center mt-4">SHIVANI MALIK</h5>
             <p className="md:my-3 text-xs md:text-xl">Founder & CEO</p>
-            <p className="font-[100] text-center  md:text-sm text-[8px] font-lexend">
+            <p className="font-[100] text-center  md:text-sm text-[6px] font-lexend">
               A successful entrepreneur having 21+ years of experience across verticals. Actively working with focused
               projects on women & child mentorship programs.
             </p>
@@ -85,7 +85,7 @@ const TeamInfo = () => {
             <ImageBox image={Sunil} />
             <h5 className="md:text-2xl text-center mt-4">SUNIL CHAUHAN</h5>
             <p className="md:my-3 md:text-xl text-xs">CoFounder</p>
-            <p className="font-[100] text-center md:text-sm text-[8px] font-lexend">
+            <p className="font-[100] text-center md:text-sm text-[6px] font-lexend">
               A successful entrepreneur having 21+ years of experience across verticals. Actively working with focused
               projects on women & child mentorship programs.
             </p>

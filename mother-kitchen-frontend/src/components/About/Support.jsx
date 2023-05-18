@@ -1,12 +1,17 @@
-import { DancingWomen } from '../../assets'
+import { DancingWomen, ProductsHeading } from '../../assets'
 import YellowDiv from '../custom/YellowDiv'
 
 const Support = () => {
   return (
     <section className="px-5 md:px-10">
-      <YellowDiv>
-        <h2 className="text-2xl md:text-6xl text-red-base white-stroke font-gluten font-black uppercase text-center py-10">
-          We support
+      <YellowDiv className="z-10">
+        <img
+          src={ProductsHeading}
+          alt="heading"
+          className="h-11  md:h-24 absolute -z-[1] mt-8 md:mt-5 w-full mx-auto object-contain"
+        />
+        <h2 className="text-2xl md:text-6xl text-red-base white-stroke font-gluten z-[11] font-black uppercase text-center py-10">
+          We <span className="text-white black-shadow">support</span>
         </h2>
         <div className="grid md:grid-cols-2 gap-5 md:gap-0">
           <div className="flex items-center justify-center">

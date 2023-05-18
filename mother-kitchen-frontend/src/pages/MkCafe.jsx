@@ -3,7 +3,7 @@ import { ComingSoon } from '../components/Mk Cafe'
 
 const MkCafe = () => {
   return (
-    <div>
+    <div className="2xl:mx-56">
       <ComingSoon />
       <LastSection />
     </div>

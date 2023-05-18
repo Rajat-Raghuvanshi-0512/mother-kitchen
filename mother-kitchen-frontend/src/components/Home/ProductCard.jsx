@@ -1,7 +1,9 @@
 import { GiPaperBagFolded } from 'react-icons/gi'
-const ProductCard = ({ image, price, quantity, title, desc, btnText, color }) => {
+const ProductCard = ({ image, price, quantity, title, desc, btnText, color, icon }) => {
   return (
-    <div className={`border-4 border-r-8 border-b-8 border-black rounded-3xl p-3 min-w-[350px] font-lexend ${color}  `}>
+    <div
+      className={`border-4 relative border-r-8 border-b-8 my-10 border-black rounded-3xl p-3 min-w-[350px] font-lexend ${color}`}
+    >
       <div className="flex items-center justify-center h-[250px] ">
         <img src={image} alt="x" className="object-contain h-full drop-shadow-lg" />
       </div>
@@ -13,11 +15,12 @@ const ProductCard = ({ image, price, quantity, title, desc, btnText, color }) =>
             <span>{btnText}</span> <GiPaperBagFolded />
           </button>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 relative">
           <h3 className="font-bold leading-5 text-[15px] tracking-[-0.1em]">{title}</h3>
-          <h6 className="text-sm text-white font-gluten leading-3 mt-2 px-1">{desc}</h6>
+          <h6 className="text-sm text-white font-gluten leading-3 mt-2 px-1 pr-3">{desc}</h6>
         </div>
       </div>
+      <img src={icon} alt="icon" className="absolute -right-10 -bottom-10 w-20 " />
     </div>
   )
 }

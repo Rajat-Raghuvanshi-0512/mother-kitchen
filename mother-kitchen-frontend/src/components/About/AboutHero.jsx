@@ -3,10 +3,10 @@ import YellowDiv from '../custom/YellowDiv'
 
 const AboutHero = () => {
   return (
-    <section className="">
+    <section>
       <img src={AboutBg} alt="about" className="-top-10 absolute -z-30" />
       <h1 className="text-center text-4xl md:text-[80px] font-lexend font-black uppercase mt-20 md:leading-[60px]">
-        <div className="text-red-base tracking-tighter">Opening</div>
+        <div className="text-red-base  tracking-tighter">Opening</div>
         <div className="pt-2 md:pt-5 md:text-6xl text-red-base font-gluten">the</div>
         <div className="font-bold">door</div>
       </h1>

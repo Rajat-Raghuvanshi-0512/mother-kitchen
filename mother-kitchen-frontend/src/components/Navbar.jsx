@@ -69,6 +69,7 @@ const NavSm = () => {
                     ? 'bg-[#E9787C] text-white border-r-4 border-b-2 border-black'
                     : 'text-black'
                 } font-gluten font-extralight p-3 rounded-full text-xl`}
+                onClick={closeModal}
               >
                 {link.name}
               </Link>
@@ -113,23 +114,61 @@ const NavSm = () => {
     </nav>
   )
 }
-const NavLg = () => {
+const NavMd = () => {
   let location = useLocation()
   return (
-    <nav className="py-8 px-5 md:px-20 w-screen">
+    <nav className="py-5 px-7 w-screen">
       <div className="md:bg-green-base border-[3px] border-black border-b-8 border-r-8 px-10 rounded-tr-[40px] rounded-tl-[40px] flex justify-between items-center drop-shadow-small">
         <div className="pt-3">
-          <img src={TextLogo} alt="logo" className="w-[50%]" />
+          <img src={TextLogo} alt="logo" className="w-[6rem] mr-10" />
         </div>
-        <ul className="hidden md:flex text-sm items-center text-white font-lexend font-medium">
+        <ul className="hidden md:flex text-base items-center gap-3 py-2 text-white font-lexend font-medium pr-7">
           {navLinks.map((navLink) => {
             return (
               <li
                 key={navLink.path}
                 className={
                   location.pathname === navLink.path
-                    ? 'bg-red-base px-7 py-2 rounded border-2 border-black border-b-4 border-r-4 font-bold'
-                    : 'px-7 py-2'
+                    ? 'bg-red-base px-3 py-2 leading-4 rounded border-2 text-xs border-black border-b-4 border-r-4'
+                    : 'px-3 py-2 text-xs leading-4 '
+                }
+              >
+                <Link to={navLink.path}>{navLink.name}</Link>
+              </li>
+            )
+          })}
+        </ul>
+        <div className="flex items-center justify-start py-5">
+          <Link
+            to={'/contact'}
+            className={`border-[2.5px] text-white rounded-lg p-1 ${
+              location.pathname === '/contact' && 'border-black bg-red-base rounded '
+            }`}
+          >
+            <img src={PaperPlane} alt="plane" className="w-9" />
+          </Link>
+        </div>
+      </div>
+    </nav>
+  )
+}
+const NavLg = () => {
+  let location = useLocation()
+  return (
+    <nav className="py-8 px-5 md:px-20 w-screen">
+      <div className="md:bg-green-base border-[3px] border-black border-b-8 border-r-8 px-10 rounded-tr-[40px] rounded-tl-[40px] flex justify-between items-center drop-shadow-small py-2">
+        <div className="pt-3">
+          <img src={TextLogo} alt="logo" className="w-[120px] mr-10" />
+        </div>
+        <ul className="hidden md:flex gap-2 text-base items-center text-white font-lexend font-medium pr-10">
+          {navLinks.map((navLink) => {
+            return (
+              <li
+                key={navLink.path}
+                className={
+                  location.pathname === navLink.path
+                    ? 'bg-red-base px-5 py-2 text-sm rounded border-2 border-black border-b-4 border-r-4 font-bold'
+                    : 'px-5 py-2 text-sm'
                 }
               >
                 <Link to={navLink.path}>{navLink.name}</Link>
@@ -160,7 +199,11 @@ const Navbar = () => {
         <NavSm />
       </div>
 
-      <div className="hidden md:block">
+      <div className="hidden lg:hidden md:block">
+        {/*Medium Screen*/}
+        <NavMd />
+      </div>
+      <div className="hidden lg:block">
         {/*Large Screen*/}
         <NavLg />
       </div>

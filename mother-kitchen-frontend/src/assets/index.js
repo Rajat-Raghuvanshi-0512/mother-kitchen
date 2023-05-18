@@ -35,6 +35,12 @@ import SuperWoman from './superwoman.webp'
 import Rocket from './rocket.webp'
 import DiscoverBg1 from './discovery-bg1.webp'
 
+import ProductItemSm1 from './home/productItemSmall1.png'
+import ProductItemSm2 from './home/productItemSmall2.png'
+import ProductItemSm3 from './home/productItemSmall3.png'
+
+import CameraAndGirl from './about/camera_and_girl.png'
+
 import review1 from './reviews/review1.webp'
 import review2 from './reviews/review2.webp'
 import review3 from './reviews/review3.webp'
@@ -87,6 +93,10 @@ import ContactFormImg from './contact/cform.webp'
 import Bird from './contact/bird.webp'
 import Animals from './contact/animals.webp'
 import Monkey from './contact/monkey.webp'
+import MotherAndDaughter from './contact/mon_daughter.png'
+import SmallCookie from './contact/half-cookie.png'
+import BigCookie from './contact/big-cookie.png'
+import BigBlackCookie from './contact/big-cookie-black.png'
 
 import ThanksImg from './thanks.webp'
 import NavSmall from './nav-sm.webp'
@@ -113,6 +123,7 @@ export {
   WholesomeImg,
   Nutrious,
   KitchenBg,
+  CameraAndGirl,
   KitchenCard1,
   Kitchen1,
   ReviewHeading,
@@ -174,4 +185,11 @@ export {
   ThanksImg,
   NavSmall,
   TextLogoBlack,
+  ProductItemSm1,
+  ProductItemSm2,
+  ProductItemSm3,
+  MotherAndDaughter,
+  SmallCookie,
+  BigCookie,
+  BigBlackCookie,
 }
