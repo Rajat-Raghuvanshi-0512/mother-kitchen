@@ -133,10 +133,10 @@ const ProductsLg = ({ productsRef, handleLeftClick, handleRightClick }) => {
 const Products = () => {
   const productsRef = useRef()
   const handleLeftClick = () => {
-    productsRef.current.scrollBy(-440, 0)
+    productsRef.current.scrollBy(-380, 0)
   }
   const handleRightClick = () => {
-    productsRef.current.scrollBy(440, 0)
+    productsRef.current.scrollBy(380, 0)
   }
 
   return (
