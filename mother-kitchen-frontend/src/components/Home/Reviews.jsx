@@ -96,16 +96,16 @@ const Reviews = () => {
         <img
           src={reviewBg}
           alt="reviewbg"
-          className="absolute -z-20 h-[80vh] md:h-[200vh] scale-125 top-20 object-cover"
+          className="absolute top-20 -z-20 h-[80vh] scale-125 object-cover md:h-[200vh]"
         />
       </div>
-      <div className="relative overflow-x-auto mt-10 md:mt-0 2xl:mx-56">
-        <div className="md:pt-28 pb-20 [&>*:nth-child(odd)]:translate-y-20 flex w-max gap-10 overflow-hidden select-none -left-10 px-10">
+      <div className="relative mt-10 overflow-x-auto md:mt-0 2xl:mx-56">
+        <div className="-left-10 flex w-max select-none gap-10 overflow-hidden px-10 pb-20 md:pt-28 [&>*:nth-child(odd)]:translate-y-20">
           {reviews1.map((review, idx) => (
             <ReviewCard {...review} key={review.name + idx} />
           ))}
         </div>
-        <div className="pt-5 pb-20 [&>*:nth-child(odd)]:translate-y-20 md:flex w-max gap-5 md:gap-10 overflow-hidden select-none -left-10 px-10 hidden">
+        <div className="-left-10 hidden w-max select-none gap-5 overflow-hidden px-10 pb-20 pt-5 md:flex md:gap-10 [&>*:nth-child(odd)]:translate-y-20">
           {reviews2.map((review, idx) => (
             <ReviewCard {...review} key={review.name + idx} />
           ))}

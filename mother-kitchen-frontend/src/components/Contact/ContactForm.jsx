@@ -4,26 +4,26 @@ import ThankYou from '../custom/ThankYou'
 const ContactForm = () => {
   const { isOpen, openModal, closeModal } = useModal()
   return (
-    <div className="bg-[#FEF5CE] px-7 pt-10 md:pt-20 pb-10 rounded-3xl mt-20 relative border-4 border-b-[12px] border-r-[12px] border-black">
-      <img src={Bird} alt="bird" className="absolute w-40 -top-32 -right-10 hidden md:block" />
-      <div className="grid grid-cols-1 md:grid-cols-2 font-lexend ">
-        <div className="md:hidden pb-10">
+    <div className="relative mt-20 rounded-3xl border-4 border-b-[12px] border-r-[12px] border-black bg-[#FEF5CE] px-7 pb-10 pt-10 md:pt-20">
+      <img src={Bird} alt="bird" className="absolute -right-10 -top-32 hidden w-40 md:block" />
+      <div className="grid grid-cols-1 font-lexend md:grid-cols-2 ">
+        <div className="pb-10 md:hidden">
           <img src={ContactFormImg} alt="img" className="w-full" />
         </div>
         <div className="flex flex-col gap-3 md:gap-8">
           <input
             type="text"
-            className="bg-[#976120] w-full outline-none text-white placeholder:text-white p-2 py-3  rounded-xl border-2 border-black border-r-4 border-b-4 text-[8px] md:text-base"
+            className="w-full rounded-xl border-2 border-b-4 border-r-4 border-black bg-[#976120]  p-2 py-3 text-[8px] text-white outline-none placeholder:text-white md:text-base"
             placeholder="Your Name"
           />
           <input
             type="text"
-            className="bg-[#976120] w-full outline-none text-white placeholder:text-white p-2 py-3 rounded-xl border-2 border-black border-r-4 border-b-4 text-[8px] md:text-base"
+            className="w-full rounded-xl border-2 border-b-4 border-r-4 border-black bg-[#976120] p-2 py-3 text-[8px] text-white outline-none placeholder:text-white md:text-base"
             placeholder="Your Email"
           />
           <input
             type="text"
-            className="bg-[#976120] w-full outline-none text-white placeholder:text-white p-2 py-3 rounded-xl border-2 border-black border-r-4 border-b-4 text-[8px] md:text-base"
+            className="w-full rounded-xl border-2 border-b-4 border-r-4 border-black bg-[#976120] p-2 py-3 text-[8px] text-white outline-none placeholder:text-white md:text-base"
             placeholder="Your Number"
           />
           <textarea
@@ -31,12 +31,12 @@ const ContactForm = () => {
             id="contact"
             cols="50"
             rows="8"
-            className="bg-[#976120] w-full outline-none text-white placeholder:text-white p-2 rounded-xl border-2 border-black border-r-4 border-b-4 text-[8px] md:text-base mt-5 resize-none"
+            className="mt-5 w-full resize-none rounded-xl border-2 border-b-4 border-r-4 border-black bg-[#976120] p-2 text-[8px] text-white outline-none placeholder:text-white md:text-base"
             placeholder="Write your message..."
           ></textarea>
           <button
             type="button"
-            className="ml-auto md:hidden bg-[#C40D4F] px-7 py-2 mt-5 rounded-full border-b-4 border-black text-white font-semibold "
+            className="ml-auto mt-5 rounded-full border-b-4 border-black bg-[#C40D4F] px-7 py-2 font-semibold text-white md:hidden "
             onClick={openModal}
           >
             Sent
@@ -46,7 +46,7 @@ const ContactForm = () => {
           <img src={ContactFormImg} alt="img" />
           <button
             type="button"
-            className="absolute right-6 bottom-10 bg-[#C40D4F] px-10 py-3 rounded-full border-b-4 border-black text-white font-semibold hidden md:block"
+            className="absolute bottom-10 right-6 hidden rounded-full border-b-4 border-black bg-[#C40D4F] px-10 py-3 font-semibold text-white md:block"
             onClick={openModal}
           >
             Sent

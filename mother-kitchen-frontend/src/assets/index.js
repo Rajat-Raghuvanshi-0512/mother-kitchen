@@ -40,6 +40,7 @@ import ProductItemSm2 from './home/productItemSmall2.png'
 import ProductItemSm3 from './home/productItemSmall3.png'
 
 import CameraAndGirl from './about/camera_and_girl.png'
+import AboutHeroTextBgPhone from './about/text-bg-phone.png'
 
 import review1 from './reviews/review1.webp'
 import review2 from './reviews/review2.webp'
@@ -192,4 +193,5 @@ export {
   SmallCookie,
   BigCookie,
   BigBlackCookie,
+  AboutHeroTextBgPhone,
 }

@@ -5,15 +5,15 @@ import BorderDiv from '../custom/BorderDiv'
 const ComingSoonSm = () => {
   return (
     <div className="relative">
-      <img src={SoonBg} alt="soon" className="mt-5 relative" />
+      <img src={SoonBg} alt="soon" className="relative mt-5" />
       <div className="absolute top-0 w-full">
-        <h3 className="border-t-2 border-b-2 relative w-[55vw] border-white text-white text-center text-2xl font-lexend py-2 left-[50%] top-[50%]  translate-x-[-50%] translate-y-[-50%]">
+        <h3 className="relative left-[50%] top-[50%] w-[55vw] translate-x-[-50%] translate-y-[-50%] border-b-2 border-t-2 border-white py-2 text-center font-lexend  text-2xl text-white">
           MK’s Cafe
         </h3>
-        <div className="font-black text-4xl mt-6 font-gluten text-center text-white black-shadow relative w-full left-[50%] top-[50%]  translate-x-[-50%] translate-y-[-50%]">
+        <div className="black-shadow relative left-[50%] top-[50%] mt-6 w-full translate-x-[-50%] translate-y-[-50%] text-center font-gluten text-4xl  font-black text-white">
           Coming Soon
         </div>
-        <p className="font-lexend text-[10px] text-white font-white px-16 leading-3 text-center bottom-[-32rem] absolute">
+        <p className="font-white absolute bottom-[-32rem] px-16 text-center font-lexend text-[10px] leading-3 text-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut aliquet lacus, sit amet eleifend dui. Mauris
           dapibus eros eget lacus hendrerit, vel sagittis ipsum imperdiet. Integer elementum viverra sem in eleifend.
           Pellentesque erat tellus, aliquet eget turpis vitae, euismod vestibulum orci. Aenean
@@ -26,22 +26,22 @@ const ComingSoonSm = () => {
 const ComingSoonLg = () => {
   return (
     <div>
-      <BorderDiv className="overflow-hidden  mt-20 mx-10">
+      <BorderDiv className="mx-10  mt-20 overflow-hidden">
         <div className="bg-black/50">
-          <img src={soon} alt="" className="opacity-50 blur-sm absolute h-full top-0 w-full -z-20 object-cover" />
-          <img src={TextLogo} alt="kitchen" className="w-52 mx-auto pt-32" />
-          <div className="flex justify-center items-center flex-col border-4 mx-32 py-20 border-t-0 drop-shadow-3xl">
-            <div className="border-t-2 border-b-2 border-white text-white text-7xl font-gluten  my-10 py-4 w-[20vw] text-center">
+          <img src={soon} alt="" className="absolute top-0 -z-20 h-full w-full object-cover opacity-50 blur-sm" />
+          <img src={TextLogo} alt="kitchen" className="mx-auto w-52 pt-32" />
+          <div className="mx-32 flex flex-col items-center justify-center border-4 border-t-0 py-20 drop-shadow-3xl">
+            <div className="my-10 w-[20vw] border-b-2 border-t-2 border-white py-4  text-center font-gluten text-7xl text-white">
               Cafe
             </div>
-            <div className="font-black text-9xl font-gluten text-white black-shadow">Coming Soon</div>
+            <div className="black-shadow font-gluten text-9xl font-black text-white">Coming Soon</div>
           </div>
-          <p className="w-[60vw] text-white text-justify font-semibold font-lexend mx-auto mt-14">
+          <p className="mx-auto mt-14 w-[60vw] text-justify font-lexend font-semibold text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut aliquet lacus, sit amet eleifend dui. Mauris
             dapibus eros eget lacus hendrerit, vel sagittis ipsum imperdiet. Integer elementum viverra sem in eleifend.
             Pellentesque erat tellus, aliquet eget turpis vitae, euismod vestibulum orci. Aenean{' '}
           </p>
-          <img src={RabitTea} alt="rabbit" className="w-60 ml-auto mr-10" />
+          <img src={RabitTea} alt="rabbit" className="ml-auto mr-10 w-60" />
         </div>
       </BorderDiv>
     </div>

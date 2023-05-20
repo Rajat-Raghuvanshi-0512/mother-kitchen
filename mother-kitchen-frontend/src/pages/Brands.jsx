@@ -4,8 +4,8 @@ import LastSection from '../components/LastSection'
 const Brands = () => {
   return (
     <div className="2xl:mx-56">
-      <h2 className="text-4xl md:text-6xl font-gluten text-red-base font-black white-stroke text-center my-8 md:my-20 white-shadow">
-        OUR <span className="font-lexend text-white black-shadow uppercase">Brands</span>
+      <h2 className="white-stroke white-shadow my-8 text-center font-gluten text-4xl font-black text-red-base md:my-20 md:text-6xl">
+        OUR <span className="black-shadow font-lexend uppercase text-white">Brands</span>
       </h2>
       <Brand />
       <LastSection />

@@ -24,8 +24,8 @@ const details = [
 
 const DiscoveryInfo = () => {
   return (
-    <div className="md:mt-72 mt-20 md:gap-56 gap-10 flex flex-col md:px-20 relative">
-      <img src={NumberBg} alt="number" className="absolute -z-20 top-[20rem] hidden md:block" />
+    <div className="relative mt-20 flex flex-col gap-10 md:mt-52 md:gap-20 md:px-10 lg:mt-40 lg:gap-56 lg:px-20">
+      <img src={NumberBg} alt="number" className="absolute top-[20rem] -z-20 hidden md:block" />
       {details.map((detail, idx) => {
         return <DetailCard key={detail.heading} {...detail} even={(idx + 1) % 2 === 0} />
       })}

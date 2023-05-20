@@ -31,7 +31,7 @@ function PaginatedItems({ itemsPerPage }) {
   return (
     <>
       <Items currentItems={currentItems} />
-      <div className="flex justify-center w-full">
+      <div className="flex w-full justify-center">
         <ReactPaginate
           breakLabel="..."
           previousLabel={<FaChevronLeft />}
@@ -42,7 +42,7 @@ function PaginatedItems({ itemsPerPage }) {
           pageRangeDisplayed={5}
           pageCount={pageCount}
           renderOnZeroPageCount={null}
-          className="flex gap-3 md:gap-10 font-bold font-gluten text-base md:text-3xl text-white/60"
+          className="flex gap-3 font-gluten text-base font-bold text-white/60 md:gap-10 md:text-3xl"
           pageLinkClassName="m-auto bg-[#A5763F] px-3 pt-3 pb-2 rounded"
           activeLinkClassName="!bg-[#031E29] text-white"
           previousClassName="my-auto"
@@ -54,23 +54,23 @@ function PaginatedItems({ itemsPerPage }) {
 }
 const Comic = () => {
   return (
-    <div className="py-5 px-3 md:p-20">
-      <div className="flex md:justify-between px-5">
-        <div className="text-white font-gluten font-bold w-full">
-          <h2 className="text-green-base text-3xl md:text-8xl  black-shadow">
+    <div className="px-3 py-5 md:p-20">
+      <div className="flex px-5 md:justify-between">
+        <div className="w-full font-gluten font-bold text-white">
+          <h2 className="black-shadow text-3xl text-green-base  md:text-8xl">
             INayat{' '}
             <span className="text-white">
               & <br /> Mummy
             </span>
           </h2>
-          <p className="md:text-4xl mt-5">PRINCIPLE OF SUCCESS</p>
-          <p className="md:text-2xl text-green-base">Mini Series</p>
+          <p className="mt-5 md:text-4xl">PRINCIPLE OF SUCCESS</p>
+          <p className="text-green-base md:text-2xl">Mini Series</p>
         </div>
-        <div className="flex flex-col justify-end items-end md:items-start md:justify-center">
-          <div className="bg-green-base w-[3rem] md:w-[6rem] border-black md:border-r-8 md:border-b-8 border-2 md:border-4 rounded-tl-[2rem] rounded-r-[3rem] md:mx-auto p-3 md:p-5 cursor-pointer hover:scale-95 duration-300">
+        <div className="flex flex-col items-end justify-end md:items-start md:justify-center">
+          <div className="w-[3rem] cursor-pointer rounded-r-[3rem] rounded-tl-[2rem] border-2 border-black bg-green-base p-3 duration-300 hover:scale-95 md:mx-auto md:w-[6rem] md:border-4 md:border-b-8 md:border-r-8 md:p-5">
             <img src={BackArrow} alt="arrow" />
           </div>
-          <p className="text-white text-right md:text-left font-semibold text-[8px] md:text-xl tracking-tighter mt-4 font-lexend">
+          <p className="mt-4 text-right font-lexend text-[8px] font-semibold tracking-tighter text-white md:text-left md:text-xl">
             Press here to go Back
           </p>
         </div>

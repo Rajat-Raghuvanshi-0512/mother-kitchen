@@ -6,14 +6,14 @@ import YellowDiv from '../custom/YellowDiv'
 const NutritionSm = () => {
   return (
     <>
-      <section className="px-5 my-20">
+      <section className="my-20 px-5">
         <YellowDiv className="flex flex-col">
-          <div className="flex-1 relative">
+          <div className="relative flex-1">
             <img src={Nutrition} alt="nutrition" className="relative -top-6 w-[100%]" />
           </div>
-          <div className="flex-1 px-5 z-10">
-            <h3 className="font-lexend text-lg font-semibold mb-5 text-center">
-              Pouring nutrition <br /> <span className="text-red-base font-gluten font-black"> in your dish</span>
+          <div className="z-10 flex-1 px-5">
+            <h3 className="mb-5 text-center font-lexend text-lg font-semibold">
+              Pouring nutrition <br /> <span className="font-gluten font-black text-red-base"> in your dish</span>
             </h3>
             <p className="text-justify text-sm ">
               At Mother&rsquo;s Kitchen, love is always the first ingredient. Our top-quality ingredients and
@@ -40,19 +40,19 @@ const NutritionMd = () => {
     <>
       <section className="md:mx-10">
         <YellowDiv className="flex">
-          <div className="flex-1 relative">
+          <div className="relative flex-1">
             <img
               src={Nutrition}
               alt="nutrition"
-              className="absolute -top-10 w-[100%] h-full object-contain object-top"
+              className="absolute -top-10 h-full w-[100%] object-contain object-top"
             />
           </div>
-          <div className="flex-1 p-5 z-10">
-            <h3 className="font-lexend text-2xl font-semibold mb-5">
+          <div className="z-10 flex-1 p-5">
+            <h3 className="mb-5 font-lexend text-2xl font-semibold">
               Pouring nutrition <br />{' '}
-              <span className="text-red-base font-gluten font-black text-3xl"> in your dish</span>
+              <span className="font-gluten text-3xl font-black text-red-base"> in your dish</span>
             </h3>
-            <p className="text-justify pr-4 text-xs font-medium">
+            <p className="pr-4 text-justify text-xs font-medium">
               At Mother&rsquo;s Kitchen, love is always the first ingredient. Our top-quality ingredients and
               easy-to-use products make cooking a breeze, so you can spend more time with the people who matter most.
               From seasonings and spices to baking mixes and ready-to-eat meals, we&rsquo;ve got everything you need to
@@ -74,19 +74,19 @@ const NutritionLg = () => {
     <>
       <section className="md:mx-20 2xl:mx-56">
         <YellowDiv className="flex">
-          <div className="flex-1 relative">
+          <div className="relative flex-1">
             <img
               src={Nutrition}
               alt="nutrition"
-              className="absolute -top-10 w-[100%] h-full object-contain object-top"
+              className="absolute -top-10 h-full w-[100%] object-contain object-top"
             />
           </div>
-          <div className="flex-1 p-5 z-10">
-            <h3 className="font-lexend text-3xl font-semibold mb-5">
+          <div className="z-10 flex-1 p-5">
+            <h3 className="mb-5 font-lexend text-3xl font-semibold">
               Pouring nutrition <br />{' '}
-              <span className="text-red-base font-gluten font-black text-4xl"> in your dish</span>
+              <span className="font-gluten text-4xl font-black text-red-base"> in your dish</span>
             </h3>
-            <p className="text-justify pr-4 font-medium">
+            <p className="pr-4 text-justify font-medium">
               At Mother&rsquo;s Kitchen, love is always the first ingredient. Our top-quality ingredients and
               easy-to-use products make cooking a breeze, so you can spend more time with the people who matter most.
               From seasonings and spices to baking mixes and ready-to-eat meals, we&rsquo;ve got everything you need to
@@ -110,7 +110,7 @@ const NutritionSection = () => {
         {/*Small Screen*/}
         <NutritionSm />
       </div>
-      <div className="lg:hidden hidden md:block">
+      <div className="hidden md:block lg:hidden">
         {/*Medium Screen*/}
         <NutritionMd />
       </div>

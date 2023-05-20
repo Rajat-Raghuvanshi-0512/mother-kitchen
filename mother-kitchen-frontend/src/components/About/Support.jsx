@@ -8,17 +8,17 @@ const Support = () => {
         <img
           src={ProductsHeading}
           alt="heading"
-          className="h-11  md:h-24 absolute -z-[1] mt-8 md:mt-5 w-full mx-auto object-contain"
+          className="absolute -z-[1] mx-auto mt-8 h-11 w-full object-contain md:mt-7 md:h-16 lg:mt-5 lg:h-24"
         />
-        <h2 className="text-2xl md:text-6xl text-red-base white-stroke font-gluten z-[11] font-black uppercase text-center py-10">
-          We <span className="text-white black-shadow">support</span>
+        <h2 className="white-stroke z-[11] py-10 text-center font-gluten text-2xl font-black uppercase text-red-base md:text-4xl lg:text-6xl">
+          We <span className="black-shadow text-white">support</span>
         </h2>
-        <div className="grid md:grid-cols-2 gap-5 md:gap-0">
+        <div className="grid gap-5 md:grid-cols-2 md:gap-0">
           <div className="flex items-center justify-center">
-            <img src={DancingWomen} alt="women" className="w-full h-full" />
+            <img src={DancingWomen} alt="women" className="h-full w-full object-contain" />
           </div>
           <div className="md:px-10">
-            <p className="bg-[#FFDBA0] text-center rounded-lg mx-3 md:mx-0 md:rounded-2xl text-[8px] md:text-base p-4 md:p-14 font-lexend font-medium tracking-tighter shadow-md drop-shadow-sm">
+            <p className="mx-3 rounded-lg bg-[#FFDBA0] p-4 text-center font-lexend text-[8px] font-medium tracking-tighter shadow-md drop-shadow-sm md:mx-0 md:rounded-2xl md:p-8 md:text-[10px] lg:p-12 lg:text-base">
               At Mother Kitchen, we firmly believe in the power of women and their invaluable contributions to society.
               We understand that women&apos;s empowerment is crucial for the growth and development of individuals,
               families, and communities. <br /> <br />
@@ -29,7 +29,7 @@ const Support = () => {
               We&apos;re committed to using our platform to empower women and inspire positive change. Join us in our
               mission to promote gender equality and create a more equitable world for all.
             </p>
-            <div className="text-right py-5 pr-3 text-sm md:text-base md:font-bold md:text-white">
+            <div className="py-5 pr-3 text-right text-sm md:text-base md:font-bold md:text-white">
               - Mother&apos;s Kitchen
             </div>
           </div>

@@ -7,7 +7,7 @@ const DetailCardSm = ({ even, image, heading, description }) => {
           <img src={image} alt="imaze" />
         </div>
         <div>
-          <h3 className="font-gluten text-white text-[10px] font-semibold text-justify pt-16">{description}</h3>
+          <h3 className="pt-16 text-justify font-gluten text-[10px] font-semibold text-white">{description}</h3>
         </div>
       </div>
     )
@@ -15,7 +15,7 @@ const DetailCardSm = ({ even, image, heading, description }) => {
   return (
     <div className={`grid grid-cols-2 px-4`}>
       <div>
-        <h3 className="font-gluten text-white text-[10px] font-semibold pt-16 text-justify">{description}</h3>
+        <h3 className="pt-16 text-justify font-gluten text-[10px] font-semibold text-white">{description}</h3>
       </div>
       <div className="px-4">
         <h3 className="font-gluten text-lg font-bold text-red-900">{heading}</h3>
@@ -24,17 +24,17 @@ const DetailCardSm = ({ even, image, heading, description }) => {
     </div>
   )
 }
-const DetailCardLg = ({ even, image, heading, description }) => {
+const DetailCardMd = ({ even, image, heading, description }) => {
   if (even) {
     return (
       <div
-        className={`grid grid-cols-2 bg-[#FFBF37] border-4 relative border-black before:border-white before:border-[3px] before:absolute before:w-full before:h-full before:rounded-2xl before:rounded-tl-2xl border-b-8 border-r-8 rounded-2xl before:top-[0.8px] before:left-[0.8px] shadow-2xl p-10 w-[80%] ${
+        className={`relative grid w-[80%] grid-cols-2 rounded-2xl border-4 border-b-8 border-r-8 border-black bg-[#FFBF37] p-10 shadow-2xl before:absolute before:left-[0.8px] before:top-[0.8px] before:h-full before:w-full before:rounded-2xl before:rounded-tl-2xl before:border-[3px] before:border-white ${
           even && 'ml-auto'
         }`}
       >
         <div className="px-4">
-          <h3 className="font-gluten text-7xl font-bold text-red-900">{heading}</h3>
-          <h3 className="font-gluten font-semibold pt-10">{description}</h3>
+          <h3 className="break-words font-gluten text-5xl font-bold text-red-900">{heading}</h3>
+          <h3 className="pt-10 font-gluten text-xs font-semibold">{description}</h3>
         </div>
         <div>
           <img src={image} alt="imaze" />
@@ -44,7 +44,7 @@ const DetailCardLg = ({ even, image, heading, description }) => {
   }
   return (
     <div
-      className={`grid grid-cols-2 bg-[#FFBF37] border-4 relative border-black before:border-white before:border-[3px] before:absolute before:w-full before:h-full before:rounded-2xl before:rounded-tl-2xl border-b-8 border-r-8 rounded-2xl before:top-[0.8px] before:left-[0.8px] shadow-2xl p-10 w-[80%] ${
+      className={`relative grid w-[80%] grid-cols-2 rounded-2xl border-4 border-b-8 border-r-8 border-black bg-[#FFBF37] p-10 shadow-2xl before:absolute before:left-[0.8px] before:top-[0.8px] before:h-full before:w-full before:rounded-2xl before:rounded-tl-2xl before:border-[3px] before:border-white ${
         even && 'ml-auto'
       }`}
     >
@@ -52,8 +52,42 @@ const DetailCardLg = ({ even, image, heading, description }) => {
         <img src={image} alt="imaze" />
       </div>
       <div className="px-4">
-        <h3 className="font-gluten text-7xl font-bold text-red-900">{heading}</h3>
-        <h3 className="font-gluten font-semibold pt-10">{description}</h3>
+        <h3 className="break-words font-gluten text-5xl font-bold text-red-900">{heading}</h3>
+        <h3 className="pt-10 font-gluten text-xs font-semibold">{description}</h3>
+      </div>
+    </div>
+  )
+}
+const DetailCardLg = ({ even, image, heading, description }) => {
+  if (even) {
+    return (
+      <div
+        className={`relative grid w-[80%] grid-cols-2 rounded-2xl border-4 border-b-8 border-r-8 border-black bg-[#FFBF37] p-10 shadow-2xl before:absolute before:left-[0.8px] before:top-[0.8px] before:h-full before:w-full before:rounded-2xl before:rounded-tl-2xl before:border-[3px] before:border-white ${
+          even && 'ml-auto'
+        }`}
+      >
+        <div className="px-4">
+          <h3 className="font-gluten text-6xl font-bold text-red-900">{heading}</h3>
+          <h3 className="pt-10 font-gluten font-semibold">{description}</h3>
+        </div>
+        <div>
+          <img src={image} alt="imaze" />
+        </div>
+      </div>
+    )
+  }
+  return (
+    <div
+      className={`relative grid w-[80%] grid-cols-2 rounded-2xl border-4 border-b-8 border-r-8 border-black bg-[#FFBF37] p-10 shadow-2xl before:absolute before:left-[0.8px] before:top-[0.8px] before:h-full before:w-full before:rounded-2xl before:rounded-tl-2xl before:border-[3px] before:border-white ${
+        even && 'ml-auto'
+      }`}
+    >
+      <div>
+        <img src={image} alt="imaze" />
+      </div>
+      <div className="px-4">
+        <h3 className="font-gluten text-6xl font-bold text-red-900">{heading}</h3>
+        <h3 className="pt-10 font-gluten font-semibold">{description}</h3>
       </div>
     </div>
   )
@@ -61,12 +95,16 @@ const DetailCardLg = ({ even, image, heading, description }) => {
 const DetailCard = (props) => {
   return (
     <div>
-      <div className="md:hidden ">
+      <div className="md:hidden">
         {/*Small Screen*/}
         <DetailCardSm {...props} />
       </div>
 
-      <div className="hidden md:block">
+      <div className="hidden md:block lg:hidden">
+        {/*Medium Screen*/}
+        <DetailCardMd {...props} />
+      </div>
+      <div className="hidden lg:block">
         {/*Large Screen*/}
         <DetailCardLg {...props} />
       </div>

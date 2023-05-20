@@ -26,9 +26,9 @@ const KitchenItems = [
 const WelcomeSm = () => {
   return (
     <section className="mt-40 px-5 ">
-      <h3 className="font-gluten font-bold text-center text-4xl text-red-base">Welcome to Mother’s Kitchen</h3>
-      <img src={KitchenBg} alt="bg" className="-z-30 absolute w-full left-0" />
-      <div className="grid grid-cols-1 mt-24 gap-10">
+      <h3 className="text-center font-gluten text-4xl font-bold text-red-base">Welcome to Mother’s Kitchen</h3>
+      <img src={KitchenBg} alt="bg" className="absolute left-0 -z-30 w-full" />
+      <div className="mt-24 grid grid-cols-1 gap-10">
         {KitchenItems.map((item) => (
           <KitchenCard key={item.smallHeading} largeHeading={item.largeHeading} color={item.color} image={item.image} />
         ))}
@@ -39,10 +39,10 @@ const WelcomeSm = () => {
 }
 const WelcomeLg = () => {
   return (
-    <section className="md:mt-40 px-5 lg:px-20 2xl:mx-56">
-      <h3 className="font-gluten font-bold text-center text-5xl text-red-base">Welcome to Mother’s Kitchen</h3>
-      <img src={KitchenBg} alt="bg" className="-z-30 absolute w-full left-0" />
-      <div className="grid grid-cols-3 mt-24 gap-5 lg:gap-10">
+    <section className="px-5 md:mt-40 lg:px-20 2xl:mx-56">
+      <h3 className="text-center font-gluten text-5xl font-bold text-red-base">Welcome to Mother’s Kitchen</h3>
+      <img src={KitchenBg} alt="bg" className="absolute left-0 -z-30 w-full" />
+      <div className="mt-24 grid grid-cols-3 gap-5 lg:gap-10">
         {KitchenItems.map((item) => (
           <KitchenCard key={item.smallHeading} {...item} />
         ))}

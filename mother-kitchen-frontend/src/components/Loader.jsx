@@ -2,9 +2,9 @@ import { LoadingGirl, LoadingItems } from '../assets'
 
 const Loader = () => {
   return (
-    <div className="flex items-center justify-center mt-0 relative h-screen">
+    <div className="relative mt-0 flex h-screen items-center justify-center">
       <img src={LoadingGirl} alt="girl" className="w-[55vw] md:w-[20vw]" />
-      <img src={LoadingItems} alt="items" className="absolute animate-spin duration-700 w-[90vw] md:w-[40vw]" />
+      <img src={LoadingItems} alt="items" className="absolute w-[90vw] animate-spin duration-700 md:w-[40vw]" />
     </div>
   )
 }

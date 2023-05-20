@@ -60,44 +60,44 @@ const teamDetails = [
 const TeamInfo = () => {
   return (
     <div>
-      <div className="w-[80%] relative text-center mx-auto md:px-20 px-5 font-lexend bg-[#BB48CE] py-4 border-black before:border-white before:border-b-0 before:border-[3px] before:absolute before:w-full before:h-full before:rounded-t-2xl before:rounded-tl-2xl border-t-4 border-l-4 border-r-[12px] rounded-t-3xl before:top-[0.8px] before:left-[0.8px] shadow-2xl text-[8px] md:text-[10px] md:text-base text-white font-semibold">
+      <div className="relative mx-auto w-[80%] rounded-t-3xl border-l-4 border-r-[12px] border-t-4 border-black bg-[#BB48CE] px-5 py-4 text-center font-lexend text-[8px] font-semibold text-white shadow-2xl before:absolute before:left-[0.8px] before:top-[0.8px] before:h-full before:w-full before:rounded-t-2xl before:rounded-tl-2xl before:border-[3px] before:border-b-0 before:border-white md:px-20 md:text-[10px] md:text-base">
         We are proud to introduce you to the members of our board, a group of dedicated individuals who share a passion
         for our mission and work tirelessly to advance it
       </div>
       <BorderDiv className="bg-[#D07D41] p-10">
-        <div className="flex justify-center mt-5">
-          <img src={TeamHeading} alt="heading" className="h-10 md:h-20 -mt-2 md:-mt-5 absolute -z-10" />
-          <h3 className="text-white font-semibold font-lexend text-center text-sm md:text-3xl drop-shadow-3xl">
+        <div className="mt-5 flex justify-center">
+          <img src={TeamHeading} alt="heading" className="absolute -z-10 -mt-2 h-10 md:-mt-5 md:h-20" />
+          <h3 className="text-center font-lexend text-sm font-semibold text-white drop-shadow-3xl md:text-3xl">
             Executive Team
           </h3>
         </div>
-        <div className="flex mt-20 mx-auto gap-7 md:gap-36 md:w-[60vw]">
-          <div className="flex flex-1 flex-col items-center text-white font-gluten">
+        <div className="mx-auto mt-20 flex gap-7 md:w-[60vw] md:gap-36">
+          <div className="flex flex-1 flex-col items-center font-gluten text-white">
             <ImageBox image={Shivani} />
-            <h5 className="md:text-2xl text-center mt-4">SHIVANI MALIK</h5>
-            <p className="md:my-3 text-xs md:text-xl">Founder & CEO</p>
-            <p className="font-[100] text-center  md:text-sm text-[6px] font-lexend">
+            <h5 className="mt-4 text-center md:text-2xl">SHIVANI MALIK</h5>
+            <p className="text-xs md:my-3 md:text-xl">Founder & CEO</p>
+            <p className="text-center font-lexend  text-[6px] font-[100] md:text-sm">
               A successful entrepreneur having 21+ years of experience across verticals. Actively working with focused
               projects on women & child mentorship programs.
             </p>
           </div>
-          <div className="flex flex-1 flex-col items-center text-white font-gluten">
+          <div className="flex flex-1 flex-col items-center font-gluten text-white">
             <ImageBox image={Sunil} />
-            <h5 className="md:text-2xl text-center mt-4">SUNIL CHAUHAN</h5>
-            <p className="md:my-3 md:text-xl text-xs">CoFounder</p>
-            <p className="font-[100] text-center md:text-sm text-[6px] font-lexend">
+            <h5 className="mt-4 text-center md:text-2xl">SUNIL CHAUHAN</h5>
+            <p className="text-xs md:my-3 md:text-xl">CoFounder</p>
+            <p className="text-center font-lexend text-[6px] font-[100] md:text-sm">
               A successful entrepreneur having 21+ years of experience across verticals. Actively working with focused
               projects on women & child mentorship programs.
             </p>
           </div>
         </div>
-        <div className="flex justify-start mt-10">
-          <img src={TeamHeading} alt="heading" className="h-11 md:h-20 -mt-3 md:-mt-5 absolute -z-10" />
-          <h3 className="text-white font-semibold font-lexend text-center text-sm md:text-3xl drop-shadow-3xl ml-10 md:ml-5">
+        <div className="mt-10 flex justify-start">
+          <img src={TeamHeading} alt="heading" className="absolute -z-10 -mt-3 h-11 md:-mt-5 md:h-20" />
+          <h3 className="ml-10 text-center font-lexend text-sm font-semibold text-white drop-shadow-3xl md:ml-5 md:text-3xl">
             Advisory Board
           </h3>
         </div>
-        <div className="grid grid-cols-3 md:grid-cols-4 gap-5 md:gap-x-24 md:gap-y-10 md:m-10 mt-7">
+        <div className="mt-7 grid grid-cols-3 gap-5 md:m-10 md:grid-cols-4 md:gap-x-24 md:gap-y-10">
           {teamDetails.map((teamMem) => {
             return <TeamInfoCard key={teamMem.name} {...teamMem} />
           })}

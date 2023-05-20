@@ -22,11 +22,11 @@ const nutritionData = [
 const CircularDiv = ({ image, text, idx }) => {
   return (
     <div
-      className={`border-4 border-white rounded-full w-28 h-28 md:w-20 md:h-20 lg:w-28 lg:h-28 bg-[#FFD16E] flex justify-center items-center flex-col p-2 absolute md:relative ${
+      className={`absolute flex h-28 w-28 flex-col items-center justify-center rounded-full border-4 border-white bg-[#FFD16E] p-2 md:relative md:h-20 md:w-20 lg:h-28 lg:w-28 ${
         idx === 0
-          ? 'top-5 left-5'
+          ? 'left-5 top-5'
           : idx === 1
-          ? 'top-7 right-7 scale-75'
+          ? 'right-7 top-7 scale-75'
           : idx === 2
           ? 'bottom-7 left-7 scale-75'
           : idx === 3
@@ -35,7 +35,7 @@ const CircularDiv = ({ image, text, idx }) => {
       } `}
     >
       <img src={image} alt="item" className="w-10 md:w-6 lg:w-10" />
-      <p className="text-xs md:text-[7px] md:leading-[6px] lg:leading-3 lg:text-xs font-gluten text-center font-semibold leading-3 mt-1">
+      <p className="mt-1 text-center font-gluten text-xs font-semibold leading-3 md:text-[7px] md:leading-[6px] lg:text-xs lg:leading-3">
         {text}
       </p>
     </div>
@@ -45,8 +45,8 @@ const CircularDiv = ({ image, text, idx }) => {
 const NutritionSm = () => {
   return (
     <section className="pb-10">
-      <div className="flex items-center justify-center py-32 relative clipped-bg">
-        <div className="flex justify-center items-center w-screen ">
+      <div className="clipped-bg relative flex items-center justify-center py-32">
+        <div className="flex w-screen items-center justify-center ">
           <img src={GirlBadge} alt="girl-badge" className="w-48" />
         </div>
         {nutritionData.map((item, idx) => (
@@ -59,8 +59,8 @@ const NutritionSm = () => {
 const NutritionMd = () => {
   return (
     <section className="py-20">
-      <div className="bg-yellow-dark h-24 relative border-4 border-l-0 border-r-0 shadow-md flex justify-evenly items-center pl-52">
-        <img src={GirlBadge} alt="girl-badge" className="w-40 absolute -top-10 left-10" />
+      <div className="relative flex h-24 items-center justify-evenly border-4 border-l-0 border-r-0 bg-yellow-dark pl-52 shadow-md">
+        <img src={GirlBadge} alt="girl-badge" className="absolute -top-10 left-10 w-40" />
         {nutritionData.map((item) => (
           <CircularDiv image={item.image} text={item.text} key={item.text} />
         ))}
@@ -72,8 +72,8 @@ const NutritionMd = () => {
 const NutritionLg = () => {
   return (
     <section className="py-10 md:py-24 ">
-      <div className="bg-yellow-dark h-32 relative border-4 border-l-0 border-r-0 shadow-md flex justify-evenly items-center pl-64">
-        <img src={GirlBadge} alt="girl-badge" className="w-56 absolute -top-14 left-20" />
+      <div className="relative flex h-32 items-center justify-evenly border-4 border-l-0 border-r-0 bg-yellow-dark pl-64 shadow-md">
+        <img src={GirlBadge} alt="girl-badge" className="absolute -top-14 left-20 w-56" />
         {nutritionData.map((item) => (
           <CircularDiv image={item.image} text={item.text} key={item.text} />
         ))}
@@ -91,7 +91,7 @@ const NutritionDetails = () => {
         <NutritionSm />
       </div>
 
-      <div className="hidden lg:hidden md:block">
+      <div className="hidden md:block lg:hidden">
         {/*Medium Screen*/}
         <NutritionMd />
       </div>

@@ -3,11 +3,11 @@ const Drawer = ({ isOpen, children }) => {
     <div
       className={`${
         !isOpen ? '-translate-x-full' : 'translate-x-0'
-      } w-screen fixed z-[1000] top-0 left-0 duration-500 bg-opacity-20 transition-transform rounded-3xl p-3`}
+      } fixed left-0 top-0 z-[1000] w-screen rounded-3xl bg-opacity-20 p-3 transition-transform duration-500`}
     >
-      <div className={` top-5 left-[10px] fixed w-[95%] md:max-w-lg rounded-3xl`}>
-        <div className="relative w-full h-full md:h-auto ">
-          <div className=" bg-white w-full h-full shadow rounded-3xl z-50 pl-5 pr-10 border-4 border-black">
+      <div className={` fixed left-[10px] top-5 w-[95%] rounded-3xl md:max-w-lg`}>
+        <div className="relative h-full w-full md:h-auto ">
+          <div className=" z-50 h-full w-full rounded-3xl border-4 border-black bg-white pl-5 pr-10 shadow">
             {children}
           </div>
         </div>
