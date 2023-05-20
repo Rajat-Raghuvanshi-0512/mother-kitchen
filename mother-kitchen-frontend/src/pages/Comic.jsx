@@ -1,11 +1,11 @@
 import { Comic } from '../components/Comic'
-import LastSection from '../components/LastSection'
+import DownloadComic from '../components/Comic/DownloadComic'
 
 const ComicPage = () => {
   return (
     <div className="2xl:mx-56">
       <Comic />
-      <LastSection />
+      <DownloadComic />
     </div>
   )
 }
