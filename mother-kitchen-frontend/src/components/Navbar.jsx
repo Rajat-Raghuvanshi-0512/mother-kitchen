@@ -155,8 +155,8 @@ const NavMd = () => {
 const NavLg = () => {
   let location = useLocation()
   return (
-    <nav className="w-screen px-5 py-8 md:px-20 2xl:px-36">
-      <div className="flex items-center justify-between rounded-tl-[40px] rounded-tr-[40px] border-[3px] border-b-8 border-r-8 border-black px-10 py-2 drop-shadow-small md:bg-green-base">
+    <nav className="w-screen px-5 py-5 md:px-20 2xl:px-36">
+      <div className="flex items-center justify-between rounded-tl-[40px] rounded-tr-[40px] border-[3px] border-b-8 border-r-8 border-black px-10 py-1 drop-shadow-small md:bg-green-base">
         <div className="pt-3">
           <img src={TextLogo} alt="logo" className="mr-10 w-[120px]" />
         </div>
@@ -167,8 +167,8 @@ const NavLg = () => {
                 key={navLink.path}
                 className={
                   location.pathname === navLink.path
-                    ? 'rounded border-2 border-b-4 border-r-4 border-black bg-red-base px-5 py-2 text-sm font-bold'
-                    : 'px-5 py-2 text-sm font-bold'
+                    ? 'rounded border-2 border-b-4 border-r-4 border-black bg-red-base px-5 py-2 text-sm font-medium'
+                    : 'px-5 py-2 text-sm font-medium'
                 }
               >
                 <Link to={navLink.path}>{navLink.name}</Link>

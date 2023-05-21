@@ -3,12 +3,12 @@ import YellowDiv from '../custom/YellowDiv'
 
 const AboutHero = () => {
   return (
-    <section>
+    <section className="2xl:mx-36">
       <img src={AboutBg} alt="about" className="absolute -top-10 -z-30" />
-      <h1 className="mt-20 text-center font-lexend text-4xl font-black uppercase md:text-[80px] md:leading-[60px]">
+      <h1 className="mt-14 text-center font-lexend text-4xl font-black uppercase md:text-6xl md:leading-[50px]">
         <div className="tracking-tighter  text-red-base">Opening</div>
-        <div className="pt-2 font-gluten text-red-base md:pt-5 md:text-6xl">the</div>
-        <div className="font-bold">door</div>
+        <div className="pt-2 font-gluten text-red-base md:pt-5 md:text-4xl">the</div>
+        <div className="font-bold tracking-tighter ">door</div>
       </h1>
       <div className="px-5 py-10 md:px-24">
         <YellowDiv>

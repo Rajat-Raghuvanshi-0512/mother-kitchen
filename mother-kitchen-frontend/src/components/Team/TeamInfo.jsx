@@ -51,7 +51,7 @@ const teamDetails = [
     image: shifali,
   },
   {
-    name: 'Shifali Singh',
+    name: 'Shifali Sinha',
     desc: 'Director at RP-Sanjiv Goenka Group SVP – Operations & E commerce : Apparel Ex Vice President : International Brands at Flipkart',
     image: shifali,
   },
@@ -60,7 +60,7 @@ const teamDetails = [
 const TeamInfo = () => {
   return (
     <div>
-      <div className="relative mx-auto w-[80%] rounded-t-3xl border-l-4 border-r-[12px] border-t-4 border-black bg-[#BB48CE] px-5 py-4 text-center font-lexend text-[8px] font-semibold text-white shadow-2xl before:absolute before:left-[0.8px] before:top-[0.8px] before:h-full before:w-full before:rounded-t-2xl before:rounded-tl-2xl before:border-[3px] before:border-b-0 before:border-white md:px-20 md:text-[10px] md:text-base">
+      <div className="relative mx-auto w-[80%] rounded-t-3xl border-l-4 border-r-[12px] border-t-4 border-black bg-[#BB48CE] px-5 py-4 text-center font-lexend text-[8px] font-semibold text-white shadow-2xl before:absolute before:left-[0.8px] before:top-[0.8px] before:h-full before:w-full before:rounded-t-2xl before:rounded-tl-2xl before:border-[3px] before:border-b-0 before:border-white md:px-20 md:text-[10px] md:text-sm">
         We are proud to introduce you to the members of our board, a group of dedicated individuals who share a passion
         for our mission and work tirelessly to advance it
       </div>
@@ -71,8 +71,8 @@ const TeamInfo = () => {
             Executive Team
           </h3>
         </div>
-        <div className="mx-auto mt-20 flex gap-7 md:w-[60vw] md:gap-36">
-          <div className="flex flex-1 flex-col items-center font-gluten text-white">
+        <div className="mx-auto mt-10 flex gap-7 md:w-[60vw] md:gap-36">
+          <div className="flex flex-1 flex-col items-center p-8 font-gluten text-white">
             <ImageBox image={Shivani} />
             <h5 className="mt-4 text-center md:text-2xl">SHIVANI MALIK</h5>
             <p className="text-xs md:my-3 md:text-xl">Founder & CEO</p>
@@ -81,7 +81,7 @@ const TeamInfo = () => {
               projects on women & child mentorship programs.
             </p>
           </div>
-          <div className="flex flex-1 flex-col items-center font-gluten text-white">
+          <div className="flex flex-1 flex-col items-center p-8 font-gluten text-white">
             <ImageBox image={Sunil} />
             <h5 className="mt-4 text-center md:text-2xl">SUNIL CHAUHAN</h5>
             <p className="text-xs md:my-3 md:text-xl">CoFounder</p>
@@ -97,7 +97,7 @@ const TeamInfo = () => {
             Advisory Board
           </h3>
         </div>
-        <div className="mt-7 grid grid-cols-3 gap-5 md:m-10 md:grid-cols-4 md:gap-x-24 md:gap-y-10">
+        <div className="mt-7 grid grid-cols-3 gap-5 md:m-10 md:grid-cols-4 md:gap-x-20 md:gap-y-10">
           {teamDetails.map((teamMem) => {
             return <TeamInfoCard key={teamMem.name} {...teamMem} />
           })}

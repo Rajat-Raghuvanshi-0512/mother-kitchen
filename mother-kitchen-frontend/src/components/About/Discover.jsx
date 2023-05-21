@@ -15,7 +15,7 @@ import DiscoveryInfo from './DiscoveryInfo'
 const Discover = () => {
   const ref = useRef()
   return (
-    <section className="pb-20">
+    <section className="pb-20 2xl:mx-36">
       <div className="flex justify-center ">
         <img src={ProductsHeading} alt="heading" className="absolute  -z-20 mt-6 h-14 md:mt-10 md:h-24" />
         <h2 className="text-center font-gluten text-3xl font-black text-[#790000] md:text-5xl md:leading-[60px]">
@@ -57,8 +57,12 @@ const Discover = () => {
           </div>
         </div>
       </div>
-      <div className="relative h-full py-20">
-        <img src={YellowBg} alt="bg" className="absolute top-0 -z-50 h-[70vh] md:-top-[20rem] md:h-auto md:w-screen" />
+      <div className="relative h-full py-20  2xl:-mx-36">
+        <img
+          src={YellowBg}
+          alt="bg"
+          className="absolute top-0 -z-50 h-[70vh]  md:-top-[20rem] md:h-auto md:w-screen 2xl:h-[160vh]"
+        />
         <h2 className="white-stroke my-5 -rotate-6 pl-10 font-gluten text-3xl font-bold text-red-base md:-mt-40 md:mb-0 md:pl-40 md:text-7xl">
           A Tale of <span className="text-black">Discovery!</span>
         </h2>

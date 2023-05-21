@@ -54,23 +54,23 @@ function PaginatedItems({ itemsPerPage }) {
 }
 const Comic = () => {
   return (
-    <div className="px-3 py-5 md:p-20">
+    <div className="px-3 py-5 md:px-20 md:pt-10 ">
       <div className="flex px-5 md:justify-between">
         <div className="w-full font-gluten font-bold text-white">
-          <h2 className="black-shadow text-3xl text-green-base  md:text-8xl">
+          <h2 className="black-shadow text-3xl text-green-base  md:text-6xl">
             INayat{' '}
             <span className="text-white">
               & <br /> Mummy
             </span>
           </h2>
-          <p className="mt-5 md:text-4xl">PRINCIPLE OF SUCCESS</p>
-          <p className="text-green-base md:text-2xl">Mini Series</p>
+          <p className="mt-5 md:text-2xl">PRINCIPLE OF SUCCESS</p>
+          <p className="text-green-base md:text-xl">Mini Series</p>
         </div>
         <div className="flex flex-col items-end justify-end md:items-start md:justify-center">
-          <div className="w-[3rem] cursor-pointer rounded-r-[3rem] rounded-tl-[2rem] border-2 border-black bg-green-base p-3 duration-300 hover:scale-95 md:mx-auto md:w-[6rem] md:border-4 md:border-b-8 md:border-r-8 md:p-5">
+          <div className="w-[3rem] cursor-pointer rounded-r-[3rem] rounded-tl-[2rem] border-2 border-black bg-green-base p-3 duration-300 hover:scale-95 md:mx-auto md:w-[5rem] md:border-4 md:border-b-[6px] md:border-r-[6px] md:p-5">
             <img src={BackArrow} alt="arrow" />
           </div>
-          <p className="mt-4 text-right font-lexend text-[8px] font-semibold tracking-tighter text-white md:text-left md:text-xl">
+          <p className="mt-4 text-right font-lexend text-[8px] font-semibold tracking-tighter text-white md:text-left md:text-base">
             Press here to go Back
           </p>
         </div>

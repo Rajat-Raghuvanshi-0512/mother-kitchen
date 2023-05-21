@@ -25,23 +25,25 @@ const ComingSoonSm = () => {
 
 const ComingSoonLg = () => {
   return (
-    <div>
+    <div className="px-20">
       <BorderDiv className="mx-10  mt-20 overflow-hidden">
-        <div className="bg-black/50">
-          <img src={soon} alt="" className="absolute top-0 -z-20 h-full w-full object-cover opacity-50 blur-sm" />
-          <img src={TextLogo} alt="kitchen" className="mx-auto w-52 pt-32" />
-          <div className="mx-32 flex flex-col items-center justify-center border-4 border-t-0 py-20 drop-shadow-3xl">
-            <div className="my-10 w-[20vw] border-b-2 border-t-2 border-white py-4  text-center font-gluten text-7xl text-white">
+        <div className="bg-black/30">
+          <img src={soon} alt="" className="absolute top-0 -z-20 h-full w-full object-cover opacity-90 blur-sm" />
+          <img src={TextLogo} alt="kitchen" className="mx-auto w-40 pt-20" />
+          <div className="mx-32 flex flex-col items-center justify-center border-2 border-t-0 py-10 drop-shadow-3xl">
+            <div className=" mb-10 w-[20vw] border-b border-t border-white py-2 text-center font-gluten text-5xl text-white">
               Cafe
             </div>
-            <div className="black-shadow font-gluten text-9xl font-black text-white">Coming Soon</div>
+            <div className="black-shadow py-5 text-center font-gluten text-7xl font-bold leading-6 tracking-widest text-white">
+              Coming Soon
+            </div>
           </div>
-          <p className="mx-auto mt-14 w-[60vw] text-justify font-lexend font-semibold text-white">
+          <p className="mx-auto mt-10 w-[60vw] text-justify font-lexend text-xs font-semibold text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut aliquet lacus, sit amet eleifend dui. Mauris
             dapibus eros eget lacus hendrerit, vel sagittis ipsum imperdiet. Integer elementum viverra sem in eleifend.
             Pellentesque erat tellus, aliquet eget turpis vitae, euismod vestibulum orci. Aenean{' '}
           </p>
-          <img src={RabitTea} alt="rabbit" className="ml-auto mr-10 w-60" />
+          <img src={RabitTea} alt="rabbit" className="ml-auto mr-10 w-40" />
         </div>
       </BorderDiv>
     </div>

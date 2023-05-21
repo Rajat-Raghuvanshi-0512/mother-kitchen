@@ -3,7 +3,7 @@ import YellowDiv from '../custom/YellowDiv'
 
 const Support = () => {
   return (
-    <section className="px-5 md:px-10">
+    <section className="px-5 md:my-20 md:px-10  2xl:mx-36">
       <YellowDiv className="z-10">
         <img
           src={ProductsHeading}
