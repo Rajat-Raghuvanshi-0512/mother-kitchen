@@ -31,7 +31,11 @@ const ContactDetails = () => {
       {contactItems.map((item) => {
         return <ContactDetailsCard key={item.title} {...item} />
       })}
-      <img src={Monkey} alt="monkey" className="absolute -bottom-[16.5rem] right-[30rem] -z-10 w-[20rem]" />
+      <img
+        src={Monkey}
+        alt="monkey"
+        className="absolute left-[50%] top-[50%] -z-10 w-[20rem] translate-x-[-60%] translate-y-[70%]"
+      />
     </div>
   )
 }

@@ -68,7 +68,7 @@ const InstagramSectionMd = () => {
 }
 const InstagramSectionLg = () => {
   return (
-    <section className="md:px-24 md:pt-24 2xl:mx-56">
+    <section className="md:px-24 md:pt-24 2xl:mx-32">
       <div className="rounded-2xl border-[6px] border-b-[16px] border-r-[16px] border-black bg-[#EF3D69] px-8 py-4 text-white">
         <div className="grid grid-cols-6 gap-10 font-lexend">
           <div className="icon col-span-2">

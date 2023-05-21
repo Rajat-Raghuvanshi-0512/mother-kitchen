@@ -50,17 +50,17 @@ const HeroMd = () => {
 }
 const HeroLg = () => {
   return (
-    <div className="flex pl-28 2xl:px-[15rem]">
+    <div className="flex pl-28 2xl:px-[10rem]">
       <div className="left-section flex-1 py-14">
         <div className="relative">
           <img src={HeroLVec} alt="vec" className="absolute -left-28 top-5 -z-10 w-[55%]" />
           <img src={HHLeft} alt="elem" className="absolute -left-10 -top-7 w-10" />
-          <h2 className="font-gluten text-7xl font-bold">
+          <h2 className="font-gluten text-6xl font-bold">
             <span className="text-red-base">Mindful</span> <br /> eating for <br /> well being.
           </h2>
           <img src={HHRight} alt="elem" className="absolute -top-9 left-[17rem] w-10" />
         </div>
-        <p className="mt-5  font-lexend text-2xl">
+        <p className="mt-5  font-lexend text-xl">
           &ldquo;Bringing the warmth of mom&rsquo;s <br /> cooking to every kitchen, one <br /> delicious bite at a
           time.
         </p>

@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import {
   Hazelnut,
   ProductItemSm1,
@@ -11,6 +11,8 @@ import {
 } from '../../assets'
 import ProductCard from './ProductCard'
 import ProductsInfiniteScroll from './ProductsInfiniteScroll'
+import { useScroll, motion, useTransform } from 'framer-motion'
+import { BiChevronLeft, BiChevronRight } from 'react-icons/bi'
 
 const productsData = [
   {
@@ -64,7 +66,17 @@ const productsData = [
     icon: ProductItemSm2,
   },
 ]
-const ProductsSm = () => {
+const ProductsSm = ({ productsRef }) => {
+  const { scrollXProgress } = useScroll({
+    container: productsRef,
+  })
+  const [currentPrecent, setCurrentPercent] = useState(null)
+  const XRange = useTransform(scrollXProgress, [0, 1], [0, 92])
+  useEffect(() => {
+    XRange.on('change', () => {
+      setCurrentPercent(Math.trunc(XRange.current))
+    })
+  }, [XRange])
   return (
     <>
       <section className="py-10 md:py-24">
@@ -75,24 +87,38 @@ const ProductsSm = () => {
           </h3>
         </div>
         <div className="relative ml-3 pt-20">
-          <div className="flex gap-5 overflow-x-auto">
+          <div className="flex gap-5 overflow-x-auto" ref={productsRef}>
             {productsData.map((product) => (
               <ProductCard key={product.title} {...product} />
             ))}
           </div>
         </div>
       </section>
-
-      <section className=" w-screen py-10">
-        <ProductsInfiniteScroll />
-      </section>
+      <motion.div className="progress-container relative mx-auto h-[6px] w-[50vw] overflow-hidden rounded-full bg-white/30">
+        <motion.div
+          className="absolute z-50 h-[6px] w-4 rounded-full bg-red-base"
+          style={{ left: `${currentPrecent}%` }}
+          id="myBar"
+        ></motion.div>
+      </motion.div>
     </>
   )
 }
 const ProductsLg = ({ productsRef, handleLeftClick, handleRightClick }) => {
+  const { scrollXProgress } = useScroll({
+    container: productsRef,
+  })
+  const [currentPrecent, setCurrentPercent] = useState(null)
+  const XRange = useTransform(scrollXProgress, [0, 1], [0, 90])
+  useEffect(() => {
+    XRange.on('change', () => {
+      setCurrentPercent(Math.trunc(XRange.current))
+    })
+  }, [XRange])
+
   return (
     <>
-      <section className="pb-24 pt-10 2xl:mx-52">
+      <section className="pb-24 pt-10 2xl:mx-36">
         <div className="flex items-center justify-center">
           <img src={ProductsHeading} alt="heading" className="absolute -z-20 h-24" />
           <h3 className="text-center font-gluten text-3xl font-bold text-red-base">
@@ -101,28 +127,32 @@ const ProductsLg = ({ productsRef, handleLeftClick, handleRightClick }) => {
         </div>
         <div className="relative pt-20">
           <div className="px-20">
-            <div className="flex gap-14 overflow-x-auto overflow-y-clip" ref={productsRef}>
+            <motion.div className="flex gap-14 overflow-x-auto overflow-y-clip" ref={productsRef}>
               {productsData.map((product) => (
                 <ProductCard key={product.title} {...product} />
               ))}
-              {/* Left Arrow */}
-            </div>
+            </motion.div>
           </div>
-          <div className="absolute left-5 top-[50%] -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full p-2 text-2xl text-white group-hover:block">
-            <div className="z-50 text-black" onClick={handleLeftClick}>
-              &#10092;
+          {/* Left Arrow */}
+          <div className="absolute left-5 top-[50%] -translate-x-0 cursor-pointer rounded-full p-2 text-2xl text-white group-hover:block">
+            <div className="-left-5 z-50 text-black" onClick={handleLeftClick}>
+              <BiChevronLeft className="h-10 w-10 lg:h-14 lg:w-14" />
             </div>
           </div>
           {/* Right Arrow */}
-          <div className="absolute right-5 top-[50%] -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full p-2 text-2xl text-white  group-hover:block 2xl:-right-16">
+          <div className="absolute right-5 top-[50%] -translate-x-0 cursor-pointer rounded-full p-2 text-2xl text-white  group-hover:block 2xl:-right-5">
             <div className="z-50 text-black" onClick={handleRightClick}>
-              &#10093;
+              <BiChevronRight className="h-10 w-10 lg:h-14 lg:w-14" />
             </div>
           </div>
         </div>
-        <div className="progress-container hidden h-2 w-full bg-white">
-          <div className="h-2 bg-red-500" id="myBar"></div>
-        </div>
+        <motion.div className="progress-container relative mx-auto h-[6px] w-[10vw] overflow-hidden rounded-full bg-white/30">
+          <motion.div
+            className="absolute z-50 h-[6px] w-4 rounded-full bg-red-base"
+            style={{ left: `${currentPrecent}%` }}
+            id="myBar"
+          ></motion.div>
+        </motion.div>
       </section>
 
       <ProductsInfiniteScroll />
@@ -143,7 +173,7 @@ const Products = () => {
     <>
       <div className="md:hidden ">
         {/*Small Screen*/}
-        <ProductsSm />
+        <ProductsSm productsRef={productsRef} />
       </div>
 
       <div className="hidden md:block">

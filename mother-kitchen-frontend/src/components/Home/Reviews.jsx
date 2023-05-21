@@ -89,8 +89,8 @@ const reviews2 = [
 const Reviews = () => {
   return (
     <section>
-      <div className=" flex items-center justify-center 2xl:mx-56">
-        <img src={ReviewHeading} alt="ax" className="w-[90%]" />
+      <div className=" flex items-center justify-center">
+        <img src={ReviewHeading} alt="ax" className="w-[90%] xl:w-[70%]" />
       </div>
       <div className="relative">
         <img
@@ -99,7 +99,7 @@ const Reviews = () => {
           className="absolute top-20 -z-20 h-[80vh] scale-125 object-cover md:h-[200vh]"
         />
       </div>
-      <div className="relative mt-10 overflow-x-auto md:mt-0 2xl:mx-56">
+      <div className="relative mt-10 overflow-x-auto md:mt-0">
         <div className="-left-10 flex w-max select-none gap-10 overflow-hidden px-10 pb-20 md:pt-28 [&>*:nth-child(odd)]:translate-y-20">
           {reviews1.map((review, idx) => (
             <ReviewCard {...review} key={review.name + idx} />

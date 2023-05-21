@@ -155,7 +155,7 @@ const NavMd = () => {
 const NavLg = () => {
   let location = useLocation()
   return (
-    <nav className="w-screen px-5 py-8 md:px-20">
+    <nav className="w-screen px-5 py-8 md:px-20 2xl:px-36">
       <div className="flex items-center justify-between rounded-tl-[40px] rounded-tr-[40px] border-[3px] border-b-8 border-r-8 border-black px-10 py-2 drop-shadow-small md:bg-green-base">
         <div className="pt-3">
           <img src={TextLogo} alt="logo" className="mr-10 w-[120px]" />
