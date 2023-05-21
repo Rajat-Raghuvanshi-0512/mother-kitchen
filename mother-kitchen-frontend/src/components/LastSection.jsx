@@ -2,7 +2,7 @@ import NavigationButton from './custom/NavigationButtons'
 
 const LastSection = () => {
   return (
-    <div className="navigationButtons mx-5 mt-20 flex flex-col items-center justify-center gap-10 rounded-3xl bg-[#FFD47A] p-4 md:flex-row md:bg-transparent lg:m-28">
+    <div className="navigationButtons mx-5 mt-20 flex flex-col items-center justify-center gap-10 rounded-3xl bg-[#FFD47A] p-4 md:flex-row md:bg-transparent lg:m-24">
       <NavigationButton
         path={'/comic'}
         className="bg-[#42DE6E] font-lexend text-xl font-extralight tracking-[-0.2rem] lg:px-[3.1rem] lg:py-5 lg:text-xl"

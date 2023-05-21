@@ -69,15 +69,15 @@ const InstagramSectionMd = () => {
 const InstagramSectionLg = () => {
   return (
     <section className="md:px-24 md:pt-24 2xl:mx-32">
-      <div className="rounded-2xl border-[6px] border-b-[16px] border-r-[16px] border-black bg-[#EF3D69] px-8 py-4 text-white">
+      <div className="rounded-2xl border-[6px] border-b-[14px] border-r-[14px] border-black bg-[#EF3D69] px-8 text-white">
         <div className="grid grid-cols-6 gap-10 font-lexend">
-          <div className="icon col-span-2">
-            <ImInstagram className="h-14 w-14 text-black" />
-            <h2 className="py-5 text-4xl">
-              <div className="font-semibold tracking-tighter text-black">Find us on</div>
-              <div className="mt-2 font-gluten text-5xl font-black ">Instagram</div>
+          <div className="icon col-span-2 pt-10">
+            <ImInstagram className="h-12 w-12 text-black" />
+            <h2 className="py-5 text-3xl">
+              <div className="font-lexend  font-semibold tracking-tighter text-black">Find us on</div>
+              <div className="font-gluten text-5xl font-black ">Instagram</div>
             </h2>
-            <p className="text-justify font-semibold">
+            <p className="text-justify text-sm font-semibold">
               &quot;Join our Instagram family to never miss a beat on what we&apos;re cooking up next! Get a
               behind-the-scenes look at the love and passion that goes into every Mother&apos;s Kitchen product, and see
               how we&apos;re bringing the warmth of mom&apos;s cooking to your table.&quot;
@@ -92,7 +92,7 @@ const InstagramSectionLg = () => {
               </div>
             </div>
           </div>
-          <div className="icon col-span-4 px-10">
+          <div className="icon col-span-4 px-10 pb-10">
             <img src={InstaImg} alt="instagrid" className="w-full" />
           </div>
         </div>
