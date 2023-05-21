@@ -85,6 +85,7 @@ const NavSm = () => {
                 ? 'border-b-2 border-r-4 border-black bg-[#E9787C] text-white'
                 : 'text-black'
             } rounded-full p-3 font-gluten text-xl font-extralight`}
+            onClick={closeModal}
           >
             Contact Us
           </Link>

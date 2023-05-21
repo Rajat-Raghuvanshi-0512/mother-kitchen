@@ -25,15 +25,18 @@ const FooterSm = () => {
             <TbBrandLinkedin className="h-10 w-10" />
             <RiTwitterLine className="h-10 w-10" />
           </div>
-          <a href="mailto:contact@motherskitchen.co.in" className="mt-4 font-gluten">
-            Contact@motherskitchen.co.in
-          </a>
+          <div className="my-5">
+            <a href="mailto:contact@motherskitchen.co.in" className="font-gluten">
+              Contact@motherskitchen.co.in
+            </a>
+          </div>
           <p className="my-2 mb-20 flex items-start font-bold">
             <span>Contact Us </span> <RiUser3Fill className="h-3 w-3" />
           </p>
-          <img src={footerImg} alt="footer" className="absolute bottom-0 w-[250px] " />
-          <p className="absolute bottom-0 left-[30%] shadow-3xl drop-shadow-3xl">Website by pixysquare</p>
+          <p className="absolute bottom-0 left-[35%] z-10 shadow-3xl drop-shadow-3xl">Website by pixysquare</p>
         </div>
+        <img src={footerImg} alt="footer" className="absolute bottom-0 left-[45%] w-[220px] translate-x-[-50%]" />
+
         <div className=" ml-auto flex  flex-col text-xl">
           <div className="pr- flex justify-end text-xs">
             <div className="relative">
@@ -78,9 +81,9 @@ const FooterMd = () => {
             <span>Contact Us</span> <RiUser3Fill className="h-5 w-8" />
           </p>
           <img src={TextLogo} alt="logo" className="w-[10rem]" />
-          <img src={footerImg} alt="footer" className="absolute bottom-0 left-[23%] w-[350px]" />
-          <p className="absolute bottom-0 left-[45%] shadow-3xl drop-shadow-3xl">Website by pixysquare</p>
+          <p className="absolute bottom-0 left-[48%] z-10 text-xs shadow-3xl drop-shadow-3xl">Website by pixysquare</p>
         </div>
+        <img src={footerImg} alt="footer" className="absolute bottom-0 left-[50%] w-[350px] translate-x-[-50%]" />
         <div className=" ml-auto flex  flex-col text-xl">
           <div className="flex justify-end pr-10">
             <div className="relative">
@@ -131,9 +134,9 @@ const FooterLg = () => {
             <span>Contact Us</span> <RiUser3Fill className="h-5 w-8" />
           </p>
           <img src={TextLogo} alt="logo" className="w-[13rem]" />
-          <img src={footerImg} alt="footer" className="absolute bottom-0 left-[23%] w-[550px]" />
-          <p className="absolute bottom-0 left-[45%] shadow-3xl drop-shadow-3xl">Website by pixysquare</p>
+          <p className="absolute bottom-0 left-[48%] z-10 shadow-3xl drop-shadow-3xl">Website by pixysquare</p>
         </div>
+        <img src={footerImg} alt="footer" className="absolute bottom-0 left-[50%] w-[550px] translate-x-[-50%]" />
         <div className=" ml-auto flex  flex-col text-xl">
           <div className="flex justify-end pr-20">
             <div className="relative">

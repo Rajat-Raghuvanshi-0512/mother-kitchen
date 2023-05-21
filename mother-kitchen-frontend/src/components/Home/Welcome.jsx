@@ -25,7 +25,7 @@ const KitchenItems = [
 
 const WelcomeSm = () => {
   return (
-    <section className="mt-40 px-5 ">
+    <section className="mt-20 px-5 ">
       <h3 className="text-center font-gluten text-4xl font-bold text-red-base">Welcome to Mother’s Kitchen</h3>
       <img src={KitchenBg} alt="bg" className="absolute left-0 -z-30 w-full" />
       <div className="mt-24 grid grid-cols-1 gap-10">
@@ -41,7 +41,11 @@ const WelcomeLg = () => {
   return (
     <section className="px-5 md:mt-40 lg:px-20 2xl:mx-56">
       <h3 className="text-center font-gluten text-5xl font-bold text-red-base">Welcome to Mother’s Kitchen</h3>
-      <img src={KitchenBg} alt="bg" className="absolute left-0 -z-30 w-full" />
+      <img
+        src={KitchenBg}
+        alt="bg"
+        className="absolute left-0 -z-30 w-full 2xl:left-[50%] 2xl:w-[75%] 2xl:translate-x-[-50%]"
+      />
       <div className="mt-24 grid grid-cols-3 gap-5 lg:gap-10">
         {KitchenItems.map((item) => (
           <KitchenCard key={item.smallHeading} {...item} />

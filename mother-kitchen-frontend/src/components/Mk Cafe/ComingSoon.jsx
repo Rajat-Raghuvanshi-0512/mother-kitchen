@@ -5,7 +5,7 @@ import BorderDiv from '../custom/BorderDiv'
 const ComingSoonSm = () => {
   return (
     <div className="relative">
-      <img src={SoonBg} alt="soon" className="relative mt-5" />
+      <img src={SoonBg} alt="soon" className="relative mt-5 h-full w-full object-contain" />
       <div className="absolute top-0 w-full">
         <h3 className="relative left-[50%] top-[50%] w-[55vw] translate-x-[-50%] translate-y-[-50%] border-b-2 border-t-2 border-white py-2 text-center font-lexend  text-2xl text-white">
           MK’s Cafe
@@ -13,12 +13,12 @@ const ComingSoonSm = () => {
         <div className="black-shadow relative left-[50%] top-[50%] mt-6 w-full translate-x-[-50%] translate-y-[-50%] text-center font-gluten text-4xl  font-black text-white">
           Coming Soon
         </div>
-        <p className="font-white absolute bottom-[-32rem] px-16 text-center font-lexend text-[10px] leading-3 text-white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut aliquet lacus, sit amet eleifend dui. Mauris
-          dapibus eros eget lacus hendrerit, vel sagittis ipsum imperdiet. Integer elementum viverra sem in eleifend.
-          Pellentesque erat tellus, aliquet eget turpis vitae, euismod vestibulum orci. Aenean
-        </p>
       </div>
+      <p className="font-white relative bottom-[8rem] px-10 text-center font-lexend text-[10px] leading-3 text-white">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut aliquet lacus, sit amet eleifend dui. Mauris
+        dapibus eros eget lacus hendrerit, vel sagittis ipsum imperdiet. Integer elementum viverra sem in eleifend.
+        Pellentesque erat tellus, aliquet eget turpis vitae, euismod vestibulum orci. Aenean
+      </p>
     </div>
   )
 }

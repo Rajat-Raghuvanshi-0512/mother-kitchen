@@ -65,6 +65,16 @@ const productsData = [
     color: 'bg-[#8A99E7]',
     icon: ProductItemSm2,
   },
+  {
+    image: Hazelnut,
+    price: '$6.0/Sachet',
+    quantity: '250gm',
+    title: 'Hazelnut Cocoa ead',
+    desc: 'Instant Preseasoned Green mint chutney',
+    btnText: 'Buy Now',
+    color: 'bg-[#8A99E7]',
+    icon: ProductItemSm2,
+  },
 ]
 const ProductsSm = ({ productsRef }) => {
   const { scrollXProgress } = useScroll({
@@ -87,20 +97,20 @@ const ProductsSm = ({ productsRef }) => {
           </h3>
         </div>
         <div className="relative ml-3 pt-20">
-          <div className="flex gap-5 overflow-x-auto" ref={productsRef}>
+          <motion.div className="flex gap-5 overflow-x-auto" ref={productsRef}>
             {productsData.map((product) => (
               <ProductCard key={product.title} {...product} />
             ))}
-          </div>
+          </motion.div>
         </div>
+        <motion.div className="progress-container relative mx-auto h-[6px] w-[50vw] overflow-hidden rounded-full bg-white/30">
+          <motion.div
+            className="absolute z-50 h-[6px] w-4 rounded-full bg-red-base"
+            style={{ left: `${currentPrecent}%` }}
+            id="myBar"
+          ></motion.div>
+        </motion.div>
       </section>
-      <motion.div className="progress-container relative mx-auto h-[6px] w-[50vw] overflow-hidden rounded-full bg-white/30">
-        <motion.div
-          className="absolute z-50 h-[6px] w-4 rounded-full bg-red-base"
-          style={{ left: `${currentPrecent}%` }}
-          id="myBar"
-        ></motion.div>
-      </motion.div>
     </>
   )
 }
@@ -127,7 +137,7 @@ const ProductsLg = ({ productsRef, handleLeftClick, handleRightClick }) => {
         </div>
         <div className="relative pt-20">
           <div className="px-20">
-            <motion.div className="flex gap-14 overflow-x-auto overflow-y-clip" ref={productsRef}>
+            <motion.div className="flex gap-16 overflow-x-auto" ref={productsRef}>
               {productsData.map((product) => (
                 <ProductCard key={product.title} {...product} />
               ))}

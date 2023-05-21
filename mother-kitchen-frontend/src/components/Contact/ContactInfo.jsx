@@ -1,8 +1,8 @@
-import { Animals } from '../../assets'
+import { Animals, BigCookie } from '../../assets'
 
 const ContactInfo = () => {
   return (
-    <div className="relative mt-20 rounded-xl border-4 border-b-[12px] border-r-[12px] border-black bg-[#C40D4F] md:mt-40 md:px-7 md:py-6 lg:mt-60 lg:px-12 lg:py-8 xl:mt-72">
+    <div className="relative mt-20 rounded-xl border-4 border-b-[12px] border-r-[12px] border-black bg-[#C40D4F] px-10 py-12 md:mt-40 md:px-7 md:py-6 lg:mt-60 lg:px-12 lg:py-8 xl:mt-72">
       <img
         src={Animals}
         alt="animals"
@@ -12,6 +12,7 @@ const ContactInfo = () => {
         Hey there, hungry for some wholesome goodness? We&apos;re here to help satisfy your cravings and answer any
         questions you may have about our products. Whether you prefer to shoot us an email or give us a ring, our
         friendly team is always ready to serve up some delicious customer service.
+        <img src={BigCookie} alt="cookie" className="relative top-10 mx-auto md:hidden" />
       </p>
     </div>
   )

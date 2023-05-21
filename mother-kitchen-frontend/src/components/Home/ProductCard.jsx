@@ -2,15 +2,23 @@ import { GiPaperBagFolded } from 'react-icons/gi'
 import { AiFillHeart } from 'react-icons/ai'
 const ProductsCardSm = ({ image, price, quantity, title, desc, btnText, color, icon }) => {
   return (
-    <div className={`relative my-10 rounded-3xl border-4 border-b-8 border-r-8 border-black p-3 font-lexend ${color}`}>
+    <div
+      className={`relative my-10 h-[380px] w-[310px] rounded-3xl border-4 border-b-8 border-r-8 border-black p-3 font-lexend ${color}`}
+    >
       <div className="flex h-[200px] items-center justify-center ">
-        <img src={image} alt="x" className="h-full object-contain drop-shadow-lg" />
+        <img
+          src={image}
+          alt="x"
+          className={`h-full object-contain drop-shadow-3xl ${
+            title === 'Green Mint Chutney' ? 'relative -top-10 scale-125' : ''
+          } `}
+        />
         <div className="absolute right-4 top-4">
           <AiFillHeart className="z-10 h-8 w-8 text-red-500 drop-shadow-lg" />
           <AiFillHeart className="absolute -left-[1.5px] -top-[1.5px] -z-[1] h-9 w-9 text-black drop-shadow-lg" />
         </div>
       </div>
-      <div className="flex gap-10 px-1 drop-shadow-sm">
+      <div className="flex gap-4 px-1 drop-shadow-sm">
         <div className="flex-1">
           <div className="text-[15px] font-bold text-white">{price}</div>
           <div className="text-sm ">{quantity}</div>
@@ -29,7 +37,9 @@ const ProductsCardSm = ({ image, price, quantity, title, desc, btnText, color, i
 }
 const ProductsCardMd = ({ image, price, quantity, title, desc, btnText, color, icon }) => {
   return (
-    <div className={`relative my-10 rounded-3xl border-4 border-b-8 border-r-8 border-black p-3 font-lexend ${color}`}>
+    <div
+      className={`relative my-10 h-[380px] w-[310px] rounded-3xl border-4 border-b-8 border-r-8 border-black p-3 font-lexend ${color}`}
+    >
       <div className="flex h-[200px] items-center justify-center ">
         <img src={image} alt="x" className="h-full object-contain drop-shadow-lg" />
         <div className="absolute right-4 top-4">
@@ -59,7 +69,7 @@ const ProductsCardLg = ({ image, price, quantity, title, desc, btnText, color, i
     <div
       className={`relative z-[5] my-10 h-[380px] w-[310px] rounded-3xl border-4 border-b-8 border-r-8 border-black p-3 font-lexend ${color}`}
     >
-      <div className="flex h-[200px] items-center justify-center ">
+      <div className="flex h-[230px] w-full items-center justify-center ">
         <img
           src={image}
           alt="x"
