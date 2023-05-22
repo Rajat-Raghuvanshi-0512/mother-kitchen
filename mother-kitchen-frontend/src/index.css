@@ -76,3 +76,35 @@ body {
   z-index: -1;
   background-color: #ffae0040;
 }
+.carousel .thumb {
+  border: none;
+}
+.thumbs li {
+  width: auto !important;
+}
+.carousel .thumbs {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.carousel .thumb.selected div,
+.carousel .thumb:hover div {
+  background: #41041a !important;
+  width: 1.5rem;
+}
+.carousel .thumb.selected .reviewsThumb,
+.carousel .thumb:hover .reviewsThumb {
+  background: #ef3d69 !important;
+  width: 1.5rem;
+}
+.carousel .thumb.selected,
+.carousel .thumb:hover {
+  border: none !important;
+  margin: 0;
+}
+.slider .selected {
+  scale: 100%;
+}
+.slide {
+  scale: 80%;
+}

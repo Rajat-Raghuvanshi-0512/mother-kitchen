@@ -1,3 +1,4 @@
+import { Carousel } from 'react-responsive-carousel'
 import { ReviewHeading, review1, review2, review3, review4, review5, review6, reviewBg } from '../../assets'
 import ReviewCard from './ReviewCard'
 
@@ -86,7 +87,49 @@ const reviews2 = [
   },
 ]
 
-const Reviews = () => {
+const renderCustomThumbs = () => {
+  const thumbList = Array.from(Array(reviews1.length)).map((item) => (
+    <div key={item} className=" reviewsThumb h-[6px] w-3 rounded-full bg-[#9C7F47]"></div>
+  ))
+
+  return thumbList
+}
+
+const ReviewsSm = () => {
+  return (
+    <section>
+      <div className=" flex items-center justify-center">
+        <img src={ReviewHeading} alt="ax" className="w-[90%] xl:w-[70%]" />
+      </div>
+      <div className="relative">
+        <img
+          src={reviewBg}
+          alt="reviewbg"
+          className="absolute top-20 -z-20 h-[80vh] scale-125 object-cover md:h-[200vh]"
+        />
+      </div>
+      <div className="relative mt-10 overflow-x-auto md:mt-0">
+        <Carousel
+          autoPlay
+          autoFocus
+          centerMode={true}
+          centerSlidePercentage={70}
+          infiniteLoop={true}
+          showIndicators={false}
+          showStatusBar={false}
+          showStatus={false}
+          showArrows={false}
+          renderThumbs={renderCustomThumbs}
+        >
+          {reviews1.map((review, idx) => (
+            <ReviewCard {...review} key={review.name + idx} />
+          ))}
+        </Carousel>
+      </div>
+    </section>
+  )
+}
+const ReviewsLg = () => {
   return (
     <section>
       <div className=" flex items-center justify-center">
@@ -115,4 +158,16 @@ const Reviews = () => {
   )
 }
 
+const Reviews = () => {
+  return (
+    <>
+      <div className="md:hidden">
+        <ReviewsSm />
+      </div>
+      <div className="hidden md:block">
+        <ReviewsLg />
+      </div>
+    </>
+  )
+}
 export default Reviews

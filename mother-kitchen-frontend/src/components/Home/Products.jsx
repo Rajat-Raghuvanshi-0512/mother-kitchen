@@ -13,6 +13,7 @@ import ProductCard from './ProductCard'
 import ProductsInfiniteScroll from './ProductsInfiniteScroll'
 import { useScroll, motion, useTransform } from 'framer-motion'
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi'
+import { Carousel } from 'react-responsive-carousel'
 
 const productsData = [
   {
@@ -81,7 +82,7 @@ const ProductsSm = ({ productsRef }) => {
     container: productsRef,
   })
   const [currentPrecent, setCurrentPercent] = useState(null)
-  const XRange = useTransform(scrollXProgress, [0, 1], [0, 92])
+  const XRange = useTransform(scrollXProgress, [0, 1], [0, 100])
   useEffect(() => {
     XRange.on('change', () => {
       setCurrentPercent(Math.trunc(XRange.current))
@@ -89,21 +90,34 @@ const ProductsSm = ({ productsRef }) => {
   }, [XRange])
   return (
     <>
-      <section className="py-10 md:py-24">
+      <section className="py-5 md:py-24">
         <div className="flex items-center justify-center">
           <img src={ProductsHeading} alt="heading" className="absolute -z-20 h-14" />
           <h3 className="text-center font-gluten text-xl font-bold text-red-base">
             &quot;<span className="text-[#553500]"> TOP-</span>rated by taste buds &quot;
           </h3>
         </div>
-        <div className="relative ml-3 pt-20">
-          <motion.div className="flex gap-5 overflow-x-auto" ref={productsRef}>
-            {productsData.map((product) => (
-              <ProductCard key={product.title} {...product} />
-            ))}
-          </motion.div>
+        <div className="relative pt-10">
+          <div className="w-full" ref={productsRef}>
+            <Carousel
+              autoPlay
+              autoFocus
+              centerMode={true}
+              centerSlidePercentage={70}
+              infiniteLoop={true}
+              showIndicators={false}
+              showStatusBar={false}
+              showStatus={false}
+              showThumbs={false}
+              showArrows={false}
+            >
+              {productsData.map((product) => (
+                <ProductCard key={product.title} {...product} />
+              ))}
+            </Carousel>
+          </div>
         </div>
-        <motion.div className="progress-container relative mx-auto h-[6px] w-[50vw] overflow-hidden rounded-full bg-white/30">
+        <motion.div className="progress-container relative mx-auto h-[6px] w-[40vw] overflow-hidden rounded-full bg-white/30">
           <motion.div
             className="absolute z-50 h-[6px] w-4 rounded-full bg-red-base"
             style={{ left: `${currentPrecent}%` }}

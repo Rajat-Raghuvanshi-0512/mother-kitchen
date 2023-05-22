@@ -7,6 +7,7 @@ import { RxCross1, RxHamburgerMenu, RxInstagramLogo } from 'react-icons/rx'
 import { RiFacebookFill, RiLinkedinFill } from 'react-icons/ri'
 import Drawer from './custom/Drawer'
 import { useModal } from '../custom-hooks'
+import { BurgerMenuIcon, HomeIcon } from '../assets/icons'
 
 const navLinks = [
   {
@@ -39,16 +40,14 @@ const NavSm = () => {
   const { isOpen, openModal, closeModal } = useModal()
   return (
     <nav className="px-5 py-8">
-      <div className=" flex items-center justify-between rounded-full border-[3px] border-b-8 border-r-8 border-black bg-[#C40D4F] px-4 drop-shadow-small">
+      <div className=" flex items-center justify-between rounded-full border-[3px] border-b-8 border-r-8 border-black bg-[#C40D4F] pl-4 pr-3 drop-shadow-small">
         <div className="pl-3 text-[#FEF5CE]">
-          <RxHamburgerMenu className="h-9 w-9" onClick={openModal} />
+          <img src={BurgerMenuIcon} alt="burger" className="h-12 w-12 object-contain" onClick={openModal} />
         </div>
         <div className="pt-3">
           <img src={TextLogo} alt="logo" className="mx-auto w-[50%]" />
         </div>
-        <div className=" rounded-full bg-[#FEF5CE] p-2">
-          <AiFillHome className="h-5 w-5 text-[#C40D4F] sm:h-8 sm:w-8" />
-        </div>
+        <img src={HomeIcon} alt="homeicon" className="h-12 w-12 object-contain" />
       </div>
       <Drawer isOpen={isOpen}>
         <div className="grid grid-cols-2">

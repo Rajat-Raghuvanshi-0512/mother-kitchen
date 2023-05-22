@@ -7,7 +7,7 @@ import { TextLogo, footerImg } from '../assets'
 
 const FooterSm = () => {
   return (
-    <footer className="m-1 mt-20 rounded-bl-3xl rounded-br-3xl border-4 border-b-[14px] border-l-4 border-r-[10px] border-black bg-[#031E29] p-2 text-white">
+    <footer className="m-1 mt-20 rounded-bl-3xl rounded-br-3xl border-4 border-b-[14px] border-l-4 border-r-[10px] border-black bg-[#031E29] p-2 pb-0 text-white">
       <div className="mb-5 mt-2 flex w-full justify-between rounded-full border-2 border-b-4 border-r-4 border-black bg-white p-1">
         <input
           type="email"
@@ -57,7 +57,7 @@ const FooterSm = () => {
 }
 const FooterMd = () => {
   return (
-    <footer className="m-1 mt-20 rounded-bl-3xl rounded-br-3xl border-4 border-b-[15px] border-l-[10px] border-r-[10px] border-black bg-[#031E29] p-4 text-white">
+    <footer className="m-1 mt-20 rounded-bl-3xl rounded-br-3xl border-4 border-b-[15px] border-l-[10px] border-r-[10px] border-black bg-[#031E29] p-4 pb-0 text-white">
       <a href="mailto:contact@motherskitchen.co.in" className="font-gluten text-xs">
         Contact@motherskitchen.co.in
       </a>
@@ -110,7 +110,7 @@ const FooterMd = () => {
 }
 const FooterLg = () => {
   return (
-    <footer className="m-3 mt-20 rounded-bl-3xl rounded-br-3xl border-4 border-b-[15px] border-l-[10px] border-r-[10px] border-black bg-[#031E29] p-4 text-white">
+    <footer className="m-3 mt-20 rounded-bl-3xl rounded-br-3xl border-4 border-b-[15px] border-l-[10px] border-r-[10px] border-black bg-[#031E29] p-4 pb-0 text-white">
       <a href="mailto:contact@motherskitchen.co.in" className="font-gluten">
         Contact@motherskitchen.co.in
       </a>

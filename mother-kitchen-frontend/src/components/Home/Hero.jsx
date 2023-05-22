@@ -1,4 +1,4 @@
-import { Girl, HHLeft, HHRight, HeroLVec } from '../../assets'
+import { Girl, HHLeft, HHLeftMobile, HHRight, HHRightMobile, HeroLVec, ScrollDown } from '../../assets'
 import { HeroBgSm } from '../../assets/mobile'
 import Button from '../custom/Button'
 
@@ -8,13 +8,15 @@ const HeroSm = () => {
       <div className="pb-10">
         <img src={HeroBgSm} alt="vec" className="absolute left-0 -z-10 w-screen" />
         <div className="relative">
-          <img src={HHLeft} alt="elem" className="absolute -top-4 left-24 w-8" />
-          <h2 className="mt-16 text-center font-gluten text-3xl font-black sm:text-7xl">
+          <img src={HHLeft} alt="elem" className="absolute  -top-4 left-24 hidden w-8 md:block" />
+          <img src={HHLeftMobile} alt="elem" className="absolute  -top-4 left-20 w-8 md:hidden" />
+          <h2 className="mt-14 text-center font-gluten text-4xl font-black sm:text-7xl">
             <span className="text-red-base">Mindful</span> <br /> eating for <br /> well being.
           </h2>
-          <img src={HHRight} alt="elem" className="absolute -top-7 right-24 w-8" />
+          <img src={HHRight} alt="elem" className="absolute -top-7 right-24 hidden w-8 md:block" />
+          <img src={HHRightMobile} alt="elem" className="absolute -top-7 right-20 w-8 md:hidden" />
         </div>
-        <p className="px-13  text-center font-gluten text-sm">
+        <p className="px-13  text-center font-gluten text-xs md:text-sm">
           &ldquo;Bringing the warmth of mom&rsquo;s cooking to <br /> every kitchen, one delicious bite at a time.
         </p>
       </div>
@@ -22,6 +24,7 @@ const HeroSm = () => {
         <img src={Girl} alt="gitl" />
       </div>
       <Button className="flex-1font-semibold mx-auto my-5 ">Scroll Down</Button>
+      <img src={ScrollDown} alt="scroll" className="mx-auto  h-5 w-5 animate-bounce object-contain md:hidden" />
     </div>
   )
 }

@@ -6,23 +6,26 @@ import YellowDiv from '../custom/YellowDiv'
 const NutritionSm = () => {
   return (
     <>
-      <section className="my-20 px-5">
+      <section className="px-5 py-7 md:my-20">
         <YellowDiv className="flex flex-col">
           <div className="relative flex-1">
             <img src={Nutrition} alt="nutrition" className="relative -top-6 w-[100%]" />
           </div>
           <div className="z-10 flex-1 px-5">
-            <h3 className="mb-5 text-center font-lexend text-lg font-semibold">
-              Pouring nutrition <br /> <span className="font-gluten font-black text-red-base"> in your dish</span>
+            <h3 className="-mt-8 mb-5 text-center font-lexend text-xl font-semibold tracking-tighter">
+              Pouring nutrition <br />{' '}
+              <span className="font-gluten text-2xl font-black text-red-base"> in your dish</span>
             </h3>
-            <p className="text-justify text-sm ">
+            <p className="text-justify font-lexend text-xs md:text-sm">
               At Mother&rsquo;s Kitchen, love is always the first ingredient. Our top-quality ingredients and
               easy-to-use products make cooking a breeze, so you can spend more time with the people who matter most.
               From seasonings and spices to baking mixes and ready-to-eat meals, we&rsquo;ve got everything you need to
-              whip up something delicious. Our recipes are passed down through generations of moms, ensuring that every
-              meal is packed with warmth and nostalgia. So whether you&rsquo;re baking with your little ones or
-              preparing dinner for the whole crew, Mother&rsquo;s Kitchen has got you covered. Come join us in the
-              kitchen today and taste the love!
+              whip up something delicious.
+              <span className="hidden md:block">
+                Our recipes are passed down through generations of moms, ensuring that every meal is packed with warmth
+                and nostalgia. So whether you&rsquo;re baking with your little ones or preparing dinner for the whole
+                crew, Mother&rsquo;s Kitchen has got you covered. Come join us in the kitchen today and taste the love!
+              </span>
             </p>
             <div className="flex justify-end">
               <Button className="my-5">View More</Button>

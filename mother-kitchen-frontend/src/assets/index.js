@@ -38,6 +38,9 @@ import DiscoverBg1 from './discovery-bg1.webp'
 import ProductItemSm1 from './home/productItemSmall1.png'
 import ProductItemSm2 from './home/productItemSmall2.png'
 import ProductItemSm3 from './home/productItemSmall3.png'
+import HHLeftMobile from './home/hh-left.png'
+import HHRightMobile from './home/hh-right.png'
+import ScrollDown from './home/scroll-down.png'
 
 import CameraAndGirl from './about/camera_and_girl.png'
 import AboutHeroTextBgPhone from './about/text-bg-phone.png'
@@ -194,4 +197,7 @@ export {
   BigCookie,
   BigBlackCookie,
   AboutHeroTextBgPhone,
+  HHLeftMobile,
+  HHRightMobile,
+  ScrollDown,
 }
