@@ -44,6 +44,7 @@ import ScrollDown from './home/scroll-down.png'
 
 import CameraAndGirl from './about/camera_and_girl.png'
 import AboutHeroTextBgPhone from './about/text-bg-phone.png'
+import MissionBgPhone from './about/missionbg.png'
 
 import review1 from './reviews/review1.webp'
 import review2 from './reviews/review2.webp'
@@ -200,4 +201,5 @@ export {
   HHLeftMobile,
   HHRightMobile,
   ScrollDown,
+  MissionBgPhone,
 }

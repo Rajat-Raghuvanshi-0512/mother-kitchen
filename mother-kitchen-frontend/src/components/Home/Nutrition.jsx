@@ -55,7 +55,7 @@ const NutritionMd = () => {
               Pouring nutrition <br />{' '}
               <span className="font-gluten text-3xl font-black text-red-base"> in your dish</span>
             </h3>
-            <p className="pr-4 text-justify text-xs font-medium">
+            <p className="pr-4 text-justify font-lexend text-xs font-medium leading-4 tracking-[-0.01rem]">
               At Mother&rsquo;s Kitchen, love is always the first ingredient. Our top-quality ingredients and
               easy-to-use products make cooking a breeze, so you can spend more time with the people who matter most.
               From seasonings and spices to baking mixes and ready-to-eat meals, we&rsquo;ve got everything you need to
@@ -85,11 +85,11 @@ const NutritionLg = () => {
             />
           </div>
           <div className="z-10 flex-1 p-5">
-            <h3 className="mb-5 font-lexend text-3xl font-semibold">
+            <h3 className="mb-5 font-lexend text-3xl font-black">
               Pouring nutrition <br />{' '}
-              <span className="font-gluten text-4xl font-black text-red-base"> in your dish</span>
+              <span className="mt-2 font-gluten text-4xl font-black text-red-base"> in your dish</span>
             </h3>
-            <p className="pr-4 text-justify font-medium">
+            <p className="pr-4 text-justify font-lexend font-medium tracking-[-0.1rem]">
               At Mother&rsquo;s Kitchen, love is always the first ingredient. Our top-quality ingredients and
               easy-to-use products make cooking a breeze, so you can spend more time with the people who matter most.
               From seasonings and spices to baking mixes and ready-to-eat meals, we&rsquo;ve got everything you need to

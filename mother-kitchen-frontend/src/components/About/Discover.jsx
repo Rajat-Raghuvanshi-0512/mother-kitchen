@@ -17,15 +17,15 @@ const Discover = () => {
   return (
     <section className="pb-20 2xl:mx-36">
       <div className="flex justify-center ">
-        <img src={ProductsHeading} alt="heading" className="absolute  -z-20 mt-6 h-14 md:mt-10 md:h-24" />
-        <h2 className="text-center font-gluten text-3xl font-black text-[#790000] md:text-5xl md:leading-[60px]">
+        <img src={ProductsHeading} alt="heading" className="absolute  -z-20 mt-5 h-[3.3rem] md:mt-10 md:h-24" />
+        <h2 className="text-center font-gluten text-2xl font-bold text-[#790000] md:text-5xl md:leading-[60px]">
           HOW?
           <br /> WE DISCOVERED THE <br /> <span className="font-lexend text-white drop-shadow-3xl">MASCOT</span>
         </h2>
       </div>
       <div className="relative">
         <img src={DiscoverBg1} alt="dbg" className="absolute -z-30" />
-        <div className="flex justify-end pt-5 md:pr-24 md:pt-20">
+        <div className="flex justify-end pr-3 pt-5 md:pr-24 md:pt-20">
           <div className="w-[65%] border-b-2 border-r-4 border-black/70 bg-[#039860] p-2 text-center font-lexend text-[7px] text-white md:w-[50%] md:border-b-4 md:border-r-8 md:p-7 md:text-xs lg:text-base">
             Inspired by the image of the daughter of our founder and owner Shivani Malik, Inayat represents everything
             that we stand for - love, purity, and goodness
@@ -70,7 +70,7 @@ const Discover = () => {
           <img src={Film} alt="film" className="w-[90%] md:w-[80%]" />
           <p className="w-[60vw] -rotate-3 text-center font-lexend text-[9px] font-semibold text-white drop-shadow-small md:mr-40 md:w-[40rem] md:text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit augue vel turpis vehicula consequat.
-            Morbi consequat lacus et nulla elementum auctor.
+            <span className="hidden md:block">Morbi consequat lacus et nulla elementum auctor.</span>
           </p>
         </div>
       </div>

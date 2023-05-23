@@ -41,7 +41,7 @@ const productsData = [
     price: '$6.0/Sachet',
     quantity: '250gm',
     title: 'Turmeric Almond & Saffron Booster',
-    desc: 'Instant Preseasoned Green mint chutney',
+    desc: 'Instant Green mint chutney',
     btnText: 'Buy Now',
     color: 'bg-[#ED4E4E]',
     icon: ProductItemSm3,
@@ -77,17 +77,14 @@ const productsData = [
     icon: ProductItemSm2,
   },
 ]
-const ProductsSm = ({ productsRef }) => {
-  const { scrollXProgress } = useScroll({
-    container: productsRef,
-  })
-  const [currentPrecent, setCurrentPercent] = useState(null)
-  const XRange = useTransform(scrollXProgress, [0, 1], [0, 100])
-  useEffect(() => {
-    XRange.on('change', () => {
-      setCurrentPercent(Math.trunc(XRange.current))
-    })
-  }, [XRange])
+const renderCustomThumbs = () => {
+  const thumbList = Array.from(Array(productsData.length)).map((item) => (
+    <div key={item} className=" productsthumb h-[6px] w-3 rounded-full bg-white/40"></div>
+  ))
+
+  return thumbList
+}
+const ProductsSm = () => {
   return (
     <>
       <section className="py-5 md:py-24">
@@ -98,18 +95,17 @@ const ProductsSm = ({ productsRef }) => {
           </h3>
         </div>
         <div className="relative pt-10">
-          <div className="w-full" ref={productsRef}>
+          <div className="w-full">
             <Carousel
-              autoPlay
               autoFocus
               centerMode={true}
               centerSlidePercentage={70}
-              infiniteLoop={true}
+              selectedItem={1}
               showIndicators={false}
               showStatusBar={false}
               showStatus={false}
-              showThumbs={false}
               showArrows={false}
+              renderThumbs={renderCustomThumbs}
             >
               {productsData.map((product) => (
                 <ProductCard key={product.title} {...product} />
@@ -117,13 +113,6 @@ const ProductsSm = ({ productsRef }) => {
             </Carousel>
           </div>
         </div>
-        <motion.div className="progress-container relative mx-auto h-[6px] w-[40vw] overflow-hidden rounded-full bg-white/30">
-          <motion.div
-            className="absolute z-50 h-[6px] w-4 rounded-full bg-red-base"
-            style={{ left: `${currentPrecent}%` }}
-            id="myBar"
-          ></motion.div>
-        </motion.div>
       </section>
     </>
   )

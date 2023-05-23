@@ -3,11 +3,13 @@ const DetailCardSm = ({ even, image, heading, description }) => {
     return (
       <div className={`grid grid-cols-2 px-4`}>
         <div className="px-4">
-          <h3 className="font-gluten text-lg font-bold text-red-900">{heading}</h3>
+          <h3 className="mb-4 font-gluten text-lg font-bold leading-5 text-red-900">{heading}</h3>
           <img src={image} alt="imaze" />
         </div>
         <div>
-          <h3 className="pt-16 text-justify font-gluten text-[10px] font-semibold text-white">{description}</h3>
+          <h3 className="pt-16 text-justify font-lexend text-[10px] font-semibold leading-3 text-white">
+            {description}
+          </h3>
         </div>
       </div>
     )
@@ -15,11 +17,15 @@ const DetailCardSm = ({ even, image, heading, description }) => {
   return (
     <div className={`grid grid-cols-2 px-4`}>
       <div>
-        <h3 className="pt-16 text-justify font-gluten text-[10px] font-semibold text-white">{description}</h3>
+        <h3 className="pt-16 text-justify font-lexend text-[10px] font-semibold leading-3 text-white">
+          {description.slice(0, 250)}
+        </h3>
       </div>
-      <div className="px-4">
-        <h3 className="font-gluten text-lg font-bold text-red-900">{heading}</h3>
-        <img src={image} alt="imaze" />
+      <div className=" px-4">
+        <h3 className="mb-4 font-gluten text-lg font-bold leading-5 text-red-900">{heading}</h3>
+        <div className="my-auto flex h-[70%] w-full items-center justify-center rounded-2xl border-2 border-b-4 border-r-4 border-black bg-[#FFBF37] object-contain">
+          <img src={image} alt="imaze" />
+        </div>
       </div>
     </div>
   )

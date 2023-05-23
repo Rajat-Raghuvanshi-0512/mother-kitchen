@@ -110,16 +110,17 @@ const ReviewsSm = () => {
       </div>
       <div className="relative mt-10 overflow-x-auto md:mt-0">
         <Carousel
-          autoPlay
           autoFocus
           centerMode={true}
           centerSlidePercentage={70}
-          infiniteLoop={true}
           showIndicators={false}
           showStatusBar={false}
           showStatus={false}
           showArrows={false}
           renderThumbs={renderCustomThumbs}
+          emulateTouch={true}
+          selectedItem={1}
+          infiniteLoop={true}
         >
           {reviews1.map((review, idx) => (
             <ReviewCard {...review} key={review.name + idx} />

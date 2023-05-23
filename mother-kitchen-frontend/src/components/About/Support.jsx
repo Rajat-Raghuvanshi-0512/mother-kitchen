@@ -10,7 +10,7 @@ const Support = () => {
           alt="heading"
           className="absolute -z-[1] mx-auto mt-8 h-11 w-full object-contain md:mt-7 md:h-16 lg:mt-5 lg:h-24"
         />
-        <h2 className="white-stroke z-[11] py-10 text-center font-gluten text-2xl font-black uppercase text-red-base md:text-4xl lg:text-6xl">
+        <h2 className="white-stroke z-[11] py-10 text-center font-gluten text-2xl font-semibold uppercase text-red-base md:text-4xl md:font-black lg:text-6xl">
           We <span className="black-shadow text-white">support</span>
         </h2>
         <div className="grid gap-5 md:grid-cols-2 md:gap-0">

@@ -65,26 +65,26 @@ const TeamInfo = () => {
         for our mission and work tirelessly to advance it
       </div>
       <BorderDiv className="bg-[#D07D41] p-10">
-        <div className="mt-5 flex justify-center">
+        <div className="flex justify-center md:mt-5">
           <img src={TeamHeading} alt="heading" className="absolute -z-10 -mt-2 h-10 md:-mt-5 md:h-20" />
           <h3 className="text-center font-lexend text-sm font-semibold text-white drop-shadow-3xl md:text-3xl">
             Executive Team
           </h3>
         </div>
         <div className="mx-auto mt-10 flex gap-7 md:w-[60vw] md:gap-36">
-          <div className="flex flex-1 flex-col items-center p-8 font-gluten text-white">
-            <ImageBox image={Shivani} />
+          <div className="flex flex-1 flex-col items-center font-gluten text-white lg:p-8">
+            <ImageBox image={Shivani} className={'!rounded'} />
             <h5 className="mt-4 text-center md:text-2xl">SHIVANI MALIK</h5>
-            <p className="text-xs md:my-3 md:text-xl">Founder & CEO</p>
+            <p className="my-1 text-xs md:my-3 md:text-xl">Founder & CEO</p>
             <p className="text-center font-lexend  text-[6px] font-[100] md:text-sm">
               A successful entrepreneur having 21+ years of experience across verticals. Actively working with focused
               projects on women & child mentorship programs.
             </p>
           </div>
-          <div className="flex flex-1 flex-col items-center p-8 font-gluten text-white">
-            <ImageBox image={Sunil} />
+          <div className="flex flex-1 flex-col items-center font-gluten text-white lg:p-8">
+            <ImageBox image={Sunil} className={'!rounded'} />
             <h5 className="mt-4 text-center md:text-2xl">SUNIL CHAUHAN</h5>
-            <p className="text-xs md:my-3 md:text-xl">CoFounder</p>
+            <p className="my-1 text-xs md:my-3 md:text-xl">CoFounder</p>
             <p className="text-center font-lexend text-[6px] font-[100] md:text-sm">
               A successful entrepreneur having 21+ years of experience across verticals. Actively working with focused
               projects on women & child mentorship programs.
