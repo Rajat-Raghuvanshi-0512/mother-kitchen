@@ -86,7 +86,7 @@ const renderCustomThumbs = () => {
 }
 const ProductsSm = () => {
   return (
-    <>
+    <div className="pb-14">
       <section className="py-5 md:py-24">
         <div className="flex items-center justify-center">
           <img src={ProductsHeading} alt="heading" className="absolute -z-20 h-14" />
@@ -114,7 +114,8 @@ const ProductsSm = () => {
           </div>
         </div>
       </section>
-    </>
+      <ProductsInfiniteScroll />
+    </div>
   )
 }
 const ProductsLg = ({ productsRef, handleLeftClick, handleRightClick }) => {

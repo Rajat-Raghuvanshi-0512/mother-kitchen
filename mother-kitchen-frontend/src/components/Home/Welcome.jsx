@@ -10,13 +10,13 @@ const KitchenItems = [
     color: 'bg-[#7B4512]',
   },
   {
-    largeHeading: 'Health on the Go',
+    largeHeading: 'Health in the Kitchen',
     smallHeading: 'Spreads By Mother’s Kitchen',
     image: kitchen2,
     color: 'bg-[#7B3212]',
   },
   {
-    largeHeading: 'Health on the Table',
+    largeHeading: 'Health in the Kitchen',
     smallHeading: 'Bites By Mother’s Kitchen',
     image: kitchen3,
     color: 'bg-[#DAA235]',
