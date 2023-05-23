@@ -4,7 +4,7 @@ import BorderDiv from '../custom/BorderDiv'
 
 const ComingSoonSm = () => {
   return (
-    <div className="relative">
+    <div className="relative -mb-20">
       <img src={SoonBg} alt="soon" className="relative mt-5 h-full w-full object-contain" />
       <div className="absolute top-0 w-full">
         <h3 className="relative left-[50%] top-[50%] w-[55vw] translate-x-[-50%] translate-y-[-50%] border-b-2 border-t-2 border-white py-2 text-center font-lexend  text-2xl text-white">
