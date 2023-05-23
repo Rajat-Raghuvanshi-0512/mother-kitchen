@@ -61,7 +61,7 @@ const Discover = () => {
         <img
           src={YellowBg}
           alt="bg"
-          className="absolute top-0 -z-50 h-[70vh]  md:-top-[20rem] md:h-auto md:w-screen 2xl:h-[160vh]"
+          className="absolute top-0 -z-50 h-[470px]  md:-top-[20rem] md:h-auto md:w-screen 2xl:h-[160vh]"
         />
         <h2 className="white-stroke my-5 -rotate-6 pl-10 font-gluten text-3xl font-bold text-red-base md:-mt-40 md:mb-0 md:pl-40 md:text-7xl">
           A Tale of <span className="text-black">Discovery!</span>
