@@ -86,7 +86,7 @@ const renderCustomThumbs = () => {
 }
 const ProductsSm = () => {
   return (
-    <div className="pb-14">
+    <div className="w-screen overflow-clip pb-14">
       <section className="py-5 md:py-24">
         <div className="flex items-center justify-center">
           <img src={ProductsHeading} alt="heading" className="absolute -z-20 h-14" />

@@ -45,11 +45,11 @@ const scrollData = [
 
 const ProductsInfiniteScroll = () => {
   return (
-    <section className="w-screen overflow-x-hidden">
-      <div className="animate-infinite absolute left-0 flex h-12 bg-yellow-dark shadow-md md:h-20">
+    <section className="w-screen">
+      <div className="animate-infinite flex h-12 bg-yellow-dark shadow-md md:h-20">
         <div className="flex items-center justify-center ">
-          {scrollData.map((item) => (
-            <div className="flex w-[250px] items-center md:w-[400px]" key={item.text}>
+          {scrollData.map((item, idx) => (
+            <div className="flex w-[250px] items-center md:w-[400px]" key={item.text + idx}>
               <img src={item.image} alt="logo" className="w-20 md:w-28" />
               <span className="px-4 font-gluten text-base font-bold text-red-base even:text-white md:px-10 md:text-2xl">
                 {item.text}
@@ -58,8 +58,8 @@ const ProductsInfiniteScroll = () => {
           ))}
         </div>
         <div className="flex items-center justify-center ">
-          {scrollData.map((item) => (
-            <div className="flex w-[250px] items-center md:w-[400px]" key={item.text}>
+          {scrollData.map((item, idx) => (
+            <div className="flex w-[250px] items-center md:w-[400px]" key={item.text + idx}>
               <img src={item.image} alt="logo" className="w-20 md:w-28" />
               <span className="px-4 font-gluten text-base font-bold text-red-base even:text-white md:px-10 md:text-2xl">
                 {item.text}
