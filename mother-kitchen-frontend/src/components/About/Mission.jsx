@@ -2,17 +2,17 @@ import { GreenYellowBg, MissionBgPhone, Rocket, SuperWoman } from '../../assets'
 
 const MissionSm = () => {
   return (
-    <section className="relative h-[100vh]">
-      <img src={MissionBgPhone} alt="bg" className="absolute left-0 top-0 -z-10 h-[100vh] w-full" />
+    <section className="relative h-[650px]">
+      <img src={MissionBgPhone} alt="bg" className="absolute left-0 top-0 -z-10 h-full w-full" />
       <div className="grid">
         <div className="flex items-center justify-center pr-5">
-          <img src={SuperWoman} alt="" className="absolute top-44 h-[230px] w-[230px] object-contain" />
+          <img src={SuperWoman} alt="" className="absolute top-40 h-[230px] w-[230px] object-contain" />
         </div>
         <div className="font-lexend text-sm font-[500] md:pr-20 lg:my-28 2xl:mt-44">
           <h3 className="mt-14 px-11 py-5 text-center font-gluten text-3xl font-bold text-white">
             Embarking on a <span className="text-black">long journey</span>
           </h3>
-          <div className="relative mx-4 mt-32 rounded-3xl border-4  border-r-8 border-[#A57717] bg-[#FFE7B5] p-3 text-[10px] leading-3">
+          <div className="relative mx-4 mt-28 rounded-3xl border-4  border-r-8 border-[#A57717] bg-[#FFE7B5] p-3 text-[10px] leading-3">
             <p>
               Our mission is to become the most trusted and reliable brand for products in the market, offering products
               that are made with the highest quality ingredients and are free from harmful chemicals and additives. We
