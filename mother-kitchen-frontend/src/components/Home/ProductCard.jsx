@@ -7,6 +7,7 @@ const ProductsCardSm = ({ image, price, quantity, title, desc, btnText, color })
     >
       <div className="flex h-[200px] items-center justify-center ">
         <img
+          loading="lazy"
           src={image}
           alt="x"
           className={`h-full object-contain drop-shadow-3xl ${
@@ -40,7 +41,7 @@ const ProductsCardMd = ({ image, price, quantity, title, desc, btnText, color, i
       className={`relative my-10 h-[380px] w-[310px] rounded-3xl border-4 border-b-8 border-r-8 border-black p-3 font-lexend ${color}`}
     >
       <div className="flex h-[200px] items-center justify-center ">
-        <img src={image} alt="x" className="h-full object-contain drop-shadow-lg" />
+        <img loading="lazy" src={image} alt="x" className="h-full object-contain drop-shadow-lg" />
         <div className="absolute right-4 top-4">
           <AiFillHeart className="z-10 h-8 w-8 text-red-500 drop-shadow-lg" />
           <AiFillHeart className="absolute -left-[1.5px] -top-[1.5px] -z-[1] h-9 w-9 text-black drop-shadow-lg" />
@@ -59,7 +60,7 @@ const ProductsCardMd = ({ image, price, quantity, title, desc, btnText, color, i
           <h6 className="mt-2 px-1 pr-3 font-gluten text-sm leading-3 text-white">{desc}</h6>
         </div>
       </div>
-      <img src={icon} alt="icon" className="absolute -bottom-10 -right-10 w-20 " />
+      <img loading="lazy" src={icon} alt="icon" className="absolute -bottom-10 -right-10 w-20 " />
     </div>
   )
 }
@@ -70,6 +71,7 @@ const ProductsCardLg = ({ image, price, quantity, title, desc, btnText, color, i
     >
       <div className="flex h-[230px] w-full items-center justify-center ">
         <img
+          loading="lazy"
           src={image}
           alt="x"
           className={`h-full object-contain drop-shadow-3xl ${
@@ -94,7 +96,7 @@ const ProductsCardLg = ({ image, price, quantity, title, desc, btnText, color, i
           <h6 className="mt-2 pr-3 font-gluten text-xs leading-3 text-white">{desc}</h6>
         </div>
       </div>
-      <img src={icon} alt="icon" className="absolute -bottom-10 -right-10 w-20 " />
+      <img loading="lazy" src={icon} alt="icon" className="absolute -bottom-10 -right-10 w-20 " />
     </div>
   )
 }

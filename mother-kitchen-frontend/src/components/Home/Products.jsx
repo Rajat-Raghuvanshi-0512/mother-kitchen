@@ -89,7 +89,7 @@ const ProductsSm = () => {
     <div className="w-screen overflow-clip pb-14">
       <section className="py-5 md:py-24">
         <div className="flex items-center justify-center">
-          <img src={ProductsHeading} alt="heading" className="absolute -z-20 h-14" />
+          <img loading="lazy" src={ProductsHeading} alt="heading" className="absolute -z-20 h-14" />
           <h3 className="text-center font-gluten text-xl font-bold text-red-base">
             &quot;<span className="text-[#553500]"> TOP-</span>rated by taste buds &quot;
           </h3>
@@ -134,7 +134,7 @@ const ProductsLg = ({ productsRef, handleLeftClick, handleRightClick }) => {
     <>
       <section className="pb-24 pt-10 2xl:mx-36">
         <div className="flex items-center justify-center">
-          <img src={ProductsHeading} alt="heading" className="absolute -z-20 h-24" />
+          <img loading="lazy" src={ProductsHeading} alt="heading" className="absolute -z-20 h-24" />
           <h3 className="text-center font-gluten text-3xl font-bold text-red-base">
             &quot;<span className="text-[#553500]"> TOP-</span>rated by taste buds &quot;
           </h3>

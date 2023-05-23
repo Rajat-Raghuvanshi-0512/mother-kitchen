@@ -34,7 +34,7 @@ const CircularDiv = ({ image, text, idx }) => {
           : ''
       } `}
     >
-      <img src={image} alt="item" className="w-10 md:w-6 lg:w-10" />
+      <img loading="lazy" src={image} alt="item" className="w-10 md:w-6 lg:w-10" />
       <p className="mt-1 text-center font-gluten text-xs font-semibold leading-3 md:text-[7px] md:leading-[6px] lg:text-xs lg:leading-3">
         {text}
       </p>
@@ -47,7 +47,7 @@ const NutritionSm = () => {
     <section className="pb-10">
       <div className="clipped-bg relative flex items-center justify-center py-32">
         <div className="flex w-screen items-center justify-center ">
-          <img src={GirlBadge} alt="girl-badge" className="w-48" />
+          <img loading="lazy" src={GirlBadge} alt="girl-badge" className="w-48" />
         </div>
         {nutritionData.map((item, idx) => (
           <CircularDiv image={item.image} idx={idx} text={item.text} key={item.text} />
@@ -60,7 +60,7 @@ const NutritionMd = () => {
   return (
     <section className="py-20">
       <div className="relative flex h-24 items-center justify-evenly border-4 border-l-0 border-r-0 bg-yellow-dark pl-52 shadow-md">
-        <img src={GirlBadge} alt="girl-badge" className="absolute -top-10 left-10 w-40" />
+        <img loading="lazy" src={GirlBadge} alt="girl-badge" className="absolute -top-10 left-10 w-40" />
         {nutritionData.map((item) => (
           <CircularDiv image={item.image} text={item.text} key={item.text} />
         ))}
@@ -73,7 +73,7 @@ const NutritionLg = () => {
   return (
     <section className="py-10 md:py-24 ">
       <div className="relative flex h-32 items-center justify-evenly border-4 border-l-0 border-r-0 bg-yellow-dark pl-64 shadow-md">
-        <img src={GirlBadge} alt="girl-badge" className="absolute -top-14 left-20 w-56" />
+        <img loading="lazy" src={GirlBadge} alt="girl-badge" className="absolute -top-14 left-20 w-56" />
         {nutritionData.map((item) => (
           <CircularDiv image={item.image} text={item.text} key={item.text} />
         ))}

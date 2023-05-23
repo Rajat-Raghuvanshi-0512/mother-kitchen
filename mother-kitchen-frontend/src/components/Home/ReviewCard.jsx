@@ -7,6 +7,7 @@ const ReviewCard = ({ name, profession, title, desc, bgColor, image }) => {
       <h5 className="mt-4 px-2 text-left text-sm font-bold md:text-base">{name}</h5>
       <h4 className="px-2  text-left text-[8px] font-semibold md:text-[10px]">{profession}</h4>
       <img
+        loading="lazy"
         src={image}
         alt=""
         className="mx-auto h-16 w-12 rounded-full border-2 border-b-8 border-r-8 border-black object-contain md:w-16"

@@ -6,25 +6,30 @@ const HeroSm = () => {
   return (
     <div className="flex flex-col">
       <div className="pb-10">
-        <img src={HeroBgSm} alt="vec" className="absolute left-0 -z-10 w-screen" />
+        <img loading="lazy" src={HeroBgSm} alt="vec" className="absolute left-0 -z-10 w-screen" />
         <div className="relative">
-          <img src={HHLeft} alt="elem" className="absolute  -top-4 left-24 hidden w-8 md:block" />
-          <img src={HHLeftMobile} alt="elem" className="absolute  -top-4 left-20 w-8 md:hidden" />
+          <img loading="lazy" src={HHLeft} alt="elem" className="absolute  -top-4 left-24 hidden w-8 md:block" />
+          <img loading="lazy" src={HHLeftMobile} alt="elem" className="absolute  -top-4 left-20 w-8 md:hidden" />
           <h2 className="mt-14 text-center font-gluten text-4xl font-black sm:text-7xl">
             <span className="text-red-base">Mindful</span> <br /> eating for <br /> well being.
           </h2>
-          <img src={HHRight} alt="elem" className="absolute -top-7 right-24 hidden w-8 md:block" />
-          <img src={HHRightMobile} alt="elem" className="absolute -top-7 right-20 w-8 md:hidden" />
+          <img loading="lazy" src={HHRight} alt="elem" className="absolute -top-7 right-24 hidden w-8 md:block" />
+          <img loading="lazy" src={HHRightMobile} alt="elem" className="absolute -top-7 right-20 w-8 md:hidden" />
         </div>
         <p className="px-13  text-center font-gluten text-xs md:text-sm">
           &ldquo;Bringing the warmth of mom&rsquo;s cooking to <br /> every kitchen, one delicious bite at a time.
         </p>
       </div>
       <div className=" -mt-10 flex items-start justify-end">
-        <img src={Girl} alt="gitl" />
+        <img loading="lazy" src={Girl} alt="gitl" />
       </div>
       <Button className="flex-1font-semibold mx-auto my-5 ">Scroll Down</Button>
-      <img src={ScrollDown} alt="scroll" className="mx-auto  h-5 w-5 animate-bounce object-contain md:hidden" />
+      <img
+        loading="lazy"
+        src={ScrollDown}
+        alt="scroll"
+        className="mx-auto  h-5 w-5 animate-bounce object-contain md:hidden"
+      />
     </div>
   )
 }
@@ -33,12 +38,12 @@ const HeroMd = () => {
     <div className="flex pl-14">
       <div className="left-section flex-1 py-14">
         <div className="relative">
-          <img src={HeroLVec} alt="vec" className="absolute -left-28 top-5 -z-10 w-[55%]" />
-          <img src={HHLeft} alt="elem" className="absolute -left-10 -top-7 w-10" />
+          <img loading="lazy" src={HeroLVec} alt="vec" className="absolute -left-28 top-5 -z-10 w-[55%]" />
+          <img loading="lazy" src={HHLeft} alt="elem" className="absolute -left-10 -top-7 w-10" />
           <h2 className="font-gluten text-6xl font-bold">
             <span className="text-red-base">Mindful</span> <br /> eating for <br /> well being.
           </h2>
-          <img src={HHRight} alt="elem" className="absolute -top-9 left-[17rem] w-10" />
+          <img loading="lazy" src={HHRight} alt="elem" className="absolute -top-9 left-[17rem] w-10" />
         </div>
         <p className="mt-5  font-lexend text-lg">
           &ldquo;Bringing the warmth of mom&rsquo;s cooking to every kitchen, one delicious bite at a time.
@@ -46,7 +51,7 @@ const HeroMd = () => {
         <Button className="flex-1font-semibold mt-5 !px-8 text-2xl">Shop Now</Button>
       </div>
       <div className="flex flex-1 items-start justify-end pt-4">
-        <img src={Girl} alt="gitl" />
+        <img loading="lazy" src={Girl} alt="gitl" />
       </div>
     </div>
   )
@@ -56,12 +61,12 @@ const HeroLg = () => {
     <div className="flex pl-28 2xl:px-[10rem]">
       <div className="left-section flex-1 py-14">
         <div className="relative">
-          <img src={HeroLVec} alt="vec" className="absolute -left-28 top-5 -z-10 w-[55%]" />
-          <img src={HHLeft} alt="elem" className="absolute -left-10 -top-7 w-10" />
+          <img loading="lazy" src={HeroLVec} alt="vec" className="absolute -left-28 top-5 -z-10 w-[55%]" />
+          <img loading="lazy" src={HHLeft} alt="elem" className="absolute -left-10 -top-7 w-10" />
           <h2 className="font-gluten text-6xl font-bold">
             <span className="text-red-base">Mindful</span> <br /> eating for <br /> well being.
           </h2>
-          <img src={HHRight} alt="elem" className="absolute -top-9 left-[17rem] w-10" />
+          <img loading="lazy" src={HHRight} alt="elem" className="absolute -top-9 left-[17rem] w-10" />
         </div>
         <p className="mt-5  font-lexend text-xl">
           &ldquo;Bringing the warmth of mom&rsquo;s <br /> cooking to every kitchen, one <br /> delicious bite at a
@@ -70,7 +75,7 @@ const HeroLg = () => {
         <Button className="flex-1font-semibold mt-5 !px-8 text-2xl">Shop Now</Button>
       </div>
       <div className="flex flex-1 items-start justify-end pt-4">
-        <img src={Girl} alt="gitl" />
+        <img loading="lazy" src={Girl} alt="gitl" />
       </div>
     </div>
   )

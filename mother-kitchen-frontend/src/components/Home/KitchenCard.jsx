@@ -13,6 +13,7 @@ const KitchenCard = ({ largeHeading, smallHeading, image, color }) => {
         {smallHeading && <p className="text-white ">{smallHeading} </p>}
       </div>
       <img
+        loading="lazy"
         src={image}
         alt="kc1"
         className="mx-auto w-[80%] object-contain object-top px-10 pt-2 md:h-auto md:w-auto lg:py-1"

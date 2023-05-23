@@ -27,7 +27,12 @@ const WelcomeSm = () => {
   return (
     <section className="mt-10 px-5 ">
       <h3 className="text-center font-gluten text-4xl font-medium text-red-base">Welcome to Mother’s Kitchen</h3>
-      <img src={KitchenBg} alt="bg" className="absolute left-0 -z-30 h-[120vh] w-full object-cover object-top" />
+      <img
+        loading="lazy"
+        src={KitchenBg}
+        alt="bg"
+        className="absolute left-0 -z-30 h-[120vh] w-full object-cover object-top"
+      />
       <div className="mx-3 mt-10 grid grid-cols-1 gap-10 md:mt-24">
         {KitchenItems.map((item) => (
           <KitchenCard key={item.smallHeading} largeHeading={item.largeHeading} color={item.color} image={item.image} />
@@ -42,6 +47,7 @@ const WelcomeLg = () => {
     <section className="px-5 md:mt-40 lg:px-20 2xl:mx-56">
       <h3 className="text-center font-gluten text-5xl font-bold text-red-base">Welcome to Mother’s Kitchen</h3>
       <img
+        loading="lazy"
         src={KitchenBg}
         alt="bg"
         className="absolute left-0 -z-30 w-full 2xl:left-[50%] 2xl:w-[75%] 2xl:translate-x-[-50%]"

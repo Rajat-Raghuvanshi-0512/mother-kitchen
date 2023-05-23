@@ -99,10 +99,11 @@ const ReviewsSm = () => {
   return (
     <section>
       <div className=" flex items-center justify-center">
-        <img src={ReviewHeading} alt="ax" className="w-[90%] xl:w-[70%]" />
+        <img loading="lazy" src={ReviewHeading} alt="ax" className="w-[90%] xl:w-[70%]" />
       </div>
       <div className="relative">
         <img
+          loading="lazy"
           src={reviewBg}
           alt="reviewbg"
           className="absolute top-20 -z-20 h-[80vh] scale-125 object-cover md:h-[200vh]"
@@ -134,10 +135,11 @@ const ReviewsLg = () => {
   return (
     <section>
       <div className=" flex items-center justify-center">
-        <img src={ReviewHeading} alt="ax" className="w-[90%] xl:w-[70%]" />
+        <img loading="lazy" src={ReviewHeading} alt="ax" className="w-[90%] xl:w-[70%]" />
       </div>
       <div className="relative">
         <img
+          loading="lazy"
           src={reviewBg}
           alt="reviewbg"
           className="absolute top-20 -z-20 h-[80vh] scale-125 object-cover md:h-[200vh]"

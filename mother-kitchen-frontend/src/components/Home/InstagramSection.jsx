@@ -12,7 +12,7 @@ const InstagramSectionSm = () => {
           <div className="font-gluten text-xl font-black ">Instagram</div>
         </h2>
         <div className="">
-          <img src={InstaImg} alt="instagrid" className="w-full" />
+          <img loading="lazy" src={InstaImg} alt="instagrid" className="w-full" />
         </div>
         <p className="mt-4 text-justify font-lexend text-xs font-medium leading-[14px]">
           &quot;Join our Instagram family to never miss a beat on what we&apos;re cooking up next! Get a
@@ -24,10 +24,10 @@ const InstagramSectionSm = () => {
         </div>
         <div className="relative grid h-24 grid-cols-2">
           <div>
-            <img src={Squirrel} alt="squirrel" className="h-28 w-28 object-contain object-top" />
+            <img loading="lazy" src={Squirrel} alt="squirrel" className="h-28 w-28 object-contain object-top" />
           </div>
           <div className="flex items-end justify-end">
-            <img src={Containers} alt="containers" className="absolute bottom-0 right-10 w-[100px]" />
+            <img loading="lazy" src={Containers} alt="containers" className="absolute bottom-0 right-10 w-[100px]" />
           </div>
         </div>
       </div>
@@ -53,15 +53,20 @@ const InstagramSectionMd = () => {
             <Button className="mt-5 text-xl font-semibold">Explore</Button>
             <div className="relative grid grid-cols-2">
               <div>
-                <img src={Squirrel} alt="squirrel" />
+                <img loading="lazy" src={Squirrel} alt="squirrel" />
               </div>
               <div className="flex items-end justify-end">
-                <img src={Containers} alt="containers" className="absolute -bottom-5 -right-10 w-[120px]" />
+                <img
+                  loading="lazy"
+                  src={Containers}
+                  alt="containers"
+                  className="absolute -bottom-5 -right-10 w-[120px]"
+                />
               </div>
             </div>
           </div>
           <div className="icon col-span-4 px-10">
-            <img src={InstaImg} alt="instagrid" className="w-full" />
+            <img loading="lazy" src={InstaImg} alt="instagrid" className="w-full" />
           </div>
         </div>
       </div>
@@ -87,15 +92,20 @@ const InstagramSectionLg = () => {
             <Button className="mt-5 text-xl font-semibold">Explore</Button>
             <div className="relative grid grid-cols-2">
               <div>
-                <img src={Squirrel} alt="squirrel" />
+                <img loading="lazy" src={Squirrel} alt="squirrel" />
               </div>
               <div className="flex items-end justify-end">
-                <img src={Containers} alt="containers" className="absolute -bottom-5 -right-10 w-[150px]" />
+                <img
+                  loading="lazy"
+                  src={Containers}
+                  alt="containers"
+                  className="absolute -bottom-5 -right-10 w-[150px]"
+                />
               </div>
             </div>
           </div>
           <div className="icon col-span-4 px-10 pb-10">
-            <img src={InstaImg} alt="instagrid" className="w-full" />
+            <img loading="lazy" src={InstaImg} alt="instagrid" className="w-full" />
           </div>
         </div>
       </div>

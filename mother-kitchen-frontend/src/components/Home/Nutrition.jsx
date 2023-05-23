@@ -9,7 +9,7 @@ const NutritionSm = () => {
       <section className="px-5 py-7 md:my-20">
         <YellowDiv className="flex flex-col">
           <div className="relative flex-1">
-            <img src={Nutrition} alt="nutrition" className="relative -top-6 w-[100%]" />
+            <img loading="lazy" src={Nutrition} alt="nutrition" className="relative -top-6 w-[100%]" />
           </div>
           <div className="z-10 flex-1 px-5">
             <h3 className="-mt-8 mb-5 text-center font-lexend text-xl font-semibold tracking-tighter">
@@ -45,6 +45,7 @@ const NutritionMd = () => {
         <YellowDiv className="flex">
           <div className="relative flex-1">
             <img
+              loading="lazy"
               src={Nutrition}
               alt="nutrition"
               className="absolute -top-10 h-full w-[100%] object-contain object-top"
@@ -79,6 +80,7 @@ const NutritionLg = () => {
         <YellowDiv className="flex">
           <div className="relative flex-1">
             <img
+              loading="lazy"
               src={Nutrition}
               alt="nutrition"
               className="absolute -top-10 h-full w-[100%] object-contain object-top"

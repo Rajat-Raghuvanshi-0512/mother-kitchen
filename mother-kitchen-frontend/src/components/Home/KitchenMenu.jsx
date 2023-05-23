@@ -28,20 +28,20 @@ const KithchenMenuSm = () => {
             renderThumbs={renderCustomThumbs}
           >
             <div className="  flex flex-col items-center justify-center">
-              <img src={Kitchen1} alt="k1" className="w-full object-cover" />
+              <img loading="lazy" src={Kitchen1} alt="k1" className="w-full object-cover" />
               <Button className=" !flex !items-center !justify-center gap-2 !bg-[#41041A] text-xs  font-bold hover:!bg-[#560c27]">
                 Chicken Curry <HiArrowNarrowRight />
               </Button>
             </div>
             <div className=" flex flex-col items-center justify-center">
-              <img src={kitchenMenu2} alt="k1" className="w-full object-cover" />
+              <img loading="lazy" src={kitchenMenu2} alt="k1" className="w-full object-cover" />
               <Button className="!flex !items-center !justify-center gap-2 !bg-[#41041A] text-xs font-bold hover:!bg-[#560c27]">
                 Dal Makhni
                 <HiArrowNarrowRight />
               </Button>
             </div>
             <div className="  flex flex-col items-center justify-center">
-              <img src={kitchenMenu3} alt="k1" className="w-full object-cover" />
+              <img loading="lazy" src={kitchenMenu3} alt="k1" className="w-full object-cover" />
               <Button className=" !flex !items-center !justify-center gap-2 !bg-[#41041A] text-xs  font-bold hover:!bg-[#560c27]">
                 Palak Paneer <HiArrowNarrowRight />
               </Button>
@@ -61,19 +61,19 @@ const KithchenMenuLg = () => {
         </h3>
         <div className="grid grid-cols-3 pb-7">
           <div className="flex flex-col items-center p-3">
-            <img src={Kitchen1} alt="k1" className="w-[80%]" />
+            <img loading="lazy" src={Kitchen1} alt="k1" className="w-[80%]" />
             <Button className="flex items-center gap-2 !bg-[#41041A] text-xl font-bold hover:!bg-[#560c27]">
               Chicken Curry <HiArrowNarrowRight />
             </Button>
           </div>
           <div className="flex flex-col items-center p-3">
-            <img src={kitchenMenu2} alt="k1" className="w-[80%]" />
+            <img loading="lazy" src={kitchenMenu2} alt="k1" className="w-[80%]" />
             <Button className="flex items-center gap-2 !bg-[#41041A] text-xl font-bold hover:!bg-[#560c27]">
               Dal Makhni <HiArrowNarrowRight />
             </Button>
           </div>
           <div className="flex flex-col items-center p-3">
-            <img src={kitchenMenu3} alt="k1" className="w-[80%]" />
+            <img loading="lazy" src={kitchenMenu3} alt="k1" className="w-[80%]" />
             <Button className="flex items-center gap-2 !bg-[#41041A] text-xl font-bold hover:!bg-[#560c27]">
               Palak Paneer <HiArrowNarrowRight />
             </Button>
