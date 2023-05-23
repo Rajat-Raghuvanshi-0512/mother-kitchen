@@ -12,7 +12,7 @@ const ContactInfo = () => {
         Hey there, hungry for some wholesome goodness? We&apos;re here to help satisfy your cravings and answer any
         questions you may have about our products. Whether you prefer to shoot us an email or give us a ring, our
         friendly team is always ready to serve up some delicious customer service.
-        <img src={BigCookie} alt="cookie" className="relative top-10 mx-auto md:hidden" />
+        <img src={BigCookie} alt="cookie" className="relative top-6 mx-auto w-20 md:hidden" />
       </p>
     </div>
   )

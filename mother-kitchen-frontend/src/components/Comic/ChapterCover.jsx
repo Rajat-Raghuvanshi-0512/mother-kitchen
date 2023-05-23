@@ -4,7 +4,7 @@ const ChapterCover = ({ seriesName, baseTextColor, baseBgColor, chapter, idx, ti
   return (
     <div className="my-16 ">
       <div
-        className={`w-[40vw] rounded-t-xl border-4 border-b-0 border-r-8 border-black px-3 py-1 font-gluten text-xs font-bold text-white md:w-[30vw] md:rounded-t-3xl md:px-5 md:py-3 md:pl-10 md:text-2xl ${
+        className={`w-[45vw] rounded-t-xl border-4 border-b-0 border-r-8 border-black px-3 py-1 font-gluten text-xs font-bold text-white md:w-[30vw] md:rounded-t-3xl md:px-5 md:py-3 md:pl-10 md:text-2xl ${
           idx % 2 == 0 ? 'ml-auto mr-3 md:mr-10' : 'ml-3 mr-auto md:ml-10'
         }  ${baseBgColor}`}
       >
@@ -19,11 +19,15 @@ const ChapterCover = ({ seriesName, baseTextColor, baseBgColor, chapter, idx, ti
               {chapter}
             </div>
           )}
-          <div>
+          <div className="flex">
             <ol
-              className={`w-[20vw] list-decimal text-center ${baseTextColor} relative top-3 mt-auto font-gluten font-black md:top-20 md:text-4xl  `}
+              className={`flex ${
+                chapter % 2 != 0 ? 'w-[50vw]' : 'w-[30vw]'
+              }  list-decimal ${baseTextColor} relative top-3 mt-auto font-gluten font-black md:top-20 md:text-4xl  `}
             >
-              <li value={chapter}>{title}</li>
+              <li value={chapter}>
+                <span className="relative">{title}</span>
+              </li>
             </ol>
           </div>
           {chapter % 2 != 0 && (

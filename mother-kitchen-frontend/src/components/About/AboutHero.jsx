@@ -25,9 +25,9 @@ const AboutHero = () => {
             <img
               src={AboutHeroTextBgPhone}
               alt="sdd"
-              className="h-[200px] w-full object-cover md:h-[400px]  lg:hidden"
+              className="h-[220px] w-full object-cover md:h-[400px]  lg:hidden"
             />
-            <div className="absolute left-0 top-6 font-lexend text-[6px] tracking-tight md:top-10 md:px-20 md:text-sm md:leading-4 lg:top-10 lg:px-40 lg:font-semibold">
+            <div className="absolute left-0 top-3 font-lexend text-[8px] font-semibold tracking-tight md:top-10 md:px-20 md:text-sm md:leading-4 lg:top-10 lg:px-40 lg:font-semibold">
               <p className="mx-10 rounded-lg bg-[#FFD272] p-2 md:mx-0 md:mt-0 md:rounded-none">
                 At Mother&apos;s Kitchen, we are committed to providing our customers with pure and hygienic products.
                 Our brand was born out of a passion for good food and a desire to bring the best of nature&apos;s
@@ -36,8 +36,11 @@ const AboutHero = () => {
               <p className="mx-5 px-5 pt-3 md:mx-0">
                 We take great pride in the quality of our products and are committed to maintaining the highest
                 standards of hygiene and safety in our manufacturing processes. We work closely with our suppliers to
-                source only the best quality ingredients, and we use state-of-the-art technology and equipment to ensure
-                that our products are of the highest quality.
+                source only the best quality ingredients
+                <span className="hidden md:flex">
+                  and we use state-of-the-art technology and equipment to ensure that our products are of the highest
+                  quality.
+                </span>
               </p>
             </div>
           </div>

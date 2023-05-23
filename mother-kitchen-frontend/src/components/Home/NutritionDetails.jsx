@@ -22,20 +22,20 @@ const nutritionData = [
 const CircularDiv = ({ image, text, idx }) => {
   return (
     <div
-      className={`absolute flex h-28 w-28 flex-col items-center justify-center rounded-full border-4 border-white bg-[#FFD16E] p-2 md:relative md:h-20 md:w-20 lg:h-28 lg:w-28 ${
+      className={`before absolute flex h-28 w-28 flex-col items-center justify-center rounded-full border-4 border-white bg-[#FFD16E] p-2 before:absolute before:h-full before:w-full before:rounded-full before:border-black before:bg-black md:relative md:h-20 md:w-20 lg:h-28 lg:w-28 ${
         idx === 0
-          ? 'left-5 top-5'
+          ? 'left-5 top-5 before:-left-1 before:top-1 before:-z-10 before:scale-105'
           : idx === 1
-          ? 'right-7 top-7 scale-75'
+          ? 'right-7 top-0 h-[100px] w-[100px] before:-right-1 before:top-1 before:-z-10 before:scale-105'
           : idx === 2
-          ? 'bottom-7 left-7 scale-75'
+          ? 'bottom-7 left-7 h-[100px] w-[100px] before:-left-1 before:top-1 before:-z-10 before:scale-105'
           : idx === 3
-          ? 'bottom-5 right-5'
+          ? 'bottom-5 right-5 before:-right-1 before:top-1 before:-z-10 before:scale-105'
           : ''
       } `}
     >
       <img loading="lazy" src={image} alt="item" className="w-10 md:w-6 lg:w-10" />
-      <p className="mt-1 text-center font-gluten text-xs font-semibold leading-3 md:text-[7px] md:leading-[6px] lg:text-xs lg:leading-3">
+      <p className="mt-1 w-16 break-words text-center font-gluten text-[10px] font-semibold leading-3 md:text-[7px] md:leading-[6px] lg:text-xs lg:leading-3">
         {text}
       </p>
     </div>

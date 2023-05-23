@@ -13,17 +13,17 @@ const ContactForm = () => {
         <div className="flex flex-col gap-3 md:gap-5 lg:gap-8">
           <input
             type="text"
-            className="w-full rounded-xl border-2 border-b-4 border-r-4 border-black bg-[#976120]  p-2 py-3 text-[8px] text-white outline-none placeholder:text-white md:text-sm"
+            className="w-full rounded-xl border-2 border-b-4 border-r-4 border-black bg-[#976120]  p-2 py-3 text-[10px] text-white outline-none placeholder:text-white md:text-sm"
             placeholder="Your Name"
           />
           <input
             type="text"
-            className="w-full rounded-xl border-2 border-b-4 border-r-4 border-black bg-[#976120] p-2 py-3 text-[8px] text-white outline-none placeholder:text-white md:text-sm"
+            className="w-full rounded-xl border-2 border-b-4 border-r-4 border-black bg-[#976120] p-2 py-3 text-[10px] text-white outline-none placeholder:text-white md:text-sm"
             placeholder="Your Email"
           />
           <input
             type="text"
-            className="w-full rounded-xl border-2 border-b-4 border-r-4 border-black bg-[#976120] p-2 py-3 text-[8px] text-white outline-none placeholder:text-white md:text-sm"
+            className="w-full rounded-xl border-2 border-b-4 border-r-4 border-black bg-[#976120] p-2 py-3 text-[10px] text-white outline-none placeholder:text-white md:text-sm"
             placeholder="Your Number"
           />
           <textarea
@@ -31,7 +31,7 @@ const ContactForm = () => {
             id="contact"
             cols="50"
             rows="8"
-            className="mt-5 w-full resize-none rounded-xl border-2 border-b-4 border-r-4 border-black bg-[#976120] p-2 text-[8px] text-white outline-none placeholder:text-white md:text-sm"
+            className="mt-5 w-full resize-none rounded-xl border-2 border-b-4 border-r-4 border-black bg-[#976120] p-2 text-[10px] text-white outline-none placeholder:text-white md:text-sm"
             placeholder="Write your message..."
           ></textarea>
           <button

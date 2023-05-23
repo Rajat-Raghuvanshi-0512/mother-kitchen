@@ -1,7 +1,8 @@
+import { lazy } from 'react'
 import { Nutrition } from '../../assets'
-import NutritionDetails from './NutritionDetails'
-import Button from '../custom/Button'
-import YellowDiv from '../custom/YellowDiv'
+const NutritionDetails = lazy(() => import('./NutritionDetails'))
+const Button = lazy(() => import('../custom/Button'))
+const YellowDiv = lazy(() => import('../custom/YellowDiv'))
 
 const NutritionSm = () => {
   return (
