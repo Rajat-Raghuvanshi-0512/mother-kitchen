@@ -4,8 +4,9 @@ import { RiInstagramLine, RiTwitterLine, RiUser3Fill } from 'react-icons/ri'
 import { TbBrandLinkedin } from 'react-icons/tb'
 import { BsQuestionCircle } from 'react-icons/bs'
 import { TextLogo, footerImg } from '../assets'
+import { Link, useLocation } from 'react-router-dom'
 
-const FooterSm = () => {
+const FooterSm = ({ location }) => {
   return (
     <footer className="m-1 mt-20 rounded-bl-3xl rounded-br-3xl border-4 border-b-[14px] border-l-4 border-r-[10px] border-black bg-[#031E29] p-2 pb-0 text-white">
       <div className="mb-5 mt-2 flex w-full justify-between rounded-full border-2 border-b-4 border-r-4 border-black bg-white p-1">
@@ -40,13 +41,45 @@ const FooterSm = () => {
         <div className=" ml-auto flex  flex-col text-xl">
           <div className="pr- flex justify-end text-xs">
             <div className="relative">
-              <div className="border-b-2  border-r-2 p-2 text-[#C842DE]">Home</div>
-              <div className="border-r-2 p-2">Team</div>
+              <div className="border-b-2  border-r-2 p-2">
+                <Link
+                  to={'/'}
+                  className={`${location.pathname === '/' && 'text-[#C842DE]'}`}
+                  onClick={() => scrollTo(0, 0)}
+                >
+                  Home
+                </Link>
+              </div>
+              <div className="border-r-2 p-2">
+                <Link
+                  to={'/team'}
+                  className={`${location.pathname === '/team' && 'text-[#C842DE]'}`}
+                  onClick={() => scrollTo(0, 0)}
+                >
+                  Team
+                </Link>
+              </div>
               <div className="absolute bottom-[43%] left-[87%] h-3 w-3 rounded-full bg-[#031E29] "></div>
             </div>
             <div>
-              <div className="p-2 ">About</div>
-              <div className="border-t-2  p-2">Comic</div>
+              <div className="p-2 ">
+                <Link
+                  to={'/about'}
+                  className={`${location.pathname === '/about' && 'text-[#C842DE]'}`}
+                  onClick={() => scrollTo(0, 0)}
+                >
+                  About
+                </Link>
+              </div>
+              <div className="border-t-2  p-2">
+                <Link
+                  to={'/comic'}
+                  className={`${location.pathname === '/comic' && 'text-[#C842DE]'}`}
+                  onClick={() => scrollTo(0, 0)}
+                >
+                  Comic
+                </Link>
+              </div>
             </div>
           </div>
           <img src={TextLogo} alt="logo" className="relative -right-5 top-10 w-20" />
@@ -55,7 +88,7 @@ const FooterSm = () => {
     </footer>
   )
 }
-const FooterMd = () => {
+const FooterMd = ({ location }) => {
   return (
     <footer className="m-1 mt-20 rounded-bl-3xl rounded-br-3xl border-4 border-b-[15px] border-l-[10px] border-r-[10px] border-black bg-[#031E29] p-4 pb-0 text-white">
       <a href="mailto:contact@motherskitchen.co.in" className="font-gluten text-xs">
@@ -87,13 +120,45 @@ const FooterMd = () => {
         <div className=" ml-auto flex  flex-col text-xl">
           <div className="flex justify-end pr-10">
             <div className="relative">
-              <div className="border-b-2  border-r-2 p-4 text-[#C842DE]">Home</div>
-              <div className="border-r-2 p-4">Team</div>
+              <div className="border-b-2  border-r-2 p-4">
+                <Link
+                  to={'/'}
+                  className={`${location.pathname === '/' && 'text-[#C842DE]'}`}
+                  onClick={() => scrollTo(0, 0)}
+                >
+                  Home
+                </Link>
+              </div>
+              <div className="border-r-2 p-4">
+                <Link
+                  to={'/team'}
+                  className={`${location.pathname === '/team' && 'text-[#C842DE]'}`}
+                  onClick={() => scrollTo(0, 0)}
+                >
+                  Team
+                </Link>
+              </div>
               <div className="absolute bottom-[45%] left-[92%] h-3 w-3 rounded-full bg-[#031E29] "></div>
             </div>
             <div>
-              <div className="p-4 ">About</div>
-              <div className="border-t-2  p-4">Comic</div>
+              <div className="p-4 ">
+                <Link
+                  to={'/about'}
+                  className={`${location.pathname === '/about' && 'text-[#C842DE]'}`}
+                  onClick={() => scrollTo(0, 0)}
+                >
+                  About
+                </Link>
+              </div>
+              <div className="border-t-2  p-4">
+                <Link
+                  to={'/comic'}
+                  className={`${location.pathname === '/comic' && 'text-[#C842DE]'}`}
+                  onClick={() => scrollTo(0, 0)}
+                >
+                  Comic
+                </Link>
+              </div>
             </div>
           </div>
           <div className="ml-auto mt-10 pr-5">
@@ -108,7 +173,7 @@ const FooterMd = () => {
     </footer>
   )
 }
-const FooterLg = () => {
+const FooterLg = ({ location }) => {
   return (
     <footer className="m-3 mt-20 rounded-bl-3xl rounded-br-3xl border-4 border-b-[15px] border-l-[10px] border-r-[10px] border-black bg-[#031E29] p-4 pb-0 text-white">
       <a href="mailto:contact@motherskitchen.co.in" className="font-gluten">
@@ -140,13 +205,45 @@ const FooterLg = () => {
         <div className=" ml-auto flex  flex-col text-xl">
           <div className="flex justify-end pr-20">
             <div className="relative">
-              <div className="border-b-2  border-r-2 p-4 text-[#C842DE]">Home</div>
-              <div className="border-r-2 p-4">Team</div>
+              <div className="border-b-2  border-r-2 p-4">
+                <Link
+                  to={'/'}
+                  className={`${location.pathname === '/' && 'text-[#C842DE]'}`}
+                  onClick={() => scrollTo(0, 0)}
+                >
+                  Home
+                </Link>
+              </div>
+              <div className="border-r-2 p-4">
+                <Link
+                  to={'/team'}
+                  className={`${location.pathname === '/team' && 'text-[#C842DE]'}`}
+                  onClick={() => scrollTo(0, 0)}
+                >
+                  Team
+                </Link>
+              </div>
               <div className="absolute bottom-[45%] left-[92%] h-3 w-3 rounded-full bg-[#031E29] "></div>
             </div>
             <div>
-              <div className="p-4 ">About</div>
-              <div className="border-t-2  p-4">Comic</div>
+              <div className="p-4 ">
+                <Link
+                  to={'/about'}
+                  className={`${location.pathname === '/about' && 'text-[#C842DE]'}`}
+                  onClick={() => scrollTo(0, 0)}
+                >
+                  About
+                </Link>
+              </div>
+              <div className="border-t-2  p-4">
+                <Link
+                  to={'/comic'}
+                  className={`${location.pathname === '/comic' && 'text-[#C842DE]'}`}
+                  onClick={() => scrollTo(0, 0)}
+                >
+                  Comic
+                </Link>
+              </div>
             </div>
           </div>
           <div className="ml-auto mt-20 pr-5">
@@ -163,18 +260,19 @@ const FooterLg = () => {
 }
 
 const Footer = () => {
+  const location = useLocation()
   return (
     <div>
       <div className="md:hidden ">
         {/*Small Screen*/}
-        <FooterSm />
+        <FooterSm location={location} />
       </div>
 
       <div className="hidden md:block lg:hidden">
-        <FooterMd />
+        <FooterMd location={location} />
       </div>
       <div className="hidden lg:block">
-        <FooterLg />
+        <FooterLg location={location} />
       </div>
     </div>
   )

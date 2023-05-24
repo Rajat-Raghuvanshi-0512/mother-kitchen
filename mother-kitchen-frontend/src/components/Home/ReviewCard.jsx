@@ -2,7 +2,7 @@ import { AiFillStar } from 'react-icons/ai'
 const ReviewCard = ({ name, profession, title, desc, bgColor, image }) => {
   return (
     <div
-      className={`w-[270px] rounded-lg border-2 border-b-8 border-r-8 border-black font-lexend text-white shadow-xl  md:w-[370px] md:rounded-3xl md:border-4 md:border-b-[13px] md:border-r-[13px] md:p-4 ${bgColor} `}
+      className={`w-[250px] rounded-lg border-2 border-b-8 border-r-8 border-black font-lexend text-white shadow-xl  md:w-[370px] md:rounded-3xl md:border-4 md:border-b-[13px] md:border-r-[13px] md:p-4 ${bgColor} `}
     >
       <h5 className="mt-4 px-2 text-left text-sm font-bold md:text-base">{name}</h5>
       <h4 className="px-2  text-left text-[8px] font-semibold md:text-[10px]">{profession}</h4>

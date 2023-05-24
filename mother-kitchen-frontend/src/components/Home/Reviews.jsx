@@ -98,7 +98,7 @@ const renderCustomThumbs = () => {
 const ReviewsSm = () => {
   return (
     <section>
-      <div className=" flex items-center justify-center">
+      <div className="flex items-center justify-center">
         <img loading="lazy" src={ReviewHeading} alt="ax" className="w-[90%] xl:w-[70%]" />
       </div>
       <div className="relative">
@@ -109,11 +109,11 @@ const ReviewsSm = () => {
           className="absolute top-20 -z-20 h-[80vh] scale-125 object-cover md:h-[200vh]"
         />
       </div>
-      <div className="relative mt-10 overflow-x-auto md:mt-0">
+      <div className="relative mt-10 md:mt-0">
         <Carousel
           autoFocus
           centerMode={true}
-          centerSlidePercentage={70}
+          centerSlidePercentage={65}
           showIndicators={false}
           showStatusBar={false}
           showStatus={false}
