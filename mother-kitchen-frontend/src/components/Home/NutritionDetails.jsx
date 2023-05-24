@@ -22,7 +22,7 @@ const nutritionData = [
 const CircularDiv = ({ image, text, idx }) => {
   return (
     <div
-      className={`before absolute flex h-28 w-28 flex-col items-center justify-center rounded-full border-4 border-white bg-[#FFD16E] p-2 before:absolute before:h-full before:w-full before:rounded-full before:border-black before:bg-black md:relative md:h-20 md:w-20 lg:h-28 lg:w-28 ${
+      className={`absolute flex h-28 w-28 flex-col items-center justify-center rounded-full border-4 border-white bg-[#FFD16E] p-2 before:absolute before:h-full before:w-full before:rounded-full before:border-black before:bg-black md:relative md:h-20 md:w-20 before:md:bg-transparent lg:h-28 lg:w-28 ${
         idx === 0
           ? 'left-5 top-5 before:-left-1 before:top-1 before:-z-10 before:scale-105'
           : idx === 1
