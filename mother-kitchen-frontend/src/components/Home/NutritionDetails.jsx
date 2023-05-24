@@ -35,7 +35,7 @@ const CircularDiv = ({ image, text, idx }) => {
       } `}
     >
       <img loading="lazy" src={image} alt="item" className="w-10 md:w-6 lg:w-10" />
-      <p className="mt-1 w-16 break-words text-center font-gluten text-[10px] font-semibold leading-3 md:text-[7px] md:leading-[6px] lg:text-xs lg:leading-3">
+      <p className="mt-1 w-16 break-words text-center font-gluten text-[10px] font-semibold leading-3 md:break-inside-auto md:text-[7px] md:leading-[6px] lg:text-[10px] lg:leading-3">
         {text}
       </p>
     </div>
