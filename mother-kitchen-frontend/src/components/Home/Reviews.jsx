@@ -1,6 +1,6 @@
-import { Carousel } from 'react-responsive-carousel'
 import { ReviewHeading, review1, review2, review3, review4, review5, review6, reviewBg } from '../../assets'
 import ReviewCard from './ReviewCard'
+import Slider from 'infinite-react-carousel'
 
 const reviews1 = [
   {
@@ -87,14 +87,6 @@ const reviews2 = [
   },
 ]
 
-const renderCustomThumbs = () => {
-  const thumbList = Array.from(Array(reviews1.length)).map((item) => (
-    <div key={item} className=" reviewsThumb h-[6px] w-3 rounded-full bg-[#9C7F47]"></div>
-  ))
-
-  return thumbList
-}
-
 const ReviewsSm = () => {
   return (
     <section>
@@ -109,24 +101,12 @@ const ReviewsSm = () => {
           className="absolute top-20 -z-20 h-[80vh] scale-125 object-cover md:h-[200vh]"
         />
       </div>
-      <div className="relative mt-10 md:mt-0">
-        <Carousel
-          autoFocus
-          centerMode={true}
-          centerSlidePercentage={65}
-          showIndicators={false}
-          showStatusBar={false}
-          showStatus={false}
-          showArrows={false}
-          renderThumbs={renderCustomThumbs}
-          emulateTouch={true}
-          selectedItem={1}
-          infiniteLoop={true}
-        >
+      <div className=" mt-10 md:mt-0">
+        <Slider centerMode={true} centerPadding={70} shift={70} arrows={false} dots={true}>
           {reviews1.map((review, idx) => (
             <ReviewCard {...review} key={review.name + idx} />
           ))}
-        </Carousel>
+        </Slider>
       </div>
     </section>
   )

@@ -13,7 +13,7 @@ import ProductCard from './ProductCard'
 import ProductsInfiniteScroll from './ProductsInfiniteScroll'
 import { useScroll, motion, useTransform } from 'framer-motion'
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi'
-import { Carousel } from 'react-responsive-carousel'
+import Slider from 'infinite-react-carousel'
 
 const productsData = [
   {
@@ -77,13 +77,6 @@ const productsData = [
     icon: ProductItemSm2,
   },
 ]
-const renderCustomThumbs = () => {
-  const thumbList = Array.from(Array(productsData.length)).map((item) => (
-    <div key={item} className=" productsthumb h-[6px] w-3 rounded-full bg-white/40"></div>
-  ))
-
-  return thumbList
-}
 const ProductsSm = () => {
   return (
     <div className="w-screen overflow-clip pb-14">
@@ -95,22 +88,12 @@ const ProductsSm = () => {
           </h3>
         </div>
         <div className="relative pt-10">
-          <div className="w-full">
-            <Carousel
-              autoFocus
-              centerMode={true}
-              centerSlidePercentage={70}
-              selectedItem={1}
-              showIndicators={false}
-              showStatusBar={false}
-              showStatus={false}
-              showArrows={false}
-              renderThumbs={renderCustomThumbs}
-            >
+          <div className="products w-full">
+            <Slider centerMode={true} centerPadding={70} shift={70} arrows={false} dots={true}>
               {productsData.map((product) => (
                 <ProductCard key={product.title} {...product} />
               ))}
-            </Carousel>
+            </Slider>
           </div>
         </div>
       </section>

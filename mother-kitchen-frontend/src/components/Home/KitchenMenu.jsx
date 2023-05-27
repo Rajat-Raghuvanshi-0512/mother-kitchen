@@ -1,13 +1,8 @@
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { Kitchen1, kitchenMenu2, kitchenMenu3 } from '../../assets'
 import Button from '../custom/Button'
-import { Carousel } from 'react-responsive-carousel'
+import Slider from 'infinite-react-carousel'
 
-const renderCustomThumbs = () => {
-  const thumbList = [1, 2, 3].map((item) => <div key={item} className=" h-[6px] w-3 rounded-full bg-white/40"></div>)
-
-  return thumbList
-}
 const KithchenMenuSm = () => {
   return (
     <section className="py-20">
@@ -15,38 +10,35 @@ const KithchenMenuSm = () => {
         <h3 className="py-5 text-center font-gluten font-bold leading-5 text-white">
           Droolworthy Recipes by <br /> Mother’s Kitchen
         </h3>
-        <div>
-          <Carousel
-            autoPlay
-            autoFocus
-            centerMode={true}
-            centerSlidePercentage={60}
-            infiniteLoop={true}
-            showIndicators={false}
-            showStatusBar={false}
-            showStatus={false}
-            renderThumbs={renderCustomThumbs}
-          >
-            <div className="  flex flex-col items-center justify-center">
-              <img loading="lazy" src={Kitchen1} alt="k1" className="w-full object-cover" />
-              <Button className=" !flex !items-center !justify-center gap-2 !bg-[#41041A] text-xs  font-bold hover:!bg-[#560c27]">
-                Chicken Curry <HiArrowNarrowRight />
-              </Button>
+        <div className="kitchen">
+          <Slider centerMode={true} centerPadding={70} shift={70} arrows={false} dots={true}>
+            <div>
+              <div className="!flex !flex-col !items-center justify-center">
+                <img loading="lazy" src={Kitchen1} alt="k1" className="w-full object-cover" />
+                <Button className=" mx-auto !flex !items-center !justify-center gap-2 !bg-[#41041A] text-xs  font-bold hover:!bg-[#560c27]">
+                  Chicken Curry <HiArrowNarrowRight />
+                </Button>
+              </div>
             </div>
-            <div className=" flex flex-col items-center justify-center">
-              <img loading="lazy" src={kitchenMenu2} alt="k1" className="w-full object-cover" />
-              <Button className="!flex !items-center !justify-center gap-2 !bg-[#41041A] text-xs font-bold hover:!bg-[#560c27]">
-                Dal Makhni
-                <HiArrowNarrowRight />
-              </Button>
+            <div>
+              <div className=" flex flex-col items-center justify-center">
+                <img loading="lazy" src={kitchenMenu2} alt="k1" className="w-full object-cover" />
+                <Button className="!flex !items-center !justify-center gap-2 !bg-[#41041A] text-xs font-bold hover:!bg-[#560c27]">
+                  Dal Makhni
+                  <HiArrowNarrowRight />
+                </Button>
+              </div>
             </div>
-            <div className="  flex flex-col items-center justify-center">
-              <img loading="lazy" src={kitchenMenu3} alt="k1" className="w-full object-cover" />
-              <Button className=" !flex !items-center !justify-center gap-2 !bg-[#41041A] text-xs  font-bold hover:!bg-[#560c27]">
-                Palak Paneer <HiArrowNarrowRight />
-              </Button>
+            <div>
+              {' '}
+              <div className="  flex flex-col items-center justify-center">
+                <img loading="lazy" src={kitchenMenu3} alt="k1" className="w-full object-cover" />
+                <Button className=" !flex !items-center !justify-center gap-2 !bg-[#41041A] text-xs  font-bold hover:!bg-[#560c27]">
+                  Palak Paneer <HiArrowNarrowRight />
+                </Button>
+              </div>
             </div>
-          </Carousel>
+          </Slider>
         </div>
       </div>
     </section>
