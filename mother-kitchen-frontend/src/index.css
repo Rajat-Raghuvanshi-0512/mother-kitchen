@@ -126,6 +126,9 @@ body {
 .carousel-next {
   padding-left: 30px !important;
 }
+.carousel-track {
+  transition: all 0.4s;
+}
 .carousel-prev:before {
   background-image: url('./assets/home/left-arrow.png') !important;
   height: 40px !important;
