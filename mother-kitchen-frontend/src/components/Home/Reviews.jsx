@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import { ReviewHeading, review1, review2, review3, review4, review5, review6, reviewBg } from '../../assets'
 import ReviewCard from './ReviewCard'
 import Slider from 'infinite-react-carousel'
@@ -112,6 +113,20 @@ const ReviewsSm = () => {
   )
 }
 const ReviewsLg = () => {
+  const upperReviews = useRef()
+  const lowerReviews = useRef()
+
+  const getScrollOffset = () => {
+    upperReviews.current.style.transform = `translateX(${window.pageYOffset.toFixed(1) / 5}px)`
+    lowerReviews.current.style.transform = `translateX(-${window.pageYOffset.toFixed(1) / 5}px)`
+    upperReviews.current.style.transition = ' all 0.4s'
+    lowerReviews.current.style.transition = ' all 0.4s'
+    console.log(lowerReviews.current.classList)
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', getScrollOffset)
+    return () => window.removeEventListener('scroll', getScrollOffset)
+  }, [])
   return (
     <section>
       <div className=" flex items-center justify-center">
@@ -125,13 +140,19 @@ const ReviewsLg = () => {
           className="absolute top-20 -z-20 h-[80vh] scale-125 object-cover md:h-[200vh]"
         />
       </div>
-      <div className="relative mt-10 overflow-x-auto md:mt-0">
-        <div className="-left-10 flex w-max select-none gap-10 overflow-hidden px-10 pb-20 md:pt-28 [&>*:nth-child(odd)]:translate-y-20">
+      <div className="relative mt-10 md:mt-0">
+        <div
+          className={`relative -left-[80vw] flex w-max select-none gap-10 overflow-hidden px-10 pb-20 md:pt-28 [&>*:nth-child(odd)]:translate-y-20`}
+          ref={upperReviews}
+        >
           {reviews1.map((review, idx) => (
             <ReviewCard {...review} key={review.name + idx} />
           ))}
         </div>
-        <div className="-left-10 hidden w-max select-none gap-5 overflow-hidden px-10 pb-20 pt-5 md:flex md:gap-10 [&>*:nth-child(odd)]:translate-y-20">
+        <div
+          className="relative -left-[-40vw] hidden w-max select-none gap-5 overflow-hidden px-10 pb-20 pt-5 md:flex md:gap-10 [&>*:nth-child(odd)]:translate-y-20 "
+          ref={lowerReviews}
+        >
           {reviews2.map((review, idx) => (
             <ReviewCard {...review} key={review.name + idx} />
           ))}
