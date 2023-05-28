@@ -138,12 +138,7 @@ body {
   background-color: #9c7f47 !important;
   opacity: 100 !important;
 }
-.carousel-item {
-  scale: 80% !important;
-}
-.carousel-track .active {
-  scale: 100% !important;
-}
+
 .carousel-dots li.carousel-dots-active {
   margin-right: 16px;
 }
@@ -162,7 +157,28 @@ body {
 .kitchen .carousel-dots li.carousel-dots-active button:before {
   background-color: #41041a !important;
 }
+.carousel-prev {
+  padding-right: 30px !important;
+}
+.carousel-next {
+  padding-left: 30px !important;
+}
+.carousel-prev:before {
+  background-image: url('./assets/home/left-arrow.png') !important;
+  height: 40px !important;
+  width: 40px !important;
+}
+.carousel-next:before {
+  height: 40px !important;
+  background-image: url('./assets/home/right-arrow.png') !important;
+}
 @media (max-width: 600px) {
+  .carousel-item {
+    scale: 80% !important;
+  }
+  .carousel-track .active {
+    scale: 100% !important;
+  }
   .animate-infinite {
     width: calc(250px * 20);
     animation: rotateInfinite 8s linear infinite;

@@ -38,7 +38,7 @@ const ProductsCardSm = ({ image, price, quantity, title, desc, btnText, color })
 const ProductsCardMd = ({ image, price, quantity, title, desc, btnText, color, icon }) => {
   return (
     <div
-      className={`relative my-10 h-[380px] w-[310px] rounded-3xl border-4 border-b-8 border-r-8 border-black p-3 font-lexend ${color}`}
+      className={`relative my-10 h-[380px] w-[270px] rounded-3xl border-4 border-b-8 border-r-8 border-black p-3 font-lexend ${color}`}
     >
       <div className="flex h-[200px] items-center justify-center ">
         <img loading="lazy" src={image} alt="x" className="h-full object-contain drop-shadow-lg" />
@@ -67,16 +67,15 @@ const ProductsCardMd = ({ image, price, quantity, title, desc, btnText, color, i
 const ProductsCardLg = ({ image, price, quantity, title, desc, btnText, color, icon }) => {
   return (
     <div
-      className={`relative z-[5] my-10 h-[380px] w-[310px] rounded-3xl border-4 border-b-8 border-r-8 border-black p-3 font-lexend ${color}`}
+      className={`relative z-[5] mx-auto my-10 h-[380px] w-[310px] rounded-3xl border-4 border-b-8 border-r-8 border-black p-3 font-lexend ${color}`}
     >
-      <div className="flex h-[230px] w-full items-center justify-center ">
+      <div className="flex h-[230px] w-[280px] items-center justify-center ">
         <img
           loading="lazy"
           src={image}
           alt="x"
-          className={`h-full object-contain drop-shadow-3xl ${
-            title === 'Green Mint Chutney' ? 'relative -top-10 scale-125' : ''
-          } `}
+          className={`h-full w-full
+           object-contain drop-shadow-3xl ${title === 'Green Mint Chutney' ? 'relative -top-10 scale-125' : ''} `}
         />
         <div className="absolute right-4 top-4">
           <AiFillHeart className="z-10 h-8 w-8 text-red-500 drop-shadow-lg" />

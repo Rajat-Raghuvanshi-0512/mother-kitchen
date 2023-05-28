@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useRef } from 'react'
 import {
   Hazelnut,
   ProductItemSm1,
@@ -11,10 +11,7 @@ import {
 } from '../../assets'
 import ProductCard from './ProductCard'
 import ProductsInfiniteScroll from './ProductsInfiniteScroll'
-import { useScroll, motion, useTransform } from 'framer-motion'
-import { BiChevronLeft, BiChevronRight } from 'react-icons/bi'
-import Slider from 'infinite-react-carousel'
-
+import { Slider } from 'infinite-react-carousel/lib'
 const productsData = [
   {
     image: product1,
@@ -101,55 +98,24 @@ const ProductsSm = () => {
     </div>
   )
 }
-const ProductsLg = ({ productsRef, handleLeftClick, handleRightClick }) => {
-  const { scrollXProgress } = useScroll({
-    container: productsRef,
-  })
-  const [currentPrecent, setCurrentPercent] = useState(null)
-  const XRange = useTransform(scrollXProgress, [0, 1], [0, 90])
-  useEffect(() => {
-    XRange.on('change', () => {
-      setCurrentPercent(Math.trunc(XRange.current))
-    })
-  }, [XRange])
-
+const ProductsLg = ({ productsRef }) => {
   return (
     <>
-      <section className="pb-24 pt-10 2xl:mx-36">
+      <section className="pb-24 pt-10 lg:mx-5 2xl:mx-36">
         <div className="flex items-center justify-center">
           <img loading="lazy" src={ProductsHeading} alt="heading" className="absolute -z-20 h-24" />
           <h3 className="text-center font-gluten text-3xl font-bold text-red-base">
             &quot;<span className="text-[#553500]"> TOP-</span>rated by taste buds &quot;
           </h3>
         </div>
-        <div className="relative pt-20">
-          <div className="px-20">
-            <motion.div className="flex gap-16 overflow-x-auto" ref={productsRef}>
-              {productsData.map((product) => (
-                <ProductCard key={product.title} {...product} />
-              ))}
-            </motion.div>
-          </div>
-          {/* Left Arrow */}
-          <div className="absolute left-5 top-[50%] -translate-x-0 cursor-pointer rounded-full p-2 text-2xl text-white group-hover:block">
-            <div className="-left-5 z-50 text-black" onClick={handleLeftClick}>
-              <BiChevronLeft className="h-10 w-10 lg:h-14 lg:w-14" />
-            </div>
-          </div>
-          {/* Right Arrow */}
-          <div className="absolute right-5 top-[50%] -translate-x-0 cursor-pointer rounded-full p-2 text-2xl text-white  group-hover:block 2xl:-right-5">
-            <div className="z-50 text-black" onClick={handleRightClick}>
-              <BiChevronRight className="h-10 w-10 lg:h-14 lg:w-14" />
-            </div>
-          </div>
+        <div className="relative overflow-x-scroll pt-20 lg:px-10" ref={productsRef}>
+          {/* <div className="flex"> */}
+          <Slider slidesToShow={3} dots={true} arrows={true} centerPadding={0} centerMode={true}>
+            {productsData.map((product) => (
+              <ProductCard key={product.title} {...product} />
+            ))}
+          </Slider>
         </div>
-        <motion.div className="progress-container relative mx-auto h-[6px] w-[10vw] overflow-hidden rounded-full bg-white/30">
-          <motion.div
-            className="absolute z-50 h-[6px] w-4 rounded-full bg-red-base"
-            style={{ left: `${currentPrecent}%` }}
-            id="myBar"
-          ></motion.div>
-        </motion.div>
       </section>
 
       <ProductsInfiniteScroll />
