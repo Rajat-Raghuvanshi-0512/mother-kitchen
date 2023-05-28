@@ -124,7 +124,7 @@ const ReviewsLg = () => {
     console.log(lowerReviews.current.classList)
   }
   useEffect(() => {
-    window.addEventListener('scroll', getScrollOffset)
+    window.addEventListener('scroll', getScrollOffset, { passive: true })
     return () => window.removeEventListener('scroll', getScrollOffset)
   }, [])
   return (
