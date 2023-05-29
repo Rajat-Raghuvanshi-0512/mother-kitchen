@@ -69,7 +69,7 @@ const NavSm = () => {
               >
                 {link.name}
               </Link>
-              <div className="my-4 h-[0.07px] bg-[#976120]" />
+              <div className="my-4 h-[1.5px] bg-[#976120]" />
             </div>
           )
         })}
@@ -85,7 +85,7 @@ const NavSm = () => {
           >
             Contact Us
           </Link>
-          <div className="my-4 h-[0.07px] bg-[#976120]" />
+          <div className="my-4 h-[1.5px] bg-[#976120]" />
         </div>
         <div className="grid grid-cols-3 pb-5">
           <div className="col-span-1 flex items-center">
