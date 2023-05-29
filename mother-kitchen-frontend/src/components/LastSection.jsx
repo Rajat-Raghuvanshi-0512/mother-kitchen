@@ -1,27 +1,27 @@
 import NavigationButton from './custom/NavigationButtons'
 
-const LastSection = () => {
+const LastSection = ({ elements = [] }) => {
   return (
     <div className="navigationButtons mx-5 mt-20 flex flex-col items-center justify-center gap-7 rounded-3xl bg-[#FFD47A] p-5 md:flex-row md:bg-transparent lg:m-24">
       <NavigationButton
         path={'/comic'}
-        className="w-40 bg-[#42DE6E] font-lexend text-xl font-extralight tracking-[-0.2rem] md:w-auto lg:px-[3.1rem] lg:py-5 lg:text-xl"
+        className="w-40 bg-[#42DE6E] text-center font-lexend text-xl font-extralight tracking-[-0.2rem] md:w-auto lg:px-[3.1rem] lg:py-5 lg:text-xl"
       >
-        Comics
+        {elements[0] || 'Comics'}
       </NavigationButton>
       <div className="hidden h-20 w-[1.5px] bg-black lg:block" />
       <NavigationButton
         path={'/brands'}
-        className="w-40 bg-[#42D5DE] font-lexend text-xl font-extralight tracking-[-0.2rem] md:w-auto lg:px-[3.1rem] lg:py-5 lg:text-xl"
+        className="w-40 bg-[#42D5DE] text-center font-lexend text-xl font-extralight tracking-[-0.2rem] md:w-auto lg:px-[3.1rem] lg:py-5 lg:text-xl"
       >
-        Brands
+        {elements[1] || 'Brands'}
       </NavigationButton>
       <div className="hidden h-20 w-[1.5px] bg-black lg:block" />
       <NavigationButton
         path={'/contact'}
-        className="w-40 bg-[#C842DE] font-lexend text-xl font-extralight tracking-[-0.2rem] md:w-auto lg:px-[3.1rem] lg:py-5 lg:text-xl"
+        className="w-40 bg-[#C842DE] text-center font-lexend text-xl font-extralight tracking-[-0.2rem] md:w-auto lg:px-[3.1rem] lg:py-5 lg:text-xl"
       >
-        Contact
+        {elements[2] || 'Contact'}
       </NavigationButton>
     </div>
   )

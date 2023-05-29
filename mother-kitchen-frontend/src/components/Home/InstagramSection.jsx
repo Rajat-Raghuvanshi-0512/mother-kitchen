@@ -1,14 +1,14 @@
-import { ImInstagram } from 'react-icons/im'
 import Button from '../custom/Button'
-import { Containers, InstaImg, Squirrel } from '../../assets'
+import { Containers, InstaIcon, InstaImg, Squirrel } from '../../assets'
+import { HiArrowNarrowRight } from 'react-icons/hi'
 
 const InstagramSectionSm = () => {
   return (
     <section className="mt-16 px-4 ">
       <div className="rounded-2xl border-4 border-b-8 border-r-8 border-black bg-[#EF3D69] px-5 py-4 text-white">
-        <ImInstagram className="h-10 w-10 text-black" />
-        <h2 className="pt-3 text-2xl">
-          <div className="font-lexend text-sm font-medium tracking-tighter text-black">Find us on</div>
+        <img src={InstaIcon} alt="insta" className="h-10 w-10 object-contain" />
+        <h2 className=" text-2xl">
+          <div className="font-lexend text-base font-medium tracking-tighter text-black">Find us on</div>
           <div className="font-gluten text-xl font-black ">Instagram</div>
         </h2>
         <div className="">
@@ -20,7 +20,9 @@ const InstagramSectionSm = () => {
           we&apos;re bringing the warmth of mom&apos;s cooking to your table.&quot;
         </p>
         <div className="flex justify-end">
-          <Button className="ml-auto mt-5 text-xl font-semibold">Explore</Button>
+          <Button className="ml-auto mt-5 flex items-center justify-center gap-2 text-xl font-semibold">
+            Explore <HiArrowNarrowRight />
+          </Button>
         </div>
         <div className="relative grid h-24 grid-cols-2">
           <div>
@@ -40,7 +42,7 @@ const InstagramSectionMd = () => {
       <div className="rounded-2xl border-[6px] border-b-[16px] border-r-[16px] border-black bg-[#EF3D69] px-8 py-4 text-white">
         <div className="grid grid-cols-6 gap-10 font-lexend">
           <div className="icon col-span-2">
-            <ImInstagram className="h-14 w-14 text-black" />
+            <img src={InstaIcon} alt="insta" className="h-20 w-20 object-contain" />
             <h2 className="py-5 text-2xl">
               <div className="font-semibold tracking-tighter text-black">Find us on</div>
               <div className="mt-2 font-gluten text-3xl font-black ">Instagram</div>
@@ -79,7 +81,7 @@ const InstagramSectionLg = () => {
       <div className="rounded-2xl border-[6px] border-b-[14px] border-r-[14px] border-black bg-[#EF3D69] px-8 text-white">
         <div className="grid grid-cols-6 gap-10 font-lexend">
           <div className="icon col-span-2 pt-10">
-            <ImInstagram className="h-12 w-12 text-black" />
+            <img src={InstaIcon} alt="insta" className="h-20 w-20 object-contain" />
             <h2 className="py-5 text-3xl">
               <div className="font-lexend  font-semibold tracking-tighter text-black">Find us on</div>
               <div className="font-gluten text-5xl font-black ">Instagram</div>
@@ -89,7 +91,9 @@ const InstagramSectionLg = () => {
               behind-the-scenes look at the love and passion that goes into every Mother&apos;s Kitchen product, and see
               how we&apos;re bringing the warmth of mom&apos;s cooking to your table.&quot;
             </p>
-            <Button className="mt-5 text-xl font-semibold">Explore</Button>
+            <Button className="mt-5 flex items-center justify-center gap-3 text-xl font-semibold">
+              Explore <HiArrowNarrowRight />
+            </Button>
             <div className="relative grid grid-cols-2">
               <div>
                 <img loading="lazy" src={Squirrel} alt="squirrel" />

@@ -4,21 +4,21 @@ import DetailCard from './DetailCard'
 const details = [
   {
     image: InfoImg1,
-    heading: 'HOW OUR IDEA ORIGINATED',
+    heading: "The Rise of Mother's Kitchen",
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ad praesentium quibusdam hic magnam labore, numquam dolorum totam consequuntur, placeat vel quas provident, quos magni impedit fugit molestias tenetur quaerat?',
+      "In 2018, Shivani Malik founded Mother's Kitchen. With her passion and hard work, Mother's Kitchen quickly became popular. The brand expanded to Canada and the UK, providing customers in those countries with healthy and nutritious options",
   },
   {
     image: InfoImg2,
-    heading: 'HOW IT EXPANDED',
+    heading: 'The Global Expansion',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore unde ipsum reiciendis repudiandae omnis qui placeat assumenda iusto natus quidem adipisci sequi accusamus officiis consequatur, a officia! Voluptatum cupiditate quasi dicta fugit omnis nam impedit accusamus inventore veniam corporis eveniet ipsum vero repellat, laboriosam delectus autem aut quos perferendis aliquid!',
+      "Over the next few years, the idea of Mother's Kitchen continued to spread globally, reaching many other countries such as Hong Kong, New Zealand, Australia, Oman, The USA and turkey. Cementing its status as a global leader in the FMCG industry.",
   },
   {
     image: InfoImg3,
     heading: 'HOW LANNDED TO INDIA',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ad praesentium quibusdam hic magnam labore, numquam dolorum totam consequuntur, placeat vel quas provident, quos magni impedit fugit molestias tenetur quaerat?',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit augue vel turpis vehicula consequat. Morbi consequat lacus et nulla elementum auctor. In luctus ipsum eu ante convallis, at iaculis felis ultrices. Nullam non pulvinar leo.',
   },
 ]
 

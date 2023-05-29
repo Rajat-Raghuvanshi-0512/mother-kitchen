@@ -20,7 +20,7 @@ const ReviewCard = ({ name, profession, title, desc, bgColor, image }) => {
         <AiFillStar className="h-3 w-3 text-yellow-500 drop-shadow-sm  md:h-6 md:w-6" />
       </div>
       <h3 className=" my-4 px-2 text-center text-sm font-bold drop-shadow-md md:text-xl">{title}</h3>
-      <p className=" my-4 px-4 text-justify text-[9px] font-semibold drop-shadow-md md:text-xs">{desc}</p>
+      <p className=" my-4 px-4 text-center text-[9px] font-semibold drop-shadow-md md:text-xs">{desc}</p>
     </div>
   )
 }

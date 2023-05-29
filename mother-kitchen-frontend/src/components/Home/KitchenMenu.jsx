@@ -15,7 +15,7 @@ const KithchenMenuSm = () => {
             <div>
               <div className="!flex !flex-col !items-center justify-center">
                 <img loading="lazy" src={Kitchen1} alt="k1" className="w-full object-cover" />
-                <Button className=" mx-auto !flex !items-center !justify-center gap-2 !bg-[#41041A] text-xs  font-bold hover:!bg-[#560c27]">
+                <Button className=" mx-auto !flex !items-center !justify-center gap-2 !bg-[#41041A] text-xs  font-bold hover:!bg-green-base">
                   Chicken Curry <HiArrowNarrowRight />
                 </Button>
               </div>
@@ -23,7 +23,7 @@ const KithchenMenuSm = () => {
             <div>
               <div className=" flex flex-col items-center justify-center">
                 <img loading="lazy" src={kitchenMenu2} alt="k1" className="w-full object-cover" />
-                <Button className="!flex !items-center !justify-center gap-2 !bg-[#41041A] text-xs font-bold hover:!bg-[#560c27]">
+                <Button className="!flex !items-center !justify-center gap-2 !bg-[#41041A] text-xs font-bold hover:!bg-green-base">
                   Dal Makhni
                   <HiArrowNarrowRight />
                 </Button>
@@ -33,7 +33,7 @@ const KithchenMenuSm = () => {
               {' '}
               <div className="  flex flex-col items-center justify-center">
                 <img loading="lazy" src={kitchenMenu3} alt="k1" className="w-full object-cover" />
-                <Button className=" !flex !items-center !justify-center gap-2 !bg-[#41041A] text-xs  font-bold hover:!bg-[#560c27]">
+                <Button className=" !flex !items-center !justify-center gap-2 !bg-[#41041A] text-xs  font-bold hover:!bg-green-base">
                   Palak Paneer <HiArrowNarrowRight />
                 </Button>
               </div>
@@ -54,19 +54,19 @@ const KithchenMenuLg = () => {
         <div className="grid grid-cols-3 pb-7">
           <div className="flex flex-col items-center p-3">
             <img loading="lazy" src={Kitchen1} alt="k1" className="w-[80%]" />
-            <Button className="flex items-center gap-2 !bg-[#41041A] text-xl font-bold hover:!bg-[#560c27]">
+            <Button className="flex items-center gap-2 !bg-[#41041A] text-xl font-bold hover:!bg-green-base">
               Chicken Curry <HiArrowNarrowRight />
             </Button>
           </div>
           <div className="flex flex-col items-center p-3">
             <img loading="lazy" src={kitchenMenu2} alt="k1" className="w-[80%]" />
-            <Button className="flex items-center gap-2 !bg-[#41041A] text-xl font-bold hover:!bg-[#560c27]">
+            <Button className="flex items-center gap-2 !bg-[#41041A] text-xl font-bold hover:!bg-green-base">
               Dal Makhni <HiArrowNarrowRight />
             </Button>
           </div>
           <div className="flex flex-col items-center p-3">
             <img loading="lazy" src={kitchenMenu3} alt="k1" className="w-[80%]" />
-            <Button className="flex items-center gap-2 !bg-[#41041A] text-xl font-bold hover:!bg-[#560c27]">
+            <Button className="flex items-center gap-2 !bg-[#41041A] text-xl font-bold hover:!bg-green-base">
               Palak Paneer <HiArrowNarrowRight />
             </Button>
           </div>

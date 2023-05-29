@@ -41,6 +41,7 @@ import ProductItemSm3 from './home/productItemSmall3.png'
 import HHLeftMobile from './home/hh-left.png'
 import HHRightMobile from './home/hh-right.png'
 import ScrollDown from './home/scroll-down.png'
+import InstaIcon from './home/instagram.png'
 
 import CameraAndGirl from './about/camera_and_girl.png'
 import AboutHeroTextBgPhone from './about/text-bg-phone.png'
@@ -69,7 +70,7 @@ import SmallWheel from './discover/small_wheel.webp'
 import GirlShoot from './discover/girl_shoot.webp'
 import Wiring from './discover/wiring.webp'
 import Camera from './discover/camera.webp'
-import Film from './discover/film.webp'
+import Film from './discover/film.png'
 import YellowBg from './discover/yellow_stripe_bg.webp'
 import DancingWomen from './discover/support.webp'
 import InfoImg1 from './discover/info1.webp'
@@ -123,6 +124,7 @@ export {
   Vegan,
   ProductsHeading,
   Hazelnut,
+  InstaIcon,
   AdorableMealsImg,
   FamilyFlavoursImg,
   HomeCraftedImg,

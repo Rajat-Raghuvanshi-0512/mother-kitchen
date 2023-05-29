@@ -8,7 +8,7 @@ const Brands = () => {
         OUR <span className="black-shadow font-lexend text-2xl uppercase text-white md:text-4xl">Brands</span>
       </h2>
       <Brand />
-      <LastSection />
+      <LastSection elements={['Home', 'About', 'Contact']} />
     </div>
   )
 }

@@ -15,7 +15,7 @@ const NutritionSm = () => {
           <div className="z-10 flex-1 px-5">
             <h3 className="-mt-8 mb-5 text-center font-lexend text-xl font-semibold tracking-tighter">
               Pouring nutrition <br />{' '}
-              <span className="font-gluten text-2xl font-black text-red-base"> in your dish</span>
+              <span className="white-shadow font-gluten text-2xl font-black text-red-base"> in your dish</span>
             </h3>
             <p className="text-justify font-lexend text-xs md:text-sm">
               At Mother&rsquo;s Kitchen, love is always the first ingredient. Our top-quality ingredients and
@@ -55,7 +55,7 @@ const NutritionMd = () => {
           <div className="z-10 flex-1 p-5">
             <h3 className="mb-5 font-lexend text-2xl font-semibold">
               Pouring nutrition <br />{' '}
-              <span className="font-gluten text-3xl font-black text-red-base"> in your dish</span>
+              <span className="white-shadow font-gluten text-3xl font-black text-red-base"> in your dish</span>
             </h3>
             <p className="pr-4 text-justify font-lexend text-xs font-medium leading-4 tracking-[-0.01rem]">
               At Mother&rsquo;s Kitchen, love is always the first ingredient. Our top-quality ingredients and

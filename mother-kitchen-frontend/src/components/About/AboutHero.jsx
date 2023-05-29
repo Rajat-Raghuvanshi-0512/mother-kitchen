@@ -27,7 +27,7 @@ const AboutHero = () => {
               alt="sdd"
               className="h-[320px] w-full object-cover md:h-[400px]  lg:hidden"
             />
-            <div className="absolute left-0 top-3 font-lexend text-[10px] font-semibold tracking-tight md:top-10 md:px-20 md:text-sm md:leading-4 lg:top-10 lg:px-40 lg:font-semibold">
+            <div className="absolute left-0 top-3 text-center font-lexend text-[10px] font-semibold tracking-tight md:top-10 md:px-20 md:text-sm md:leading-4 lg:top-10 lg:px-40 lg:font-bold">
               <p className="mx-10 rounded-lg bg-[#FFD272] p-2 md:mx-0 md:mt-0 md:rounded-none">
                 At Mother&apos;s Kitchen, we are committed to providing our customers with pure and hygienic products.
                 Our brand was born out of a passion for good food and a desire to bring the best of nature&apos;s

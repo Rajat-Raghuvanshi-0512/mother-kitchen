@@ -8,7 +8,7 @@ const About = () => {
       <Mission />
       <Discover />
       <Support />
-      <LastSection />
+      <LastSection elements={['Home', 'Comics', 'Contact']} />
     </>
   )
 }

@@ -61,7 +61,6 @@ body {
 .comic-text-shadow {
   text-shadow: black 3px 3px;
 }
-
 .black-shadow {
   text-shadow: black 2px 2px;
 }
@@ -142,12 +141,27 @@ body {
   height: 40px !important;
   background-image: url('./assets/home/right-arrow.png') !important;
 }
+.discover-shadow {
+  text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff, 6px 6px black;
+}
 @media (max-width: 600px) {
   .carousel-item {
     scale: 80% !important;
   }
   .carousel-track .active {
     scale: 100% !important;
+  }
+  .white-shadow {
+    text-shadow: white 1px 1px;
+  }
+  .comic-text-shadow {
+    text-shadow: black 1px 1px;
+  }
+  .black-shadow {
+    text-shadow: black 1px 1px;
+  }
+  .discover-shadow {
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 3px 3px black;
   }
   .animate-infinite {
     width: calc(250px * 20);

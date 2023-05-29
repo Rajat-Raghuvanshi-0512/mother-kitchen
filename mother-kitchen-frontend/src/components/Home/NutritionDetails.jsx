@@ -26,11 +26,11 @@ const CircularDiv = ({ image, text, idx }) => {
         idx === 0
           ? 'left-5 top-5 before:-left-1 before:top-1 before:-z-10 before:scale-105'
           : idx === 1
-          ? 'right-7 top-0 h-[100px] w-[100px] before:-right-1 before:top-1 before:-z-10 before:scale-105'
+          ? 'right-10 top-4 h-[100px] w-[100px] before:-right-1 before:top-1 before:-z-10 before:scale-105'
           : idx === 2
           ? 'bottom-7 left-7 h-[100px] w-[100px] before:-left-1 before:top-1 before:-z-10 before:scale-105'
           : idx === 3
-          ? 'bottom-5 right-5 before:-right-1 before:top-1 before:-z-10 before:scale-105'
+          ? 'bottom-8 right-5 before:-right-1 before:top-1 before:-z-10 before:scale-105'
           : ''
       } `}
     >
@@ -47,7 +47,7 @@ const NutritionSm = () => {
     <section className="pb-10">
       <div className="clipped-bg relative flex items-center justify-center py-32">
         <div className="flex w-screen items-center justify-center ">
-          <img loading="lazy" src={GirlBadge} alt="girl-badge" className="w-48" />
+          <img loading="lazy" src={GirlBadge} alt="girl-badge" className="w-60" />
         </div>
         {nutritionData.map((item, idx) => (
           <CircularDiv image={item.image} idx={idx} text={item.text} key={item.text} />

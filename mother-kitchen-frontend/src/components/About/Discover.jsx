@@ -20,7 +20,7 @@ const Discover = () => {
         <img src={ProductsHeading} alt="heading" className="absolute  -z-20 mt-5 h-[3.3rem] md:mt-10 md:h-24" />
         <h2 className="text-center font-gluten text-2xl font-bold text-[#790000] md:text-5xl md:leading-[60px]">
           HOW?
-          <br /> WE DISCOVERED THE <br /> <span className="font-lexend text-white drop-shadow-3xl">MASCOT</span>
+          <br /> WE DISCOVERED THE <br /> <span className="black-shadow font-lexend text-white">MASCOT</span>
         </h2>
       </div>
       <div className="relative">
@@ -63,12 +63,12 @@ const Discover = () => {
           alt="bg"
           className="absolute top-0 -z-50 h-[470px]  md:-top-[20rem] md:h-auto md:w-screen 2xl:h-[160vh]"
         />
-        <h2 className="white-stroke my-5 -rotate-6 pl-10 font-gluten text-3xl font-bold text-red-base md:-mt-40 md:mb-0 md:pl-40 md:text-7xl">
+        <h2 className="discover-shadow my-5 -rotate-6 pl-10 font-gluten text-3xl font-bold text-red-base md:-mt-40 md:mb-0 md:pl-40 md:text-7xl">
           A Tale of <span className="text-black">Discovery!</span>
         </h2>
         <div className="flex flex-col items-end justify-end  md:pt-20">
           <img src={Film} alt="film" className="w-[90%] md:w-[80%]" />
-          <p className="w-[60vw] -rotate-3 text-center font-lexend text-[9px] font-semibold text-white drop-shadow-small md:mr-40 md:w-[40rem] md:text-xl">
+          <p className="w-[60vw] -rotate-3 text-center font-lexend text-[9px] font-semibold text-white drop-shadow-small md:mr-40 md:w-[40rem] md:text-lg md:font-bold">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit augue vel turpis vehicula consequat.
             <span className="hidden md:block">Morbi consequat lacus et nulla elementum auctor.</span>
           </p>

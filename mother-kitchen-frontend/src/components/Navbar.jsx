@@ -57,35 +57,37 @@ const NavSm = () => {
         </div>
         {navLinks.map((link) => {
           return (
-            <div key={link.name}>
-              <Link
-                to={link.path}
-                className={`${
-                  location.pathname === link.path
-                    ? 'border-b-2 border-r-4 border-black bg-[#E9787C] text-white'
-                    : 'text-black'
-                } rounded-full p-3 font-gluten text-xl font-extralight`}
-                onClick={closeModal}
-              >
-                {link.name}
-              </Link>
+            <Link className="w-full" to={link.path} key={link.name}>
+              <div onClick={closeModal}>
+                <span
+                  className={`${
+                    location.pathname === link.path
+                      ? 'border-b-2 border-r-4 border-black bg-[#E9787C] text-white'
+                      : 'text-black'
+                  } rounded-full p-3 font-gluten text-xl font-extralight`}
+                >
+                  {link.name}
+                </span>
+              </div>
               <div className="my-4 h-[1.5px] bg-[#976120]" />
-            </div>
+            </Link>
           )
         })}
         <div>
-          <Link
-            to="/contact"
-            className={`${
-              location.pathname === '/contact'
-                ? 'border-b-2 border-r-4 border-black bg-[#E9787C] text-white'
-                : 'text-black'
-            } rounded-full p-3 font-gluten text-xl font-extralight`}
-            onClick={closeModal}
-          >
-            Contact Us
+          <Link className="w-full" to="/contact">
+            <div onClick={closeModal}>
+              <span
+                className={`${
+                  location.pathname === '/contact'
+                    ? 'border-b-2 border-r-4 border-black bg-[#E9787C] text-white'
+                    : 'text-black'
+                } rounded-full p-3 font-gluten text-xl font-extralight`}
+              >
+                Contact Us
+              </span>
+            </div>
+            <div className="my-4 h-[1.5px] bg-[#976120]" />
           </Link>
-          <div className="my-4 h-[1.5px] bg-[#976120]" />
         </div>
         <div className="grid grid-cols-3 pb-5">
           <div className="col-span-1 flex items-center">

@@ -9,7 +9,7 @@ const Home = () => {
       <Welcome />
       <Reviews />
       <InstagramSection />
-      <LastSection />
+      <LastSection elements={['About', 'Comics', 'Brand']} />
     </div>
   )
 }
