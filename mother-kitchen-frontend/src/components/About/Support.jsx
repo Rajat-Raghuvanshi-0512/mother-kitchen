@@ -18,7 +18,7 @@ const Support = () => {
             <img src={DancingWomen} alt="women" className="h-full w-full object-contain" />
           </div>
           <div className="md:px-10">
-            <p className="mx-3 rounded-lg bg-[#FFDBA0] p-4 text-center font-lexend text-[7px] font-medium tracking-tighter shadow-md drop-shadow-sm md:mx-0 md:rounded-2xl md:p-8 md:text-[10px] lg:p-12 lg:text-base">
+            <p className="mx-3 rounded-lg bg-[#FFDBA0] p-4 text-center font-lexend text-[10px] font-medium tracking-tighter shadow-md drop-shadow-sm md:mx-0 md:rounded-2xl md:p-8 lg:p-12 lg:text-base">
               At Mother Kitchen, we firmly believe in the power of women and their invaluable contributions to society.
               We understand that women&apos;s empowerment is crucial for the growth and development of individuals,
               families, and communities. <br /> <br />
