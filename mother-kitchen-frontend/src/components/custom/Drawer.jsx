@@ -7,9 +7,7 @@ const Drawer = ({ isOpen, children }) => {
     >
       <div className={` fixed left-[10px] top-5 w-[95%] rounded-3xl md:max-w-lg`}>
         <div className="relative h-full w-full md:h-auto ">
-          <div className=" z-50 h-full w-full rounded-3xl border-4 border-black bg-white pl-5 pr-10 shadow">
-            {children}
-          </div>
+          <div className=" z-50 h-full w-full rounded-3xl border-4 border-black bg-white px-5 shadow">{children}</div>
         </div>
       </div>
     </div>

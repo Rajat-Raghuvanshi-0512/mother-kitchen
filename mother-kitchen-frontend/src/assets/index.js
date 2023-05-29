@@ -1,5 +1,5 @@
 import TextLogo from './logo_text.webp'
-import TextLogoBlack from './logo_text_black.webp'
+import TextLogoBlack from './logo_text.png'
 import PaperPlane from './Paperplane.png'
 import HHLeft from './hero-heading-left.webp'
 import HHRight from './hero-heading-right.webp'
@@ -96,7 +96,7 @@ import LoadingGirl from './loading_girl.webp'
 import LoadingItems from './loading_items.webp'
 
 import ContactFormImg from './contact/cform.webp'
-import Bird from './contact/bird.webp'
+import Bird from './contact/bird.png'
 import Animals from './contact/animals.webp'
 import Monkey from './contact/monkey.webp'
 import MotherAndDaughter from './contact/mon_daughter.png'
@@ -105,7 +105,7 @@ import BigCookie from './contact/big-cookie.png'
 import BigBlackCookie from './contact/big-cookie-black.png'
 
 import ThanksImg from './thanks.webp'
-import NavSmall from './nav-sm.webp'
+import NavSmall from './nav-sm.png'
 export {
   TextLogo,
   PaperPlane,

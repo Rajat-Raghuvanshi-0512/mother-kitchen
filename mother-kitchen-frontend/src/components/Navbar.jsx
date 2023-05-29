@@ -48,11 +48,11 @@ const NavSm = () => {
       </div>
       <Drawer isOpen={isOpen}>
         <div className="grid grid-cols-2">
-          <div className="flex items-center justify-center">
-            <img src={TextLogoBlack} alt="nav" />
+          <div className="flex items-start justify-start">
+            <img src={TextLogoBlack} alt="nav" className="h-28 w-28 object-contain" />
           </div>
-          <div>
-            <img src={NavSmall} alt="nav" />
+          <div className="flex items-end justify-end">
+            <img src={NavSmall} alt="nav" className="h-32 w-32 object-contain" />
           </div>
         </div>
         {navLinks.map((link) => {
