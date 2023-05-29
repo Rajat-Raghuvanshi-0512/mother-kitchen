@@ -15,9 +15,9 @@ const ComingSoonSm = () => {
         </div>
       </div>
       <p className="font-white relative bottom-[8rem] px-10 text-center font-lexend text-[10px] leading-3 text-white">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut aliquet lacus, sit amet eleifend dui. Mauris
-        dapibus eros eget lacus hendrerit, vel sagittis ipsum imperdiet. Integer elementum viverra sem in eleifend.
-        Pellentesque erat tellus, aliquet eget turpis vitae, euismod vestibulum orci. Aenean
+        Mother&apos;s Kitchen is excited to announce the upcoming launch of our new cafe! We are passionate about
+        providing our customers with nutritious and wholesome food options. Our cafe will feature a menu filled with
+        healthy meals and snacks made from the freshest and highest quality ingredients.
       </p>
     </div>
   )
@@ -38,10 +38,12 @@ const ComingSoonLg = () => {
               Coming Soon
             </div>
           </div>
-          <p className="mx-auto mt-10 w-[60vw] text-justify font-lexend text-xs font-semibold text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut aliquet lacus, sit amet eleifend dui. Mauris
-            dapibus eros eget lacus hendrerit, vel sagittis ipsum imperdiet. Integer elementum viverra sem in eleifend.
-            Pellentesque erat tellus, aliquet eget turpis vitae, euismod vestibulum orci. Aenean{' '}
+          <p className="mx-auto mt-10 w-[60vw] text-center font-lexend text-sm font-semibold text-white">
+            Mother&apos;s Kitchen is excited to announce the upcoming launch of our new cafe! We are passionate about
+            providing our customers with nutritious and wholesome food options. Our cafe will feature a menu filled with
+            healthy meals and snacks made from the freshest and highest quality ingredients. We believe that eating
+            healthy should be a joyous experience, and we are committed to making that possible for all of our
+            customers.
           </p>
           <img src={RabitTea} alt="rabbit" className="ml-auto mr-10 w-40" />
         </div>

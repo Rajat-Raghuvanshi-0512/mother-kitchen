@@ -23,7 +23,7 @@ const ChapterCover = ({ seriesName, baseTextColor, baseBgColor, chapter, idx, ti
             <ol
               className={`flex ${
                 chapter % 2 != 0 ? 'w-[50vw]' : 'w-[30vw]'
-              }  list-decimal ${baseTextColor} relative top-3 mt-auto font-gluten font-black md:top-20 md:text-4xl  `}
+              }  list-decimal ${baseTextColor} comic-text-shadow relative top-3 mt-auto font-gluten font-semibold md:top-20 md:text-4xl  `}
             >
               <li value={chapter}>
                 <span className="relative">{title}</span>

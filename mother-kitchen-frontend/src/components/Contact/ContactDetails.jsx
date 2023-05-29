@@ -20,7 +20,7 @@ const contactItems = [
   {
     icon: <FaPhoneAlt className="h-8 w-8" />,
     title: 'Phone Number',
-    desc: '+91 9310411544 +91 70113 61501',
+    desc: '+91 9310411544 / 70113 61501',
     color: 'bg-[#E08E00]',
   },
 ]

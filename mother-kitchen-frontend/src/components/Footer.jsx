@@ -15,7 +15,7 @@ const FooterSm = ({ location }) => {
           className="w-[60%] bg-transparent py-1 pl-3 font-lexend text-sm tracking-tighter text-black outline-none"
           placeholder="EMAIL ADDRESS"
         />
-        <Button className="bg-green-base">Sign Up</Button>
+        <Button className="bg-green-base !py-2 font-lexend text-sm tracking-tighter">Sign Up</Button>
       </div>
 
       <div className=" relative grid grid-cols-2 gap-5 font-gluten">
@@ -82,7 +82,7 @@ const FooterSm = ({ location }) => {
               </div>
             </div>
           </div>
-          <img src={TextLogo} alt="logo" className="relative -right-5 top-10 w-20" />
+          <img src={TextLogo} alt="logo" className="relative -right-5 top-16 w-20" />
         </div>
       </div>
     </footer>
@@ -162,8 +162,8 @@ const FooterMd = ({ location }) => {
             </div>
           </div>
           <div className="ml-auto mt-10 pr-5">
-            <div className="flex  w-24 items-center rounded-full border-2 border-b-8 border-r-8 border-black bg-green-base py-2">
-              <BsQuestionCircle className="mx-3 w-5" />
+            <div className="flex  w-24 items-center  rounded-full border-2  border-b-8 border-r-8 border-black bg-green-base py-2 font-lexend text-xs uppercase tracking-tighter">
+              <BsQuestionCircle className="mx-2 h-5 w-5" />
               <span className="text-sm">Help</span>
             </div>
             <p className="mt-5 text-sm">+91 931 041 1544</p>
@@ -184,10 +184,12 @@ const FooterLg = ({ location }) => {
           <div className="my-5 flex w-[400px] justify-between rounded-full border-2 border-b-4 border-r-4 border-black bg-white p-2">
             <input
               type="email"
-              className="w-[70%] bg-transparent py-2 pl-4 font-lexend text-sm tracking-tighter text-black outline-none"
+              className="w-[60%] bg-transparent py-2 pl-4 font-lexend text-sm tracking-tighter text-black outline-none"
               placeholder="EMAIL ADDRESS"
             />
-            <Button className="bg-green-base">Sign Up</Button>
+            <Button className="!bg-green-base !py-2 font-lexend text-sm tracking-tighter hover:!bg-red-base">
+              Sign Up
+            </Button>
           </div>
           <div className="social-medias flex gap-7">
             <RiInstagramLine className="h-10 w-10" />
@@ -247,10 +249,14 @@ const FooterLg = ({ location }) => {
             </div>
           </div>
           <div className="ml-auto mt-20 pr-5">
-            <div className="flex  w-32 items-center rounded-full border-2 border-b-8 border-r-8 border-black bg-green-base py-3">
-              <BsQuestionCircle className="mx-3 w-5" />
+            <Link
+              to={'/contact'}
+              className="flex  w-32 items-center rounded-full border-2 border-b-8 border-r-8 border-black bg-green-base py-3 font-lexend text-sm uppercase tracking-tighter"
+              onClick={() => scrollTo(0, 0)}
+            >
+              <BsQuestionCircle className="mx-3 h-6 w-6" />
               <span>Help</span>
-            </div>
+            </Link>
             <p className="mt-10">+91 931 041 1544</p>
           </div>
         </div>

@@ -121,7 +121,6 @@ const ReviewsLg = () => {
     lowerReviews.current.style.transform = `translateX(-${window.pageYOffset.toFixed(1) / 5}px)`
     upperReviews.current.style.transition = ' all 0.4s'
     lowerReviews.current.style.transition = ' all 0.4s'
-    console.log(lowerReviews.current.classList)
   }
   useEffect(() => {
     window.addEventListener('scroll', getScrollOffset, { passive: true })

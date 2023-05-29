@@ -87,6 +87,7 @@ import shrikumar from './team/shrikumar.webp'
 import stuart from './team/stuart.webp'
 import shifali from './team/shifali.webp'
 import satyam from './team/satyam.webp'
+import rohit from './team/rohit.png'
 
 import soon from './soon.webp'
 import RabitTea from './tea_with_rabbit.webp'
@@ -173,6 +174,7 @@ export {
   Shivani,
   Sunil,
   bhavna,
+  rohit,
   joshua,
   satyam,
   stuart,

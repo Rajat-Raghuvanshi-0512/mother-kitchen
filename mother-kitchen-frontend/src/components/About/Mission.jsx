@@ -38,17 +38,17 @@ const MissionSm = () => {
 }
 const MissionLg = () => {
   return (
-    <section className="relative md:py-20 2xl:px-36">
-      <img src={GreenYellowBg} alt="bg" className="absolute -top-20 left-0 -z-10 h-[100vh] object-cover md:h-auto" />
+    <section className="relative md:py-20 lg:min-h-[100vh] 2xl:px-36">
+      <img src={GreenYellowBg} alt="bg" className="absolute -top-16 left-0 -z-10 h-[100vh] object-cover md:h-auto" />
       <div className="grid md:grid-cols-6 md:gap-10">
         <div className="col-span-2">
           <img src={SuperWoman} alt="" className="hidden md:block" />
         </div>
-        <div className="col-span-4 font-lexend text-sm font-[500] md:pr-20 lg:my-28 2xl:mt-44">
-          <h3 className="mt-28 px-11 py-5 font-gluten text-4xl font-bold text-white md:mt-0 md:px-0 md:text-3xl lg:text-5xl ">
+        <div className="col-span-4 font-lexend text-sm font-[500] md:pr-20 lg:mb-28 lg:mt-20 2xl:mt-44">
+          <h3 className="mt-28 px-11 py-5 font-gluten text-4xl font-bold text-white md:mt-0 md:px-0 md:text-3xl lg:text-[2.6rem] ">
             Embarking on a <span className="text-black">long journey</span>
           </h3>
-          <div className="relative mx-7 rounded-3xl border-4 border-r-8  border-[#A57717] bg-[#FFE7B5] p-3 text-[8px] leading-3 md:mx-0 md:px-7 md:py-4 lg:text-base lg:leading-4">
+          <div className="relative mx-7 rounded-3xl border-4 border-r-8  border-[#A57717] bg-[#FFE7B5] p-3 text-[8px] leading-3 md:mx-0 md:px-7 md:py-4 lg:text-sm lg:leading-4">
             <p>
               Our mission is to become the most trusted and reliable brand for products in the market, offering products
               that are made with the highest quality ingredients and are free from harmful chemicals and additives. We

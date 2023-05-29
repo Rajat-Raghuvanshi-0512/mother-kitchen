@@ -22,7 +22,7 @@ const DownloadComic = () => {
           <div>
             <img src={TextLogo} alt="logo" className="w-20 lg:w-40" />
           </div>
-          <button className="my-3 flex items-center gap-2 border-2 border-b-4 border-r-4 border-black bg-green-base px-5 uppercase">
+          <button className="my-3 flex cursor-pointer items-center gap-2 border-2 border-b-4 border-r-4 border-black bg-green-base px-5 uppercase duration-300 hover:scale-95">
             Download
             <MdOutlineDownload className="h-8 w-8" />
           </button>

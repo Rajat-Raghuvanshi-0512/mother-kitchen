@@ -14,8 +14,8 @@ const Contact = () => {
             &nbsp;
             <span>ENTER&nbsp;</span> <span>THE&nbsp;</span> <span>KITCHEN</span>
           </span>
-          <p className="text-white">Don’t be shy - just drop us a line</p>
-          <img src={Bird} alt="bird" className="absolute -bottom-24 left-[55%] w-40 translate-x-[-50%] -scale-x-100" />
+          <p className="font-gluten text-white">Don’t be shy - just drop us a line</p>
+          <img src={Bird} alt="bird" className="absolute -bottom-32 left-[55%] w-44 translate-x-[-50%] -scale-x-100" />
         </div>
         <NavigationIndicator />
         <div className="hidden font-gluten font-bold text-[#5B360B] md:block lg:text-3xl">

@@ -58,11 +58,15 @@ body {
   text-shadow: none;
 }
 
+.comic-text-shadow {
+  text-shadow: black 3px 3px;
+}
+
 .black-shadow {
-  text-shadow: black 0 4px;
+  text-shadow: black 2px 2px;
 }
 .white-shadow {
-  text-shadow: white 0 4px;
+  text-shadow: white 2px 2px;
 }
 .extra-bold {
   text-shadow: 0px 3px, 3px 0px, 3px 3px;
