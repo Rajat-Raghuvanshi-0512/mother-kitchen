@@ -27,15 +27,16 @@ const contactItems = [
 
 const ContactDetails = () => {
   return (
-    <div className="relative mt-20 grid grid-cols-1 gap-10 rounded-xl bg-[#FFEC9F] px-10 py-20 md:mb-60 md:grid-cols-3 md:gap-6 lg:gap-20">
+    <div className="relative mb-72 mt-20 grid grid-cols-1 gap-10 rounded-xl bg-[#FFEC9F] px-10 py-20 md:mb-60 md:grid-cols-3 md:gap-6 lg:gap-20">
       {contactItems.map((item) => {
         return <ContactDetailsCard key={item.title} {...item} />
       })}
       <img
         src={Monkey}
         alt="monkey"
-        className="absolute left-[50%] top-[50%] -z-10 w-[20rem] translate-x-[-60%] translate-y-[70%]"
+        className="absolute left-[50%] top-[50%] -z-10 hidden w-[20rem] translate-x-[-60%] translate-y-[70%] md:block"
       />
+      <img src={Monkey} alt="monkey" className="absolute bottom-0 right-0 translate-x-[20%] translate-y-[100%]" />
     </div>
   )
 }

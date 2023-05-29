@@ -7,7 +7,7 @@ const ThankYou = ({ isOpen, onClose }) => {
         isOpen ? 'flex' : 'hidden'
       } md:p-50 fixed left-0 top-0 z-50 flex h-screen w-screen  items-center justify-center bg-black bg-opacity-60 duration-500`}
     >
-      <div className="flex h-[50vh] w-[80vw] items-center justify-center rounded-3xl bg-white/50 md:h-[76vh] md:w-[100vh] lg:rounded-[3rem]">
+      <div className="flex h-[25rem] w-[80vw] items-center justify-center rounded-3xl bg-white/50 md:h-[35rem] md:w-[50vw] lg:rounded-[3rem]">
         <div className="my-10 h-[90%] w-[90%] rounded-3xl border-2 border-[#e7e0c0] bg-[#CCC083] md:h-[90%] md:w-[93%]  md:border-4 lg:rounded-[3rem] lg:border-8">
           <div className="mx-4 mt-5 flex justify-between md:mx-10">
             <img src={TextLogo} alt="logo" className="w-[4rem] object-contain md:w-[6rem] lg:w-[8rem]" />

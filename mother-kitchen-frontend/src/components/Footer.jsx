@@ -251,7 +251,7 @@ const FooterLg = ({ location }) => {
           <div className="ml-auto mt-20 pr-5">
             <Link
               to={'/contact'}
-              className="flex  w-32 items-center rounded-full border-2 border-b-8 border-r-8 border-black bg-green-base py-3 font-lexend text-sm uppercase tracking-tighter"
+              className="flex  w-32 items-center rounded-full border-2 border-b-8 border-r-8 border-black bg-green-base py-3 font-lexend text-sm uppercase tracking-tighter duration-300 hover:bg-red-base"
               onClick={() => scrollTo(0, 0)}
             >
               <BsQuestionCircle className="mx-3 h-6 w-6" />
