@@ -63,14 +63,14 @@ const Comic = () => {
               & <br /> Mummy
             </span>
           </h2>
-          <p className="mt-5 md:text-2xl">PRINCIPLE OF SUCCESS</p>
+          <p className=" mt-2 md:mt-5 md:text-2xl">PRINCIPLE OF SUCCESS</p>
           <p className="text-green-base md:text-xl">Mini Series</p>
         </div>
-        <div className="flex flex-col items-end justify-end md:items-start md:justify-center">
+        <div className="flex flex-col items-end justify-center md:items-start md:justify-center">
           <div className="w-[3rem] cursor-pointer rounded-r-[3rem] rounded-tl-[2rem] border-2 border-black bg-green-base p-3 duration-300 hover:scale-95 md:mx-auto md:w-[5rem] md:border-4 md:border-b-[6px] md:border-r-[6px] md:p-5">
             <img src={BackArrow} alt="arrow" />
           </div>
-          <p className="mt-4 text-right font-lexend text-[8px] font-semibold tracking-tighter text-white md:text-left md:text-base">
+          <p className="mt-4 text-center font-lexend text-[10px] font-semibold tracking-tighter text-white md:text-left md:text-base">
             Press here to go Back
           </p>
         </div>

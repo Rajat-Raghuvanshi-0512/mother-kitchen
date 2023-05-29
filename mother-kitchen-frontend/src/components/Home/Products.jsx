@@ -108,8 +108,7 @@ const ProductsLg = ({ productsRef }) => {
             &quot;<span className="text-[#553500]"> TOP-</span>rated by taste buds &quot;
           </h3>
         </div>
-        <div className="relative overflow-x-scroll pt-20 lg:px-10" ref={productsRef}>
-          {/* <div className="flex"> */}
+        <div className="products relative overflow-x-scroll pt-20 lg:px-10" ref={productsRef}>
           <Slider slidesToShow={3} dots={true} arrows={true} centerPadding={0} centerMode={true}>
             {productsData.map((product) => (
               <ProductCard key={product.title} {...product} />

@@ -62,14 +62,14 @@ const NavSm = () => {
                 <span
                   className={`${
                     location.pathname === link.path
-                      ? 'border-b-2 border-r-4 border-black bg-[#E9787C] text-white'
-                      : 'text-black'
+                      ? 'border-b-2 border-r-4 border-black bg-[#E9787C] font-gluten tracking-widest text-white'
+                      : 'font-lexend tracking-[-0.1rem] text-black'
                   } rounded-full p-3 font-gluten text-xl font-extralight`}
                 >
                   {link.name}
                 </span>
               </div>
-              <div className="my-4 h-[1.5px] bg-[#976120]" />
+              <div className="my-4 h-[1px] bg-[#976120]" />
             </Link>
           )
         })}
@@ -79,14 +79,14 @@ const NavSm = () => {
               <span
                 className={`${
                   location.pathname === '/contact'
-                    ? 'border-b-2 border-r-4 border-black bg-[#E9787C] text-white'
-                    : 'text-black'
-                } rounded-full p-3 font-gluten text-xl font-extralight`}
+                    ? 'border-b-2 border-r-4 border-black bg-[#E9787C] font-gluten tracking-widest text-white'
+                    : 'font-lexend tracking-[-0.1rem] text-black'
+                } rounded-full p-3 text-xl font-extralight`}
               >
                 Contact Us
               </span>
             </div>
-            <div className="my-4 h-[1.5px] bg-[#976120]" />
+            <div className="my-4 h-[1px] bg-[#976120]" />
           </Link>
         </div>
         <div className="grid grid-cols-3 pb-5">
