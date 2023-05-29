@@ -36,7 +36,11 @@ const ContactDetails = () => {
         alt="monkey"
         className="absolute left-[50%] top-[50%] -z-10 hidden w-[20rem] translate-x-[-60%] translate-y-[70%] md:block"
       />
-      <img src={Monkey} alt="monkey" className="absolute bottom-0 right-0 translate-x-[20%] translate-y-[100%]" />
+      <img
+        src={Monkey}
+        alt="monkey"
+        className="absolute bottom-0 right-0 translate-x-[20%] translate-y-[100%] md:hidden"
+      />
     </div>
   )
 }

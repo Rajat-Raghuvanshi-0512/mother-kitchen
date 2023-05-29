@@ -20,7 +20,7 @@ const ThankYou = ({ isOpen, onClose }) => {
               </div>
             </div>
           </div>
-          <img src={ThanksImg} alt="thanks" className="mx-auto w-[70%] md:w-[250px] lg:w-[330px]" />
+          <img src={ThanksImg} alt="thanks" className="mx-auto w-[70%] md:w-[250px] lg:w-[300px]" />
           <p className="mt-3 px-8 text-center font-gluten text-xs leading-3 text-[#003D6A] md:text-sm md:leading-4 lg:px-16">
             Thank you for contacting us. We appreciate your interest and will do our best to respond to you as soon as
             possible.
