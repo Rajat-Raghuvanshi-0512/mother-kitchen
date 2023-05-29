@@ -1,4 +1,4 @@
-import { InfoImg1, InfoImg2, InfoImg3, NumberBg } from '../../assets'
+import { DetailWire, InfoImg1, InfoImg2, InfoImg3, NumberBg } from '../../assets'
 import DetailCard from './DetailCard'
 
 const details = [
@@ -26,8 +26,9 @@ const DiscoveryInfo = () => {
   return (
     <div className="relative mt-5 flex flex-col gap-10 md:mt-52 md:gap-20 md:px-10 lg:mt-40 lg:gap-56 lg:px-20">
       <img src={NumberBg} alt="number" className="absolute top-[20rem] -z-20 hidden md:block" />
+      <img src={DetailWire} alt="wire" className="absolute left-[12rem] top-[16rem] -z-20 h-[25rem] md:hidden" />
       {details.map((detail, idx) => {
-        return <DetailCard key={detail.heading} {...detail} even={(idx + 1) % 2 === 0} />
+        return <DetailCard key={detail.heading} {...detail} index={idx} even={(idx + 1) % 2 === 0} />
       })}
     </div>
   )

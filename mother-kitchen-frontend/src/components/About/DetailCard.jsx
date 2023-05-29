@@ -1,12 +1,19 @@
-const DetailCardSm = ({ even, image, heading, description }) => {
+import { Detail1, Detail2, Detail3 } from '../../assets'
+
+const DetailCardSm = ({ even, image, heading, description, index }) => {
   if (!even) {
     return (
-      <div className={`grid grid-cols-2 px-4`}>
-        <div className="px-4">
-          <h3 className="mb-4 font-gluten text-lg font-bold leading-5 text-red-900">{heading}</h3>
-          <img src={image} alt="imaze" />
+      <div className={`grid grid-cols-5 px-4`}>
+        <div className="relative col-span-3 px-4">
+          <h3 className="mb-4 pr-5 font-gluten text-lg font-bold leading-5 text-red-900">{heading}</h3>
+          <img src={image} alt="imaze" className="h-full w-full object-contain object-top" />
+          {index == 0 ? (
+            <img src={Detail1} alt="detail1" className="absolute -bottom-3 left-0 w-12" />
+          ) : (
+            <img src={Detail3} alt="detail1" className="absolute -bottom-3 right-5 w-12" />
+          )}
         </div>
-        <div>
+        <div className="col-span-2">
           <h3 className="pt-16 text-justify font-lexend text-[10px] font-semibold leading-3 text-white">
             {description}
           </h3>
@@ -15,16 +22,17 @@ const DetailCardSm = ({ even, image, heading, description }) => {
     )
   }
   return (
-    <div className={`grid grid-cols-2 px-4`}>
-      <div>
+    <div className={`grid grid-cols-5 px-4`}>
+      <div className="col-span-2">
         <h3 className="pt-16 text-justify font-lexend text-[10px] font-semibold leading-3 text-white">
           {description.slice(0, 250)}
         </h3>
       </div>
-      <div className=" px-4">
-        <h3 className="mb-4 font-gluten text-lg font-bold leading-5 text-red-900">{heading}</h3>
-        <div className="my-auto flex h-[70%] w-full items-center justify-center rounded-2xl border-2 border-b-4 border-r-4 border-black bg-[#FFBF37] object-contain">
-          <img src={image} alt="imaze" />
+      <div className=" col-span-3 pl-10">
+        <h3 className="mb-4 pl-7 font-gluten text-lg font-bold leading-5 text-red-900">{heading}</h3>
+        <div className="relative my-auto flex h-[85%] w-full items-center justify-center rounded-2xl border-2 border-b-4 border-r-4 border-black bg-[#FFBF37] object-contain">
+          <img src={image} alt="imaze" className="h-full w-full object-contain object-top" />
+          {index == 1 && <img src={Detail2} alt="detail1" className="absolute -bottom-10 -left-2 w-12" />}
         </div>
       </div>
     </div>
@@ -43,7 +51,7 @@ const DetailCardMd = ({ even, image, heading, description }) => {
           <h3 className="pt-10 font-gluten text-xs font-semibold">{description}</h3>
         </div>
         <div>
-          <img src={image} alt="imaze" />
+          <img src={image} alt="imaze" className="h-full w-full object-contain object-top" />
         </div>
       </div>
     )
@@ -55,7 +63,7 @@ const DetailCardMd = ({ even, image, heading, description }) => {
       }`}
     >
       <div>
-        <img src={image} alt="imaze" />
+        <img src={image} alt="imaze" className="h-full w-full object-contain object-top" />
       </div>
       <div className="px-4">
         <h3 className="break-words font-gluten text-5xl font-bold text-red-900">{heading}</h3>

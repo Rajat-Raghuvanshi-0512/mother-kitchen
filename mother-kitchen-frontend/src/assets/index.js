@@ -46,6 +46,10 @@ import InstaIcon from './home/instagram.png'
 import CameraAndGirl from './about/camera_and_girl.png'
 import AboutHeroTextBgPhone from './about/text-bg-phone.png'
 import MissionBgPhone from './about/missionbg.png'
+import Detail1 from './about/detail1.png'
+import Detail2 from './about/detail2.png'
+import Detail3 from './about/detail3.png'
+import DetailWire from './about/detail-wire.png'
 
 import review1 from './reviews/review1.webp'
 import review2 from './reviews/review2.webp'
@@ -206,4 +210,8 @@ export {
   HHRightMobile,
   ScrollDown,
   MissionBgPhone,
+  Detail1,
+  Detail2,
+  Detail3,
+  DetailWire,
 }
