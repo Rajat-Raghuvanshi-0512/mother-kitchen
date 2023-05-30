@@ -6,15 +6,15 @@ const ComingSoonSm = () => {
   return (
     <div className="relative -mb-20">
       <img src={SoonBg} alt="soon" className="relative mt-5 h-full w-full object-contain" loading="lazy" />
-      <div className="absolute top-0 w-full">
+      <div className="absolute top-10 w-full">
         <h3 className="relative left-[50%] top-[50%] w-[55vw] translate-x-[-50%] translate-y-[-50%] border-b-2 border-t-2 border-white py-2 text-center font-lexend  text-2xl text-white">
-          MK’s Cafe
+          MK’s <span className="font-gluten text-3xl">Cafe</span>
         </h3>
-        <div className="black-shadow relative left-[50%] top-[50%] mt-6 w-full translate-x-[-50%] translate-y-[-50%] text-center font-gluten text-4xl  font-black text-white">
+        <div className="black-shadow-large relative left-[50%] top-[50%] mt-6 w-full translate-x-[-50%] translate-y-[-50%] text-center font-gluten text-4xl  font-black text-white">
           Coming Soon
         </div>
       </div>
-      <p className="font-white relative bottom-[8rem] px-10 text-center font-lexend text-[10px] leading-3 text-white">
+      <p className="font-white relative bottom-[9rem] px-8 text-center font-lexend text-[11px] leading-[14px] text-white">
         Mother&apos;s Kitchen is excited to announce the upcoming launch of our new cafe! We are passionate about
         providing our customers with nutritious and wholesome food options. Our cafe will feature a menu filled with
         healthy meals and snacks made from the freshest and highest quality ingredients.

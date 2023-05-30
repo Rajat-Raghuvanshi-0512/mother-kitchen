@@ -163,6 +163,9 @@ body {
   .black-shadow {
     text-shadow: black 1px 1px;
   }
+  .black-shadow-large {
+    text-shadow: black 3px 3px;
+  }
   .discover-shadow {
     text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 3px 3px black;
   }
