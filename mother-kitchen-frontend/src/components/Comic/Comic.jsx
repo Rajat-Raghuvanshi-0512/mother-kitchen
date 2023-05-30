@@ -76,15 +76,16 @@ const Comic = () => {
           <p className=" mt-2 md:mt-5 md:text-2xl">PRINCIPLE OF SUCCESS</p>
           <p className="text-green-base md:text-xl">Mini Series</p>
         </div>
-        <div className="flex select-none flex-col items-end justify-center md:items-start md:justify-center">
+        <div className="flex select-none flex-col items-end justify-start pt-3 md:items-start md:justify-center">
           <div
             className="w-[3rem] cursor-pointer rounded-r-[3rem] rounded-tl-[2rem] border-2 border-b-4 border-r-4 border-black bg-green-base p-3 duration-300 hover:scale-95 md:mx-auto md:w-[5rem] md:border-4 md:border-b-[6px] md:border-r-[6px] md:p-5"
             onClick={handlePageBack}
           >
             <img src={BackArrow} alt="arrow" />
           </div>
-          <p className="mt-4 text-center font-lexend text-[10px] font-semibold tracking-tighter text-white md:text-left md:text-base">
-            Press here to go Back
+          <p className="mt-2 text-center font-lexend text-[10px] font-semibold tracking-tighter text-white md:text-left md:text-base">
+            <div className="block w-20 md:w-40 ">Press here </div>
+            <div>to go Back</div>
           </p>
         </div>
       </div>

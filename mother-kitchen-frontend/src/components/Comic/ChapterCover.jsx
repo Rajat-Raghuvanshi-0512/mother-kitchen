@@ -1,4 +1,4 @@
-import { ContinuedBg } from '../../assets/comics'
+import { ContinuedBg, ContinuedSmBg } from '../../assets/comics'
 
 const ChapterCover = ({ seriesName, baseTextColor, baseBgColor, chapter, idx, title, images = [] }) => {
   return (
@@ -11,7 +11,7 @@ const ChapterCover = ({ seriesName, baseTextColor, baseBgColor, chapter, idx, ti
         {seriesName}
       </div>
       <div className="rounded-xl border-8 border-b-[12px] border-r-[14px] border-black bg-[#FFEABF] md:rounded-3xl">
-        <div className="flex justify-between px-8 md:px-20 md:pb-20">
+        <div className="flex justify-between pl-7 pr-3 md:px-20 md:pb-20">
           {chapter % 2 == 0 && (
             <div
               className={`max-h-13 rounded-b-lg border-b-4 border-l-2 border-r-2 border-black px-3 pt-4 md:rounded-b-xl md:border-b-8 md:px-6 ${baseBgColor} font-gluten font-bold text-white md:text-6xl`}
@@ -23,7 +23,7 @@ const ChapterCover = ({ seriesName, baseTextColor, baseBgColor, chapter, idx, ti
             <ol
               className={`flex ${
                 chapter % 2 != 0 ? 'w-[50vw]' : 'w-[30vw]'
-              }  list-decimal ${baseTextColor} comic-text-shadow relative top-3 mt-auto font-gluten font-semibold md:top-20 md:text-4xl  `}
+              }  list-decimal ${baseTextColor} comic-text-shadow relative top-3 mt-auto font-gluten text-lg font-semibold md:top-20 md:text-4xl  `}
             >
               <li value={chapter}>
                 <span className="relative">{title}</span>
@@ -55,10 +55,11 @@ const ChapterCover = ({ seriesName, baseTextColor, baseBgColor, chapter, idx, ti
               </div>
             )
           })}
-          <div className="relative flex items-center justify-center">
+          <div className="relative flex items-center md:justify-center">
             <img src={ContinuedBg} alt="continue" className="absolute hidden md:block" />
-            <p className="z-[1] font-gluten md:text-3xl">
-              To Be <br className="hidden md:block" /> <span className="font-bold md:text-5xl">Continued...</span>
+            <img src={ContinuedSmBg} alt="continue" className="absolute w-[12rem]  md:hidden" />
+            <p className="z-[1] pl-5 font-gluten font-medium md:pl-0 md:text-3xl">
+              To Be <br className="hidden md:block" /> <span className=" md:text-5xl">Continued...</span>
             </p>
           </div>
         </div>
