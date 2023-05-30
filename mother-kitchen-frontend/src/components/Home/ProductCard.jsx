@@ -27,7 +27,7 @@ const ProductsCardSm = ({ image, price1, price2, price3, quantity, title, desc, 
           </div>
           <div className="text-[7px] font-semibold">{quantity}</div>
           <button className="mt-3 flex w-full items-center justify-end gap-3 rounded-md border-2 border-b-4 border-r-4 border-black bg-[#039860] px-2 py-1 font-gluten text-white">
-            <span className="black-shadow text-xs">{btnText}</span>{' '}
+            <span className="black-shadow text-xs">{btnText}</span>
             <img src={Bag} alt="bag" className="h-4 w-4 object-contain" />
           </button>
         </div>
@@ -96,8 +96,8 @@ const ProductsCardLg = ({ image, price1, price2, price3, quantity, title, desc, 
             {price1} <span className="text-white">{price2}</span> <span>{price3}</span>
           </div>
           <div className="text-[8px] font-medium ">{quantity}</div>
-          <button className="mt-3 flex w-full items-center justify-end gap-3 rounded-lg border-2 border-b-4 border-r-4 border-black bg-[#039860] px-3 py-1 font-gluten text-white">
-            <span className="black-shadow-sm">{btnText}</span>{' '}
+          <button className="mt-3 flex w-full items-center justify-end gap-2 rounded-lg border-2 border-b-4 border-r-4 border-black bg-[#039860] px-3 py-1 font-gluten text-white">
+            <span className="black-shadow-sm">{btnText}</span>
             <img src={Bag} alt="bag" className="h-4 w-4 object-contain" />
           </button>
         </div>
