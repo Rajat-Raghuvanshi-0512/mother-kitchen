@@ -3,23 +3,27 @@ import { Bottle, Drop, FatFree, GirlBadge, Vegan } from '../../assets'
 const nutritionData = [
   {
     image: Bottle,
-    text: 'FREE OF ANYTHING ARTIFICIAL',
+    text: 'FREE OF',
+    textred: ' ANYTHING ARTIFICIAL',
   },
   {
     image: Drop,
-    text: 'No Preservatives',
+    text: 'No',
+    textred: ' Preservatives',
   },
   {
     image: Vegan,
-    text: 'Vegan & Plant based',
+    text: 'Vegan &',
+    textred: ' Plant based',
   },
   {
     image: FatFree,
-    text: 'TRANS FAT FREE',
+    text: 'TRANS ',
+    textred: 'FAT FREE',
   },
 ]
 
-const CircularDiv = ({ image, text, idx }) => {
+const CircularDiv = ({ image, text, idx, textred }) => {
   return (
     <div
       className={`absolute flex h-28 w-28 flex-col items-center justify-center rounded-full border-4 border-white bg-[#FFD16E] p-2 before:absolute before:h-full before:w-full before:rounded-full before:border-black before:bg-black md:relative md:h-20 md:w-20 before:md:bg-transparent lg:h-28 lg:w-28 ${
@@ -34,9 +38,24 @@ const CircularDiv = ({ image, text, idx }) => {
           : ''
       } `}
     >
-      <img loading="lazy" src={image} alt="item" className="w-10 md:w-6 lg:w-10" />
+      <img
+        loading="lazy"
+        src={image}
+        alt="item"
+        className={`w-10 md:w-6 lg:w-10 ${
+          idx === 0
+            ? 'w-8 md:w-6 lg:w-10'
+            : idx === 1
+            ? 'w-9 md:w-6 lg:w-10'
+            : idx === 2
+            ? 'w-10 md:w-6 lg:w-10'
+            : idx === 3
+            ? 'w-8 md:w-6 lg:w-10'
+            : ''
+        } `}
+      />
       <p className="mt-1 w-16 break-words text-center font-gluten text-[10px] font-semibold leading-3 md:break-inside-auto md:text-[7px] md:leading-[6px] lg:text-[10px] lg:leading-3">
-        {text}
+        {text} <span className="text-[#842000]">{textred}</span>
       </p>
     </div>
   )
@@ -50,7 +69,7 @@ const NutritionSm = () => {
           <img loading="lazy" src={GirlBadge} alt="girl-badge" className="w-60" />
         </div>
         {nutritionData.map((item, idx) => (
-          <CircularDiv image={item.image} idx={idx} text={item.text} key={item.text} />
+          <CircularDiv image={item.image} idx={idx} text={item.text} textred={item.textred} key={item.text} />
         ))}
       </div>
     </section>
@@ -62,7 +81,7 @@ const NutritionMd = () => {
       <div className="relative flex h-24 items-center justify-evenly border-4 border-l-0 border-r-0 bg-yellow-dark pl-52 shadow-md">
         <img loading="lazy" src={GirlBadge} alt="girl-badge" className="absolute -top-10 left-10 w-40" />
         {nutritionData.map((item) => (
-          <CircularDiv image={item.image} text={item.text} key={item.text} />
+          <CircularDiv image={item.image} text={item.text} textred={item.textred} key={item.text} />
         ))}
       </div>
       <div className="h-[6px] bg-black"></div>
@@ -75,7 +94,7 @@ const NutritionLg = () => {
       <div className="relative flex h-32 items-center justify-evenly border-4 border-l-0 border-r-0 bg-yellow-dark pl-64 shadow-md">
         <img loading="lazy" src={GirlBadge} alt="girl-badge" className="absolute -top-14 left-20 w-56" />
         {nutritionData.map((item) => (
-          <CircularDiv image={item.image} text={item.text} key={item.text} />
+          <CircularDiv image={item.image} text={item.text} textred={item.textred} key={item.text} />
         ))}
       </div>
       <div className="h-[6px] bg-black"></div>
