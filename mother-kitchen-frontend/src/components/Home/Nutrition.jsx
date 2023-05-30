@@ -93,9 +93,9 @@ const NutritionLg = ({ navigate }) => {
             />
           </div>
           <div className="z-10 flex-1 p-5">
-            <h3 className="mb-5 font-lexend text-3xl font-black">
+            <h3 className="mb-5 font-lexend text-4xl font-semibold tracking-[-0.2rem]">
               Pouring nutrition <br />{' '}
-              <span className="mt-2 font-gluten text-4xl font-black text-red-base"> in your dish</span>
+              <span className="mt-2 font-gluten text-4xl font-black tracking-normal text-red-base"> in your dish</span>
             </h3>
             <p className="pr-4 text-justify font-lexend font-medium tracking-[-0.1rem]">
               At Mother&rsquo;s Kitchen, love is always the first ingredient. Our top-quality ingredients and
