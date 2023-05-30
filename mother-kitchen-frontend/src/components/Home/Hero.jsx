@@ -9,25 +9,15 @@ const HeroSm = () => {
         <img loading="lazy" src={HeroBgSm} alt="vec" className="absolute left-0 -z-10 w-screen" />
         <div className="relative">
           {/* <img loading="lazy" src={HHLeft} alt="elem" className="absolute  -top-4 left-24 hidden w-8 md:block" /> */}
-          <img
-            loading="lazy"
-            src={HHLeftMobile}
-            alt="elem"
-            className="absolute  -top-4 left-20 w-8 md:-top-4 md:left-24"
-          />
+          <img loading="lazy" src={HHLeftMobile} alt="elem" className="absolute  -top-5 left-20 w-8" />
           <h2 className="mt-14 text-center font-gluten text-4xl font-black sm:text-7xl">
             <span className="text-red-base">Mindful</span> <br /> eating for <br /> well being.
           </h2>
           {/* <img loading="lazy" src={HHRight} alt="elem" className="absolute -top-7 right-24 hidden w-8 md:block" /> */}
-          <img
-            loading="lazy"
-            src={HHRightMobile}
-            alt="elem"
-            className="absolute  -top-4 left-20 w-8 md:-top-4 md:left-24"
-          />
+          <img loading="lazy" src={HHRightMobile} alt="elem" className="absolute  -top-7 right-20 w-8" />
         </div>
         <p className="px-13  text-center font-gluten text-xs md:text-sm">
-          &ldquo;Bringing the warmth of mom&rsquo;s cooking to <br /> every kitchen, one delicious bite at a time.
+          Bringing the warmth of mom&rsquo;s cooking to <br /> every kitchen, one delicious bite at a time.
         </p>
       </div>
       <div className=" -mt-10 flex items-start justify-end">
@@ -56,7 +46,7 @@ const HeroMd = () => {
           <img loading="lazy" src={HHRight} alt="elem" className="absolute -top-9 left-[17rem] w-10" />
         </div>
         <p className="mt-5  font-lexend text-lg">
-          &ldquo;Bringing the warmth of mom&rsquo;s cooking to every kitchen, one delicious bite at a time.
+          Bringing the warmth of mom&rsquo;s cooking to every kitchen, one delicious bite at a time.
         </p>
         <Button className="flex-1font-semibold mt-5 !px-8 text-2xl">Shop Now</Button>
       </div>
@@ -79,8 +69,7 @@ const HeroLg = () => {
           <img loading="lazy" src={HHRightMobile} alt="elem" className="absolute -top-9 left-[17rem] w-10" />
         </div>
         <p className="mt-5  font-lexend text-xl">
-          &ldquo;Bringing the warmth of mom&rsquo;s <br /> cooking to every kitchen, one <br /> delicious bite at a
-          time.
+          Bringing the warmth of mom&rsquo;s <br /> cooking to every kitchen, one <br /> delicious bite at a time.
         </p>
         <Button className="flex-1font-semibold mt-5 !px-8 text-2xl">Shop Now</Button>
       </div>
