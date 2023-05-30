@@ -1,5 +1,6 @@
 import { GiPaperBagFolded } from 'react-icons/gi'
 import { AiFillHeart } from 'react-icons/ai'
+import { Bag } from '../../assets'
 const ProductsCardSm = ({ image, price, quantity, title, desc, btnText, color }) => {
   return (
     <div
@@ -21,15 +22,16 @@ const ProductsCardSm = ({ image, price, quantity, title, desc, btnText, color })
       </div>
       <div className="flex gap-2 px-1 text-left drop-shadow-sm">
         <div className="flex flex-1 flex-col items-start justify-start">
-          <div className="text-[8px] font-bold text-white">{price}</div>
-          <div className="text-[7px]">{quantity}</div>
-          <button className="mt-3 flex w-full items-center justify-between rounded-lg border-2 border-b-4 border-r-4 border-black bg-[#039860] px-2 py-1 font-gluten text-white">
-            <span className="text-xs">{btnText}</span> <GiPaperBagFolded />
+          <div className="text-[10px] font-bold ">{price}</div>
+          <div className="text-[7px] font-semibold">{quantity}</div>
+          <button className="mt-3 flex w-full items-center justify-end gap-3 rounded-md border-2 border-b-4 border-r-4 border-black bg-[#039860] px-2 py-1 font-gluten text-white">
+            <span className="black-shadow text-xs">{btnText}</span>{' '}
+            <img src={Bag} alt="bag" className="h-4 w-4 object-contain" />
           </button>
         </div>
         <div className="relative flex-1">
-          <h3 className="text-[9px] font-bold leading-3">{title}</h3>
-          <h6 className="mt-2 px-1 pr-3 font-gluten text-[8px] font-medium leading-[8px] text-white">{desc}</h6>
+          <h3 className="font-lexend text-[10px] font-bold leading-3 tracking-tighter">{title}</h3>
+          <h6 className="mt-2 px-1 pr-3 font-gluten text-[9px] font-semibold leading-[9px] text-white">{desc}</h6>
         </div>
       </div>
     </div>
@@ -88,13 +90,14 @@ const ProductsCardLg = ({ image, price, quantity, title, desc, btnText, color, i
         <div className="flex-1">
           <div className="text-[15px] font-bold ">{price}</div>
           <div className="text-[8px] font-medium ">{quantity}</div>
-          <button className="mt-3 flex w-full items-center justify-between rounded-lg border-2 border-b-4 border-r-4 border-black bg-[#039860] px-3 py-1 font-gluten text-white">
-            <span className="black-shadow">{btnText}</span> <GiPaperBagFolded />
+          <button className="mt-3 flex w-full items-center justify-end gap-3 rounded-lg border-2 border-b-4 border-r-4 border-black bg-[#039860] px-3 py-1 font-gluten text-white">
+            <span className="black-shadow">{btnText}</span>{' '}
+            <img src={Bag} alt="bag" className="h-4 w-4 object-contain" />
           </button>
         </div>
         <div className="relative flex-1">
-          <h3 className="text-[12px] font-bold leading-4 tracking-[-0.1em]">{title}</h3>
-          <h6 className="mt-2 pr-3 font-gluten text-[10px] font-semibold leading-3 text-white">{desc}</h6>
+          <h3 className="text-[14px] font-bold leading-4 tracking-[-0.1em]">{title}</h3>
+          <h6 className="mt-2 pr-3 font-gluten text-[12px] font-semibold leading-3 text-white">{desc}</h6>
         </div>
       </div>
       <img loading="lazy" src={icon} alt="icon" className="absolute -bottom-10 -right-10 w-20 " />

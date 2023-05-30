@@ -23,7 +23,7 @@ import KitchenCard1 from './kitchencard1.webp'
 import Kitchen1 from './kitchen1.webp'
 import ReviewHeading from './review_heading.webp'
 import ReviewImg from './review1.webp'
-import footerImg from './footerImg.webp'
+import footerImg from './footerImg.png'
 import InstaImg from './insta_img.webp'
 import Squirrel from './squirrel.webp'
 import Containers from './containers.webp'
@@ -42,6 +42,7 @@ import HHLeftMobile from './home/hh-left.png'
 import HHRightMobile from './home/hh-right.png'
 import ScrollDown from './home/scroll-down.png'
 import InstaIcon from './home/instagram.png'
+import Bag from './bag.png'
 
 import CameraAndGirl from './about/camera_and_girl.png'
 import AboutHeroTextBgPhone from './about/text-bg-phone.png'
@@ -214,4 +215,5 @@ export {
   Detail2,
   Detail3,
   DetailWire,
+  Bag,
 }

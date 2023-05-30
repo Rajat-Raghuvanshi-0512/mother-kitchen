@@ -37,7 +37,7 @@ const productsData = [
     image: product3,
     price: '$6.0/Sachet',
     quantity: '250gm',
-    title: 'Turmeric Almond & Saffron Booster',
+    title: 'Turmeric & Saffron Booster',
     desc: 'Instant Green mint chutney',
     btnText: 'Buy Now',
     color: 'bg-[#ED4E4E]',

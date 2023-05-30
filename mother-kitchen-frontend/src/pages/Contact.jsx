@@ -26,7 +26,7 @@ const Contact = () => {
       <ContactInfo />
       <ContactDetails />
       <ContactLastPhone />
-      <LastSection elements={['Home', 'About', 'Comics']} />
+      <LastSection elements={['Home', 'About', 'Comic']} />
     </div>
   )
 }

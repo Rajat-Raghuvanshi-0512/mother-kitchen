@@ -15,7 +15,9 @@ const FooterSm = ({ location }) => {
           className="w-[60%] bg-transparent py-1 pl-3 font-lexend text-sm tracking-tighter text-black outline-none"
           placeholder="EMAIL ADDRESS"
         />
-        <Button className="bg-green-base !py-2 font-lexend text-sm tracking-tighter">Sign Up</Button>
+        <Button className="!bg-green-base !py-2 font-lexend text-sm tracking-tighter hover:!bg-red-base">
+          Sign Up
+        </Button>
       </div>
 
       <div className=" relative grid grid-cols-2 gap-5 font-gluten">
@@ -34,7 +36,9 @@ const FooterSm = ({ location }) => {
           <p className="my-2 mb-20 flex items-start font-bold">
             <span>Contact Us </span> <RiUser3Fill className="h-3 w-3" />
           </p>
-          <p className="absolute bottom-0 left-[35%] z-10 shadow-3xl drop-shadow-3xl">Website by pixysquare</p>
+          <p className="absolute -bottom-1 left-[37%] z-10 text-[10px] shadow-3xl drop-shadow-3xl">
+            Website by pixysquare
+          </p>
         </div>
         <img src={footerImg} alt="footer" className="absolute bottom-0 left-[45%] w-[220px] translate-x-[-50%]" />
 
