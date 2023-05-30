@@ -1,10 +1,11 @@
 import { lazy } from 'react'
 import { Nutrition } from '../../assets'
+import { useNavigate } from 'react-router-dom'
 const NutritionDetails = lazy(() => import('./NutritionDetails'))
 const Button = lazy(() => import('../custom/Button'))
 const YellowDiv = lazy(() => import('../custom/YellowDiv'))
 
-const NutritionSm = () => {
+const NutritionSm = ({ navigate }) => {
   return (
     <>
       <section className="px-5 py-7 md:my-20">
@@ -29,7 +30,9 @@ const NutritionSm = () => {
               </span>
             </p>
             <div className="flex justify-end">
-              <Button className="my-5">View More</Button>
+              <Button className="my-5" onClick={() => navigate('/about')}>
+                View More
+              </Button>
             </div>
           </div>
         </YellowDiv>
@@ -39,7 +42,7 @@ const NutritionSm = () => {
   )
 }
 
-const NutritionMd = () => {
+const NutritionMd = ({ navigate }) => {
   return (
     <>
       <section className="md:mx-10">
@@ -66,7 +69,9 @@ const NutritionMd = () => {
               preparing dinner for the whole crew, Mother&rsquo;s Kitchen has got you covered. Come join us in the
               kitchen today and taste the love!
             </p>
-            <Button className="mt-10">View More</Button>
+            <Button className="mt-10" onClick={() => navigate('/about')}>
+              View More
+            </Button>
           </div>
         </YellowDiv>
       </section>
@@ -74,7 +79,7 @@ const NutritionMd = () => {
     </>
   )
 }
-const NutritionLg = () => {
+const NutritionLg = ({ navigate }) => {
   return (
     <>
       <section className="md:mx-20 2xl:mx-56">
@@ -101,7 +106,9 @@ const NutritionLg = () => {
               preparing dinner for the whole crew, Mother&rsquo;s Kitchen has got you covered. Come join us in the
               kitchen today and taste the love!
             </p>
-            <Button className="mt-10">View More</Button>
+            <Button className="mt-10" onClick={() => navigate('/about')}>
+              View More
+            </Button>
           </div>
         </YellowDiv>
       </section>
@@ -110,20 +117,21 @@ const NutritionLg = () => {
   )
 }
 const NutritionSection = () => {
+  const navigate = useNavigate()
   return (
     <div>
       <div className="md:hidden ">
         {/*Small Screen*/}
-        <NutritionSm />
+        <NutritionSm navigate={navigate} />
       </div>
       <div className="hidden md:block lg:hidden">
         {/*Medium Screen*/}
-        <NutritionMd />
+        <NutritionMd navigate={navigate} />
       </div>
 
       <div className="hidden lg:block">
         {/*Large Screen*/}
-        <NutritionLg />
+        <NutritionLg navigate={navigate} />
       </div>
     </div>
   )

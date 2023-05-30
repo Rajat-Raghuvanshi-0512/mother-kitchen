@@ -1,4 +1,4 @@
-import { AiFillStar } from 'react-icons/ai'
+import { Star } from '../../assets'
 const ReviewCard = ({ name, profession, title, desc, bgColor, image }) => {
   return (
     <div
@@ -12,12 +12,12 @@ const ReviewCard = ({ name, profession, title, desc, bgColor, image }) => {
         alt=""
         className="mx-auto h-12 w-12 rounded-full border-2 border-b-4 border-r-4 border-black object-contain md:h-16 md:w-16 md:border-b-8 md:border-r-8"
       />
-      <div className="mt-2 flex items-center justify-center gap-1 md:gap-3">
-        <AiFillStar className="h-3 w-3 text-yellow-500 drop-shadow-sm  md:h-6 md:w-6" />
-        <AiFillStar className="h-3 w-3 text-yellow-500 drop-shadow-sm  md:h-6 md:w-6" />
-        <AiFillStar className="h-3 w-3 text-yellow-500 drop-shadow-sm  md:h-6 md:w-6" />
-        <AiFillStar className="h-3 w-3 text-yellow-500 drop-shadow-sm  md:h-6 md:w-6" />
-        <AiFillStar className="h-3 w-3 text-yellow-500 drop-shadow-sm  md:h-6 md:w-6" />
+      <div className="mt-2 flex items-center justify-center gap-1">
+        <img src={Star} alt="star" className="h-5 w-5 object-contain md:h-8 md:w-8" />
+        <img src={Star} alt="star" className="h-5 w-5 object-contain md:h-8 md:w-8" />
+        <img src={Star} alt="star" className="h-5 w-5 object-contain md:h-8 md:w-8" />
+        <img src={Star} alt="star" className="h-5 w-5 object-contain md:h-8 md:w-8" />
+        <img src={Star} alt="star" className="h-5 w-5 object-contain md:h-8 md:w-8" />
       </div>
       <h3 className=" my-4 px-2 text-center text-sm font-bold drop-shadow-md md:text-xl">{title}</h3>
       <p className=" my-4 px-4 text-center text-[9px] font-semibold drop-shadow-md md:text-xs">{desc}</p>

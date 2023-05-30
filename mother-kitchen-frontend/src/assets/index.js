@@ -51,6 +51,7 @@ import Detail1 from './about/detail1.png'
 import Detail2 from './about/detail2.png'
 import Detail3 from './about/detail3.png'
 import DetailWire from './about/detail-wire.png'
+import Star from './about/star.png'
 
 import review1 from './reviews/review1.webp'
 import review2 from './reviews/review2.webp'
@@ -216,4 +217,5 @@ export {
   Detail3,
   DetailWire,
   Bag,
+  Star,
 }
