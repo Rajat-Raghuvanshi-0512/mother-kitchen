@@ -1,4 +1,4 @@
-import { GreenYellowBg, MissionBgPhone, Rocket, SuperWoman } from '../../assets'
+import { GreenYellowBg, HHLeft, HHRight, MissionBgPhone, Rocket, SuperWoman } from '../../assets'
 
 const MissionSm = () => {
   return (
@@ -46,7 +46,20 @@ const MissionLg = () => {
         </div>
         <div className="col-span-4 font-lexend text-sm font-[500] md:pr-20 lg:mb-28 lg:mt-20 2xl:mt-44">
           <h3 className="mt-28 px-11 py-5 font-gluten text-4xl font-bold text-white md:mt-0 md:px-0 md:text-3xl lg:text-[2.6rem] ">
-            Embarking on a <span className="text-black">long journey</span>
+            Embarking on a{' '}
+            <span className="relative text-black">
+              long journey
+              <img
+                src={HHLeft}
+                alt="lef"
+                className="absolute -left-10 -top-10 hidden h-12 w-12 object-contain md:block"
+              />
+              <img
+                src={HHRight}
+                alt="lef"
+                className="absolute -right-10 -top-10 hidden h-14 w-14 object-contain md:block"
+              />
+            </span>
           </h3>
           <div className="relative mx-7 rounded-3xl border-4 border-r-8  border-[#A57717] bg-[#FFE7B5] p-3 text-[8px] leading-3 md:mx-0 md:px-7 md:py-4 lg:text-sm lg:leading-4">
             <p>
