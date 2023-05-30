@@ -67,6 +67,9 @@ body {
 .black-shadow {
   text-shadow: black 2px 2px;
 }
+.black-shadow-sm {
+  text-shadow: black 1px 1px;
+}
 .white-shadow {
   text-shadow: white 2px 2px;
 }

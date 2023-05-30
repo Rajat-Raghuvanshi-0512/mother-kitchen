@@ -91,7 +91,7 @@ const ProductsCardLg = ({ image, price, quantity, title, desc, btnText, color, i
           <div className="text-[15px] font-bold ">{price}</div>
           <div className="text-[8px] font-medium ">{quantity}</div>
           <button className="mt-3 flex w-full items-center justify-end gap-3 rounded-lg border-2 border-b-4 border-r-4 border-black bg-[#039860] px-3 py-1 font-gluten text-white">
-            <span className="black-shadow">{btnText}</span>{' '}
+            <span className="black-shadow-sm">{btnText}</span>{' '}
             <img src={Bag} alt="bag" className="h-4 w-4 object-contain" />
           </button>
         </div>
