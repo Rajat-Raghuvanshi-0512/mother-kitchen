@@ -22,7 +22,7 @@ const ProductsCardSm = ({ image, price1, price2, price3, quantity, title, desc, 
       </div>
       <div className="flex gap-2 px-1 text-left drop-shadow-sm">
         <div className="flex flex-1 flex-col items-start justify-start">
-          <div className="flex text-[10px] font-bold">
+          <div className="flex text-[10px] font-bold tracking-tighter">
             {price1} <span className="text-white">{price2}</span> <span>{price3}</span>
           </div>
           <div className="text-[7px] font-semibold">{quantity}</div>
@@ -92,7 +92,7 @@ const ProductsCardLg = ({ image, price1, price2, price3, quantity, title, desc, 
       </div>
       <div className="flex gap-5 px-1 drop-shadow-sm">
         <div className="flex-1">
-          <div className="flex text-[15px] font-bold">
+          <div className="flex text-[15px] font-bold tracking-tighter">
             {price1} <span className="text-white">{price2}</span> <span>{price3}</span>
           </div>
           <div className="text-[8px] font-medium ">{quantity}</div>
