@@ -62,8 +62,8 @@ const TeamInfo = () => {
       </div>
       <BorderDiv className="bg-[#D07D41] p-5 md:p-10">
         <div className="flex justify-center md:mt-5">
-          <img src={TeamHeading} alt="heading" className="absolute -z-10 -mt-2 h-10 md:-mt-5 md:h-20" />
-          <h3 className="black-shadow text-center font-lexend text-sm font-semibold text-white md:text-3xl">
+          <img src={TeamHeading} alt="heading" className="absolute -mt-2 h-10 md:-mt-5 md:h-20" />
+          <h3 className="black-shadow z-10 text-center font-lexend text-sm font-semibold text-white md:text-3xl">
             Executive Team
           </h3>
         </div>
@@ -96,8 +96,8 @@ const TeamInfo = () => {
           </div>
         </div>
         <div className="mt-10 flex justify-start">
-          <img src={TeamHeading} alt="heading" className="absolute -z-10 -mt-3 h-11 md:-mt-5 md:h-20" />
-          <h3 className="black-shadow ml-10 text-center font-lexend text-sm font-semibold text-white md:ml-5 md:text-3xl">
+          <img src={TeamHeading} alt="heading" className="absolute -mt-3 h-11 md:-mt-5 md:h-20" />
+          <h3 className="black-shadow z-10 ml-10 text-center font-lexend text-sm font-semibold text-white md:ml-5 md:text-3xl">
             Advisory Board
           </h3>
         </div>
