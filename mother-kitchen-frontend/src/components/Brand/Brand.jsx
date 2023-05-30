@@ -5,7 +5,7 @@ import ImageBox from '../custom/ImageBox'
 const Brand = () => {
   return (
     <BorderDiv className="mx-7 bg-[#516AC0] p-5 md:mx-14 md:p-10 lg:mx-24">
-      <h4 className=" mx-auto text-center font-gluten text-[10px] text-white md:w-[80%] md:text-xl md:leading-4">
+      <h4 className=" mx-auto text-center font-gluten text-[12px] text-white md:w-[80%] md:text-xl md:leading-4">
         We&apos;re a group of companies transforming the FMCG industry through healthy and innovative products,
         prioritizing your well-being and the planet.
       </h4>
