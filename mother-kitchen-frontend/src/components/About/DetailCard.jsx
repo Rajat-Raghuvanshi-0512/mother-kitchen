@@ -5,8 +5,14 @@ const DetailCardSm = ({ even, image, heading, description, index }) => {
     return (
       <div className={`grid grid-cols-5 px-4`}>
         <div className="relative col-span-3 px-4">
-          <h3 className="mb-4 pr-5 font-gluten text-lg font-bold leading-5 text-red-900">{heading}</h3>
-          <img src={image} alt="imaze" className="h-full w-full object-contain object-top" />
+          <h3 className={`mb-4 ${index !== 0 ? 'pr-5' : ''} font-gluten text-lg font-bold leading-5 text-red-900`}>
+            {heading}
+          </h3>
+          <img
+            src={image}
+            alt="imaze"
+            className={`h-full w-full object-contain object-top ${index == 0 ? 'relative -top-8' : ''}`}
+          />
           {index == 0 ? (
             <img src={Detail1} alt="detail1" className="absolute -bottom-3 left-0 w-12" />
           ) : (
