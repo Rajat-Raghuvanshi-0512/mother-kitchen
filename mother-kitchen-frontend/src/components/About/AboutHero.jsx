@@ -4,7 +4,7 @@ import YellowDiv from '../custom/YellowDiv'
 const AboutHero = () => {
   return (
     <section className="2xl:mx-36">
-      <img src={AboutBg} alt="about" className="absolute -top-10 -z-30" />
+      <img src={AboutBg} alt="about" className="absolute -top-10 -z-30" loading="lazy" />
       <h1 className="mt-5 text-center font-lexend text-3xl font-black uppercase leading-5 md:mt-14 md:text-6xl md:leading-[50px]">
         <div className="tracking-tighter  text-red-base">Opening</div>
         <div className="pt-2 font-gluten text-2xl text-red-base md:pt-5 md:text-4xl">the</div>
@@ -18,10 +18,10 @@ const AboutHero = () => {
             className="absolute left-10 top-10 hidden md:block md:w-[100px] lg:w-[150px]"
           />
           <div className=" flex w-full flex-col justify-center md:flex-row">
-            <img src={AboutIntroBg} alt="about" className="h-full object-contain md:w-[50%]" />
+            <img src={AboutIntroBg} alt="about" className="h-full object-contain md:w-[50%]" loading="lazy" />
           </div>
           <div className="relative px-5 pb-5 md:px-10 md:pb-10 lg:px-24">
-            <img src={AboutHeroTextBg} alt="asd" className="hidden h-[300px] w-full lg:block" />
+            <img src={AboutHeroTextBg} alt="asd" className="hidden h-[300px] w-full lg:block" loading="lazy" />
             <img
               src={AboutHeroTextBgPhone}
               alt="sdd"

@@ -5,7 +5,7 @@ import BorderDiv from '../custom/BorderDiv'
 const ComingSoonSm = () => {
   return (
     <div className="relative -mb-20">
-      <img src={SoonBg} alt="soon" className="relative mt-5 h-full w-full object-contain" />
+      <img src={SoonBg} alt="soon" className="relative mt-5 h-full w-full object-contain" loading="lazy" />
       <div className="absolute top-0 w-full">
         <h3 className="relative left-[50%] top-[50%] w-[55vw] translate-x-[-50%] translate-y-[-50%] border-b-2 border-t-2 border-white py-2 text-center font-lexend  text-2xl text-white">
           MK’s Cafe
@@ -28,7 +28,12 @@ const ComingSoonLg = () => {
     <div className="px-20">
       <BorderDiv className="mx-10  mt-20 overflow-hidden">
         <div className="bg-black/30">
-          <img src={soon} alt="" className="absolute top-0 -z-20 h-full w-full object-cover opacity-90 blur-sm" />
+          <img
+            src={soon}
+            alt=""
+            className="absolute top-0 -z-20 h-full w-full object-cover opacity-90 blur-sm"
+            loading="lazy"
+          />
           <img src={TextLogo} alt="kitchen" className="mx-auto w-40 pt-20 drop-shadow-sm" />
           <div className="mx-32 flex flex-col items-center justify-center border-2 border-t-0 py-10">
             <div className=" mb-10 w-[20vw] border-b border-t border-white py-2 text-center font-gluten text-5xl text-white">
