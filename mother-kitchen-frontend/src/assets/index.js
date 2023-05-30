@@ -101,7 +101,7 @@ import RabitTea from './tea_with_rabbit.webp'
 import LoadingGirl from './loading_girl.webp'
 import LoadingItems from './loading_items.webp'
 
-import ContactFormImg from './contact/cform.webp'
+import ContactFormImg from './contact/cform.png'
 import Bird from './contact/bird.png'
 import Animals from './contact/animals.webp'
 import Monkey from './contact/monkey.webp'

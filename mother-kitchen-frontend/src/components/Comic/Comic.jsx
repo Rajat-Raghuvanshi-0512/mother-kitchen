@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { BackArrow } from '../../assets/comics'
 import ChapterCover from './ChapterCover'
 import ReactPaginate from 'react-paginate'
@@ -14,15 +14,14 @@ function Items({ currentItems }) {
   )
 }
 
-function PaginatedItems({ itemsPerPage }) {
-  const [itemOffset, setItemOffset] = useState(0)
-
+function PaginatedItems({ itemsPerPage, itemOffset, setItemOffset, page, setPage }) {
   const endOffset = itemOffset + itemsPerPage
   const currentItems = Comics.slice(itemOffset, endOffset)
   const pageCount = Math.ceil(Comics.length / itemsPerPage)
 
   // Invoke when user click to request another page.
   const handlePageClick = (event) => {
+    setPage(event.selected)
     const newOffset = (event.selected * itemsPerPage) % Comics.length
     scrollTo(0, 400)
     setItemOffset(newOffset)
@@ -47,12 +46,23 @@ function PaginatedItems({ itemsPerPage }) {
           activeLinkClassName="!bg-[#031E29] text-white"
           previousClassName="my-auto"
           nextClassName="my-auto"
+          forcePage={page}
         />
       </div>
     </>
   )
 }
 const Comic = () => {
+  const itemPerPage = 4
+  const [itemOffset, setItemOffset] = useState(0)
+  const [page, setPage] = useState(0)
+  const handlePageBack = () => {
+    if (itemOffset === 0) return
+    else {
+      setItemOffset((prev) => prev - itemPerPage)
+      setPage((prev) => prev - 1)
+    }
+  }
   return (
     <div className="px-3 py-5 md:px-20 md:pt-10 ">
       <div className="flex px-5 md:justify-between">
@@ -66,8 +76,11 @@ const Comic = () => {
           <p className=" mt-2 md:mt-5 md:text-2xl">PRINCIPLE OF SUCCESS</p>
           <p className="text-green-base md:text-xl">Mini Series</p>
         </div>
-        <div className="flex flex-col items-end justify-center md:items-start md:justify-center">
-          <div className="w-[3rem] cursor-pointer rounded-r-[3rem] rounded-tl-[2rem] border-2 border-b-4 border-r-4 border-black bg-green-base p-3 duration-300 hover:scale-95 md:mx-auto md:w-[5rem] md:border-4 md:border-b-[6px] md:border-r-[6px] md:p-5">
+        <div className="flex select-none flex-col items-end justify-center md:items-start md:justify-center">
+          <div
+            className="w-[3rem] cursor-pointer rounded-r-[3rem] rounded-tl-[2rem] border-2 border-b-4 border-r-4 border-black bg-green-base p-3 duration-300 hover:scale-95 md:mx-auto md:w-[5rem] md:border-4 md:border-b-[6px] md:border-r-[6px] md:p-5"
+            onClick={handlePageBack}
+          >
             <img src={BackArrow} alt="arrow" />
           </div>
           <p className="mt-4 text-center font-lexend text-[10px] font-semibold tracking-tighter text-white md:text-left md:text-base">
@@ -75,7 +88,13 @@ const Comic = () => {
           </p>
         </div>
       </div>
-      <PaginatedItems itemsPerPage={4} />
+      <PaginatedItems
+        itemsPerPage={itemPerPage}
+        itemOffset={itemOffset}
+        setItemOffset={setItemOffset}
+        page={page}
+        setPage={setPage}
+      />
     </div>
   )
 }
