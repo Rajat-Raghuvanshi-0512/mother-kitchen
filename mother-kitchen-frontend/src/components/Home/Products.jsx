@@ -15,7 +15,9 @@ import { Slider } from 'infinite-react-carousel/lib'
 const productsData = [
   {
     image: product1,
-    price: '$6.0/Sachet',
+    price1: '$',
+    price2: '6.0',
+    price3: '/Sachet',
     quantity: '250gm',
     title: 'Green Mint Chutney',
     desc: 'Instant Preseasoned Green mint chutney',
@@ -25,7 +27,9 @@ const productsData = [
   },
   {
     image: product2,
-    price: '$6.0/Sachet',
+    price1: '$',
+    price2: '6.0',
+    price3: '/Sachet',
     quantity: '250gm',
     title: 'Hazelnut Cocoa Spread',
     desc: 'Loaded with the goodness of hazelnuts',
@@ -35,7 +39,9 @@ const productsData = [
   },
   {
     image: product3,
-    price: '$6.0/Sachet',
+    price1: '$',
+    price2: '6.0',
+    price3: '/Sachet',
     quantity: '250gm',
     title: 'Turmeric & Saffron Booster',
     desc: 'Instant Green mint chutney',
@@ -45,7 +51,9 @@ const productsData = [
   },
   {
     image: Hazelnut,
-    price: '$6.0/Sachet',
+    price1: '$',
+    price2: '6.0',
+    price3: '/Sachet',
     quantity: '250gm',
     title: 'Hazelnut Cocoa Sread',
     desc: 'Instant Preseasoned Green mint chutney',
@@ -55,7 +63,9 @@ const productsData = [
   },
   {
     image: Hazelnut,
-    price: '$6.0/Sachet',
+    price1: '$',
+    price2: '6.0',
+    price3: '/Sachet',
     quantity: '250gm',
     title: 'Hazelnut Cocoa pread',
     desc: 'Instant Preseasoned Green mint chutney',
@@ -65,7 +75,9 @@ const productsData = [
   },
   {
     image: Hazelnut,
-    price: '$6.0/Sachet',
+    price1: '$',
+    price2: '6.0',
+    price3: '/Sachet',
     quantity: '250gm',
     title: 'Hazelnut Cocoa ead',
     desc: 'Instant Preseasoned Green mint chutney',
