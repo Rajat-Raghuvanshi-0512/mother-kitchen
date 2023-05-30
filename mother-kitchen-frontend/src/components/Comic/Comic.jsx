@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { BackArrow } from '../../assets/comics'
 import ChapterCover from './ChapterCover'
 import ReactPaginate from 'react-paginate'
