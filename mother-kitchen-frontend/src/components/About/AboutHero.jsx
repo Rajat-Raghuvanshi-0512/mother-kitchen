@@ -33,14 +33,16 @@ const AboutHero = () => {
                 Our brand was born out of a passion for good food and a desire to bring the best of nature&apos;s
                 ingredients to every kitchen.
               </p>
-              <p className="mx-5 px-5 pt-3 md:mx-0">
+              <p className="mx-5 hidden px-5 pt-3 md:mx-0 md:block">
                 We take great pride in the quality of our products and are committed to maintaining the highest
                 standards of hygiene and safety in our manufacturing processes. We work closely with our suppliers to
-                source only the best quality ingredients
-                <span className="hidden md:flex">
-                  and we use state-of-the-art technology and equipment to ensure that our products are of the highest
-                  quality.
-                </span>
+                source only the best quality ingredients and we use state-of-the-art technology and equipment to ensure
+                that our products are of the highest quality.
+              </p>
+              <p className="mx-5 px-5 pt-3 md:mx-0 md:hidden">
+                We take great pride in the quality of our products and are committed to maintaining the highest
+                standards of hygiene and safety in our manufacturing processes. We work closely with our suppliers to
+                source only the best quality ingredients.
               </p>
             </div>
           </div>
