@@ -61,6 +61,9 @@ body {
 .comic-text-shadow {
   text-shadow: black 3px 3px;
 }
+.black-shadow-large {
+  text-shadow: black 4px 4px;
+}
 .black-shadow {
   text-shadow: black 2px 2px;
 }
