@@ -18,17 +18,17 @@ import TeamInfoCard from './TeamInfoCard'
 const teamDetails = [
   {
     name: 'Joshua Morgolis',
-    desc: 'Professor of Business Administration at Harvard Business School, Business Administration',
+    desc: 'Professor of Business Administration at Harvard Business School',
     image: joshua,
   },
   {
     name: 'Stuart Gates',
-    desc: 'The Seasoned Grocer | College for the Distributive Trades Management. Ex Harrods. Over 30 years into food industry',
+    desc: 'The Seasoned Grocer | Ex Harrods. Over 30 years into food industry',
     image: stuart,
   },
   {
     name: 'Bhawna Agarwal',
-    desc: 'Country Head HPE, CEO at NDTV Gadget360.com, Harvard Business School, Co-Founder of OYO',
+    desc: 'Country Head HPE, CEO at NDTV Gadget360.com.',
     image: bhavna,
   },
   {
@@ -38,7 +38,7 @@ const teamDetails = [
   },
   {
     name: 'Mrunalini Deshmukh',
-    desc: 'Lawyer (22 Years Exp.) Experienced in Handling Most high-profile cases',
+    desc: 'Lawyer (22 Yrs Exp). Experienced in Handling Most high-profile cases',
     image: mrunalini,
   },
   {
@@ -48,7 +48,7 @@ const teamDetails = [
   },
   {
     name: 'Shifali Singh',
-    desc: 'Director at RP-Sanjiv Goenka Group SVP – Operations & E commerce : Apparel Ex Vice President : International Brands at Flipkart',
+    desc: 'Director at RP-Sanjiv Goenka Group.',
     image: shifali,
   },
 ]
@@ -61,7 +61,7 @@ const TeamInfo = () => {
         for our mission and work tirelessly to advance it
       </div>
       <BorderDiv className="bg-[#D07D41] p-5 md:p-10">
-        <div className="flex justify-center md:mt-5">
+        <div className="mt-3 flex justify-center md:mt-5">
           <img src={TeamHeading} alt="heading" className="absolute -mt-2 h-10 md:-mt-5 md:h-20" />
           <h3 className="black-shadow z-10 text-center font-lexend text-sm font-semibold text-white md:text-3xl">
             Executive Team
@@ -72,48 +72,46 @@ const TeamInfo = () => {
             <ImageBox image={Sunil} className={'!rounded'} />
             <h5 className="mt-4 text-center text-sm md:text-2xl">SUNIL CHAUHAN</h5>
             <p className="my-1 text-[10px] md:my-3 md:text-xl">CoFounder</p>
-            <p className="text-center font-lexend text-[6px] font-[100] md:text-sm">
-              A successful entrepreneur having 21+ years of experience across verticals. Actively working with focused
-              projects on women & child mentorship programs.
+            <p className="text-center font-lexend text-[7px] font-light md:text-sm">
+              Founder - Fabcafe, With over two decades of experience in f&B industry.
             </p>
           </div>
           <div className="flex flex-1 flex-col items-center font-gluten text-white lg:p-8">
             <ImageBox image={Shivani} className={'!rounded'} />
             <h5 className="mt-4 text-center text-sm md:text-2xl">SHIVANI MALIK</h5>
             <p className="my-1 text-[10px] md:my-3 md:text-xl">Founder & CEO</p>
-            <p className="text-center font-lexend  text-[6px] font-[100] md:text-sm">
-              A successful entrepreneur having 21+ years of experience across verticals. Actively working with focused
-              projects on women & child mentorship programs.
+            <p className="text-center font-lexend  text-[7px] font-light md:text-sm">
+              A successful entrepreneur having 25+ years of experience across verticals.
             </p>
           </div>
           <div className="flex flex-1 flex-col items-center font-gluten text-white lg:p-8">
             <ImageBox image={rohit} className={'!rounded'} />
             <h5 className="mt-4 text-center text-sm md:text-2xl">ROHIT KHARBANDA</h5>
             <p className="my-1 text-[10px] md:my-3 md:text-xl">CoFounder</p>
-            <p className="text-center font-lexend text-[6px] font-[100] md:text-sm">
-              Adept in food sector through relentless & rich experience of more than 18 years in the industry
+            <p className="text-center font-lexend text-[7px] font-light md:text-sm">
+              Over 18 years of relentless and extensive experience in the food sector
             </p>
           </div>
         </div>
-        <div className="mt-10 flex justify-start">
-          <img src={TeamHeading} alt="heading" className="absolute -mt-3 h-11 md:-mt-5 md:h-20" />
-          <h3 className="black-shadow z-10 ml-10 text-center font-lexend text-sm font-semibold text-white md:ml-5 md:text-3xl">
+        <div className="mt-10 flex justify-center md:justify-start">
+          <img src={TeamHeading} alt="heading" className="absolute -mt-2 h-10 md:-mt-5 md:h-20" />
+          <h3 className="black-shadow z-10 text-center font-lexend text-sm font-semibold text-white md:ml-5 md:text-3xl">
             Advisory Board
           </h3>
         </div>
         <div className="hidden md:block">
-          <div className="mt-7 grid grid-cols-3 gap-5 md:m-10 md:grid-cols-4 md:gap-x-20 md:gap-y-10">
+          <div className="mt-7 grid grid-cols-3 gap-5 md:m-10 md:grid-cols-4 md:gap-x-16 md:gap-y-10">
             {teamDetails.slice(0, 4).map((teamMem) => {
               return <TeamInfoCard key={teamMem.name} {...teamMem} />
             })}
           </div>
-          <div className="mx-44 grid gap-x-20 gap-y-10 md:grid-cols-3 ">
+          <div className="mx-44 grid gap-x-16 gap-y-10 md:grid-cols-3 ">
             {teamDetails.slice(4, 7).map((teamMem) => {
               return <TeamInfoCard key={teamMem.name} {...teamMem} />
             })}
           </div>
         </div>
-        <div className="mt-7 grid grid-cols-3 gap-5 md:hidden">
+        <div className="mt-7 grid grid-cols-3 gap-7 md:hidden">
           {teamDetails.map((teamMem) => {
             return <TeamInfoCard key={teamMem.name} {...teamMem} />
           })}

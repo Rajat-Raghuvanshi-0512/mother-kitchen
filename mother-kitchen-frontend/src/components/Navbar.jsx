@@ -1,5 +1,5 @@
 import { NavSmall, PaperPlane, TextLogo, TextLogoBlack } from '../assets'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { RxCross1, RxInstagramLogo } from 'react-icons/rx'
 import { RiFacebookFill, RiLinkedinFill } from 'react-icons/ri'
 import Drawer from './custom/Drawer'
@@ -35,6 +35,7 @@ const navLinks = [
 const NavSm = () => {
   let location = useLocation()
   const { isOpen, openModal, closeModal } = useModal()
+  const navigate = useNavigate()
   return (
     <nav className="px-5 py-8">
       <div className=" flex items-center justify-between rounded-full border-[3px] border-b-8 border-r-8 border-black bg-[#C40D4F] pl-4 pr-3 drop-shadow-small">
@@ -44,7 +45,7 @@ const NavSm = () => {
         <div className="pt-3">
           <img src={TextLogo} alt="logo" className="mx-auto w-[50%]" />
         </div>
-        <img src={HomeIcon} alt="homeicon" className="h-12 w-12 object-contain" />
+        <img src={HomeIcon} alt="homeicon" className="h-12 w-12 object-contain" onClick={() => navigate('/')} />
       </div>
       <Drawer isOpen={isOpen}>
         <div className="grid grid-cols-2">

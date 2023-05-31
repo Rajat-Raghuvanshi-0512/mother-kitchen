@@ -4,21 +4,24 @@ import DetailCard from './DetailCard'
 const details = [
   {
     image: InfoImg1,
-    heading: "The Rise of Mother's Kitchen",
+    heading: 'The Rise of',
+    headingwhite: " Mother's Kitchen",
     description:
       "In 2018, Shivani Malik founded Mother's Kitchen. With her passion and hard work, Mother's Kitchen quickly became popular. The brand expanded to Canada and the UK, providing customers in those countries with healthy and nutritious options",
   },
   {
     image: InfoImg2,
-    heading: 'The Global Expansion',
+    heading: 'The Global',
+    headingwhite: ' Expansion',
     description:
       "Over the next few years, the idea of Mother's Kitchen continued to spread globally, reaching many other countries such as Hong Kong, New Zealand, Australia, Oman, The USA and turkey. Cementing its status as a global leader in the FMCG industry.",
   },
   {
     image: InfoImg3,
-    heading: 'HOW LANNDED TO INDIA',
+    heading: 'LANNDED TO',
+    headingwhite: ' INDIA',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit augue vel turpis vehicula consequat. Morbi consequat lacus et nulla elementum auctor. In luctus ipsum eu ante convallis, at iaculis felis ultrices. Nullam non pulvinar leo.',
+      "In 2022, Mother's Kitchen made its entry into India, and Sunil Chauhan, the founder of Fabcafe, joined forces as a co-founder. With his contribution, Mother's Kitchen successfully diversified its business into new FMCG domains",
   },
 ]
 

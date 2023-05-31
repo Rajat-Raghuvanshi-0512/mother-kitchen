@@ -61,13 +61,11 @@ const NutritionMd = ({ navigate }) => {
               <span className="white-shadow font-gluten text-3xl font-black text-red-base"> in your dish</span>
             </h3>
             <p className="pr-4 text-justify font-lexend text-xs font-medium leading-4 tracking-[-0.01rem]">
-              At Mother&rsquo;s Kitchen, love is always the first ingredient. Our top-quality ingredients and
-              easy-to-use products make cooking a breeze, so you can spend more time with the people who matter most.
-              From seasonings and spices to baking mixes and ready-to-eat meals, we&rsquo;ve got everything you need to
-              whip up something delicious. Our recipes are passed down through generations of moms, ensuring that every
-              meal is packed with warmth and nostalgia. So whether you&rsquo;re baking with your little ones or
-              preparing dinner for the whole crew, Mother&rsquo;s Kitchen has got you covered. Come join us in the
-              kitchen today and taste the love!
+              At Mother&apos;s Kitchen, love is always the first ingredient. We believe that food is not just fuel for
+              the body, but also nourishment for the soul. We are passionate about creating products that are not only
+              healthy and delicious, but also bring people together and foster a sense of community and connection. Our
+              recipes are passed down through generations of moms, ensuring that every food product is packed with
+              warmth and love.
             </p>
             <Button className="mt-10" onClick={() => navigate('/about')}>
               View More
@@ -97,14 +95,13 @@ const NutritionLg = ({ navigate }) => {
               Pouring nutrition <br />{' '}
               <span className="mt-2 font-gluten text-4xl font-black tracking-normal text-red-base"> in your dish</span>
             </h3>
-            <p className="pr-4 text-justify font-lexend font-medium tracking-[-0.1rem]">
-              At Mother&rsquo;s Kitchen, love is always the first ingredient. Our top-quality ingredients and
-              easy-to-use products make cooking a breeze, so you can spend more time with the people who matter most.
-              From seasonings and spices to baking mixes and ready-to-eat meals, we&rsquo;ve got everything you need to
-              whip up something delicious. Our recipes are passed down through generations of moms, ensuring that every
-              meal is packed with warmth and nostalgia. So whether you&rsquo;re baking with your little ones or
-              preparing dinner for the whole crew, Mother&rsquo;s Kitchen has got you covered. Come join us in the
-              kitchen today and taste the love!
+            <p className="pr-4 text-justify font-lexend text-base font-medium tracking-[-0.1rem]">
+              At Mother&apos;s Kitchen, love is always the first ingredient. We believe that food is not just fuel for
+              the body, but also nourishment for the soul. We are passionate about creating products that are not only
+              healthy and delicious, but also bring people together and foster a sense of community and connection. Our
+              recipes are passed down through generations of moms, ensuring that every food product is packed with
+              warmth and love.so whether you&apos;re whipping up a quick snack or preparing a feast for your loved ones,
+              We&apos;ve has got you covered with our range of pure and hygienic products.
             </p>
             <Button className="mt-10" onClick={() => navigate('/about')}>
               View More

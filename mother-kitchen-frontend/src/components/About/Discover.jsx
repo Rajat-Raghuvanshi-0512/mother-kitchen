@@ -26,9 +26,14 @@ const Discover = () => {
       <div className="relative">
         <img src={DiscoverBg1} alt="dbg" className="absolute -z-30" />
         <div className="flex justify-end pr-3 pt-5 md:pr-24 md:pt-20">
-          <div className="w-[65%] border-b-2 border-r-4 border-black/70 bg-[#039860] p-2 text-center font-lexend text-[7px] text-white md:w-[50%] md:border-b-4 md:border-r-8 md:p-7 md:text-xs lg:text-base">
-            Inspired by the image of the daughter of our founder and owner Shivani Malik, Inayat represents everything
-            that we stand for - love, purity, and goodness
+          <div className="w-[55%] border-b-2 border-r-4 border-black/70 bg-[#039860] p-2 text-center font-lexend text-[10px] text-white md:w-[50%] md:border-b-4 md:border-r-8 md:p-7 md:text-xs lg:text-base">
+            <span className="hidden md:block">
+              Inspired by the image of the daughter of our founder and owner Shivani Malik, Inayat represents everything
+              that we stand for - love, purity, and goodness
+            </span>
+            <span className="md:hidden">
+              We&apos;re proud to introduce our beloved mascot, the heart and soul of our brand - Inayat
+            </span>
           </div>
         </div>
         <div className="shoot relative -top-16 -mb-16 md:-top-52 md:px-20 md:pr-52">
@@ -68,9 +73,8 @@ const Discover = () => {
         </h2>
         <div className="flex flex-col items-end justify-end  md:pt-20">
           <img src={Film} alt="film" className="w-[90%] md:w-[80%]" />
-          <p className="w-[60vw] -rotate-3 text-center font-lexend text-[9px] font-semibold text-white drop-shadow-small md:mr-40 md:w-[40rem] md:text-lg md:font-bold">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit augue vel turpis vehicula consequat.
-            <span className="hidden md:block">Morbi consequat lacus et nulla elementum auctor.</span>
+          <p className="mt-3 w-[80vw] -rotate-3 text-center font-lexend text-[10px] font-semibold text-white drop-shadow-small md:mr-20 md:w-[45rem] md:text-xl md:font-bold">
+            From a simple crayon drawing on a piece of paper to an iconic brand symbol.
           </p>
         </div>
       </div>
