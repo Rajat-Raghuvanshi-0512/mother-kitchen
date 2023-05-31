@@ -56,7 +56,7 @@ const teamDetails = [
 const TeamInfo = () => {
   return (
     <div>
-      <div className="relative mx-auto mb-[0.3px] w-[90%] rounded-b-3xl rounded-t-3xl border-b-[6px] border-l-4 border-r-[12px] border-t-4 border-black bg-[#BB48CE] px-5 py-4 text-center font-lexend text-[8px] font-semibold text-white shadow-2xl before:absolute before:left-[0.8px] before:top-[0.8px] before:h-full before:w-full before:rounded-b-2xl before:rounded-t-2xl before:rounded-tl-2xl before:border-[3px] before:border-white md:mb-0 md:w-[80%] md:rounded-b-none md:border-b-0 md:px-20 md:text-[10px] md:text-sm md:before:rounded-b-none md:before:border-b-0">
+      <div className="relative mx-auto mb-[0.3px] w-[90%] rounded-b-3xl rounded-t-3xl border-b-[6px] border-l-4 border-r-[12px] border-t-4 border-black bg-[#BB48CE] px-5 py-4 text-center font-lexend text-[10px] font-semibold text-white shadow-2xl before:absolute before:left-[0.8px] before:top-[0.8px] before:h-full before:w-full before:rounded-b-2xl before:rounded-t-2xl before:rounded-tl-2xl before:border-[3px] before:border-white md:mb-0 md:w-[80%] md:rounded-b-none md:border-b-0 md:px-20 md:text-[10px] md:text-sm md:before:rounded-b-none md:before:border-b-0">
         We are proud to introduce you to the members of our board, a group of dedicated individuals who share a passion
         for our mission and work tirelessly to advance it
       </div>
