@@ -26,7 +26,11 @@ const Discover = () => {
       </div>
       <div className="relative">
         <img src={DiscoverBg1} alt="dbg" className="absolute -z-30 hidden md:block" />
-        <img src={DiscoverBg1Phone} alt="dbg" className="absolute left-5 top-6 -z-30 md:hidden" />
+        <img
+          src={DiscoverBg1Phone}
+          alt="dbg"
+          className="absolute -top-3 left-7 -z-30 h-full w-[90%] object-contain md:hidden"
+        />
         <div className="flex justify-end pr-3 pt-5 md:pr-24 md:pt-20">
           <div className="w-[55%] border-b-2 border-r-4 border-black/70 bg-[#039860] p-2 text-center font-lexend text-[10px] text-white md:w-[50%] md:border-b-4 md:border-r-8 md:p-7 md:text-xs lg:text-base">
             <span className="hidden md:block">
