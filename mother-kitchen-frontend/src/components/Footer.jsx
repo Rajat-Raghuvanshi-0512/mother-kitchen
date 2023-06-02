@@ -49,7 +49,7 @@ const FooterSm = ({ location }) => {
                 <Link
                   to={'/'}
                   className={`${location.pathname === '/' && 'text-[#C842DE]'}`}
-                  onClick={() => scrollTo(0, 0)}
+                  onClick={() => scroll(0, 0)}
                 >
                   Home
                 </Link>
@@ -58,7 +58,7 @@ const FooterSm = ({ location }) => {
                 <Link
                   to={'/team'}
                   className={`${location.pathname === '/team' && 'text-[#C842DE]'}`}
-                  onClick={() => scrollTo(0, 0)}
+                  onClick={() => scroll(0, 0)}
                 >
                   Team
                 </Link>
@@ -70,7 +70,7 @@ const FooterSm = ({ location }) => {
                 <Link
                   to={'/about'}
                   className={`${location.pathname === '/about' && 'text-[#C842DE]'}`}
-                  onClick={() => scrollTo(0, 0)}
+                  onClick={() => scroll(0, 0)}
                 >
                   About
                 </Link>
@@ -79,7 +79,7 @@ const FooterSm = ({ location }) => {
                 <Link
                   to={'/comic'}
                   className={`${location.pathname === '/comic' && 'text-[#C842DE]'}`}
-                  onClick={() => scrollTo(0, 0)}
+                  onClick={() => scroll(0, 0)}
                 >
                   Comic
                 </Link>
@@ -128,7 +128,7 @@ const FooterMd = ({ location }) => {
                 <Link
                   to={'/'}
                   className={`${location.pathname === '/' && 'text-[#C842DE]'}`}
-                  onClick={() => scrollTo(0, 0)}
+                  onClick={() => scroll(0, 0)}
                 >
                   Home
                 </Link>
@@ -137,7 +137,7 @@ const FooterMd = ({ location }) => {
                 <Link
                   to={'/team'}
                   className={`${location.pathname === '/team' && 'text-[#C842DE]'}`}
-                  onClick={() => scrollTo(0, 0)}
+                  onClick={() => scroll(0, 0)}
                 >
                   Team
                 </Link>
@@ -149,7 +149,7 @@ const FooterMd = ({ location }) => {
                 <Link
                   to={'/about'}
                   className={`${location.pathname === '/about' && 'text-[#C842DE]'}`}
-                  onClick={() => scrollTo(0, 0)}
+                  onClick={() => scroll(0, 0)}
                 >
                   About
                 </Link>
@@ -158,7 +158,7 @@ const FooterMd = ({ location }) => {
                 <Link
                   to={'/comic'}
                   className={`${location.pathname === '/comic' && 'text-[#C842DE]'}`}
-                  onClick={() => scrollTo(0, 0)}
+                  onClick={() => scroll(0, 0)}
                 >
                   Comic
                 </Link>
@@ -215,7 +215,7 @@ const FooterLg = ({ location }) => {
                 <Link
                   to={'/'}
                   className={`${location.pathname === '/' && 'text-[#C842DE]'}`}
-                  onClick={() => scrollTo(0, 0)}
+                  onClick={() => scroll(0, 0)}
                 >
                   Home
                 </Link>
@@ -224,7 +224,7 @@ const FooterLg = ({ location }) => {
                 <Link
                   to={'/team'}
                   className={`${location.pathname === '/team' && 'text-[#C842DE]'}`}
-                  onClick={() => scrollTo(0, 0)}
+                  onClick={() => scroll(0, 0)}
                 >
                   Team
                 </Link>
@@ -236,7 +236,7 @@ const FooterLg = ({ location }) => {
                 <Link
                   to={'/about'}
                   className={`${location.pathname === '/about' && 'text-[#C842DE]'}`}
-                  onClick={() => scrollTo(0, 0)}
+                  onClick={() => scroll(0, 0)}
                 >
                   About
                 </Link>
@@ -245,7 +245,7 @@ const FooterLg = ({ location }) => {
                 <Link
                   to={'/comic'}
                   className={`${location.pathname === '/comic' && 'text-[#C842DE]'}`}
-                  onClick={() => scrollTo(0, 0)}
+                  onClick={() => scroll(0, 0)}
                 >
                   Comic
                 </Link>
@@ -256,7 +256,7 @@ const FooterLg = ({ location }) => {
             <Link
               to={'/contact'}
               className="flex  w-32 items-center rounded-full border-2 border-b-8 border-r-8 border-black bg-green-base py-3 font-lexend text-sm uppercase tracking-tighter duration-300 hover:bg-red-base"
-              onClick={() => scrollTo(0, 0)}
+              onClick={() => scroll(0, 0)}
             >
               <BsQuestionCircle className="mx-3 h-6 w-6" />
               <span>Help</span>
