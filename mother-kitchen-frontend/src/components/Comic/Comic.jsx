@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, lazy } from 'react'
 import { BackArrow } from '../../assets/comics'
-import ChapterCover from './ChapterCover'
+const ChapterCover = lazy(() => import('./ChapterCover'))
 import ReactPaginate from 'react-paginate'
 import Comics from './comicData'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'

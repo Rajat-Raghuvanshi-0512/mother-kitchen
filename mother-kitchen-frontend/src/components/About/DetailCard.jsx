@@ -5,7 +5,9 @@ const DetailCardSm = ({ even, image, heading, headingwhite, description, index }
     return (
       <div className={`grid grid-cols-5 px-4`}>
         <div className="relative col-span-3 px-4">
-          <h3 className={`mb-4 ${index !== 0 ? 'pr-5' : ''} font-gluten text-lg font-bold leading-5 text-red-900`}>
+          <h3
+            className={`${index !== 0 ? 'mt-14 pr-8' : ''} mb-4 font-gluten text-2xl font-bold leading-6 text-red-900`}
+          >
             <span>{heading}</span> <span className="text-white">{headingwhite}</span>
           </h3>
           <img
@@ -20,7 +22,11 @@ const DetailCardSm = ({ even, image, heading, headingwhite, description, index }
           )}
         </div>
         <div className="col-span-2">
-          <h3 className="pt-16 text-justify font-lexend text-[10px] font-semibold leading-3 text-white">
+          <h3
+            className={`${
+              index !== 0 ? 'mt-10' : ''
+            } pt-20 text-left font-lexend text-[10px] font-semibold leading-3 text-white`}
+          >
             {description}
           </h3>
         </div>
@@ -30,16 +36,16 @@ const DetailCardSm = ({ even, image, heading, headingwhite, description, index }
   return (
     <div className={`grid grid-cols-5 px-4`}>
       <div className="col-span-2">
-        <h3 className="pt-16 text-justify font-lexend text-[10px] font-semibold leading-3 text-white">
+        <h3 className="pt-16 text-right font-lexend text-[10px] font-semibold leading-3 text-white">
           {description.slice(0, 250)}
         </h3>
       </div>
       <div className=" col-span-3 pl-10">
-        <h3 className="mb-4 pl-7 font-gluten text-lg font-bold leading-5 text-red-900">
+        <h3 className="mb-4 pl-7 font-gluten text-2xl font-bold leading-6 text-red-900">
           <span>{heading}</span> <span className="text-white">{headingwhite}</span>
         </h3>
         <div className="relative my-auto flex h-[85%] w-full items-center justify-center rounded-2xl border-2 border-b-4 border-r-4 border-black bg-[#FFBF37] object-contain">
-          <img src={image} alt="imaze" className="h-full w-full object-contain object-top" />
+          <img src={image} alt="imaze" className="mr-4 mt-10 h-full w-full scale-[1.15] object-contain object-top" />
           {index == 1 && <img src={Detail2} alt="detail1" className="absolute -bottom-10 -left-2 w-12" />}
         </div>
       </div>

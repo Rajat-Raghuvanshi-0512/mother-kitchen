@@ -4,6 +4,7 @@ import {
   Camera,
   CameraAndGirl,
   DiscoverBg1,
+  DiscoverBg1Phone,
   Film,
   ProductsHeading,
   SmallWheel,
@@ -24,7 +25,8 @@ const Discover = () => {
         </h2>
       </div>
       <div className="relative">
-        <img src={DiscoverBg1} alt="dbg" className="absolute -z-30" />
+        <img src={DiscoverBg1} alt="dbg" className="absolute -z-30 hidden md:block" />
+        <img src={DiscoverBg1Phone} alt="dbg" className="absolute left-5 top-6 -z-30 md:hidden" />
         <div className="flex justify-end pr-3 pt-5 md:pr-24 md:pt-20">
           <div className="w-[55%] border-b-2 border-r-4 border-black/70 bg-[#039860] p-2 text-center font-lexend text-[10px] text-white md:w-[50%] md:border-b-4 md:border-r-8 md:p-7 md:text-xs lg:text-base">
             <span className="hidden md:block">
@@ -66,14 +68,14 @@ const Discover = () => {
         <img
           src={YellowBg}
           alt="bg"
-          className="absolute top-0 -z-50 h-[470px]  md:-top-[20rem] md:h-auto md:w-screen 2xl:h-[160vh]"
+          className="absolute top-0 -z-50 h-[490px]  md:-top-[20rem] md:h-auto md:w-screen 2xl:h-[160vh]"
         />
         <h2 className="discover-shadow my-5 -rotate-6 pl-10 font-gluten text-3xl font-bold text-red-base md:-mt-40 md:mb-0 md:pl-40 md:text-7xl">
           A Tale of <span className="text-black">Discovery!</span>
         </h2>
         <div className="flex flex-col items-end justify-end  md:pt-20">
           <img src={Film} alt="film" className="w-[90%] md:w-[80%]" />
-          <p className="mt-3 w-[80vw] -rotate-3 text-center font-lexend text-[10px] font-semibold text-white drop-shadow-small md:mr-20 md:w-[45rem] md:text-xl md:font-bold">
+          <p className="mt-3 w-[85vw] -rotate-3 text-center font-lexend text-xs font-bold text-white md:mr-20 md:w-[45rem] md:text-xl">
             From a simple crayon drawing on a piece of paper to an iconic brand symbol.
           </p>
         </div>

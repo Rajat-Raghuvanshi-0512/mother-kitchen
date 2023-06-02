@@ -34,6 +34,8 @@ import GreenYellowBg from './long_journey.webp'
 import SuperWoman from './superwoman.webp'
 import Rocket from './rocket.webp'
 import DiscoverBg1 from './discovery-bg1.webp'
+import DiscoverBg1Phone from './discover/DiscoverBg1Phone.png'
+import Heart from './heart.png'
 
 import ProductItemSm1 from './home/productItemSmall1.png'
 import ProductItemSm2 from './home/productItemSmall2.png'
@@ -117,12 +119,14 @@ export {
   TextLogo,
   PaperPlane,
   HHLeft,
+  DiscoverBg1Phone,
   HHRight,
   Girl,
   Squirrel,
   Containers,
   HeroLVec,
   Nutrition,
+  Heart,
   GirlBadge,
   Bottle,
   Drop,

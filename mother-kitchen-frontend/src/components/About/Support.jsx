@@ -29,7 +29,7 @@ const Support = () => {
               We&apos;re committed to using our platform to empower women and inspire positive change. Join us in our
               mission to promote gender equality and create a more equitable world for all.
             </p>
-            <div className="py-5 pr-3 text-right text-sm md:text-base md:font-bold md:text-white">
+            <div className="py-5 pr-5 text-right font-lexend text-sm md:text-base md:font-bold md:text-white">
               - Mother&apos;s Kitchen
             </div>
           </div>
