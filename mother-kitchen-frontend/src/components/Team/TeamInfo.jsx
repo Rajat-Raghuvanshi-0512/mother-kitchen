@@ -69,14 +69,6 @@ const TeamInfo = () => {
         </div>
         <div className="mx-auto mt-10 grid grid-cols-3 gap-3">
           <div className="flex flex-1 flex-col items-center font-gluten text-white lg:p-8">
-            <ImageBox image={Sunil} className={'!rounded'} />
-            <h5 className="mt-4 text-center text-sm md:text-2xl">SUNIL CHAUHAN</h5>
-            <p className="my-1 text-[10px] md:my-3 md:text-xl">CoFounder</p>
-            <p className="text-center font-lexend text-[8px] font-light md:text-sm">
-              Founder - Fabcafe, With over two decades of experience in f&B industry.
-            </p>
-          </div>
-          <div className="flex flex-1 flex-col items-center font-gluten text-white lg:p-8">
             <ImageBox image={Shivani} className={'!rounded'} />
             <h5 className="mt-4 text-center text-sm md:text-2xl">SHIVANI MALIK</h5>
             <p className="my-1 text-[10px] md:my-3 md:text-xl">Founder & CEO</p>
@@ -90,6 +82,14 @@ const TeamInfo = () => {
             <p className="my-1 text-[10px] md:my-3 md:text-xl">CoFounder</p>
             <p className="text-center font-lexend text-[8px] font-light md:text-sm">
               Over 18 years of relentless and extensive experience in the food sector
+            </p>
+          </div>
+          <div className="flex flex-1 flex-col items-center font-gluten text-white lg:p-8">
+            <ImageBox image={Sunil} className={'!rounded'} />
+            <h5 className="mt-4 text-center text-sm md:text-2xl">SUNIL CHAUHAN</h5>
+            <p className="my-1 text-[10px] md:my-3 md:text-xl">CoFounder</p>
+            <p className="text-center font-lexend text-[8px] font-light md:text-sm">
+              Founder - Fabcafe, With over two decades of experience in f&B industry.
             </p>
           </div>
         </div>
