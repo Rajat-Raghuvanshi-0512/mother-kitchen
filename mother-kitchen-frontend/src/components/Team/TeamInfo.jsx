@@ -73,7 +73,7 @@ const TeamInfo = () => {
             <h5 className="mt-4 text-center text-sm md:text-2xl">SHIVANI MALIK</h5>
             <p className="my-1 text-[10px] md:my-3 md:text-xl">Founder & CEO</p>
             <p className="text-center font-lexend  text-[8px] font-light md:text-sm">
-              A successful entrepreneur having 25+ years of experience across verticals.
+              Founder Director - Infomerics Rating, with over 25+ years of experience in food and other verticals.
             </p>
           </div>
           <div className="flex flex-1 flex-col items-center font-gluten text-white lg:p-8">
@@ -81,7 +81,7 @@ const TeamInfo = () => {
             <h5 className="mt-4 text-center text-sm md:text-2xl">ROHIT KHARBANDA</h5>
             <p className="my-1 text-[10px] md:my-3 md:text-xl">CoFounder</p>
             <p className="text-center font-lexend text-[8px] font-light md:text-sm">
-              Over 18 years of relentless and extensive experience in the food sector
+              Partner Lyallpur Bakers with over 27 years of extensive experience in food sector
             </p>
           </div>
           <div className="flex flex-1 flex-col items-center font-gluten text-white lg:p-8">
