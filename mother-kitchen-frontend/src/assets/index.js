@@ -98,6 +98,7 @@ import shifali from './team/shifali.webp'
 import satyam from './team/satyam.webp'
 import rohit from './team/rohit.png'
 
+import soon from './soon.webp'
 import RabitTea from './tea_with_rabbit.webp'
 
 import LoadingGirl from './loading_girl.webp'
@@ -192,6 +193,7 @@ export {
   shrikumar,
   shifali,
   mrunalini,
+  soon,
   RabitTea,
   LoadingGirl,
   LoadingItems,
