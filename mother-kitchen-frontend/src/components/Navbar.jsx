@@ -40,7 +40,7 @@ const NavSm = () => {
     <nav className="px-5 py-8">
       <div className=" flex items-center justify-between rounded-full border-[3px] border-b-8 border-r-8 border-black bg-[#C40D4F] pl-4 pr-3 drop-shadow-small">
         <div className="pl-3 text-[#FEF5CE]">
-          <img src={BurgerMenuIcon} alt="burger" className="h-12 w-12 object-contain" onClick={openModal} />
+          <img src={BurgerMenuIcon} alt="burger" className="h-[4.5rem] w-[4.5rem] object-contain" onClick={openModal} />
         </div>
         <div className="pt-3">
           <img src={TextLogo} alt="logo" className="mx-auto w-[50%]" />
