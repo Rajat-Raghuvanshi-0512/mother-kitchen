@@ -122,7 +122,7 @@ import Chap20Img3 from './mini series part 1/chapter 20/3.webp'
 import Chap20Img4 from './mini series part 1/chapter 20/4.webp'
 import Chap20Img5 from './mini series part 1/chapter 20/5.webp'
 import DownloadArrow from './download-arrow.png'
-import DownloadImg from './download-comic.png'
+import DownloadImg from './download-comic.webp'
 
 export {
   BackArrow,
