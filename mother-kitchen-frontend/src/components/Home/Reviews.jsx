@@ -124,7 +124,7 @@ const ReviewsLg = () => {
   }
   useEffect(() => {
     window.addEventListener('scroll', getScrollOffset, { passive: true })
-    return () => window.removeEventListener('scroll', getScrollOffset)
+    return () => window.removeEventListener('scroll', getScrollOffset, { passive: true })
   }, [])
   return (
     <section>

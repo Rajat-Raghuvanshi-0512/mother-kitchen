@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
-import { About, Brands, Comic, Contact, Home, MkCafe, Team } from './pages'
+import { About, Brands, Comic, Contact, Home, MkCafe, NotFound, Team } from './pages'
 import { Footer, Loader, Navbar } from './components'
 import { Suspense } from 'react'
 
@@ -16,6 +16,7 @@ const App = () => {
           <Route path="/comic" element={<Comic />} />
           <Route path="/cafe" element={<MkCafe />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </Suspense>
