@@ -196,10 +196,10 @@ const FooterLg = ({ location }) => {
             </Button>
           </div>
           <div className="social-medias flex gap-7">
-            <RiInstagramLine className="h-10 w-10 cursor-pointer duration-300 hover:text-cyan-300" />
-            <TiSocialFacebookCircular className="h-10 w-10 cursor-pointer duration-300 hover:text-cyan-300" />
-            <TbBrandLinkedin className="h-10 w-10 cursor-pointer duration-300 hover:text-cyan-300" />
-            <RiTwitterLine className="h-10 w-10 cursor-pointer duration-300 hover:text-cyan-300" />
+            <RiInstagramLine className="h-10 w-10 cursor-pointer duration-300 hover:text-green-base" />
+            <TiSocialFacebookCircular className="h-10 w-10 cursor-pointer duration-300 hover:text-green-base" />
+            <TbBrandLinkedin className="h-10 w-10 cursor-pointer duration-300 hover:text-green-base" />
+            <RiTwitterLine className="h-10 w-10 cursor-pointer duration-300 hover:text-green-base" />
           </div>
           <p className="my-10 flex items-start text-xl font-bold">
             <span>Contact Us</span> <RiUser3Fill className="h-5 w-8" />
