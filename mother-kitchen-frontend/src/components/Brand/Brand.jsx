@@ -1,4 +1,4 @@
-import { TextLogo } from '../../assets'
+import { Brand2, Brand3, TextLogo } from '../../assets'
 import BorderDiv from '../custom/BorderDiv'
 import ImageBox from '../custom/ImageBox'
 
@@ -10,12 +10,36 @@ const Brand = () => {
         prioritizing your well-being and the planet.
       </h4>
       <div className="m-5 grid grid-cols-2 gap-8 md:m-10 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:m-20 lg:gap-x-24 lg:gap-y-14">
-        <ImageBox image={TextLogo} className="bg-[#7E97ED] p-6 md:px-8" clickable={true} />
-        <ImageBox image={TextLogo} className="bg-[#7E97ED] p-6 md:px-8 md:py-16" clickable={true} />
-        <ImageBox image={TextLogo} className="bg-[#7E97ED] p-6 md:px-8 md:py-16" clickable={true} />
-        <ImageBox image={TextLogo} className="bg-[#7E97ED] p-6 md:px-8 md:py-16" clickable={true} />
-        <ImageBox image={TextLogo} className="bg-[#7E97ED] p-6 md:px-8 md:py-16" clickable={true} />
-        <ImageBox image={TextLogo} className="bg-[#7E97ED] p-6 md:px-8 md:py-16" clickable={true} />
+        <ImageBox
+          image={TextLogo}
+          className="h-[100px] w-[100px] bg-[#7E97ED] object-contain p-6 md:h-[150px] md:w-[300px] md:px-8 lg:h-[240px] lg:w-[400px]"
+          clickable={true}
+        />
+        <ImageBox
+          image={Brand2}
+          className="h-[100px] w-[100px] bg-[#7E97ED] object-contain p-6 md:h-[150px] md:w-[300px] lg:h-[240px] lg:w-[400px]"
+          clickable={true}
+        />
+        <ImageBox
+          image={Brand3}
+          className="h-[100px] w-[100px] bg-[#7E97ED] object-contain p-6 md:h-[150px] md:w-[300px] lg:h-[240px] lg:w-[400px]"
+          clickable={true}
+        />
+        <ImageBox
+          image={TextLogo}
+          className="h-[100px] w-[100px] bg-[#7E97ED] object-contain p-6 md:h-[150px] md:w-[300px] lg:h-[240px] lg:w-[400px]"
+          clickable={true}
+        />
+        <ImageBox
+          image={TextLogo}
+          className="h-[100px] w-[100px] bg-[#7E97ED] object-contain p-6 md:h-[150px] md:w-[300px] lg:h-[240px] lg:w-[400px]"
+          clickable={true}
+        />
+        <ImageBox
+          image={TextLogo}
+          className="h-[100px] w-[100px] bg-[#7E97ED] object-contain p-6 md:h-[150px] md:w-[300px] lg:h-[240px] lg:w-[400px]"
+          clickable={true}
+        />
       </div>
     </BorderDiv>
   )

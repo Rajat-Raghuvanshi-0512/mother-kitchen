@@ -1,21 +1,21 @@
 import { useEffect, useRef } from 'react'
-import { ReviewHeading, review1, review2, review3, review4, review5, review6, reviewBg } from '../../assets'
+import { ReviewHeading, review1, review2, review3, review4, review5, review6, review7, reviewBg } from '../../assets'
 import ReviewCard from './ReviewCard'
 import Slider from 'infinite-react-carousel'
 
 const reviews1 = [
   {
-    title: 'Thank you, Mothers Kitchen, for these wonderfully flavored gluten free treats',
-    desc: 'The Cumin seed cookies and the pistachio cookies of Mothers Kitchen are the only biscuits my mother will have. She used to eat these back from our hometown bakery before I shifted to the city to pursue my career as an actor. Thank you, Mothers Kitchen, for these wonderfully flavored gluten free treats.',
-    name: 'Kashish Vohra',
-    profession: 'Bollywood Actor',
+    title: 'Thank you, Mothers Kitchen, for this delicious chana burfi',
+    desc: 'Dear Shivani As I sit here enjoying your chana burﬁ that I just received, I realized I have been extremely selﬁsh in not reaching out to you earlier. Just know I received your earlier letters. I am simply overwhelmed and touched by your conﬁdence in me. Your story moved me to tears. Your determination to power ahead is inspiring. Please let me know how I can help you. Best wishes and charge on. The world needs more people like you.',
+    name: 'Indra Nooyi',
+    profession: 'Former Pepsico CEO',
     bgColor: 'bg-[#446DBC]',
     image: review1,
   },
   {
     title: 'Sesame Seed Cookies are my favorite',
     desc: 'Sesame Seed Cookies are my favorite sweet but the only thought that comes to my mind when I’m making it is, whether it’s healthy or not. Sugar is fattening and being an actor, I need to both look and feel fifit. Mothers Kitchen’s gluten-free Sesame Seed Cookies are healthy and nutritious. Now I enjoy my favorite treat with nosecond thoughts.',
-    name: 'Hilash Kumar',
+    name: 'Abhilash Kumar',
     profession: 'Bollywood Actor',
     bgColor: 'bg-[#A66C42]',
     image: review2,
@@ -30,11 +30,11 @@ const reviews1 = [
   },
   {
     title: 'Thank you, Mothers Kitchen, for these wonderfully flavored gluten free treats',
-    desc: 'The Cumin seed cookies and the pistachio cookies of Mothers Kitchen are the only biscuits my mother will have. She used to eat these back from our hometown bakery before I shifted to the city to pursue my career as an actor. Thank you, Mothers Kitchen, for these wonderfully flavored gluten free treats.',
-    name: 'Abhishek Kapoor',
-    profession: 'Bollywood Actor',
+    desc: 'As importants itis to have breakfast, it is equally important to eat the right food. Products from Mothers Kitchen are gluten free, low in calorie yet high in energy. It keeps you fuller for a long time which helps in warding off hunger pangs and boost concentration levels.',
+    name: 'Dr. Upasana Arora',
+    profession: 'Director-YSSH',
     bgColor: 'bg-[#6FAD94]',
-    image: review3,
+    image: review4,
   },
   {
     title: 'The most nostalgic memory of my childhood',
@@ -72,11 +72,11 @@ const reviews2 = [
   },
   {
     title: 'I love these little taste bombs',
-    desc: 'When I hear the word “street food”, my favorite Gol gappas is all I can think about. I love these little taste bombs but due to my shoots I get no time to go out and enjoy them. But now I can eat them anytime because of Mothers Kitchen Gol Gappas and Masala Mix.',
-    name: 'Purvi Mundada',
-    profession: 'Bollywood Actor',
+    desc: 'A stressful lifestyle coupled with pollution and poor eating habits is very harmful for the heart. The nutritious vegan products provided by Mothers Kitchen are both lactose and gluten-free which is why we at the National Heart Institute highly recommend their products to our patients.',
+    name: 'Dr. O.P. Yadava',
+    profession: 'Cardiac Surgeon,',
     bgColor: 'bg-[#60CB84]',
-    image: review6,
+    image: review7,
   },
   {
     title: 'The most nostalgic memory of my childhood',

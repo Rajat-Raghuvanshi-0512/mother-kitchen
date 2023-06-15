@@ -55,12 +55,13 @@ import Detail3 from './about/detail3.webp'
 import DetailWire from './about/detail-wire.webp'
 import Star from './about/star.webp'
 
-import review1 from './reviews/review1.webp'
+import review1 from './reviews/indra.jpeg'
 import review2 from './reviews/review2.webp'
 import review3 from './reviews/review3.webp'
-import review4 from './reviews/review4.webp'
+import review4 from './reviews/upasana.jpeg'
 import review5 from './reviews/review5.webp'
 import review6 from './reviews/review6.webp'
+import review7 from './reviews/op.jpeg'
 import reviewBg from './reviews/review_bg.webp'
 
 import product1 from './products/product1.webp'
@@ -98,6 +99,9 @@ import shifali from './team/shifali.webp'
 import satyam from './team/satyam.webp'
 import rohit from './team/rohit.png'
 
+import Brand2 from './brands/brand2.png'
+import Brand3 from './brands/brand3.png'
+
 import soon from './soon.webp'
 import RabitTea from './tea_with_rabbit.webp'
 
@@ -131,6 +135,7 @@ export {
   Bottle,
   Drop,
   FatFree,
+  review7,
   Vegan,
   ProductsHeading,
   Hazelnut,
@@ -213,6 +218,7 @@ export {
   BigBlackCookie,
   AboutHeroTextBgPhone,
   HHLeftMobile,
+  Brand2,
   HHRightMobile,
   ScrollDown,
   MissionBgPhone,
@@ -222,4 +228,5 @@ export {
   DetailWire,
   Bag,
   Star,
+  Brand3,
 }

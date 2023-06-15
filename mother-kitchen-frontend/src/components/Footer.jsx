@@ -36,9 +36,6 @@ const FooterSm = ({ location }) => {
           <p className="my-2 mb-20 flex items-start font-bold">
             <span>Contact Us </span> <RiUser3Fill className="h-3 w-3" />
           </p>
-          <p className="absolute -bottom-1 left-[37%] z-10 text-[10px] shadow-3xl drop-shadow-3xl">
-            Website by pixysquare
-          </p>
         </div>
         <img src={footerImg} alt="footer" className="absolute bottom-0 left-[45%] w-[220px] translate-x-[-50%]" />
 
@@ -118,7 +115,6 @@ const FooterMd = ({ location }) => {
             <span>Contact Us</span> <RiUser3Fill className="h-5 w-8" />
           </p>
           <img src={TextLogo} alt="logo" className="w-[10rem]" />
-          <p className="absolute bottom-0 left-[48%] z-10 text-xs shadow-3xl drop-shadow-3xl">Website by pixysquare</p>
         </div>
         <img src={footerImg} alt="footer" className="absolute bottom-0 left-[50%] w-[350px] translate-x-[-50%]" />
         <div className=" ml-auto flex  flex-col text-xl">
@@ -205,7 +201,6 @@ const FooterLg = ({ location }) => {
             <span>Contact Us</span> <RiUser3Fill className="h-5 w-8" />
           </p>
           <img src={TextLogo} alt="logo" className="w-[13rem]" />
-          <p className="absolute bottom-0 left-[48%] z-10 shadow-3xl drop-shadow-3xl">Website by pixysquare</p>
         </div>
         <img src={footerImg} alt="footer" className="absolute bottom-0 left-[50%] w-[550px] translate-x-[-50%]" />
         <div className=" ml-auto flex  flex-col text-xl">
