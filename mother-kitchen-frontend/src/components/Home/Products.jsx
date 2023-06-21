@@ -1,6 +1,5 @@
 import { useRef } from 'react'
 import {
-  Hazelnut,
   ProductItemSm1,
   ProductItemSm2,
   ProductItemSm3,
@@ -8,10 +7,11 @@ import {
   product1,
   product2,
   product3,
+  product4,
 } from '../../assets'
 import ProductCard from './ProductCard'
 import ProductsInfiniteScroll from './ProductsInfiniteScroll'
-import { Slider } from 'infinite-react-carousel/lib'
+import { Slider } from 'infinite-react-carousel'
 const productsData = [
   {
     image: product1,
@@ -50,19 +50,19 @@ const productsData = [
     icon: ProductItemSm3,
   },
   {
-    image: Hazelnut,
+    image: product4,
     price1: '$',
     price2: '6.0',
     price3: '/Sachet',
     quantity: '250gm',
-    title: 'Hazelnut Cocoa Sread',
+    title: 'Finger Millet Cookies',
     desc: 'Instant Preseasoned Green mint chutney',
     btnText: 'Buy Now',
     color: 'bg-green-500',
     icon: ProductItemSm1,
   },
   {
-    image: Hazelnut,
+    image: product2,
     price1: '$',
     price2: '6.0',
     price3: '/Sachet',
@@ -74,7 +74,7 @@ const productsData = [
     icon: ProductItemSm2,
   },
   {
-    image: Hazelnut,
+    image: product3,
     price1: '$',
     price2: '6.0',
     price3: '/Sachet',
@@ -121,7 +121,7 @@ const ProductsLg = ({ productsRef }) => {
           </h3>
         </div>
         <div className="products relative overflow-x-scroll pt-20 lg:px-10" ref={productsRef}>
-          <Slider slidesToShow={3} dots={true} arrows={true} centerPadding={0} centerMode={true}>
+          <Slider slidesToShow={3} dots={true} arrows={true} initialSlide={1} centerPadding={0} centerMode={true}>
             {productsData.map((product) => (
               <ProductCard key={product.title} {...product} />
             ))}

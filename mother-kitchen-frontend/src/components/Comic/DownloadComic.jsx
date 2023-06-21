@@ -13,10 +13,10 @@ const DownloadComic = () => {
         <img src={DownloadImg} alt="download" className=" h-full w-full object-contain pl-10" />
       </div>
       <div className="col-span-3 px-3 md:pr-5 lg:pr-10">
-        <h3 className="py-2 text-right text-4xl lg:pr-20">“Lorem ipsum</h3>
+        <h3 className="py-2 text-right text-4xl lg:pr-20">“Grab your copy</h3>
         <p className="rounded-2xl bg-white/40 p-7 text-center lg:text-2xl">
-          “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit augue vel turpis vehicula consequat.
-          Morbi consequat lacus et nulla elementum auctor.{' '}
+          “Join Inayat on a delightful journey of love, learning, and laughter. This heartwarming comic imparts valuable
+          lessons of honesty, hard work, and the path to success.
         </p>
         <div className="flex justify-between pt-5">
           <div>

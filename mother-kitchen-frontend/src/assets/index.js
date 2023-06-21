@@ -20,7 +20,7 @@ import WholesomeImg from './wholesome.webp'
 import Nutrious from './nutrious.webp'
 import KitchenBg from './kitchen_bg.webp'
 import KitchenCard1 from './kitchencard1.webp'
-import Kitchen1 from './kitchen1.webp'
+import Kitchen1 from './kitchen/kitchen1.png'
 import ReviewHeading from './review_heading.webp'
 import ReviewImg from './review1.webp'
 import footerImg from './footerImg.webp'
@@ -64,9 +64,10 @@ import review6 from './reviews/review6.webp'
 import review7 from './reviews/op.jpeg'
 import reviewBg from './reviews/review_bg.webp'
 
-import product1 from './products/product1.webp'
-import product2 from './products/product2.webp'
-import product3 from './products/product3.webp'
+import product1 from './products/product1.png'
+import product2 from './products/product2.png'
+import product3 from './products/product3.png'
+import product4 from './products/product4.webp'
 
 import kitchen1 from './kitchen/kitchencard1.webp'
 import kitchen2 from './kitchen/kitchencard2.webp'
@@ -99,8 +100,12 @@ import shifali from './team/shifali.webp'
 import satyam from './team/satyam.webp'
 import rohit from './team/rohit.png'
 
-import Brand2 from './brands/brand2.png'
-import Brand3 from './brands/brand3.png'
+import Brand1 from './brands/brand1.webp'
+import Brand2 from './brands/brand2.webp'
+import Brand3 from './brands/brand3.webp'
+import Brand4 from './brands/brand4.webp'
+import Brand5 from './brands/brand5.webp'
+import Brand6 from './brands/brand6.webp'
 
 import soon from './soon.webp'
 import RabitTea from './tea_with_rabbit.webp'
@@ -183,6 +188,7 @@ export {
   YellowBg,
   DancingWomen,
   InfoImg1,
+  product4,
   InfoImg2,
   InfoImg3,
   NumberBg,
@@ -218,7 +224,11 @@ export {
   BigBlackCookie,
   AboutHeroTextBgPhone,
   HHLeftMobile,
+  Brand1,
   Brand2,
+  Brand4,
+  Brand5,
+  Brand6,
   HHRightMobile,
   ScrollDown,
   MissionBgPhone,

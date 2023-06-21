@@ -16,7 +16,7 @@ const KithchenMenuSm = () => {
               <div className="!flex !flex-col !items-center justify-center">
                 <img loading="lazy" src={Kitchen1} alt="k1" className="w-full object-cover" />
                 <Button className=" mx-auto !flex !items-center !justify-center gap-2 !bg-[#41041A] text-xs  font-bold hover:!bg-green-base">
-                  Chicken Curry <HiArrowNarrowRight />
+                  Veg Biryani <HiArrowNarrowRight />
                 </Button>
               </div>
             </div>
@@ -53,9 +53,9 @@ const KithchenMenuLg = () => {
         </h3>
         <div className="grid grid-cols-3 pb-7">
           <div className="flex flex-col items-center p-3">
-            <img loading="lazy" src={Kitchen1} alt="k1" className="w-[80%]" />
+            <img loading="lazy" src={Kitchen1} alt="k1" className="w-[67%]" />
             <Button className="flex items-center gap-2 !bg-[#41041A] text-xl font-bold hover:!bg-green-base">
-              Chicken Curry <HiArrowNarrowRight />
+              Veg Biryani <HiArrowNarrowRight />
             </Button>
           </div>
           <div className="flex flex-col items-center p-3">

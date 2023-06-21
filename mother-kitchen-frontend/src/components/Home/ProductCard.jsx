@@ -81,8 +81,12 @@ const ProductsCardLg = ({ image, price1, price2, price3, quantity, title, desc, 
           src={image}
           alt="x"
           className={`h-full w-full
-           scale-125 object-contain drop-shadow-3xl ${
-             title === 'Green Mint Chutney' ? 'relative -top-10 scale-125' : ''
+           scale-125 object-contain object-top drop-shadow-3xl ${
+             title === 'Finger Millet Cookies'
+               ? 'relative -top-5 scale-105'
+               : title === 'Green Mint Chutney'
+               ? 'scale-90'
+               : ''
            } `}
         />
         <div className="absolute right-4 top-4">
