@@ -25,7 +25,7 @@ const KitchenItems = [
 
 const WelcomeSm = () => {
   return (
-    <section className="mt-10 px-5 ">
+    <section className="my-10 px-5 ">
       <h3 className="text-center font-gluten text-4xl font-medium text-red-base">Welcome to Mother’s Kitchen</h3>
       <img
         loading="lazy"
@@ -38,13 +38,13 @@ const WelcomeSm = () => {
           <KitchenCard key={item.smallHeading} largeHeading={item.largeHeading} color={item.color} image={item.image} />
         ))}
       </div>
-      <KitchenMenu />
+      {/* <KitchenMenu /> */}
     </section>
   )
 }
 const WelcomeLg = () => {
   return (
-    <section className="px-5 md:mt-40 lg:px-20 2xl:mx-56">
+    <section className="px-5 md:my-40 lg:px-20 2xl:mx-56">
       <h3 className="text-center font-gluten text-5xl font-bold text-red-base">Welcome to Mother’s Kitchen</h3>
       <img
         loading="lazy"
@@ -57,7 +57,7 @@ const WelcomeLg = () => {
           <KitchenCard key={item.smallHeading} {...item} />
         ))}
       </div>
-      <KitchenMenu />
+      {/* <KitchenMenu /> */}
     </section>
   )
 }

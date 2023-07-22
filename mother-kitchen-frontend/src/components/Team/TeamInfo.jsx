@@ -1,14 +1,4 @@
-import {
-  Shivani,
-  TeamHeading,
-  bhavna,
-  joshua,
-  mrunalini,
-  satyam,
-  shifali,
-  shrikumar,
-  stuart,
-} from '../../assets'
+import { Shivani, TeamHeading, bhavna, joshua, mrunalini, satyam, shifali, shrikumar, stuart } from '../../assets'
 import BorderDiv from '../custom/BorderDiv'
 import ImageBox from '../custom/ImageBox'
 import TeamInfoCard from './TeamInfoCard'
