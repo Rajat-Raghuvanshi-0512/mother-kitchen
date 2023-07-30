@@ -80,14 +80,8 @@ const ProductsCardLg = ({ image, price1, price2, price3, quantity, title, desc, 
           loading="lazy"
           src={image}
           alt="x"
-          className={`h-full w-full
-           scale-125 object-contain object-top drop-shadow-3xl ${
-             title === 'Finger Millet Cookies'
-               ? 'relative -top-5 scale-105'
-               : title === 'Green Mint Chutney'
-               ? 'scale-90'
-               : ''
-           } `}
+          className={`-mt-10 h-full
+           w-full scale-150 object-contain object-top drop-shadow-3xl`}
         />
         <div className="absolute right-4 top-4">
           <AiFillHeart className="z-10 h-8 w-8 text-red-500 drop-shadow-lg" />

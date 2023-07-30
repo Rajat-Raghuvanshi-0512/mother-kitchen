@@ -62,12 +62,16 @@ import review4 from './reviews/upasana.jpeg'
 import review5 from './reviews/review5.webp'
 import review6 from './reviews/review6.webp'
 import review7 from './reviews/op.jpeg'
+import review8 from './reviews/anil.png'
+import review9 from './reviews/zain.png'
 import reviewBg from './reviews/review_bg.webp'
 
-import product1 from './products/product1.png'
-import product2 from './products/product2.png'
-import product3 from './products/product3.png'
+import product1 from './products/product1.webp'
+import product2 from './products/product2.webp'
+import product3 from './products/product3.webp'
 import product4 from './products/product4.webp'
+import product5 from './products/product5.webp'
+import product6 from './products/product6.webp'
 
 import kitchen1 from './kitchen/kitchencard1.webp'
 import kitchen2 from './kitchen/kitchencard2.webp'
@@ -89,7 +93,7 @@ import InfoImg3 from './discover/info3.webp'
 import NumberBg from './discover/numbers.webp'
 
 import TeamHeading from './team_heading.webp'
-import Shivani from './team/shivani.webp'
+import Shivani from './team/shivani.jpg'
 import Sunil from './team/sunil.webp'
 import bhavna from './team/bhavna.webp'
 import joshua from './team/joshua.webp'
@@ -106,6 +110,9 @@ import Brand3 from './brands/brand3.webp'
 import Brand4 from './brands/brand4.webp'
 import Brand5 from './brands/brand5.webp'
 import Brand6 from './brands/brand6.webp'
+
+import InayatHeadingImg from './comics/inayat.png'
+import MummyHeadingImg from './comics/mummy.png'
 
 import soon from './soon.webp'
 import RabitTea from './tea_with_rabbit.webp'
@@ -189,6 +196,8 @@ export {
   DancingWomen,
   InfoImg1,
   product4,
+  product5,
+  product6,
   InfoImg2,
   InfoImg3,
   NumberBg,
@@ -239,4 +248,8 @@ export {
   Bag,
   Star,
   Brand3,
+  review8,
+  review9,
+  InayatHeadingImg,
+  MummyHeadingImg,
 }

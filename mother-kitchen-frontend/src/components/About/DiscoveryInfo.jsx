@@ -21,7 +21,7 @@ const details = [
     heading: 'LANNDED TO',
     headingwhite: ' INDIA',
     description:
-      "In 2022, Mother's Kitchen made its entry into India, and Sunil Chauhan, the founder of Fabcafe, joined forces as a co-founder. With his contribution, Mother's Kitchen successfully diversified its business into new FMCG domains",
+      "In 2022, Mother's Kitchen made its entry into India, and Rohit Kharbanda, the founder of Lyallpur Bakers, joined forces as a co-founder. With his contribution, Mother's Kitchen successfully diversified its business into new FMCG domains",
   },
 ]
 

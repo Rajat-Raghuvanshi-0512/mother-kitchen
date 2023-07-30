@@ -20,8 +20,15 @@ const InstagramSectionSm = () => {
           we&apos;re bringing the warmth of mom&apos;s cooking to your table.&quot;
         </p>
         <div className="flex justify-end">
-          <Button className="ml-auto mt-5 flex items-center justify-center gap-2 text-xl font-semibold">
-            Explore <HiArrowNarrowRight />
+          <Button className="ml-auto mt-5">
+            <a
+              className="flex items-center justify-center gap-2 text-xl font-semibold"
+              href="https://www.instagram.com/motherskitchen.co/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Explore <HiArrowNarrowRight />
+            </a>
           </Button>
         </div>
         <div className="relative grid h-24 grid-cols-2">
@@ -52,7 +59,16 @@ const InstagramSectionMd = () => {
               behind-the-scenes look at the love and passion that goes into every Mother&apos;s Kitchen product, and see
               how we&apos;re bringing the warmth of mom&apos;s cooking to your table.&quot;
             </p>
-            <Button className="mt-5 text-xl font-semibold">Explore</Button>
+            <Button className="mt-5 ">
+              <a
+                className="flex items-center justify-center gap-3 text-xl font-semibold"
+                href="https://www.instagram.com/motherskitchen.co/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Explore <HiArrowNarrowRight />
+              </a>
+            </Button>
             <div className="relative grid grid-cols-2">
               <div>
                 <img loading="lazy" src={Squirrel} alt="squirrel" />
@@ -91,8 +107,15 @@ const InstagramSectionLg = () => {
               behind-the-scenes look at the love and passion that goes into every Mother&apos;s Kitchen product, and see
               how we&apos;re bringing the warmth of mom&apos;s cooking to your table.&quot;
             </p>
-            <Button className="mt-5 flex items-center justify-center gap-3 text-xl font-semibold">
-              Explore <HiArrowNarrowRight />
+            <Button className="mt-5 ">
+              <a
+                className="flex items-center justify-center gap-3 text-xl font-semibold"
+                href="https://www.instagram.com/motherskitchen.co/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Explore <HiArrowNarrowRight />
+              </a>
             </Button>
             <div className="relative grid grid-cols-2">
               <div>

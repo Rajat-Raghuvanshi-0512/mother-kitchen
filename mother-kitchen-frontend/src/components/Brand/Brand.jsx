@@ -1,4 +1,4 @@
-import { Brand1, Brand2, Brand3, Brand4, Brand5, Brand6, TextLogo } from '../../assets'
+import { Brand1, Brand2, Brand3, Brand4, Brand5, Brand6 } from '../../assets'
 import BorderDiv from '../custom/BorderDiv'
 import ImageBox from '../custom/ImageBox'
 
@@ -12,33 +12,39 @@ const Brand = () => {
       <div className="m-5 grid grid-cols-2 gap-8 md:m-10 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:m-20 lg:gap-x-24 lg:gap-y-14">
         <ImageBox
           image={Brand1}
-          className="h-[100px] w-[100px] bg-[#7E97ED] object-contain md:h-[150px] md:w-[300px] md:px-8 lg:h-[240px] lg:w-[400px]"
+          className="object-contain !p-3 md:px-8"
           clickable={true}
+          boxClassName={'!h-[120px] !w-[120px] bg-[#7E97ED]  md:!h-[150px] md:!w-[150px] lg:!h-[240px] lg:!w-[240px]'}
         />
         <ImageBox
           image={Brand2}
-          className="h-[100px] w-[100px] bg-[#7E97ED] object-contain p-2 md:h-[150px] md:w-[300px] lg:h-[240px] lg:w-[400px]"
+          className="object-contain !p-3 md:px-8"
           clickable={true}
+          boxClassName={'!h-[120px] !w-[120px] bg-[#7E97ED]  md:!h-[150px] md:!w-[150px] lg:!h-[240px] lg:!w-[240px]'}
         />
         <ImageBox
           image={Brand3}
-          className="h-[100px] w-[100px] bg-[#7E97ED] object-contain p-2 md:h-[150px] md:w-[300px] lg:h-[240px] lg:w-[400px]"
+          className="object-contain !p-3 md:px-8"
           clickable={true}
+          boxClassName={'!h-[120px] !w-[120px] bg-[#7E97ED]  md:!h-[150px] md:!w-[150px] lg:!h-[240px] lg:!w-[240px]'}
         />
         <ImageBox
           image={Brand4}
-          className="h-[100px] w-[100px] bg-[#7E97ED] object-contain p-6 md:h-[150px] md:w-[300px] lg:h-[240px] lg:w-[400px]"
+          className="object-contain !p-3 md:px-8"
           clickable={true}
+          boxClassName={'!h-[120px] !w-[120px] bg-[#7E97ED]  md:!h-[150px] md:!w-[150px] lg:!h-[240px] lg:!w-[240px]'}
         />
         <ImageBox
           image={Brand5}
-          className="h-[100px] w-[100px] bg-[#7E97ED] object-contain p-2 md:h-[150px] md:w-[300px] lg:h-[240px] lg:w-[400px]"
+          className="object-contain !p-3 md:px-8"
           clickable={true}
+          boxClassName={'!h-[120px] !w-[120px] bg-[#7E97ED]  md:!h-[150px] md:!w-[150px] lg:!h-[240px] lg:!w-[240px]'}
         />
         <ImageBox
           image={Brand6}
-          className="h-[100px] w-[100px] bg-[#7E97ED] object-contain p-4 md:h-[150px] md:w-[300px] lg:h-[240px] lg:w-[400px]"
+          className="object-contain !p-3 md:px-8"
           clickable={true}
+          boxClassName={'!h-[120px] !w-[120px] bg-[#7E97ED]  md:!h-[150px] md:!w-[150px] lg:!h-[240px] lg:!w-[240px]'}
         />
       </div>
     </BorderDiv>

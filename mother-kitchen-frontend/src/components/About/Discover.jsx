@@ -16,7 +16,7 @@ import DiscoveryInfo from './DiscoveryInfo'
 const Discover = () => {
   const ref = useRef()
   return (
-    <section className="pb-20 2xl:mx-36">
+    <section className="max-w-screen overflow-hidden pb-20 2xl:mx-36">
       <div className="flex justify-center ">
         <img src={ProductsHeading} alt="heading" className="absolute  -z-20 mt-5 h-[3.3rem] md:mt-10 md:h-24" />
         <h2 className="text-center font-gluten text-2xl font-bold text-[#790000] md:text-5xl md:leading-[60px]">

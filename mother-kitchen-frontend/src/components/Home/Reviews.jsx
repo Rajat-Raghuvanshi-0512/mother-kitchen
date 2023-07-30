@@ -1,17 +1,21 @@
 import { useEffect, useRef } from 'react'
-import { ReviewHeading, review1, review2, review3, review4, review5, review6, review7, reviewBg } from '../../assets'
+import {
+  ReviewHeading,
+  review1,
+  review2,
+  review3,
+  review4,
+  review5,
+  review6,
+  review7,
+  review8,
+  review9,
+  reviewBg,
+} from '../../assets'
 import ReviewCard from './ReviewCard'
 import Slider from 'infinite-react-carousel'
 
 const reviews1 = [
-  {
-    title: 'Thank you, Mothers Kitchen, for this delicious chana burfi',
-    desc: 'Dear Shivani As I sit here enjoying your chana burﬁ that I just received, I realized I have been extremely selﬁsh in not reaching out to you earlier. Just know I received your earlier letters. I am simply overwhelmed and touched by your conﬁdence in me. Your story moved me to tears. Your determination to power ahead is inspiring. Please let me know how I can help you. Best wishes and charge on. The world needs more people like you.',
-    name: 'Indra Nooyi',
-    profession: 'Former Pepsico CEO',
-    bgColor: 'bg-[#446DBC]',
-    image: review1,
-  },
   {
     title: 'Sesame Seed Cookies are my favorite',
     desc: 'Sesame Seed Cookies are my favorite sweet but the only thought that comes to my mind when I’m making it is, whether it’s healthy or not. Sugar is fattening and being an actor, I need to both look and feel fifit. Mothers Kitchen’s gluten-free Sesame Seed Cookies are healthy and nutritious. Now I enjoy my favorite treat with nosecond thoughts.',
@@ -37,12 +41,20 @@ const reviews1 = [
     image: review4,
   },
   {
-    title: 'The most nostalgic memory of my childhood',
-    desc: 'The most nostalgic memory of my childhood is, eating Cardamom cookies. This biscuit has a flavor which is rare to find. I have tried it at various places but Mothers Kitchen is the only brand whose cardamom cookies have the same taste and are gluten free as well. Thank you for the authentic experience Mothers Kitchen.',
-    name: 'Abhishek Kapoor',
-    profession: 'Bollywood Actor',
-    bgColor: 'bg-[#96BC44]',
-    image: review3,
+    title: 'Thank you, Mothers Kitchen, for this delicious chana burfi',
+    desc: 'Dear Shivani As I sit here enjoying your chana burﬁ that I just received, I realized I have been extremely selﬁsh in not reaching out to you earlier. Just know I received your earlier letters. I am simply overwhelmed and touched by your conﬁdence in me. Your story moved me to tears. Your determination to power ahead is inspiring. Please let me know how I can help you. Best wishes and charge on. The world needs more people like you.',
+    name: 'Indra Nooyi',
+    profession: 'Former Pepsico CEO',
+    bgColor: 'bg-[#446DBC]',
+    image: review1,
+  },
+  {
+    title: 'Thank you, Mothers Kitchen, for this delicious chana burfi',
+    desc: "I received a Mothers Kitchen Gift Pack full of cookies and sweets and was hesitant to try at ﬁrst for fear of increasing my waist-line.The kids of course ﬁnished the rest, they pointed to me the drawings of kids marching on the artistically made box and I smiled on the attention to detail that these guys go into. Mothers Kitchen's products remind me of ﬂavours and fragrances I experienced in my childhood with a curious fusion that we see in today's best restaurants.",
+    name: 'Anil Bahuman',
+    profession: 'Vice President, Jio Platforms Ltd',
+    bgColor: 'bg-[#446D3C]',
+    image: review8,
   },
 ]
 const reviews2 = [
@@ -79,12 +91,12 @@ const reviews2 = [
     image: review7,
   },
   {
-    title: 'The most nostalgic memory of my childhood',
-    desc: 'The most nostalgic memory of my childhood is, eating Cardamom cookies. This biscuit has a flavor which is rare to find. I have tried it at various places but Mothers Kitchen is the only brand whose cardamom cookies have the same taste and are gluten free as well. Thank you for the authentic experience Mothers Kitchen.',
-    name: 'Abhishek Kapoor',
+    title: 'Best cookies I have ever eaten',
+    desc: 'When I heard gluten-free almond cookies exists, I didn’t believe it. I thought the taste and texture will not be the same, but when I tasted the Mothers Kitchen cookies I encountered a new world of gluten-free happiness. Now these almond cookies are my all-time favorite.',
+    name: 'Zain Imam',
     profession: 'Bollywood Actor',
     bgColor: 'bg-[#E45F5F]',
-    image: review6,
+    image: review9,
   },
 ]
 
@@ -141,7 +153,7 @@ const ReviewsLg = () => {
       </div>
       <div className="relative mt-10 md:mt-0">
         <div
-          className={`relative -left-[80vw] flex w-max select-none gap-10 overflow-hidden px-10 pb-20 md:pt-28 [&>*:nth-child(odd)]:translate-y-20`}
+          className={`relative -left-[80vw] flex w-max select-none gap-10 overflow-hidden px-10 pb-20 md:pt-28 xl:-left-[65vw] 2xl:-left-[50vw] [&>*:nth-child(odd)]:translate-y-20`}
           ref={upperReviews}
         >
           {reviews1.map((review, idx) => (
