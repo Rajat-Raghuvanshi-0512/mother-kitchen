@@ -7,14 +7,7 @@ const ProductsCardSm = ({ image, price1, price2, price3, quantity, title, desc, 
       className={`relative my-10 h-[300px] w-[100%] rounded-3xl border-4 border-b-8 border-r-8 border-black px-1 py-3 font-lexend ${color}`}
     >
       <div className="flex h-[200px] items-center justify-center ">
-        <img
-          loading="lazy"
-          src={image}
-          alt="x"
-          className={`h-full scale-110 object-contain drop-shadow-3xl ${
-            title === 'Green Mint Chutney' ? 'relative -top-10 scale-125' : ''
-          } `}
-        />
+        <img loading="lazy" src={image} alt="x" className={`-mt-10 h-full scale-150 object-contain drop-shadow-3xl `} />
         <div className="absolute right-3 top-3">
           <AiFillHeart className="z-10 h-6 w-6 text-red-500 drop-shadow-lg" />
           <AiFillHeart className="absolute -left-[1.5px] -top-[1.5px] -z-[1] h-7 w-7 text-black drop-shadow-lg" />
@@ -104,7 +97,7 @@ const ProductsCardLg = ({ image, price1, price2, price3, quantity, title, desc, 
           <h6 className="mt-2 pr-3 font-gluten text-[11px] font-semibold leading-3 text-white">{desc}</h6>
         </div>
       </div>
-      <img loading="lazy" src={icon} alt="icon" className="absolute -bottom-10 -right-10 w-20 " />
+      <img loading="lazy" src={icon} alt="icon" className="absolute -bottom-7 -right-10 w-20 " />
     </div>
   )
 }

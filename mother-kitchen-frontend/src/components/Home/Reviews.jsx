@@ -17,6 +17,14 @@ import Slider from 'infinite-react-carousel'
 
 const reviews1 = [
   {
+    title: 'Thank you, Mothers Kitchen, for this delicious chana burfi',
+    desc: 'Dear Shivani As I sit here enjoying your chana burﬁ that I just received, I realized I have been extremely selﬁsh in not reaching out to you earlier. Just know I received your earlier letters. I am simply overwhelmed and touched by your conﬁdence in me. Your story moved me to tears. Your determination to power ahead is inspiring. Please let me know how I can help you.The world needs more people like you.',
+    name: 'Indra Nooyi',
+    profession: 'Former Pepsico CEO',
+    bgColor: 'bg-[#446DBC]',
+    image: review1,
+  },
+  {
     title: 'Sesame Seed Cookies are my favorite',
     desc: 'Sesame Seed Cookies are my favorite sweet but the only thought that comes to my mind when I’m making it is, whether it’s healthy or not. Sugar is fattening and being an actor, I need to both look and feel fifit. Mothers Kitchen’s gluten-free Sesame Seed Cookies are healthy and nutritious. Now I enjoy my favorite treat with nosecond thoughts.',
     name: 'Abhilash Kumar',
@@ -42,15 +50,7 @@ const reviews1 = [
   },
   {
     title: 'Thank you, Mothers Kitchen, for this delicious chana burfi',
-    desc: 'Dear Shivani As I sit here enjoying your chana burﬁ that I just received, I realized I have been extremely selﬁsh in not reaching out to you earlier. Just know I received your earlier letters. I am simply overwhelmed and touched by your conﬁdence in me. Your story moved me to tears. Your determination to power ahead is inspiring. Please let me know how I can help you. Best wishes and charge on. The world needs more people like you.',
-    name: 'Indra Nooyi',
-    profession: 'Former Pepsico CEO',
-    bgColor: 'bg-[#446DBC]',
-    image: review1,
-  },
-  {
-    title: 'Thank you, Mothers Kitchen, for this delicious chana burfi',
-    desc: "I received a Mothers Kitchen Gift Pack full of cookies and sweets and was hesitant to try at ﬁrst for fear of increasing my waist-line.The kids of course ﬁnished the rest, they pointed to me the drawings of kids marching on the artistically made box and I smiled on the attention to detail that these guys go into. Mothers Kitchen's products remind me of ﬂavours and fragrances I experienced in my childhood with a curious fusion that we see in today's best restaurants.",
+    desc: "I received a Mothers Kitchen Gift Pack full of cookies and sweets and was hesitant to try at ﬁrst for fear of increasing my waist-line. Mothers Kitchen's products remind me of ﬂavours and fragrances I experienced in my childhood with a curious fusion that we see in today's best restaurants.",
     name: 'Anil Bahuman',
     profession: 'Vice President, Jio Platforms Ltd',
     bgColor: 'bg-[#446D3C]',

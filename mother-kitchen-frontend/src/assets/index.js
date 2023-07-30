@@ -40,6 +40,9 @@ import Heart from './heart.png'
 import ProductItemSm1 from './home/productItemSmall1.webp'
 import ProductItemSm2 from './home/productItemSmall2.webp'
 import ProductItemSm3 from './home/productItemSmall3.webp'
+import ProductItemSm4 from './home/productItemSmall4.webp'
+import ProductItemSm5 from './home/productItemSmall5.webp'
+import ProductItemSm6 from './home/productItemSmall6.webp'
 import HHLeftMobile from './home/hh-left.webp'
 import HHRightMobile from './home/hh-right.webp'
 import ScrollDown from './home/scroll-down.webp'
@@ -227,6 +230,9 @@ export {
   ProductItemSm1,
   ProductItemSm2,
   ProductItemSm3,
+  ProductItemSm4,
+  ProductItemSm5,
+  ProductItemSm6,
   MotherAndDaughter,
   SmallCookie,
   BigCookie,
