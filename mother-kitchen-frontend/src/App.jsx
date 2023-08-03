@@ -4,6 +4,7 @@ import { Footer, Loader, Navbar } from './components'
 import { Suspense } from 'react'
 
 const App = () => {
+  document.addEventListener('contextmenu', (ev) => ev.preventDefault())
   return (
     <>
       <Suspense fallback={<Loader />}>
