@@ -63,7 +63,7 @@ const productsData = [
     title: 'Honey and nuts rose brittle',
     desc: 'Wholesome goodness of nuts',
     btnText: 'Buy Now',
-    color: 'bg-[#ED647E]',
+    color: 'bg-[#C73684]',
     icon: ProductItemSm2,
   },
   {
@@ -87,7 +87,7 @@ const productsData = [
     title: 'Finger Millets',
     desc: 'Blended with sweetness and crunch',
     btnText: 'Buy Now',
-    color: 'bg-[#C73684]',
+    color: 'bg-[#C1715A]',
     icon: ProductItemSm6,
   },
 ]

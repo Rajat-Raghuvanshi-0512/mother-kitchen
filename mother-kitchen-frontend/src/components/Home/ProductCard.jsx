@@ -7,7 +7,14 @@ const ProductsCardSm = ({ image, price1, price2, price3, quantity, title, desc, 
       className={`relative my-10 h-[300px] w-[100%] rounded-3xl border-4 border-b-8 border-r-8 border-black px-1 py-3 font-lexend ${color}`}
     >
       <div className="flex h-[200px] items-center justify-center ">
-        <img loading="lazy" src={image} alt="x" className={`-mt-10 h-full scale-150 object-contain drop-shadow-3xl `} />
+        <img
+          loading="lazy"
+          src={image}
+          alt="x"
+          className={`-mt-10 h-full  object-contain drop-shadow-3xl ${
+            title === 'Finger Millets' ? 'scale-125' : 'scale-150'
+          } `}
+        />
         <div className="absolute right-3 top-3">
           <AiFillHeart className="z-10 h-6 w-6 text-red-500 drop-shadow-lg" />
           <AiFillHeart className="absolute -left-[1.5px] -top-[1.5px] -z-[1] h-7 w-7 text-black drop-shadow-lg" />
@@ -32,7 +39,7 @@ const ProductsCardSm = ({ image, price1, price2, price3, quantity, title, desc, 
     </div>
   )
 }
-const ProductsCardMd = ({ image, price1, price2, price3, quantity, title, desc, btnText, color, icon }) => {
+const ProductsCardMd = ({ image, quantity, title, desc, btnText, color, icon }) => {
   return (
     <div
       className={`relative my-10 h-[350px] w-[270px] rounded-3xl border-4 border-b-8 border-r-8 border-black p-3 font-lexend ${color}`}
@@ -46,10 +53,7 @@ const ProductsCardMd = ({ image, price1, price2, price3, quantity, title, desc, 
       </div>
       <div className="flex gap-10 px-1 drop-shadow-sm">
         <div className="flex-1">
-          <div className="flex text-[12px] font-bold text-white">
-            {price1} <span className="text-white">{price2}</span> <span>{price3}</span>
-          </div>
-          <div className="text-[8px] ">{quantity}</div>
+          <div className="flex text-[12px] font-bold text-white">{quantity}</div>
           <button className="mt-3 flex items-center justify-between rounded-lg border-2 border-b-4 border-r-4 border-black bg-[#039860] px-3 py-1 font-gluten text-white">
             <span className="text-xs">{btnText}</span> <GiPaperBagFolded />
           </button>
@@ -63,7 +67,7 @@ const ProductsCardMd = ({ image, price1, price2, price3, quantity, title, desc, 
     </div>
   )
 }
-const ProductsCardLg = ({ image, price1, price2, price3, quantity, title, desc, btnText, color, icon }) => {
+const ProductsCardLg = ({ image, quantity, title, desc, btnText, color, icon }) => {
   return (
     <div
       className={`relative z-[5] mx-auto my-10 h-[360px] w-[310px] rounded-3xl border-4 border-b-8 border-r-8 border-black px-2 py-3 font-lexend ${color}`}
@@ -83,10 +87,7 @@ const ProductsCardLg = ({ image, price1, price2, price3, quantity, title, desc, 
       </div>
       <div className="flex gap-5 px-1 drop-shadow-sm">
         <div className="flex-1">
-          <div className="flex text-[15px] font-bold tracking-tighter">
-            {price1} <span className="text-white">{price2}</span> <span>{price3}</span>
-          </div>
-          <div className="text-[8px] font-medium ">{quantity}</div>
+          <div className="flex text-[15px] font-bold tracking-tighter">{quantity}</div>
           <button className="mt-3 flex w-full items-center justify-end gap-2 rounded-lg border-2 border-b-4 border-r-4 border-black bg-[#039860] px-3 py-1 font-gluten text-white">
             <span className="black-shadow-sm">{btnText}</span>
             <img src={Bag} alt="bag" className="h-4 w-4 object-contain" />
